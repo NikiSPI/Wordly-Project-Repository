@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4KWHC9ky3r+D+wqlBDLr3mIbNRvUp0BUpsYg14GLYp07wiorBEYOaK0aX47aKa9PjgesaXym+11Dg/FPHGcZzQ==",
+  "dgSpecHash": "4msVhlu7lmMe45Ocb6MV3fdIV4KkluECri6fOvJM5GIFAw5ljFWrrWtvMDbgdumyLHt2BAqaOCfeyD9zbPWmcA==",
   "success": true,
   "projectFilePath": "D:\\Other\\JetBrains\\Rider IDE\\Solutions\\WordTester\\WordTester.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

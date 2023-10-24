@@ -12,3 +12,6 @@ D:\Other\JetBrains\Rider IDE\Solutions\WordTester\obj\Debug\net7.0-windows\refin
 D:\Other\JetBrains\Rider IDE\Solutions\WordTester\obj\Debug\net7.0-windows\WordTester.pdb
 D:\Other\JetBrains\Rider IDE\Solutions\WordTester\obj\Debug\net7.0-windows\WordTester.genruntimeconfig.cache
 D:\Other\JetBrains\Rider IDE\Solutions\WordTester\obj\Debug\net7.0-windows\ref\WordTester.dll
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester\obj\Debug\net7.0-windows\WordTester.csproj.AssemblyReference.cache
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester\obj\Debug\net7.0-windows\WordTester.csproj.CopyComplete
