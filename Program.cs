@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System.Diagnostics;
+using System.Reflection;
 
 public class Frame : Form
 {
@@ -7,40 +8,37 @@ public class Frame : Form
     
     private class WordList
     {
-        public string[] English;
+        public IList<string[]> English;
         public string[] EBulgarian;
-        public string[] Deutsch;
-        public string[] DBulgarian;
+        //public IList<IList<string>> Deutsch;
+        //public List<List<string>> DBulgarian;
     }
     
     public Frame()
     {
-        Text = " Word Tester";
-        Icon = Icon.ExtractAssociatedIcon(Path.GetDirectoryName(stackFrame.GetFileName()) + "\\Images\\WordTester.ico");
-        ClientSize = new Size(500, 500);
-        StartPosition = FormStartPosition.CenterScreen;
-
         string jsonFile =
             File.ReadAllText(Path.GetDirectoryName(stackFrame.GetFileName()) + @"\Word Lists\Word List.json");
 
-        WordList deserialized = JsonConvert.DeserializeObject<WordList>(jsonFile);
+        var deserialized = JsonConvert.DeserializeObject<WordList>(jsonFile); //how to deserialize
 
-        string visualize = "";
-        for (int i = 0; i < deserialized.English.Length; i++)
+        for(int i = 0; i < deserialized.English.Count; i++)
         {
-            visualize += deserialized.English[i] + " - ";
-            visualize += deserialized.EBulgarian[i] + "     ";
-            visualize += deserialized.Deutsch[i] + " - ";
-            visualize += deserialized.DBulgarian[i] + "\n";
+            Console.Write(deserialized.EBulgarian[i] + " - ");
+            
+            foreach (var word in deserialized.English[i])
+            {
+                Console.Write(word);
+                if ( ! word.Equals( (deserialized.English[i])[deserialized.English[i].Length - 1] ) )
+                {
+                    Console.Write(", ");
+                }
+            }
+
+            Console.WriteLine();
         }
         
-        Label label = new Label();
-        label.Text = visualize;
-        label.BackColor = Color.Bisque;
-        label.Location = new Point(25, 25);
-        label.Size = new Size(450, 450);
         
-        Controls.Add(label);
+        
     }
     
 }
@@ -49,6 +47,6 @@ static class Program
 {
     static void Main()
     {
-        Application.Run(new Frame());
+        new Frame();
     }
 }

@@ -1,10 +1,10 @@
-{
+{  
   "English": [
-    "GaliR",
-    "The boss",
-    "Bucci",
-    "Skunk",
-    "Roki Balboa"
+    ["GaliR", "ciganin"],
+    ["The boss", "shef"],
+    ["Bucci","bomba"],
+    ["Skunk", "Mirizlivka"],
+    ["Roki Balboa", "rosen"]
   ],
   "EBulgarian": [
     "Джалил",
@@ -22,14 +22,13 @@
   ],
   "DBulgarian": [
     "говоря",
-    "Вие",
+    ["Вие", "you"],
     "Немски",
     "Да",
     "Добре"
   ],
   
   "Duma": [
-    "Word",
     "Word"
   ]
 }
