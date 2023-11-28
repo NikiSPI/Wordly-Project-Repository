@@ -1,0 +1,7 @@
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\bin\Debug\WordTester_ConsoleVersion.exe
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\bin\Debug\WordTester_ConsoleVersion.pdb
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.csproj.AssemblyReference.cache
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.csproj.SuggestedBindingRedirects.cache
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.csproj.CoreCompileInputs.cache
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.exe
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.pdb
