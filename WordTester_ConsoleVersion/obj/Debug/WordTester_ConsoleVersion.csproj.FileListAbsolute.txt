@@ -5,3 +5,6 @@ D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_Cons
 D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.csproj.CoreCompileInputs.cache
 D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.exe
 D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.pdb
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\bin\Debug\Newtonsoft.Json.dll
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\bin\Debug\Newtonsoft.Json.xml
+D:\Other\JetBrains\Rider IDE\Solutions\WordTester_ConsoleVersion\WordTester_ConsoleVersion\obj\Debug\WordTester_ConsoleVersion.csproj.CopyComplete
