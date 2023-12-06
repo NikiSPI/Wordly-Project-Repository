@@ -1,95 +1,42 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using Newtonsoft.Json;
 
 public class QuizScript
 {
-    private class WordList
-    {
-        public List<string[]> Term;
-        public List<string[]> Meaning;
-    }
-    private WordList wl;
-    
-    public void Start()
-    {
-        ChooseWordList();
-        
-        CheckListsEqual();
-        
-        DisplayList();
-        
-        AssignAnsweringList();
-        
-    }
+    public List<string[]> shownWords;
+    public List<string[]> answerWords;
 
-    private void ChooseWordList()
-    {
-        Console.Write("Enter the name of the list: ");
-        wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(Script.wordListDirectory + Console.ReadLine() + ".json"));
-    }
+    private Random rand = new Random();
     
-    private void CheckListsEqual()
+    public void StartQuiz()
     {
-        if (wl.Term.Count != wl.Meaning.Count)
+        while (true)
         {
-            Console.WriteLine("The number of terms doesn't match the number of meanings!");
-            
-            int diff = Math.Max(wl.Term.Count, wl.Meaning.Count) - Math.Min(wl.Term.Count, wl.Meaning.Count);
-            
-            if (wl.Term.Count > wl.Meaning.Count)
+            int currentPos = rand.Next(0, shownWords.Count);
+
+            for (int i = 0; i < shownWords[currentPos].Length; i++)
             {
-                Console.Write("Terms removed: ");
-                wl.Term = RemoveWords(wl.Term, diff);
+                if (i != 0)
+                {
+                    Console.Write(", ");
+                }
+                
+                Console.Write(shownWords[currentPos][i]);
             }
-            else
+            Console.Write(" - ");
+
+            string answer = Console.ReadLine();
+            
+            for (int i = 0; i < shownWords[currentPos].Length; i++)
             {
-                Console.Write("Meanings removed: ");
-                wl.Meaning = RemoveWords(wl.Meaning, diff);
+                if (shownWords[currentPos][i].Equals(answer))
+                {
+                    Console.WriteLine("Correct!");
+                    break;
+                }
             }
 
-            Console.WriteLine();
-        }
-        
-    }
-    private List<string[]> RemoveWords(List<string[]> list, int diff)
-    {
-        for (int i = 0; i < diff; i++)
-        {
-            Console.Write(list[list.Count - 1][0] + " ");
-                    
-            list.RemoveAt(list.Count - 1);
-        }
-
-        return list;
-    }
-
-    private void AssignAnsweringList()
-    {
-        
-    }
-    
-    
-    private void DisplayList()
-    {
-        Console.WriteLine("List:");
-        
-        for (int i = 0; i < wl.Term.Count; i++)
-        {
-            for (int j = 0; j < wl.Term[i].Length; j++)
-            {
-                Console.Write(wl.Term[i][j] + " ");
-            }
-            
-            Console.Write("- ");
-            
-            for (int j = 0; j < wl.Meaning[i].Length; j++)
-            {
-                Console.Write(wl.Meaning[i][j] + " ");
-            }
-            Console.WriteLine();
         }
     }
-    
+        
 }

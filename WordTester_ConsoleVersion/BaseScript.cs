@@ -47,8 +47,8 @@ class Script
 
     private void InitiateMainFunction()
     {
-        QuizScript quizScr = new QuizScript();
-        quizScr.Start();
+        SetUpQuiz quiz = new SetUpQuiz();
+        quiz.Initiate();
     }
 
 }
