@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using Newtonsoft.Json;
 
@@ -12,7 +11,6 @@ class CreateNewWordList
         public List<string[]> Meaning;
     }
     
-    private StackFrame stackFrame = new StackTrace(new StackFrame(true)).GetFrame(0);
 
     private WordList jsonList = new WordList();
     private string wordListName, allTerms, allMeanings;
@@ -27,7 +25,7 @@ class CreateNewWordList
         jsonList.Term = addTerms.Start(allTerms);
         jsonList.Meaning = addTerms.Start(allMeanings);
         
-        ListCheck();
+        ListDisplayCheck();
         
         SaveJsonFile();
     }
@@ -46,7 +44,7 @@ class CreateNewWordList
         allMeanings = Console.ReadLine();
     }
 
-    private void ListCheck()
+    private void ListDisplayCheck()
     {
         for (int i = 0; i < Math.Max(jsonList.Term.Count, jsonList.Meaning.Count); i++)
         {
@@ -59,7 +57,7 @@ class CreateNewWordList
             }
             else
             {
-                Console.WriteLine("Terms dont match with meanings!");
+                Console.WriteLine("Terms don't match with meanings!");
             }
             
             Console.Write("- ");
@@ -73,7 +71,7 @@ class CreateNewWordList
             }
             else
             {
-                Console.WriteLine("Meanings dont match with terms!");
+                Console.WriteLine("Meanings don't match with terms!");
             }
             
 
@@ -84,24 +82,30 @@ class CreateNewWordList
 
     private void SaveJsonFile()
     {
-        Console.WriteLine("Do you want to save the file? ('yes' to save)");
+        Console.WriteLine("Do you want to save the file? ('yes' or 'no')");
 
-        if (Console.ReadLine().ToLower().Equals("yes"))
+        string scanner = Console.ReadLine();
+        
+        if (scanner.ToLower().Equals("yes"))
         {
             File.WriteAllText(
-                Path.GetDirectoryName(stackFrame.GetFileName()) + @"\Word Lists\"+ wordListName +".json" , 
+                Script.wordListDirectory + wordListName +".json" , 
                 JsonConvert.SerializeObject(jsonList));
             
             Console.WriteLine("saved!");
         }
-        else
+        else if(scanner.ToLower().Equals("no"))
         {
             Console.WriteLine("did not save!");
+        }
+        else
+        {
+            SaveJsonFile();
         }
     }
 }
 
-class AddWords
+public class AddWords
 {
     private List<string[]> wordList;
     private List<string> currentSynList = new List<string>();
