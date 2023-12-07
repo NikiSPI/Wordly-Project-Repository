@@ -22,7 +22,7 @@ public class SetUpQuiz
 
         quizScr = new QuizScript();
         AssignAnsweringList();
-        
+        quizScr.StartQuiz();
         
         
     }

@@ -39,8 +39,8 @@ class Script
 
     private void InitiateWordList()
     {
-        CreateNewWordList createWL = new CreateNewWordList();
-        createWL.Create();
+        CreateNewWordList createWordList = new CreateNewWordList();
+        createWordList.Create();
         
         InitiateScript();
     }

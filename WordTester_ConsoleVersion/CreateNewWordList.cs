@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
 
 class CreateNewWordList
@@ -46,6 +47,8 @@ class CreateNewWordList
 
     private void ListDisplayCheck()
     {
+        Console.WriteLine("\n");
+        
         for (int i = 0; i < Math.Max(jsonList.Term.Count, jsonList.Meaning.Count); i++)
         {
             if (i < jsonList.Term.Count)
@@ -57,7 +60,7 @@ class CreateNewWordList
             }
             else
             {
-                Console.WriteLine("Terms don't match with meanings!");
+                Console.Write("term");
             }
             
             Console.Write("- ");
@@ -71,7 +74,7 @@ class CreateNewWordList
             }
             else
             {
-                Console.WriteLine("Meanings don't match with terms!");
+                Console.Write("meaning");
             }
             
 
@@ -150,6 +153,8 @@ public class AddWords
         {
             currentSynList.Add(allWords.Substring(startingChar, currentChar - startingChar));
 
+            RemoveUnnecessary(currentSynList[currentSynList.Count - 1]);
+            
             startingChar = currentChar + 1;
         }
     }
@@ -159,16 +164,55 @@ public class AddWords
         {
             CheckWordSyn(true);
 
-            string[] currentStr = new string[currentSynList.Count];
-
-            for (int i = 0; i < currentSynList.Count; i++)
+            if (currentSynList.Count != 0)
             {
-                currentStr[i] = currentSynList[i];
-            }
-                
-            wordList.Add(currentStr);
+                string[] currentStr = new string[currentSynList.Count];
 
-            currentSynList = new List<string>();
+                for (int i = 0; i < currentSynList.Count; i++)
+                {
+                    currentStr[i] = currentSynList[i];
+                }
+                
+                wordList.Add(currentStr);
+
+                currentSynList = new List<string>();
+            }
+            
+        }
+    }
+
+    private void RemoveUnnecessary(string word) //checks for unnecessary spaces and empty words
+    {
+        int pos = 0;
+        
+        for(int i = 0; i < word.Length; i++)
+        {
+            if (!word[i].Equals(' '))
+            {
+                break;
+            }
+            pos++;
+        }
+        word = word.Substring(pos, word.Length - pos);
+        
+        pos = 0;
+        for(int i = 0; i < word.Length; i++)
+        {
+            if (!word[word.Length - i - 1].Equals(' '))
+            {
+                break;
+            }
+            pos++;
+        }
+        word = word.Substring(0, word.Length - pos);
+
+        if (word.Equals(""))
+        {
+            currentSynList.RemoveAt(currentSynList.Count - 1);
+        }
+        else
+        {
+            currentSynList[currentSynList.Count - 1] = word;
         }
     }
 }

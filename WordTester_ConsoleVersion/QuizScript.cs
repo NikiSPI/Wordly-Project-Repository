@@ -14,29 +14,55 @@ public class QuizScript
         {
             int currentPos = rand.Next(0, shownWords.Count);
 
-            for (int i = 0; i < shownWords[currentPos].Length; i++)
-            {
-                if (i != 0)
-                {
-                    Console.Write(", ");
-                }
-                
-                Console.Write(shownWords[currentPos][i]);
-            }
+            DisplayArray(shownWords[currentPos]);
             Console.Write(" - ");
 
             string answer = Console.ReadLine();
             
-            for (int i = 0; i < shownWords[currentPos].Length; i++)
+            for (int i = 0; i < answerWords[currentPos].Length; i++)
             {
-                if (shownWords[currentPos][i].Equals(answer))
+                if (answerWords[currentPos][i].Equals(answer))
                 {
+                    answerWords.RemoveAt(currentPos);
+                    
                     Console.WriteLine("Correct!");
                     break;
                 }
             }
 
+            if (shownWords.Count == answerWords.Count)
+            {
+                Console.WriteLine("Incorrect!\nThe correct word is ");
+                DisplayArray(answerWords[currentPos]);
+            }
+            else
+            {
+                shownWords.RemoveAt(currentPos);
+            }
+
+            if(shownWords.Count <=  0)
+            {
+                Console.WriteLine("You went through all words!\n");
+                break;
+            }     
         }
+    }
+
+    private void DisplayArray(string[] words)
+    {
+        for (int i = 0; i < words.Length; i++)
+        {
+            if (i != 0)
+            {
+                Console.Write(", ");
+            }
+            Console.Write(words[i]);
+        }
+    }
+
+    private void EndCheck()
+    {
+        
     }
         
 }
