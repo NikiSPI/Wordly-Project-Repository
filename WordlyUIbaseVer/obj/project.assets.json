@@ -8,20 +8,28 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nicol\\.nuget\\packages\\": {}
+    "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicol\\source\\repos\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "projectUniqueName": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
       "projectName": "WordlyUIbaseVer",
-      "projectPath": "C:\\Users\\nicol\\source\\repos\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
-      "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicol\\source\\repos\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
+      "projectPath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "packagesPath": "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\",
+      "outputPath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nikola Bozhkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
