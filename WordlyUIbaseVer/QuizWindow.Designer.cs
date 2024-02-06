@@ -1,6 +1,6 @@
 ﻿namespace WordlyUIbaseVer
 {
-    partial class Quiz_Window
+    partial class QuizWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            quizLbl = new Label();
             SuspendLayout();
             // 
-            // quizLbl
-            // 
-            quizLbl.AutoSize = true;
-            quizLbl.BackColor = Color.Transparent;
-            quizLbl.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            quizLbl.Location = new Point(177, 200);
-            quizLbl.Name = "quizLbl";
-            quizLbl.Size = new Size(191, 86);
-            quizLbl.TabIndex = 1;
-            quizLbl.Text = "QUIZ";
-            // 
-            // Quiz_Window
+            // QuizWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.MediumTurquoise;
-            ClientSize = new Size(584, 486);
-            Controls.Add(quizLbl);
-            Name = "Quiz_Window";
-            Text = "Quiz_Window";
+            ClientSize = new Size(600, 525);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "QuizWindow";
+            Text = "QuizWindow";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label quizLbl;
     }
 }

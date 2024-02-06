@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             homeLbl = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // homeLbl
@@ -58,5 +59,6 @@
         #endregion
 
         private Label homeLbl;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

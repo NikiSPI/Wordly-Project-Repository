@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WordlyUIbaseVer
 {
-    public partial class Quiz_Window : Form
+    public partial class QuizWindow : Form
     {
-        public Quiz_Window()
+        public QuizWindow()
         {
             InitializeComponent();
         }

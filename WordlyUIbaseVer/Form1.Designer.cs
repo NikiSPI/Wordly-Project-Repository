@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             optionsPnl = new Panel();
+            selectedButtonPnl = new Panel();
             setttingsBtn = new Button();
             quitBtn = new Button();
             createBtn = new Button();
@@ -52,6 +53,7 @@
             // optionsPnl
             // 
             optionsPnl.BackColor = SystemColors.GradientInactiveCaption;
+            optionsPnl.Controls.Add(selectedButtonPnl);
             optionsPnl.Controls.Add(setttingsBtn);
             optionsPnl.Controls.Add(quitBtn);
             optionsPnl.Controls.Add(createBtn);
@@ -63,6 +65,14 @@
             optionsPnl.Name = "optionsPnl";
             optionsPnl.Size = new Size(200, 600);
             optionsPnl.TabIndex = 0;
+            // 
+            // selectedButtonPnl
+            // 
+            selectedButtonPnl.BackColor = Color.Black;
+            selectedButtonPnl.Location = new Point(0, 200);
+            selectedButtonPnl.Name = "selectedButtonPnl";
+            selectedButtonPnl.Size = new Size(5, 50);
+            selectedButtonPnl.TabIndex = 6;
             // 
             // setttingsBtn
             // 
@@ -195,6 +205,7 @@
             // 
             // titleLogo
             // 
+            titleLogo.Dock = DockStyle.Right;
             titleLogo.Image = Properties.Resources.house;
             titleLogo.Location = new Point(525, 0);
             titleLogo.Name = "titleLogo";
@@ -205,18 +216,20 @@
             // 
             // titleLbl
             // 
-            titleLbl.AutoSize = true;
+            titleLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             titleLbl.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleLbl.ImageAlign = ContentAlignment.MiddleRight;
-            titleLbl.Location = new Point(20, 19);
+            titleLbl.Location = new Point(10, 0);
             titleLbl.Name = "titleLbl";
-            titleLbl.Size = new Size(121, 42);
+            titleLbl.RightToLeft = RightToLeft.No;
+            titleLbl.Size = new Size(515, 75);
             titleLbl.TabIndex = 0;
             titleLbl.Text = "Home";
+            titleLbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // mainPnl
             // 
-            mainPnl.Dock = DockStyle.Fill;
+            mainPnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             mainPnl.Location = new Point(200, 75);
             mainPnl.Name = "mainPnl";
             mainPnl.Size = new Size(600, 525);
@@ -230,6 +243,7 @@
             Controls.Add(mainPnl);
             Controls.Add(titleLabel);
             Controls.Add(optionsPnl);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -239,7 +253,6 @@
             userPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             titleLabel.ResumeLayout(false);
-            titleLabel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)titleLogo).EndInit();
             ResumeLayout(false);
         }
@@ -260,5 +273,6 @@
         private Label titleLbl;
         private Panel mainPnl;
         private PictureBox titleLogo;
+        private Panel selectedButtonPnl;
     }
 }

@@ -7,6 +7,14 @@ namespace WordlyUIbaseVer
         public Form1()
         {
             InitializeComponent();
+
+            Main_Window homeWindow = new Main_Window();
+            homeWindow.Dock = DockStyle.Fill;
+            homeWindow.TopLevel = false;
+            homeWindow.TopMost = true;
+            homeWindow.FormBorderStyle = FormBorderStyle.None;
+            mainPnl.Controls.Add(homeWindow);
+            homeWindow.Show();
         }
 
         private static StackFrame stackFrame = new StackTrace(new StackFrame(true)).GetFrame(0);
@@ -16,6 +24,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnClrs();
             homeBtn.BackColor = Color.FromArgb(192, 192, 0);
+            selectedButtonPnl.Location = homeBtn.Location;
 
             titleLbl.Text = "Home";
             titleLogo.Image = Image.FromFile(imgsFolderDir + "house.png");
@@ -33,16 +42,19 @@ namespace WordlyUIbaseVer
         {
             ResetBtnClrs();
             startBtn.BackColor = Color.FromArgb(192, 192, 0);
+            selectedButtonPnl.Location = startBtn.Location;
 
-            titleLbl.Text = "Menu";
+            titleLbl.Text = "Select your Word List";
             titleLogo.Image = Image.FromFile(imgsFolderDir + "language sign.png");
 
             mainPnl.Controls.Clear();
-            Quiz_Window quizWindow = new Quiz_Window();
+
+            ChooseListForm quizWindow = new ChooseListForm();
             quizWindow.Dock = DockStyle.Fill;
             quizWindow.TopLevel = false;
             quizWindow.TopMost = true;
             quizWindow.FormBorderStyle = FormBorderStyle.None;
+            
             mainPnl.Controls.Add(quizWindow);
             quizWindow.Show();
         }
@@ -50,6 +62,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnClrs();
             createBtn.BackColor = Color.FromArgb(192, 192, 0);
+            selectedButtonPnl.Location = createBtn.Location;
 
             titleLbl.Text = "Create a New Word List";
             titleLogo.Image = Image.FromFile(imgsFolderDir + "plus icon.png");
@@ -68,6 +81,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnClrs();
             setttingsBtn.BackColor = Color.DarkGray;
+            selectedButtonPnl.Location = setttingsBtn.Location;
 
             titleLbl.Text = "Settings";
             titleLogo.Image = Image.FromFile(imgsFolderDir + "Settings-icon.png");
@@ -84,6 +98,7 @@ namespace WordlyUIbaseVer
         private void quitBtn_Click(object sender, EventArgs e)
         {
             //add message box
+            Environment.Exit(0);
         }
 
         private void ResetBtnClrs()
