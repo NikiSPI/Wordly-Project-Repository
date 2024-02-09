@@ -3,7 +3,6 @@ D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\WordlyUIbaseVer.runtimeconfig.json
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\WordlyUIbaseVer.dll
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\WordlyUIbaseVer.pdb
-D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Form1.resources
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Properties.Resources.resources
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.GenerateResource.cache
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.GeneratedMSBuildEditorConfig.editorconfig
@@ -17,7 +16,6 @@ D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.genruntimeconfig.cache
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\ref\WordlyUIbaseVer.dll
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Main_Window.resources
-D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Quiz_Window.resources
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Add_Window.resources
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Settings_Window.resources
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\WordlyUIbaseVer.exe
@@ -43,3 +41,9 @@ C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbas
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\ref\WordlyUIbaseVer.dll
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.QuizWindow.resources
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.ChooseListForm.resources
+D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.ChooseListForm.resources
+D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.QuizWindow.resources
+D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.WordlyForm.resources
+D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.AssemblyReference.cache
+D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.CopyComplete

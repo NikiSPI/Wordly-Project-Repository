@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj": {}
+    "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj": {
+    "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+        "projectUniqueName": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
         "projectName": "WordlyUIbaseVer",
-        "projectPath": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
-        "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
+        "projectPath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+        "packagesPath": "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Nikola Bozhkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +39,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

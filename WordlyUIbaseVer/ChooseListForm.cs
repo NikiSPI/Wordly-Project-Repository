@@ -17,9 +17,16 @@ namespace WordlyUIbaseVer
             InitializeComponent();
         }
 
+
         private void wordList1Btn_Click(object sender, EventArgs e)
         {
+            WordlyForm.stepsToUndo = 1;
 
+            OpenQuizWindow();
+        }
+
+        private void OpenQuizWindow()
+        {
             QuizWindow quizWindow = new QuizWindow();
             quizWindow.Dock = DockStyle.Fill;
             quizWindow.TopLevel = false;
@@ -29,7 +36,6 @@ namespace WordlyUIbaseVer
             contentPnl.Controls.Clear();
             contentPnl.Controls.Add(quizWindow);
             quizWindow.Show();
-
         }
     }
 }

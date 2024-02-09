@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordlyUIbaseVer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0faa06b0c620a2584601bd9787417b5cc7e130d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0c746bf9f1b043451d1073dda7ce4ef82adbd6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordlyUIbaseVer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordlyUIbaseVer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
