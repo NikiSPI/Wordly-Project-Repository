@@ -139,7 +139,7 @@ namespace WordlyUIbaseVer
             menuSettingsBtn.Dock = DockStyle.Bottom;
             menuSettingsBtn.FlatAppearance.BorderSize = 0;
             menuSettingsBtn.FlatStyle = FlatStyle.Flat;
-            menuSettingsBtn.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuSettingsBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuSettingsBtn.Location = new Point(0, 320);
             menuSettingsBtn.Name = "menuSettingsBtn";
             menuSettingsBtn.Size = new Size(210, 70);
@@ -155,7 +155,7 @@ namespace WordlyUIbaseVer
             menuQuitBtn.Dock = DockStyle.Bottom;
             menuQuitBtn.FlatAppearance.BorderSize = 0;
             menuQuitBtn.FlatStyle = FlatStyle.Flat;
-            menuQuitBtn.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuQuitBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuQuitBtn.Location = new Point(0, 390);
             menuQuitBtn.Name = "menuQuitBtn";
             menuQuitBtn.Size = new Size(210, 70);
@@ -171,7 +171,7 @@ namespace WordlyUIbaseVer
             menuCreateBtn.Dock = DockStyle.Top;
             menuCreateBtn.FlatAppearance.BorderSize = 0;
             menuCreateBtn.FlatStyle = FlatStyle.Flat;
-            menuCreateBtn.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuCreateBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuCreateBtn.Location = new Point(0, 140);
             menuCreateBtn.Name = "menuCreateBtn";
             menuCreateBtn.Size = new Size(210, 70);
@@ -187,7 +187,7 @@ namespace WordlyUIbaseVer
             menuStartBtn.Dock = DockStyle.Top;
             menuStartBtn.FlatAppearance.BorderSize = 0;
             menuStartBtn.FlatStyle = FlatStyle.Flat;
-            menuStartBtn.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuStartBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStartBtn.Location = new Point(0, 70);
             menuStartBtn.Name = "menuStartBtn";
             menuStartBtn.Size = new Size(210, 70);
@@ -203,7 +203,7 @@ namespace WordlyUIbaseVer
             menuHomeBtn.Dock = DockStyle.Top;
             menuHomeBtn.FlatAppearance.BorderSize = 0;
             menuHomeBtn.FlatStyle = FlatStyle.Flat;
-            menuHomeBtn.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuHomeBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuHomeBtn.Location = new Point(0, 0);
             menuHomeBtn.Name = "menuHomeBtn";
             menuHomeBtn.Size = new Size(210, 70);

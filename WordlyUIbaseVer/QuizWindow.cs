@@ -19,20 +19,24 @@ namespace WordlyUIbaseVer
             public List<string[]> Meaning;
         }
 
-        private static string folderDir = WordlyForm.projectFolderDir + @"\Word Lists\";
+        private string folderDir = WordlyForm.projectFolderDir + @"\Word Lists\";
 
-        private WordList wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(folderDir + "ABC" + ".json"));
+        public string listFileName;
 
 
-        public QuizWindow()
+        private WordList wl;
+
+        public QuizWindow(string file)
         {
             InitializeComponent();
 
-            for(int i = 0; i < wl.Term.Count; i++)
+            wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(file));
+
+            for (int i = 0; i < wl.Term.Count; i++)
             {
                 WordPnl wp = new WordPnl(10 + i * 90);
-                wp.wordTermLbl.Text = wl.Term[i][0];
-                wp.wordMeaningLbl.Text = wl.Meaning[i][0];
+                wp.wordTermLbl.Text = CreateWordString(wl.Term[i]);
+                wp.wordMeaningLbl.Text = CreateWordString(wl.Meaning[i]);
 
                 wordContainerPnl.Controls.Add(wp);
             }
@@ -40,7 +44,19 @@ namespace WordlyUIbaseVer
 
         }
 
-        public class WordPnl : Panel
+        private string CreateWordString(string[] arr) 
+        {
+            string combinedStr = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                combinedStr += ", " + arr[i];
+            }
+
+            return combinedStr;
+        }
+
+        private class WordPnl : Panel
         {
             public Label wordTermLbl = new Label();
             public Label wordMeaningLbl = new Label();

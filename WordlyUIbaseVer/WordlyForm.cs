@@ -49,7 +49,6 @@ namespace WordlyUIbaseVer
 
             SetContentPnl(new Add_Window());
         }
-
         private void settingsBtn_Click(object sender, EventArgs e)
         {
             ResetBtnClrs();
