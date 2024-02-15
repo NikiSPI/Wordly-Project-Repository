@@ -14,27 +14,32 @@ namespace WordlyUIbaseVer
     {
 
         public static Panel contentPnl;
+        public QuizWindow quizWindow;
 
         public ChooseListForm()
         {
             InitializeComponent();
 
+            InitializeFunctions();
+
+        }
+        public void InitializeFunctions()
+        {
             CreateContentPnl();
 
-
             DirectoryInfo d = new DirectoryInfo(WordlyForm.projectFolderDir + @"\Word Lists\"); //Assuming this is your Folder
-
             FileInfo[] files = d.GetFiles(); //Getting files
-            
-            for (int i = 0; i < files.Length; i++)
+
+            for (int i = 0; i < 4; i++)
             {
                 WordListBtn btn = new WordListBtn(10 + 100 * i, files[i].Name);
-                btn.listFileName = files[i].FullName;
                 contentPnl.Controls.Add(btn);
+
+                string filePath = files[i].FullName;
+                btn.Click += (sender, EventArgs) => { Button_Click(sender, EventArgs, filePath); };
             }
 
         }
-
         private void CreateContentPnl()
         {
             // 
@@ -52,16 +57,26 @@ namespace WordlyUIbaseVer
         }
 
 
-
-        private class WordListBtn : Button
+        private void Button_Click(object sender, EventArgs e, string listFileName)
         {
-            public string listFileName;
+            WordlyForm.stepsToUndo = 1;
 
+            quizWindow = new QuizWindow(listFileName);
+            quizWindow.Dock = DockStyle.Fill;
+            quizWindow.TopLevel = false;
+            quizWindow.TopMost = true;
+            quizWindow.FormBorderStyle = FormBorderStyle.None;
+
+            contentPnl.Controls.Clear();
+            contentPnl.Controls.Add(quizWindow);
+            quizWindow.Show();
+        }
+
+
+        private class WordListBtn: Button
+        {
             public WordListBtn(int yPos, string name)
             {
-                // 
-                // wordList1Btn
-                // 
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
                 BackColor = Color.Wheat;
                 FlatAppearance.BorderSize = 0;
@@ -73,29 +88,7 @@ namespace WordlyUIbaseVer
                 TabIndex = 5;
                 Text = name.Substring(0, name.Length - 5);
                 UseVisualStyleBackColor = false;
-                Click += Button_Click;
             }
-
-            private void Button_Click(object sender, EventArgs e)
-            {
-                WordlyForm.stepsToUndo = 1;
-
-                OpenQuizWindow();
-            }
-
-            private void OpenQuizWindow()
-            {
-                QuizWindow quizWindow = new QuizWindow(listFileName);
-                quizWindow.Dock = DockStyle.Fill;
-                quizWindow.TopLevel = false;
-                quizWindow.TopMost = true;
-                quizWindow.FormBorderStyle = FormBorderStyle.None;
-
-                contentPnl.Controls.Clear();
-                contentPnl.Controls.Add(quizWindow);
-                quizWindow.Show();
-            }
-
         }
     }
 }

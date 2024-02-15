@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RiD9keziGe30jaZOVDe4GYlVyOEv/tjf4f70R8ZrV+P3k52WSAlwoT18bN0VO4+74jVfOliw0wtetTeKyaGrNA==",
+  "dgSpecHash": "yqJ5WQJOMgT6hMGDxcvXK/LDs1WH5gGA6ZNUegZfVYFw0qNdY202778LNPiVto4iLIm+X+jUmUkrs5EF8rq1Ng==",
   "success": true,
-  "projectFilePath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+  "projectFilePath": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\nicol\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

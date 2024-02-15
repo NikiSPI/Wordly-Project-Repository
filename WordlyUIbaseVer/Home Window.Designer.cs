@@ -1,6 +1,6 @@
 ﻿namespace WordlyUIbaseVer
 {
-    partial class Main_Window
+    partial class Home_Window
     {
         /// <summary>
         /// Required designer variable.
@@ -43,14 +43,14 @@
             homeLbl.TabIndex = 0;
             homeLbl.Text = "HOME";
             // 
-            // Main_Window
+            // Home_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Red;
             ClientSize = new Size(584, 486);
             Controls.Add(homeLbl);
-            Name = "Main_Window";
+            Name = "Home_Window";
             Text = "Main_Window";
             ResumeLayout(false);
             PerformLayout();

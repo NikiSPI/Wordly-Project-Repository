@@ -55,26 +55,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\": {}
+    "C:\\Users\\nicol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "projectUniqueName": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
       "projectName": "WordlyUIbaseVer",
-      "projectPath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
-      "packagesPath": "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\",
-      "outputPath": "D:\\Programing\\Visual Studio\\Solutions\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
+      "projectPath": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nicol\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nikola Bozhkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

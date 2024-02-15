@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="nextCardBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABYAAAAeCAYAAAAo5+5WAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAHdElNRQfoAgwLIAZ2Z7HhAAAB
+        P0lEQVRIS82WQU4CQRRExx0HcCuQqOFusELO4MKFZ9AdR1Gj6IojuNEbgLGtQpn8+Uz3rzYxsZK3+SQP
+        umbo7ialtOMnA3AFXsE7WIIRqMrOZ8TH4JZzxws4B3K8+JqzDJRPgBQvXnNW4BGcgjBe/MBZwDMIa/Hi
+        KfjkPCCsxYuPwAXY8rOAYi1evM8CbIAV9ZGtJSdm+MutJEdvLSUxMwe/qiUSM6xFkXdqUcQM5VaSo61F
+        FTM1tYxqxAwfqPK2LGvFzAx8ACvyvP0b8Z9UoT48bmQnqlh93Z7AGfj2BWL1D9L590Vidfn3YAzalMTq
+        JtQu3yYnVrfN7J7sxTUb/R3oLN/Gi9WjaQUOlm/jxcphyk6rD9Po+OcXZ5dv48WlC4t07O/jxbxi3XDu
+        YKeylPFihpfCS2AvhUNQlZRS8wWdkh5h5kishgAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

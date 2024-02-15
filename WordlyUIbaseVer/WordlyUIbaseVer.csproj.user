@@ -7,6 +7,9 @@
     <Compile Update="ChooseListForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FlashcardMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WordlyForm.cs">
       <SubType>Form</SubType>
     </Compile>

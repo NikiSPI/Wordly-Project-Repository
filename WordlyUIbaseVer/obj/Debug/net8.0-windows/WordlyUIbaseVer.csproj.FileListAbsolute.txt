@@ -24,8 +24,6 @@ C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbas
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\WordlyUIbaseVer.dll
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\WordlyUIbaseVer.pdb
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Add_Window.resources
-C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Form1.resources
-C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Main_Window.resources
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Properties.Resources.resources
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Settings_Window.resources
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.GenerateResource.cache
@@ -47,3 +45,9 @@ D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.AssemblyReference.cache
 D:\Programing\Visual Studio\Solutions\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.CopyComplete
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.AssemblyReference.cache
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.WordlyForm.resources
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.CopyComplete
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.FlashcardMode.resources
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Home_Window.resources

@@ -101,6 +101,7 @@
             Option1Btn.TabIndex = 0;
             Option1Btn.Text = "Flashcards";
             Option1Btn.UseVisualStyleBackColor = true;
+            Option1Btn.Click += Option1Btn_Click;
             // 
             // wordListPnl
             // 
@@ -133,7 +134,7 @@
             // 
             // wordListTitlePnl
             // 
-            wordListTitlePnl.BackColor = SystemColors.GradientActiveCaption;
+            wordListTitlePnl.BackColor = Color.LightCyan;
             wordListTitlePnl.Controls.Add(wordListTitleSepPnl);
             wordListTitlePnl.Controls.Add(wordListTitleMeaningLbl);
             wordListTitlePnl.Controls.Add(wordListTitleTermLbl);
@@ -147,7 +148,7 @@
             // 
             wordListTitleSepPnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             wordListTitleSepPnl.BackColor = Color.Black;
-            wordListTitleSepPnl.Location = new Point(256, 7);
+            wordListTitleSepPnl.Location = new Point(248, 7);
             wordListTitleSepPnl.Name = "wordListTitleSepPnl";
             wordListTitleSepPnl.Size = new Size(5, 76);
             wordListTitleSepPnl.TabIndex = 1;
@@ -156,9 +157,9 @@
             // 
             wordListTitleMeaningLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             wordListTitleMeaningLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            wordListTitleMeaningLbl.Location = new Point(261, 0);
+            wordListTitleMeaningLbl.Location = new Point(252, 0);
             wordListTitleMeaningLbl.Name = "wordListTitleMeaningLbl";
-            wordListTitleMeaningLbl.Size = new Size(256, 90);
+            wordListTitleMeaningLbl.Size = new Size(265, 90);
             wordListTitleMeaningLbl.TabIndex = 1;
             wordListTitleMeaningLbl.Text = "Meaning";
             wordListTitleMeaningLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -169,7 +170,7 @@
             wordListTitleTermLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             wordListTitleTermLbl.Location = new Point(0, 0);
             wordListTitleTermLbl.Name = "wordListTitleTermLbl";
-            wordListTitleTermLbl.Size = new Size(256, 90);
+            wordListTitleTermLbl.Size = new Size(248, 90);
             wordListTitleTermLbl.TabIndex = 0;
             wordListTitleTermLbl.Text = "Term";
             wordListTitleTermLbl.TextAlign = ContentAlignment.MiddleCenter;

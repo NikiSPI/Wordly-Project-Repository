@@ -29,7 +29,6 @@ namespace WordlyUIbaseVer
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordlyForm));
             menuPnl = new Panel();
             menuIndicatorPnl = new Panel();
             titlePnl = new Panel();
@@ -232,7 +231,7 @@ namespace WordlyUIbaseVer
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backBtn.Image = (Image)resources.GetObject("backBtn.Image");
+            backBtn.Image = Properties.Resources.backArrow;
             backBtn.ImageAlign = ContentAlignment.MiddleLeft;
             backBtn.Location = new Point(10, 15);
             backBtn.Name = "backBtn";
