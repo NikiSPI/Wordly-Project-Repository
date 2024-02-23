@@ -49,30 +49,43 @@
             flashcardBtn.Name = "flashcardBtn";
             flashcardBtn.Size = new Size(650, 550);
             flashcardBtn.TabIndex = 0;
+            flashcardBtn.TabStop = false;
             flashcardBtn.UseVisualStyleBackColor = false;
             flashcardBtn.Click += FlashcardBtn_Click;
+
+            flashcardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // previousCardBtn
             // 
             previousCardBtn.CausesValidation = false;
+            previousCardBtn.FlatAppearance.BorderSize = 0;
+            previousCardBtn.FlatStyle = FlatStyle.Flat;
             previousCardBtn.Image = Properties.Resources.backArrow;
             previousCardBtn.Location = new Point(100, 250);
             previousCardBtn.Name = "previousCardBtn";
             previousCardBtn.Size = new Size(75, 150);
-            previousCardBtn.TabIndex = 1;
+            previousCardBtn.TabIndex = 0;
+            previousCardBtn.TabStop = false;
             previousCardBtn.UseVisualStyleBackColor = true;
             previousCardBtn.Click += PreviousCardBtn_Click;
+            
+            previousCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // nextCardBtn
             // 
             nextCardBtn.CausesValidation = false;
+            nextCardBtn.FlatAppearance.BorderSize = 0;
+            nextCardBtn.FlatStyle = FlatStyle.Flat;
             nextCardBtn.Image = (Image)resources.GetObject("nextCardBtn.Image");
             nextCardBtn.Location = new Point(875, 250);
             nextCardBtn.Name = "nextCardBtn";
             nextCardBtn.Size = new Size(75, 150);
-            nextCardBtn.TabIndex = 2;
+            nextCardBtn.TabIndex = 0;
+            nextCardBtn.TabStop = false;
             nextCardBtn.UseVisualStyleBackColor = true;
             nextCardBtn.Click += NextCardBtn_Click;
+
+            nextCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // EndPnl
             // 
@@ -124,8 +137,11 @@
             Controls.Add(previousCardBtn);
             Controls.Add(flashcardBtn);
             FormBorderStyle = FormBorderStyle.None;
+            KeyPreview = true;
             Name = "FlashcardMode";
             Text = "FlashcardMode";
+            KeyDown += FlashcardMode_KeyDown;
+            PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             EndPnl.ResumeLayout(false);
             ResumeLayout(false);
         }

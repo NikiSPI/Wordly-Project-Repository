@@ -90,6 +90,7 @@
             Option2Btn.TabIndex = 1;
             Option2Btn.Text = "Write Mode";
             Option2Btn.UseVisualStyleBackColor = true;
+            Option2Btn.Click += Option2Btn_Click;
             // 
             // Option1Btn
             // 

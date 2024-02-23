@@ -18,13 +18,20 @@ namespace WordlyUIbaseVer
             public List<string[]> Term;
             public List<string[]> Meaning;
         }
-
         private WordList wl;
 
         private string fileDir;
 
-        private List<string> TermStr = new List<string>();
-        private List<string> MeaningStr = new List<string>();
+        private List<string> TermStrArr = new List<string>();
+        private List<string> MeaningStrArr = new List<string>();
+
+        public void Reset()
+        {
+            Controls.Clear();
+            InitializeComponent();
+            CreateWordListPnl();
+        }
+
 
         public QuizWindow(string file)
         {
@@ -34,14 +41,6 @@ namespace WordlyUIbaseVer
 
             CreateWordListPnl();
         }
-
-        public void Reset()
-        {
-            Controls.Clear();
-            InitializeComponent();
-            CreateWordListPnl();
-        }
-
         private void Option1Btn_Click(object sender, EventArgs e) //FLASHCARDS
         {
             WordlyForm.stepsToUndo = 2;
@@ -52,19 +51,19 @@ namespace WordlyUIbaseVer
             flashcardWindow.TopMost = true;
             flashcardWindow.FormBorderStyle = FormBorderStyle.None;
 
-            flashcardWindow.backBtn.Click += FlashcardBackBtn_Click;
+            flashcardWindow.backBtn.Click += (sender, e) =>
+            {
+                WordlyForm.stepsToUndo = 1;
+                Reset();
+            };
 
-            flashcardWindow.Term = TermStr;
-            flashcardWindow.Meaning = MeaningStr;
+            flashcardWindow.Term = TermStrArr;
+            flashcardWindow.Meaning = MeaningStrArr;
             flashcardWindow.UnflipCard();
 
             Controls.Clear();
             Controls.Add(flashcardWindow);
             flashcardWindow.Show();
-        }
-        private void FlashcardBackBtn_Click(object sender, EventArgs e)
-        {
-            Reset();
         }
 
 
@@ -74,13 +73,12 @@ namespace WordlyUIbaseVer
 
             for (int i = 0; i < wl.Term.Count; i++)
             {
+                TermStrArr.Add(CreateWordString(wl.Term[i]));
+                MeaningStrArr.Add(CreateWordString(wl.Meaning[i]));
+
                 WordPnl wp = new WordPnl(10 + i * 90);
-                wp.wordTermLbl.Text = CreateWordString(wl.Term[i]);
-                wp.wordMeaningLbl.Text = CreateWordString(wl.Meaning[i]);
-
-                TermStr.Add(CreateWordString(wl.Term[i]));
-                MeaningStr.Add(CreateWordString(wl.Meaning[i]));
-
+                wp.wordTermLbl.Text = TermStrArr[i];
+                wp.wordMeaningLbl.Text = MeaningStrArr[i];  
                 wordContainerPnl.Controls.Add(wp);
             }
         }
@@ -140,5 +138,9 @@ namespace WordlyUIbaseVer
             }
         }
 
+        private void Option2Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

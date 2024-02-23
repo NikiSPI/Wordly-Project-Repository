@@ -9,9 +9,9 @@ namespace WordlyUIbaseVer
         public static string projectFolderDir = Path.GetDirectoryName(stackFrame.GetFileName());
         private string imagesFolderDir = projectFolderDir + @"\Images\";
 
-        private Home_Window     homeWindow;
-        private ChooseListForm  listChoiceWindow;
-        private Add_Window      listCreationWindow;
+        private Home_Window homeWindow;
+        private ChooseListForm listChoiceWindow;
+        private Add_Window listCreationWindow;
         private Settings_Window settingsWindow;
 
         public static int stepsToUndo = 0;
@@ -47,7 +47,7 @@ namespace WordlyUIbaseVer
             ResetBtnColors();
             menuStartBtn.BackColor = Color.FromArgb(192, 192, 0);
             menuIndicatorPnl.Location = new Point(menuInnerPnl.Location.X, menuStartBtn.Location.Y + titlePnl.Height + 10);
-            
+
             optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
 
             ResetContentVisibility();
@@ -69,7 +69,7 @@ namespace WordlyUIbaseVer
             ResetBtnColors();
             menuSettingsBtn.BackColor = Color.FromArgb(192, 192, 0);
             menuIndicatorPnl.Location = new Point(menuInnerPnl.Location.X, menuSettingsBtn.Location.Y + titlePnl.Height + 10);
-            
+
             optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
 
             ResetContentVisibility();
@@ -111,7 +111,7 @@ namespace WordlyUIbaseVer
         private void backBtn_Click(object sender, EventArgs e)
         {
 
-            if (stepsToUndo <= 0) {} //nothing to undo
+            if (stepsToUndo <= 0) { } //nothing to undo
 
             else if (menuHomeBtn.BackColor == Color.FromArgb(192, 192, 0))
             {
@@ -119,14 +119,14 @@ namespace WordlyUIbaseVer
             }
             else if (menuStartBtn.BackColor == Color.FromArgb(192, 192, 0))
             {
-                if(stepsToUndo == 1)
+                if (stepsToUndo == 1)
                 {
                     listChoiceWindow.Controls.Clear();
                     listChoiceWindow.InitializeComponent();
                     listChoiceWindow.InitializeFunctions();
                 }
 
-                else if(stepsToUndo == 2)
+                else if (stepsToUndo == 2)
                 {
                     listChoiceWindow.quizWindow.Reset();
                 }
@@ -142,8 +142,6 @@ namespace WordlyUIbaseVer
 
             stepsToUndo--;
         }
-
-        
 
     }
 }
