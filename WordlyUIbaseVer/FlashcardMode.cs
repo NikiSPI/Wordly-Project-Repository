@@ -13,28 +13,31 @@ namespace WordlyUIbaseVer
     public partial class FlashcardMode : Form
     {
 
-        public List<string> Term;
-        public List<string> Meaning;
+        private List<string> Term;
+        private List<string> Meaning;
 
         private int currentCard = 0;
         private bool isCardFlipped = false;
 
-        public FlashcardMode()
+        public FlashcardMode(List<string> term, List<string> meaning)
         {
             InitializeComponent();
 
+            Term = term;
+            Meaning = meaning;
 
+            flashcardBtn.Text = Term[currentCard];
         }
 
         private void NextCard()
         {
-            currentCard++;
-            if (currentCard >= Term.Count)
+            if (currentCard >= Term.Count - 1)
             {
                 EndPnl.Visible = true;
             }
             else
             {
+                currentCard++;
                 UnflipCard();
             }
         }
@@ -94,6 +97,7 @@ namespace WordlyUIbaseVer
         private void FlashcardMode_KeyDown(object sender, KeyEventArgs e)
         {
             Focus();
+
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
             {
                 if (isCardFlipped)

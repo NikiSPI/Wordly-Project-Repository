@@ -41,31 +41,6 @@ namespace WordlyUIbaseVer
 
             CreateWordListPnl();
         }
-        private void Option1Btn_Click(object sender, EventArgs e) //FLASHCARDS
-        {
-            WordlyForm.stepsToUndo = 2;
-
-            FlashcardMode flashcardWindow = new FlashcardMode();
-            flashcardWindow.Dock = DockStyle.Fill;
-            flashcardWindow.TopLevel = false;
-            flashcardWindow.TopMost = true;
-            flashcardWindow.FormBorderStyle = FormBorderStyle.None;
-
-            flashcardWindow.backBtn.Click += (sender, e) =>
-            {
-                WordlyForm.stepsToUndo = 1;
-                Reset();
-            };
-
-            flashcardWindow.Term = TermStrArr;
-            flashcardWindow.Meaning = MeaningStrArr;
-            flashcardWindow.UnflipCard();
-
-            Controls.Clear();
-            Controls.Add(flashcardWindow);
-            flashcardWindow.Show();
-        }
-
 
         private void CreateWordListPnl()
         {
@@ -78,7 +53,7 @@ namespace WordlyUIbaseVer
 
                 WordPnl wp = new WordPnl(10 + i * 90);
                 wp.wordTermLbl.Text = TermStrArr[i];
-                wp.wordMeaningLbl.Text = MeaningStrArr[i];  
+                wp.wordMeaningLbl.Text = MeaningStrArr[i];
                 wordContainerPnl.Controls.Add(wp);
             }
         }
@@ -138,9 +113,48 @@ namespace WordlyUIbaseVer
             }
         }
 
-        private void Option2Btn_Click(object sender, EventArgs e)
-        {
 
+
+        private void Option1Btn_Click(object sender, EventArgs e) //FLASHCARDS
+        {
+            WordlyForm.stepsToUndo = 2;
+
+            FlashcardMode flashcardWindow = new FlashcardMode(TermStrArr, MeaningStrArr);
+            flashcardWindow.Dock = DockStyle.Fill;
+            flashcardWindow.TopLevel = false;
+            flashcardWindow.TopMost = true;
+            flashcardWindow.FormBorderStyle = FormBorderStyle.None;
+
+            flashcardWindow.backBtn.Click += (sender, e) =>
+            {
+                WordlyForm.stepsToUndo = 1;
+                Reset();
+            };
+
+            Controls.Clear();
+            Controls.Add(flashcardWindow);
+            flashcardWindow.Show();
         }
+
+        private void Option2Btn_Click(object sender, EventArgs e) //WRITE
+        {
+            WordlyForm.stepsToUndo = 2;
+
+            WriteMode writeWindow = new WriteMode(wl.Term, wl.Meaning, TermStrArr, MeaningStrArr);
+            writeWindow.Dock = DockStyle.Fill;
+            writeWindow.TopLevel = false;
+            writeWindow.TopMost = true;
+            writeWindow.FormBorderStyle = FormBorderStyle.None;
+
+            writeWindow.eBackBtn.Click += (sender, e) =>
+            {
+                WordlyForm.stepsToUndo = 1;
+                Reset();
+            };
+            Controls.Clear();
+            Controls.Add(writeWindow);
+            writeWindow.Show();
+        }
+
     }
 }

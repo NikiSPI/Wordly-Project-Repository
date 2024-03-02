@@ -51,3 +51,4 @@ C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbas
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.csproj.CopyComplete
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.FlashcardMode.resources
 C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.Home_Window.resources
+C:\Users\nicol\Documents\Visual Studio 2022\Projects\WordlyUIbaseVer\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.WriteMode.resources

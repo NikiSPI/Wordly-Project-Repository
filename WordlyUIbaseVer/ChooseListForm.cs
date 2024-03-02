@@ -32,7 +32,7 @@ namespace WordlyUIbaseVer
 
             for (int i = 0; i < 4; i++)
             {
-                WordListBtn btn = new WordListBtn(10 + 100 * i, files[i].Name);
+                WordListBtn btn = new WordListBtn(10 + 110 * i, files[i].Name);
                 contentPnl.Controls.Add(btn);
 
                 string filePath = files[i].FullName;
@@ -51,7 +51,7 @@ namespace WordlyUIbaseVer
             contentPnl.Dock = DockStyle.Fill;
             contentPnl.Location = new Point(0, 0);
             contentPnl.Name = "contentPnl";
-            contentPnl.Size = new Size(800, 600);
+            contentPnl.Size = new Size(1050, 650);
             contentPnl.TabIndex = 0;
             Controls.Add(contentPnl);
         }
@@ -84,7 +84,7 @@ namespace WordlyUIbaseVer
                 Font = new Font("Yu Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
                 Location = new Point(10, yPos);
                 Name = "wordListBtn";
-                Size = new Size(780, 90);
+                Size = new Size(1030, 100);
                 TabIndex = 5;
                 Text = name.Substring(0, name.Length - 5);
                 UseVisualStyleBackColor = false;
