@@ -13,17 +13,17 @@ namespace WordlyUIbaseVer
 {
     public partial class QuizWindow : Form
     {
-        private class WordList
+        public class WordList
         {
             public List<string[]> Term;
             public List<string[]> Meaning;
         }
-        private WordList wl;
+        public static WordList wl;
 
-        private string fileDir;
+        private string fileDir; 
 
-        private List<string> TermStrArr = new List<string>();
-        private List<string> MeaningStrArr = new List<string>();
+        public static List<string> TermStrArr = new List<string>();
+        public static List<string> MeaningStrArr = new List<string>();
 
         public void Reset()
         {
@@ -38,14 +38,13 @@ namespace WordlyUIbaseVer
             InitializeComponent();
 
             fileDir = file;
+            wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(fileDir));
 
             CreateWordListPnl();
         }
 
         private void CreateWordListPnl()
         {
-            wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(fileDir));
-
             for (int i = 0; i < wl.Term.Count; i++)
             {
                 TermStrArr.Add(CreateWordString(wl.Term[i]));
@@ -140,7 +139,7 @@ namespace WordlyUIbaseVer
         {
             WordlyForm.stepsToUndo = 2;
 
-            WriteMode writeWindow = new WriteMode(wl.Term, wl.Meaning, TermStrArr, MeaningStrArr);
+            WriteMode writeWindow = new WriteMode();
             writeWindow.Dock = DockStyle.Fill;
             writeWindow.TopLevel = false;
             writeWindow.TopMost = true;

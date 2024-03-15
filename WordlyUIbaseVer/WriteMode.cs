@@ -21,14 +21,14 @@ namespace WordlyUIbaseVer
 
         private int currentCard = 0, correctWords = 0, wrongWords = 0;
 
-        public WriteMode(List<string[]> termS, List<string[]> meaningS, List<string> term, List<string> meaning)
+        public WriteMode()
         {
             InitializeComponent();
 
-            TermS = termS;
-            MeaningS = meaningS;
-            Term = term;
-            Meaning = meaning;
+            TermS = QuizWindow.wl.Term;
+            MeaningS = QuizWindow.wl.Meaning;
+            Term = QuizWindow.TermStrArr;
+            Meaning = QuizWindow.MeaningStrArr;
 
             aShownWordLbl.Text = Term[0];
             UpdateStatPnl();
@@ -80,7 +80,6 @@ namespace WordlyUIbaseVer
             iCorrectMeaningLbl.Text = Meaning[currentCard];
             incorrectPnl.Visible = true;
         }
-
         private void UpdateStatPnl()
         {
             statNumCorrectLbl.Text = correctWords.ToString();
@@ -117,10 +116,6 @@ namespace WordlyUIbaseVer
                 }
             }
         }
-        private void WriteMode_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            e.IsInputKey = true;
-        }
 
         //|END SCREEN
         private void ShowEndScreen()
@@ -143,5 +138,12 @@ namespace WordlyUIbaseVer
             statPnl.Visible = true;
         }
 
+        private void optionRandomizeTbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            if(optionRandomizeTbtn.Checked)
+            {
+                RandomizeWords();
+            }
+        }
     }
 }

@@ -10,6 +10,9 @@
     <Compile Update="FlashcardMode.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="WordlyForm.cs">
       <SubType>Form</SubType>
     </Compile>

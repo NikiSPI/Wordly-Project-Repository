@@ -46,6 +46,8 @@
             aAnswerTbx = new TextBox();
             statNumLeftLbl = new Label();
             statPnl = new Panel();
+            optionTextRandomizeLbl = new Label();
+            optionRandomizeTbtn = new Styling_Toggle_Button.SButton();
             panel1 = new Panel();
             statWrongPbx = new PictureBox();
             statCorrectPbx = new PictureBox();
@@ -269,6 +271,8 @@
             // 
             // statPnl
             // 
+            statPnl.Controls.Add(optionTextRandomizeLbl);
+            statPnl.Controls.Add(optionRandomizeTbtn);
             statPnl.Controls.Add(panel1);
             statPnl.Controls.Add(statWrongPbx);
             statPnl.Controls.Add(statCorrectPbx);
@@ -280,6 +284,30 @@
             statPnl.Name = "statPnl";
             statPnl.Size = new Size(1050, 90);
             statPnl.TabIndex = 13;
+            // 
+            // optionTextRandomizeLbl
+            // 
+            optionTextRandomizeLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            optionTextRandomizeLbl.Location = new Point(825, 10);
+            optionTextRandomizeLbl.Name = "optionTextRandomizeLbl";
+            optionTextRandomizeLbl.Size = new Size(150, 35);
+            optionTextRandomizeLbl.TabIndex = 20;
+            optionTextRandomizeLbl.Text = "Randomize";
+            optionTextRandomizeLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // optionRandomizeTbtn
+            // 
+            optionRandomizeTbtn.Location = new Point(860, 45);
+            optionRandomizeTbtn.MinimumSize = new Size(45, 22);
+            optionRandomizeTbtn.Name = "optionRandomizeTbtn";
+            optionRandomizeTbtn.OffBackColor = Color.Gray;
+            optionRandomizeTbtn.OffToggleColor = Color.Gainsboro;
+            optionRandomizeTbtn.OnBackColor = Color.MediumSlateBlue;
+            optionRandomizeTbtn.OnToggleColor = Color.WhiteSmoke;
+            optionRandomizeTbtn.Size = new Size(80, 35);
+            optionRandomizeTbtn.TabIndex = 19;
+            optionRandomizeTbtn.UseVisualStyleBackColor = true;
+            optionRandomizeTbtn.CheckedChanged += optionRandomizeTbtn_CheckedChanged;
             // 
             // panel1
             // 
@@ -382,5 +410,7 @@
         private PictureBox statWrongPbx;
         private PictureBox statCorrectPbx;
         private Panel panel1;
+        private Label optionTextRandomizeLbl;
+        private Styling_Toggle_Button.SButton optionRandomizeTbtn;
     }
 }
