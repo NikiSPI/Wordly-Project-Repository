@@ -1,2 +1,4 @@
-# CSharp-WordTester
- a quizlet analog
+Wordly
+a quizlet analog
+tyhrse
+htrse
