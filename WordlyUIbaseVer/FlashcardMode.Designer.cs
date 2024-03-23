@@ -52,7 +52,6 @@
             flashcardBtn.TabStop = false;
             flashcardBtn.UseVisualStyleBackColor = false;
             flashcardBtn.Click += FlashcardBtn_Click;
-
             flashcardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // previousCardBtn
@@ -68,7 +67,6 @@
             previousCardBtn.TabStop = false;
             previousCardBtn.UseVisualStyleBackColor = true;
             previousCardBtn.Click += PreviousCardBtn_Click;
-            
             previousCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // nextCardBtn
@@ -84,7 +82,6 @@
             nextCardBtn.TabStop = false;
             nextCardBtn.UseVisualStyleBackColor = true;
             nextCardBtn.Click += NextCardBtn_Click;
-
             nextCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // EndPnl
@@ -100,12 +97,12 @@
             // 
             // backBtn
             // 
-            backBtn.BackColor = SystemColors.ScrollBar;
+            backBtn.BackColor = SystemColors.HotTrack;
             backBtn.CausesValidation = false;
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backBtn.Location = new Point(275, 419);
+            backBtn.Location = new Point(475, 425);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(300, 80);
             backBtn.TabIndex = 1;
@@ -114,12 +111,12 @@
             // 
             // againBtn
             // 
-            againBtn.BackColor = SystemColors.ScrollBar;
+            againBtn.BackColor = SystemColors.HotTrack;
             againBtn.CausesValidation = false;
             againBtn.FlatAppearance.BorderSize = 0;
             againBtn.FlatStyle = FlatStyle.Flat;
             againBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            againBtn.Location = new Point(275, 320);
+            againBtn.Location = new Point(125, 425);
             againBtn.Name = "againBtn";
             againBtn.Size = new Size(300, 80);
             againBtn.TabIndex = 0;

@@ -1,3 +1,4 @@
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.DirectoryServices;
 
@@ -13,8 +14,6 @@ namespace WordlyUIbaseVer
         private ChooseListForm listChoiceWindow;
         private Add_Window listCreationWindow;
         private Settings_Window settingsWindow;
-
-        public static int stepsToUndo = 0;
 
         public WordlyForm()
         {
@@ -35,7 +34,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnColors();
             menuHomeBtn.BackColor = Color.FromArgb(192, 192, 0);
-            menuIndicatorPnl.Location = new Point(menuInnerPnl.Location.X, menuHomeBtn.Location.Y + titlePnl.Height + 10);
+            menuIndicatorPnl.Location = new Point(0, menuHomeBtn.Location.Y);
 
             optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
 
@@ -46,7 +45,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnColors();
             menuStartBtn.BackColor = Color.FromArgb(192, 192, 0);
-            menuIndicatorPnl.Location = new Point(menuInnerPnl.Location.X, menuStartBtn.Location.Y + titlePnl.Height + 10);
+            menuIndicatorPnl.Location = new Point(0, menuStartBtn.Location.Y);
 
             optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
 
@@ -57,7 +56,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnColors();
             menuCreateBtn.BackColor = Color.FromArgb(192, 192, 0);
-            menuIndicatorPnl.Location = new Point(menuInnerPnl.Location.X, menuCreateBtn.Location.Y + titlePnl.Height + 10);
+            menuIndicatorPnl.Location = new Point(0, menuCreateBtn.Location.Y);
 
             optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
 
@@ -68,7 +67,7 @@ namespace WordlyUIbaseVer
         {
             ResetBtnColors();
             menuSettingsBtn.BackColor = Color.FromArgb(192, 192, 0);
-            menuIndicatorPnl.Location = new Point(menuInnerPnl.Location.X, menuSettingsBtn.Location.Y + titlePnl.Height + 10);
+            menuIndicatorPnl.Location = new Point(0, menuSettingsBtn.Location.Y);
 
             optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
 
@@ -77,8 +76,10 @@ namespace WordlyUIbaseVer
         }
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            //add message box
-            Environment.Exit(0);
+            if( (MessageBox.Show("Are you sure you want to exit?", "", MessageBoxButtons.YesNo)) == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
         }
 
         private void ResetBtnColors()
@@ -110,37 +111,22 @@ namespace WordlyUIbaseVer
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-
-            if (stepsToUndo <= 0) { } //nothing to undo
-
-            else if (menuHomeBtn.BackColor == Color.FromArgb(192, 192, 0))
+            if (homeWindow.Visible)
             {
                 //perform undo operation for home window
             }
-            else if (menuStartBtn.BackColor == Color.FromArgb(192, 192, 0))
+            else if (listChoiceWindow.Visible)
             {
-                if (stepsToUndo == 1)
-                {
-                    listChoiceWindow.Controls.Clear();
-                    listChoiceWindow.InitializeComponent();
-                    listChoiceWindow.InitializeFunctions();
-                }
-
-                else if (stepsToUndo == 2)
-                {
-                    listChoiceWindow.quizWindow.Reset();
-                }
+                listChoiceWindow.UndoFunction();
             }
-            else if (menuCreateBtn.BackColor == Color.FromArgb(192, 192, 0))
+            else if (listCreationWindow.Visible)
             {
                 //perform undo operation for create list window
             }
-            else if (menuSettingsBtn.BackColor == Color.FromArgb(192, 192, 0))
+            else if (settingsWindow.Visible)
             {
                 //perform undo operation for settings window
             }
-
-            stepsToUndo--;
         }
 
     }

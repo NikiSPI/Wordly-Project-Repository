@@ -12,6 +12,7 @@ namespace WordlyUIbaseVer
 {
     public partial class ChooseListForm : Form
     {
+        public static int stepsToUndo = 0;
 
         public static Panel contentPnl;
         public QuizWindow quizWindow;
@@ -59,7 +60,7 @@ namespace WordlyUIbaseVer
 
         private void Button_Click(object sender, EventArgs e, string listFileName)
         {
-            WordlyForm.stepsToUndo = 1;
+            stepsToUndo = 1;
 
             quizWindow = new QuizWindow(listFileName);
             quizWindow.Dock = DockStyle.Fill;
@@ -89,6 +90,24 @@ namespace WordlyUIbaseVer
                 Text = name.Substring(0, name.Length - 5);
                 UseVisualStyleBackColor = false;
             }
+        }
+
+
+        public void UndoFunction()
+        {
+            if (stepsToUndo == 1)
+            {
+                Controls.Clear();
+                InitializeComponent();
+                InitializeFunctions();
+            }
+
+            else if (stepsToUndo == 2)
+            {
+                quizWindow.Reset();
+            }
+
+            stepsToUndo--;
         }
     }
 }

@@ -12,7 +12,6 @@ namespace WordlyUIbaseVer
 {
     public partial class WriteMode : Form
     {
-
         private List<string[]> TermS;
         private List<string[]> MeaningS;
 
@@ -32,6 +31,22 @@ namespace WordlyUIbaseVer
 
             aShownWordLbl.Text = Term[0];
             UpdateStatPnl();
+        }
+
+        private void Reset()
+        {
+            currentCard = 0;
+            correctWords = 0;
+            wrongWords = 0;
+            UpdateStatPnl();
+
+            aShownWordLbl.Text = Term[0];
+            aAnswerTbx.Clear();
+            aAnswerTbx.Focus();
+
+            endPnl.Visible = false;
+            statPnl.Visible = true;
+
         }
 
         private void wordHanded()
@@ -96,6 +111,7 @@ namespace WordlyUIbaseVer
         }
         private void aAnswerBtn_Click(object sender, EventArgs e)
         {
+            aAnswerTbx.Focus();
             wordHanded();
         }
 
@@ -114,6 +130,10 @@ namespace WordlyUIbaseVer
                 {
                     wordHanded();
                 }
+
+                //to surpress the 'ding' sound when pressing enter
+                e.Handled = true;
+                e.SuppressKeyPress = true; 
             }
         }
 
@@ -125,24 +145,13 @@ namespace WordlyUIbaseVer
         }
         private void againBtn_Click(object sender, EventArgs e)
         {
-            currentCard = 0;
-            correctWords = 0;
-            wrongWords = 0;
-            UpdateStatPnl();
-
-            aShownWordLbl.Text = Term[0];
-            aAnswerTbx.Clear();
-            aAnswerTbx.Focus();
-
-            endPnl.Visible = false;
-            statPnl.Visible = true;
+            Reset();
         }
 
         private void optionRandomizeTbtn_CheckedChanged(object sender, EventArgs e)
         {
             if(optionRandomizeTbtn.Checked)
             {
-                RandomizeWords();
             }
         }
     }

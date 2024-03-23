@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             incorrectPnl = new Panel();
+            iShownWordLbl = new Label();
             iAnswerWordLbl = new Label();
             iCorrectMeaningLbl = new Label();
             iTextIncorrectLbl = new Label();
             iTextCorrectLbl = new Label();
             iTextAnswerLbl = new Label();
             iTextTermLbl = new Label();
-            iShownWordLbl = new Label();
             iContinueBtn = new Button();
             endPnl = new Panel();
             eBackBtn = new Button();
             eAgainBtn = new Button();
             answerPnl = new Panel();
+            aAnswerTbx = new SizableTextBox();
             aShownWordLbl = new Label();
             aAnswerBtn = new Button();
-            aAnswerTbx = new TextBox();
             statNumLeftLbl = new Label();
             statPnl = new Panel();
             optionTextRandomizeLbl = new Label();
             optionRandomizeTbtn = new Styling_Toggle_Button.SButton();
-            panel1 = new Panel();
+            statIntersectionPnl = new Panel();
             statWrongPbx = new PictureBox();
             statCorrectPbx = new PictureBox();
             statNumWrongLbl = new Label();
@@ -64,19 +64,30 @@
             // incorrectPnl
             // 
             incorrectPnl.BackColor = SystemColors.InactiveCaption;
+            incorrectPnl.Controls.Add(iShownWordLbl);
             incorrectPnl.Controls.Add(iAnswerWordLbl);
             incorrectPnl.Controls.Add(iCorrectMeaningLbl);
             incorrectPnl.Controls.Add(iTextIncorrectLbl);
             incorrectPnl.Controls.Add(iTextCorrectLbl);
             incorrectPnl.Controls.Add(iTextAnswerLbl);
             incorrectPnl.Controls.Add(iTextTermLbl);
-            incorrectPnl.Controls.Add(iShownWordLbl);
             incorrectPnl.Controls.Add(iContinueBtn);
             incorrectPnl.Location = new Point(0, 0);
             incorrectPnl.Name = "incorrectPnl";
             incorrectPnl.Size = new Size(900, 500);
             incorrectPnl.TabIndex = 7;
             incorrectPnl.Visible = false;
+            // 
+            // iShownWordLbl
+            // 
+            iShownWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            iShownWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iShownWordLbl.Location = new Point(50, 111);
+            iShownWordLbl.Name = "iShownWordLbl";
+            iShownWordLbl.Size = new Size(800, 50);
+            iShownWordLbl.TabIndex = 2;
+            iShownWordLbl.Text = "Shown word";
+            iShownWordLbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // iAnswerWordLbl
             // 
@@ -140,17 +151,6 @@
             iTextTermLbl.Text = "Term:";
             iTextTermLbl.TextAlign = ContentAlignment.BottomLeft;
             // 
-            // iShownWordLbl
-            // 
-            iShownWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            iShownWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iShownWordLbl.Location = new Point(50, 111);
-            iShownWordLbl.Name = "iShownWordLbl";
-            iShownWordLbl.Size = new Size(800, 50);
-            iShownWordLbl.TabIndex = 2;
-            iShownWordLbl.Text = "Shown word";
-            iShownWordLbl.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // iContinueBtn
             // 
             iContinueBtn.Anchor = AnchorStyles.Bottom;
@@ -165,6 +165,7 @@
             iContinueBtn.Size = new Size(220, 75);
             iContinueBtn.TabIndex = 0;
             iContinueBtn.Text = "Continue";
+            iContinueBtn.UseMnemonic = false;
             iContinueBtn.UseVisualStyleBackColor = false;
             iContinueBtn.Click += iContinueBtn_Click;
             // 
@@ -186,11 +187,12 @@
             eBackBtn.FlatAppearance.BorderSize = 0;
             eBackBtn.FlatStyle = FlatStyle.Flat;
             eBackBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            eBackBtn.Location = new Point(300, 430);
+            eBackBtn.Location = new Point(475, 425);
             eBackBtn.Name = "eBackBtn";
             eBackBtn.Size = new Size(300, 80);
             eBackBtn.TabIndex = 3;
             eBackBtn.Text = "Back";
+            eBackBtn.UseMnemonic = false;
             eBackBtn.UseVisualStyleBackColor = false;
             // 
             // eAgainBtn
@@ -201,11 +203,12 @@
             eAgainBtn.FlatAppearance.BorderSize = 0;
             eAgainBtn.FlatStyle = FlatStyle.Flat;
             eAgainBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            eAgainBtn.Location = new Point(300, 330);
+            eAgainBtn.Location = new Point(125, 425);
             eAgainBtn.Name = "eAgainBtn";
             eAgainBtn.Size = new Size(300, 80);
             eAgainBtn.TabIndex = 2;
             eAgainBtn.Text = "Revise Again";
+            eAgainBtn.UseMnemonic = false;
             eAgainBtn.UseVisualStyleBackColor = false;
             eAgainBtn.Click += againBtn_Click;
             // 
@@ -213,19 +216,29 @@
             // 
             answerPnl.BackColor = Color.PeachPuff;
             answerPnl.Controls.Add(incorrectPnl);
+            answerPnl.Controls.Add(aAnswerTbx);
             answerPnl.Controls.Add(aShownWordLbl);
             answerPnl.Controls.Add(aAnswerBtn);
-            answerPnl.Controls.Add(aAnswerTbx);
             answerPnl.Location = new Point(75, 100);
             answerPnl.Name = "answerPnl";
             answerPnl.Size = new Size(900, 500);
             answerPnl.TabIndex = 8;
             // 
+            // aAnswerTbx
+            // 
+            aAnswerTbx.BackColor = Color.PeachPuff;
+            aAnswerTbx.BorderStyle = BorderStyle.FixedSingle;
+            aAnswerTbx.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            aAnswerTbx.Location = new Point(50, 160);
+            aAnswerTbx.Name = "aAnswerTbx";
+            aAnswerTbx.Size = new Size(800, 50);
+            aAnswerTbx.TabIndex = 8;
+            // 
             // aShownWordLbl
             // 
             aShownWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             aShownWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            aShownWordLbl.Location = new Point(50, 63);
+            aShownWordLbl.Location = new Point(50, 60);
             aShownWordLbl.Name = "aShownWordLbl";
             aShownWordLbl.Size = new Size(800, 50);
             aShownWordLbl.TabIndex = 6;
@@ -246,18 +259,9 @@
             aAnswerBtn.Size = new Size(220, 75);
             aAnswerBtn.TabIndex = 5;
             aAnswerBtn.Text = "Answer";
+            aAnswerBtn.UseMnemonic = false;
             aAnswerBtn.UseVisualStyleBackColor = false;
             aAnswerBtn.Click += aAnswerBtn_Click;
-            // 
-            // aAnswerTbx
-            // 
-            aAnswerTbx.BackColor = SystemColors.InactiveCaption;
-            aAnswerTbx.BorderStyle = BorderStyle.None;
-            aAnswerTbx.Font = new Font("Segoe UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            aAnswerTbx.Location = new Point(50, 191);
-            aAnswerTbx.Name = "aAnswerTbx";
-            aAnswerTbx.Size = new Size(800, 50);
-            aAnswerTbx.TabIndex = 4;
             // 
             // statNumLeftLbl
             // 
@@ -273,7 +277,7 @@
             // 
             statPnl.Controls.Add(optionTextRandomizeLbl);
             statPnl.Controls.Add(optionRandomizeTbtn);
-            statPnl.Controls.Add(panel1);
+            statPnl.Controls.Add(statIntersectionPnl);
             statPnl.Controls.Add(statWrongPbx);
             statPnl.Controls.Add(statCorrectPbx);
             statPnl.Controls.Add(statNumWrongLbl);
@@ -309,13 +313,13 @@
             optionRandomizeTbtn.UseVisualStyleBackColor = true;
             optionRandomizeTbtn.CheckedChanged += optionRandomizeTbtn_CheckedChanged;
             // 
-            // panel1
+            // statIntersectionPnl
             // 
-            panel1.BackColor = Color.Black;
-            panel1.Location = new Point(340, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(5, 90);
-            panel1.TabIndex = 18;
+            statIntersectionPnl.BackColor = Color.Black;
+            statIntersectionPnl.Location = new Point(340, 10);
+            statIntersectionPnl.Name = "statIntersectionPnl";
+            statIntersectionPnl.Size = new Size(5, 80);
+            statIntersectionPnl.TabIndex = 18;
             // 
             // statWrongPbx
             // 
@@ -366,19 +370,17 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1050, 650);
-            Controls.Add(statPnl);
             Controls.Add(endPnl);
+            Controls.Add(statPnl);
             Controls.Add(answerPnl);
             FormBorderStyle = FormBorderStyle.None;
             KeyPreview = true;
             Name = "WriteMode";
             Text = "WriteMode";
             KeyDown += WriteMode_KeyDown;
-            PreviewKeyDown += WriteMode_PreviewKeyDown;
             incorrectPnl.ResumeLayout(false);
             endPnl.ResumeLayout(false);
             answerPnl.ResumeLayout(false);
-            answerPnl.PerformLayout();
             statPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)statWrongPbx).EndInit();
             ((System.ComponentModel.ISupportInitialize)statCorrectPbx).EndInit();
@@ -398,7 +400,6 @@
         private Panel answerPnl;
         private Label aShownWordLbl;
         private Button aAnswerBtn;
-        private TextBox aAnswerTbx;
         private Label iAnswerWordLbl;
         private Panel endPnl;
         public Button eBackBtn;
@@ -409,8 +410,9 @@
         private Label statNumCorrectLbl;
         private PictureBox statWrongPbx;
         private PictureBox statCorrectPbx;
-        private Panel panel1;
+        private Panel statIntersectionPnl;
         private Label optionTextRandomizeLbl;
         private Styling_Toggle_Button.SButton optionRandomizeTbtn;
+        private SizableTextBox aAnswerTbx;
     }
 }

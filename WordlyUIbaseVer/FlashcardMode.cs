@@ -34,6 +34,7 @@ namespace WordlyUIbaseVer
             if (currentCard >= Term.Count - 1)
             {
                 EndPnl.Visible = true;
+                flashcardBtn.BackColor = Color.White;
             }
             else
             {

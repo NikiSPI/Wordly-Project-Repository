@@ -29,6 +29,9 @@ namespace WordlyUIbaseVer
         {
             Controls.Clear();
             InitializeComponent();
+
+            TermStrArr = new List<string>();
+            MeaningStrArr = new List<string>();
             CreateWordListPnl();
         }
 
@@ -116,7 +119,7 @@ namespace WordlyUIbaseVer
 
         private void Option1Btn_Click(object sender, EventArgs e) //FLASHCARDS
         {
-            WordlyForm.stepsToUndo = 2;
+            ChooseListForm.stepsToUndo = 2;
 
             FlashcardMode flashcardWindow = new FlashcardMode(TermStrArr, MeaningStrArr);
             flashcardWindow.Dock = DockStyle.Fill;
@@ -126,7 +129,7 @@ namespace WordlyUIbaseVer
 
             flashcardWindow.backBtn.Click += (sender, e) =>
             {
-                WordlyForm.stepsToUndo = 1;
+                ChooseListForm.stepsToUndo = 1;
                 Reset();
             };
 
@@ -137,7 +140,7 @@ namespace WordlyUIbaseVer
 
         private void Option2Btn_Click(object sender, EventArgs e) //WRITE
         {
-            WordlyForm.stepsToUndo = 2;
+            ChooseListForm.stepsToUndo = 2;
 
             WriteMode writeWindow = new WriteMode();
             writeWindow.Dock = DockStyle.Fill;
@@ -147,7 +150,7 @@ namespace WordlyUIbaseVer
 
             writeWindow.eBackBtn.Click += (sender, e) =>
             {
-                WordlyForm.stepsToUndo = 1;
+                ChooseListForm.stepsToUndo = 1;
                 Reset();
             };
             Controls.Clear();

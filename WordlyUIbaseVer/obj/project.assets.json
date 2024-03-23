@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "projectUniqueName": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
       "projectName": "WordlyUIbaseVer",
-      "projectPath": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\WordlyUIbaseVer\\WordlyUIbaseVer\\obj\\",
+      "projectPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "packagesPath": "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nikola Bozhkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
