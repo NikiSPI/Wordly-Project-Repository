@@ -10,6 +10,9 @@
     <Compile Update="Component Classes\SizableTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="ExamMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FlashcardMode.cs">
       <SubType>Form</SubType>
     </Compile>

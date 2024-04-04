@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MYP_extension;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace WordlyUIbaseVer
         }
         public static WordList wl;
 
-        private string fileDir; 
+        private string fileDir;
 
         public static List<string> TermStrArr = new List<string>();
         public static List<string> MeaningStrArr = new List<string>();
@@ -93,25 +94,25 @@ namespace WordlyUIbaseVer
                 // 
                 wordTermLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
                 wordTermLbl.BackColor = Color.PowderBlue;
-                wordTermLbl.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                wordTermLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 wordTermLbl.Location = new Point(10, 10);
                 wordTermLbl.Name = "wordTermLbl";
                 wordTermLbl.Size = new Size(225, 60);
                 wordTermLbl.TabIndex = 0;
                 wordTermLbl.Text = "word 1";
-                wordTermLbl.TextAlign = ContentAlignment.MiddleCenter;
+                wordTermLbl.TextAlign = ContentAlignment.MiddleLeft;
                 // 
                 // wordMeaningLbl
                 // 
                 wordMeaningLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
                 wordMeaningLbl.BackColor = Color.PowderBlue;
-                wordMeaningLbl.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                wordMeaningLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 wordMeaningLbl.Location = new Point(245, 10);
                 wordMeaningLbl.Name = "wordMeaningLbl";
                 wordMeaningLbl.Size = new Size(225, 60);
                 wordMeaningLbl.TabIndex = 1;
                 wordMeaningLbl.Text = "word 2";
-                wordMeaningLbl.TextAlign = ContentAlignment.MiddleCenter;
+                wordMeaningLbl.TextAlign = ContentAlignment.MiddleLeft;
             }
         }
 
@@ -158,5 +159,19 @@ namespace WordlyUIbaseVer
             writeWindow.Show();
         }
 
+        private void Option3Btn_Click(object sender, EventArgs e)
+        {
+            ChooseListForm.stepsToUndo = 2;
+
+            ExamMode examWindow = new ExamMode();
+            examWindow.Dock = DockStyle.Fill;
+            examWindow.TopLevel = false;
+            examWindow.TopMost = true;
+            examWindow.FormBorderStyle = FormBorderStyle.None;
+
+            Controls.Clear();
+            Controls.Add(examWindow);
+            examWindow.Show();
+        }
     }
 }

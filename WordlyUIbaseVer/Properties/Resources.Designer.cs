@@ -123,6 +123,26 @@ namespace WordlyUIbaseVer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tableBtnBackgroundImg {
+            get {
+                object obj = ResourceManager.GetObject("tableBtnBackgroundImg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tilesBtnBackgroundImg {
+            get {
+                object obj = ResourceManager.GetObject("tilesBtnBackgroundImg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wrongCorrectWords {
             get {
                 object obj = ResourceManager.GetObject("wrongCorrectWords", resourceCulture);

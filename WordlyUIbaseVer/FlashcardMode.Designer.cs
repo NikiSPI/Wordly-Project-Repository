@@ -35,6 +35,7 @@
             EndPnl = new Panel();
             backBtn = new Button();
             againBtn = new Button();
+            countLbl = new Label();
             EndPnl.SuspendLayout();
             SuspendLayout();
             // 
@@ -124,12 +125,23 @@
             againBtn.UseVisualStyleBackColor = false;
             againBtn.Click += AgainBtn_Click;
             // 
+            // countLbl
+            // 
+            countLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            countLbl.Location = new Point(75, 50);
+            countLbl.Name = "countLbl";
+            countLbl.Size = new Size(125, 50);
+            countLbl.TabIndex = 4;
+            countLbl.Text = "x / y";
+            countLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // FlashcardMode
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1050, 650);
             Controls.Add(EndPnl);
+            Controls.Add(countLbl);
             Controls.Add(nextCardBtn);
             Controls.Add(previousCardBtn);
             Controls.Add(flashcardBtn);
@@ -151,5 +163,6 @@
         private Panel EndPnl;
         private Button againBtn;
         public Button backBtn;
+        private Label countLbl;
     }
 }

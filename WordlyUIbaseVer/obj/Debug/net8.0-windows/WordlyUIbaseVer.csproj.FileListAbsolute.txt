@@ -108,3 +108,4 @@ D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-w
 D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.pdb
 D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\WordlyUIbaseVer.genruntimeconfig.cache
 D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\ref\WordlyUIbaseVer.dll
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\MYP_extension.ExamMode.resources

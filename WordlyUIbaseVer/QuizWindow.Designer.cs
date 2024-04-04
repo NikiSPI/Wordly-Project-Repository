@@ -79,6 +79,7 @@
             Option3Btn.TabIndex = 2;
             Option3Btn.Text = "Exam Mode";
             Option3Btn.UseVisualStyleBackColor = true;
+            Option3Btn.Click += Option3Btn_Click;
             // 
             // Option2Btn
             // 

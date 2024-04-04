@@ -27,6 +27,7 @@ namespace WordlyUIbaseVer
             Meaning = meaning;
 
             flashcardBtn.Text = Term[currentCard];
+            countLbl.Text = "1 / " + Term.Count;
         }
 
         private void NextCard()
@@ -40,6 +41,8 @@ namespace WordlyUIbaseVer
             {
                 currentCard++;
                 UnflipCard();
+
+                countLbl.Text = Convert.ToString(currentCard + 1) + " / " + Term.Count;
             }
         }
         private void PreviousCard()
@@ -48,6 +51,8 @@ namespace WordlyUIbaseVer
             {
                 currentCard--;
                 UnflipCard();
+
+                countLbl.Text = Convert.ToString(currentCard + 1) + " / " + Term.Count;
             }
         }
         private void FlipCard()
@@ -89,6 +94,7 @@ namespace WordlyUIbaseVer
         private void AgainBtn_Click(object sender, EventArgs e)
         {
             currentCard = 0;
+            countLbl.Text = "1 / " + Term.Count;
             isCardFlipped = false;
 
             UnflipCard();
