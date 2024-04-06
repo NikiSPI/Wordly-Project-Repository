@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoundedComponents;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WordlyUIbaseVer;
 
-namespace MYP_extension
+namespace Wordly_alpha
 {
     public partial class ExamMode : Form
     {
@@ -43,13 +43,13 @@ namespace MYP_extension
 
         private void InitializeComponentsByHand()
         {
-            selectTableBtn.BackgroundImage = WordlyUIbaseVer.Properties.Resources.tableBtnBackgroundImg;
+            selectTableBtn.BackgroundImage = Properties.Resources.tableBtnBackgroundImg;
             selectTableBtn.BackgroundImageLayout = ImageLayout.Zoom;
             selectTableBtn.BackColor = selectedBtnClr;
 
-            selectTilesBtn.BackgroundImage = WordlyUIbaseVer.Properties.Resources.tilesBtnBackgroundImg;
+            selectTilesBtn.BackgroundImage = Properties.Resources.tilesBtnBackgroundImg;
             selectTilesBtn.BackgroundImageLayout = ImageLayout.Zoom;
-            selectTilesBtn.BackColor = Color.Transparent;
+            selectTilesBtn.BackColor = Color.WhiteSmoke;
         }
 
         private void randomizeWords()
@@ -281,7 +281,7 @@ namespace MYP_extension
             updateAnswers();
 
             selectTableBtn.BackColor = selectedBtnClr;
-            selectTilesBtn.BackColor = Color.Transparent;
+            selectTilesBtn.BackColor = Color.WhiteSmoke;
 
             viewTablePnl.Visible = true;
             viewTilesPnl.Visible = false;
@@ -290,8 +290,8 @@ namespace MYP_extension
         {
             updateAnswers();
 
+            selectTableBtn.BackColor = Color.WhiteSmoke;
             selectTilesBtn.BackColor = selectedBtnClr;
-            selectTableBtn.BackColor = Color.Transparent;
 
             viewTablePnl.Visible = false;
             viewTilesPnl.Visible = true;
@@ -323,10 +323,10 @@ namespace MYP_extension
             }
         }
 
-        private class TilePanel : Panel
+        private class TilePanel : RoundedPanel
         {
             public Label shownWordLbl = new Label();
-            public TextBox answerWordTbx = new TextBox();
+            public TextBox answerWordTbx = new ();
 
             public TilePanel()
             {

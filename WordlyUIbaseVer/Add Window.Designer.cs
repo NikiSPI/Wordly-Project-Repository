@@ -1,4 +1,4 @@
-﻿namespace WordlyUIbaseVer
+﻿namespace Wordly_alpha
 {
     partial class Add_Window
     {

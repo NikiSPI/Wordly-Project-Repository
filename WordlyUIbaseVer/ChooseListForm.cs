@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     public partial class ChooseListForm : Form
     {
@@ -74,7 +74,7 @@ namespace WordlyUIbaseVer
         }
 
 
-        private class WordListBtn: Button
+        private class WordListBtn : RoundedComponents.RoundedButton
         {
             public WordListBtn(int yPos, string name)
             {

@@ -2,13 +2,15 @@ using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.DirectoryServices;
 
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     public partial class WordlyForm : Form
     {
         private static StackFrame stackFrame = new StackTrace(new StackFrame(true)).GetFrame(0);
         public static string projectFolderDir = Path.GetDirectoryName(stackFrame.GetFileName());
         private string imagesFolderDir = projectFolderDir + @"\Images\";
+
+        private int dma = 20; //DMA = darken menubutton amount; the amount of darkening that the selected button gets
 
         private Home_Window homeWindow;
         private ChooseListForm listChoiceWindow;
@@ -28,15 +30,17 @@ namespace WordlyUIbaseVer
             contentPnl.Controls.Add(listCreationWindow);
             settingsWindow = (Settings_Window)AddFormFunctions(new Settings_Window());
             contentPnl.Controls.Add(settingsWindow);
+
+            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuHomeBtn.BackColor = Color.FromArgb(192, 192, 0);
+            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
             menuIndicatorPnl.Location = new Point(0, menuHomeBtn.Location.Y);
 
-            optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
+            //optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
 
             ResetContentVisibility();
             homeWindow.Visible = true;
@@ -44,10 +48,10 @@ namespace WordlyUIbaseVer
         private void startBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuStartBtn.BackColor = Color.FromArgb(192, 192, 0);
+            menuStartBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
             menuIndicatorPnl.Location = new Point(0, menuStartBtn.Location.Y);
 
-            optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
+            //optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
 
             ResetContentVisibility();
             listChoiceWindow.Visible = true;
@@ -55,10 +59,10 @@ namespace WordlyUIbaseVer
         private void createBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuCreateBtn.BackColor = Color.FromArgb(192, 192, 0);
+            menuCreateBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
             menuIndicatorPnl.Location = new Point(0, menuCreateBtn.Location.Y);
 
-            optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
+            //optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
 
             ResetContentVisibility();
             listCreationWindow.Visible = true;
@@ -66,17 +70,17 @@ namespace WordlyUIbaseVer
         private void settingsBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuSettingsBtn.BackColor = Color.FromArgb(192, 192, 0);
+            menuSettingsBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
             menuIndicatorPnl.Location = new Point(0, menuSettingsBtn.Location.Y);
 
-            optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
+            //optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
 
             ResetContentVisibility();
             settingsWindow.Visible = true;
         }
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            if( (MessageBox.Show("Are you sure you want to exit?", "", MessageBoxButtons.YesNo)) == DialogResult.Yes)
+            if ((MessageBox.Show("Are you sure you want to exit?", "", MessageBoxButtons.YesNo)) == DialogResult.Yes)
             {
                 Environment.Exit(0);
             }
@@ -84,10 +88,10 @@ namespace WordlyUIbaseVer
 
         private void ResetBtnColors()
         {
-            menuHomeBtn.BackColor = Color.FromArgb(255, 255, 128);
-            menuStartBtn.BackColor = Color.FromArgb(255, 255, 128);
-            menuCreateBtn.BackColor = Color.FromArgb(255, 255, 128);
-            menuSettingsBtn.BackColor = Color.FromArgb(255, 255, 128);
+            menuHomeBtn.BackColor = Color.Transparent;
+            menuStartBtn.BackColor = Color.Transparent;
+            menuCreateBtn.BackColor = Color.Transparent;
+            menuSettingsBtn.BackColor = Color.Transparent;
         }
         private void ResetContentVisibility()
         {
@@ -128,6 +132,5 @@ namespace WordlyUIbaseVer
                 //perform undo operation for settings window
             }
         }
-
     }
 }

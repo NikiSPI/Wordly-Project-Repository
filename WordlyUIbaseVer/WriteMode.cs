@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     public partial class WriteMode : Form
     {
@@ -31,6 +31,9 @@ namespace WordlyUIbaseVer
 
             aShownWordLbl.Text = Term[0];
             UpdateStatPnl();
+
+            underlineTbxPnl.rdus = 1;
+            aAnswerTbx.Focus();
         }
 
         private void Reset()
@@ -133,7 +136,7 @@ namespace WordlyUIbaseVer
 
                 //to surpress the 'ding' sound when pressing enter
                 e.Handled = true;
-                e.SuppressKeyPress = true; 
+                e.SuppressKeyPress = true;
             }
         }
 
@@ -150,7 +153,7 @@ namespace WordlyUIbaseVer
 
         private void optionRandomizeTbtn_CheckedChanged(object sender, EventArgs e)
         {
-            if(optionRandomizeTbtn.Checked)
+            if (optionRandomizeTbtn.Checked)
             {
             }
         }

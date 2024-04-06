@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     public class SizableTextBox : TextBox
     {

@@ -7,6 +7,15 @@
     <Compile Update="ChooseListForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Component Classes\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\RoundedLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="Component Classes\SizableTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

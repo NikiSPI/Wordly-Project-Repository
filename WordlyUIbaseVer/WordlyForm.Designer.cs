@@ -1,5 +1,7 @@
 ﻿
-namespace WordlyUIbaseVer
+using RoundedComponents;
+
+namespace Wordly_alpha
 {
     partial class WordlyForm
     {
@@ -41,14 +43,12 @@ namespace WordlyUIbaseVer
             menuStartBtn = new Button();
             menuHomeBtn = new Button();
             optBarPnl = new Panel();
-            backBtn = new Button();
-            optBarImage = new PictureBox();
+            backBtn = new RoundedButton();
             contentPnl = new Panel();
             menuPnl.SuspendLayout();
             titlePnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)titleLogoImage).BeginInit();
             optBarPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)optBarImage).BeginInit();
             SuspendLayout();
             // 
             // menuPnl
@@ -70,7 +70,7 @@ namespace WordlyUIbaseVer
             // menuIndicatorPnl
             // 
             menuIndicatorPnl.BackColor = Color.Black;
-            menuIndicatorPnl.Location = new Point(0, 250);
+            menuIndicatorPnl.Location = new Point(0, 255);
             menuIndicatorPnl.Name = "menuIndicatorPnl";
             menuIndicatorPnl.Size = new Size(5, 70);
             menuIndicatorPnl.TabIndex = 6;
@@ -78,13 +78,13 @@ namespace WordlyUIbaseVer
             // menuSettingsBtn
             // 
             menuSettingsBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            menuSettingsBtn.BackColor = Color.FromArgb(255, 255, 128);
+            menuSettingsBtn.BackColor = Color.Transparent;
             menuSettingsBtn.FlatAppearance.BorderSize = 0;
             menuSettingsBtn.FlatStyle = FlatStyle.Flat;
             menuSettingsBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuSettingsBtn.Location = new Point(0, 570);
             menuSettingsBtn.Name = "menuSettingsBtn";
-            menuSettingsBtn.Size = new Size(220, 70);
+            menuSettingsBtn.Size = new Size(230, 70);
             menuSettingsBtn.TabIndex = 7;
             menuSettingsBtn.Text = " Settings";
             menuSettingsBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -94,13 +94,14 @@ namespace WordlyUIbaseVer
             // menuQuitBtn
             // 
             menuQuitBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            menuQuitBtn.BackColor = Color.FromArgb(255, 255, 128);
+            menuQuitBtn.BackColor = Color.Transparent;
+            menuQuitBtn.FlatAppearance.BorderColor = SystemColors.GradientInactiveCaption;
             menuQuitBtn.FlatAppearance.BorderSize = 0;
             menuQuitBtn.FlatStyle = FlatStyle.Flat;
             menuQuitBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuQuitBtn.Location = new Point(0, 640);
             menuQuitBtn.Name = "menuQuitBtn";
-            menuQuitBtn.Size = new Size(220, 70);
+            menuQuitBtn.Size = new Size(230, 70);
             menuQuitBtn.TabIndex = 6;
             menuQuitBtn.Text = " Quit";
             menuQuitBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -110,13 +111,13 @@ namespace WordlyUIbaseVer
             // menuCreateBtn
             // 
             menuCreateBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuCreateBtn.BackColor = Color.FromArgb(255, 255, 128);
+            menuCreateBtn.BackColor = Color.Transparent;
             menuCreateBtn.FlatAppearance.BorderSize = 0;
             menuCreateBtn.FlatStyle = FlatStyle.Flat;
             menuCreateBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuCreateBtn.Location = new Point(0, 390);
+            menuCreateBtn.Location = new Point(0, 395);
             menuCreateBtn.Name = "menuCreateBtn";
-            menuCreateBtn.Size = new Size(220, 70);
+            menuCreateBtn.Size = new Size(230, 70);
             menuCreateBtn.TabIndex = 5;
             menuCreateBtn.Text = " Create List";
             menuCreateBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -125,7 +126,7 @@ namespace WordlyUIbaseVer
             // 
             // titlePnl
             // 
-            titlePnl.BackColor = Color.White;
+            titlePnl.BackColor = Color.Transparent;
             titlePnl.Controls.Add(titleSloganLbl);
             titlePnl.Controls.Add(titleNameLbl);
             titlePnl.Controls.Add(titleLogoImage);
@@ -137,6 +138,7 @@ namespace WordlyUIbaseVer
             // 
             // titleSloganLbl
             // 
+            titleSloganLbl.BackColor = Color.Transparent;
             titleSloganLbl.Dock = DockStyle.Fill;
             titleSloganLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             titleSloganLbl.Location = new Point(0, 186);
@@ -149,6 +151,7 @@ namespace WordlyUIbaseVer
             // 
             // titleNameLbl
             // 
+            titleNameLbl.BackColor = Color.Transparent;
             titleNameLbl.Dock = DockStyle.Top;
             titleNameLbl.Font = new Font("Times New Roman", 39.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleNameLbl.Location = new Point(0, 120);
@@ -160,8 +163,9 @@ namespace WordlyUIbaseVer
             // 
             // titleLogoImage
             // 
+            titleLogoImage.BackColor = Color.Transparent;
             titleLogoImage.Dock = DockStyle.Top;
-            titleLogoImage.Image = Properties.Resources.logo;
+            titleLogoImage.Image = Properties.Resources.defaultProfilePicWhite;
             titleLogoImage.Location = new Point(0, 0);
             titleLogoImage.Name = "titleLogoImage";
             titleLogoImage.Size = new Size(230, 120);
@@ -172,13 +176,13 @@ namespace WordlyUIbaseVer
             // menuStartBtn
             // 
             menuStartBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuStartBtn.BackColor = Color.FromArgb(255, 255, 128);
+            menuStartBtn.BackColor = Color.Transparent;
             menuStartBtn.FlatAppearance.BorderSize = 0;
             menuStartBtn.FlatStyle = FlatStyle.Flat;
             menuStartBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuStartBtn.Location = new Point(0, 320);
+            menuStartBtn.Location = new Point(0, 325);
             menuStartBtn.Name = "menuStartBtn";
-            menuStartBtn.Size = new Size(220, 70);
+            menuStartBtn.Size = new Size(230, 70);
             menuStartBtn.TabIndex = 4;
             menuStartBtn.Text = " Start Quiz";
             menuStartBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -188,13 +192,13 @@ namespace WordlyUIbaseVer
             // menuHomeBtn
             // 
             menuHomeBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuHomeBtn.BackColor = Color.FromArgb(192, 192, 0);
+            menuHomeBtn.BackColor = Color.Transparent;
             menuHomeBtn.FlatAppearance.BorderSize = 0;
             menuHomeBtn.FlatStyle = FlatStyle.Flat;
             menuHomeBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuHomeBtn.Location = new Point(0, 250);
+            menuHomeBtn.Location = new Point(0, 255);
             menuHomeBtn.Name = "menuHomeBtn";
-            menuHomeBtn.Size = new Size(220, 70);
+            menuHomeBtn.Size = new Size(230, 70);
             menuHomeBtn.TabIndex = 1;
             menuHomeBtn.Text = " Home";
             menuHomeBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -206,7 +210,6 @@ namespace WordlyUIbaseVer
             optBarPnl.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             optBarPnl.BackColor = Color.MistyRose;
             optBarPnl.Controls.Add(backBtn);
-            optBarPnl.Controls.Add(optBarImage);
             optBarPnl.Dock = DockStyle.Top;
             optBarPnl.Location = new Point(230, 0);
             optBarPnl.Name = "optBarPnl";
@@ -215,34 +218,21 @@ namespace WordlyUIbaseVer
             // 
             // backBtn
             // 
-            backBtn.Anchor = AnchorStyles.Left;
-            backBtn.BackColor = Color.Linen;
+            backBtn.BackColor = Color.White;
+            backBtn.FlatAppearance.BorderColor = Color.White;
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backBtn.Image = Properties.Resources.backArrow;
-            backBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            backBtn.Location = new Point(10, 15);
+            backBtn.Image = Properties.Resources.arrowLeft;
+            backBtn.ImageAlign = ContentAlignment.MiddleRight;
+            backBtn.Location = new Point(15, 15);
             backBtn.Name = "backBtn";
-            backBtn.RightToLeft = RightToLeft.Yes;
-            backBtn.Size = new Size(108, 40);
-            backBtn.TabIndex = 2;
-            backBtn.Text = "BACK";
-            backBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+            backBtn.Size = new Size(110, 40);
+            backBtn.TabIndex = 3;
+            backBtn.Text = " BACK";
+            backBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
             backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
-            // 
-            // optBarImage
-            // 
-            optBarImage.BackgroundImageLayout = ImageLayout.Zoom;
-            optBarImage.Dock = DockStyle.Right;
-            optBarImage.Image = Properties.Resources.house;
-            optBarImage.Location = new Point(981, 0);
-            optBarImage.Name = "optBarImage";
-            optBarImage.Size = new Size(69, 70);
-            optBarImage.SizeMode = PictureBoxSizeMode.Zoom;
-            optBarImage.TabIndex = 1;
-            optBarImage.TabStop = false;
             // 
             // contentPnl
             // 
@@ -260,7 +250,7 @@ namespace WordlyUIbaseVer
             Controls.Add(contentPnl);
             Controls.Add(optBarPnl);
             Controls.Add(menuPnl);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
             Name = "WordlyForm";
             StartPosition = FormStartPosition.CenterScreen;
@@ -269,7 +259,6 @@ namespace WordlyUIbaseVer
             titlePnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)titleLogoImage).EndInit();
             optBarPnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)optBarImage).EndInit();
             ResumeLayout(false);
         }
 
@@ -279,7 +268,6 @@ namespace WordlyUIbaseVer
         private Panel menuPnl;
         private Panel optBarPnl;
         private Panel contentPnl;
-        private PictureBox optBarImage;
         private Panel menuIndicatorPnl;
         private Button menuCreateBtn;
         private Button menuStartBtn;
@@ -290,6 +278,6 @@ namespace WordlyUIbaseVer
         private Label titleSloganLbl;
         private Button menuQuitBtn;
         private Button menuSettingsBtn;
-        private Button backBtn;
+        private RoundedButton backBtn;
     }
 }

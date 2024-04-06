@@ -1,4 +1,6 @@
-﻿namespace MYP_extension
+﻿using RoundedComponents;
+
+namespace Wordly_alpha
 {
     partial class ExamMode
     {
@@ -28,19 +30,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            viewTablePnl = new Panel();
+            viewTablePnl = new RoundedPanel();
             tableContentPnl = new Panel();
             indicationPnl = new Panel();
             indicatorLang2BLbl = new Label();
             indicatorLang2ALbl = new Label();
             indicatorLang1BLbl = new Label();
             indicatorLang1ALbl = new Label();
-            submitBtn = new Button();
+            submitBtn = new RoundedButton();
             textResultLbl = new Label();
             resultLbl = new Label();
-            selectTilesBtn = new Button();
-            selectTableBtn = new Button();
-            viewTilesPnl = new Panel();
+            selectTilesBtn = new RoundedButton();
+            selectTableBtn = new RoundedButton();
+            viewTilesPnl = new RoundedPanel();
             viewTablePnl.SuspendLayout();
             indicationPnl.SuspendLayout();
             SuspendLayout();
@@ -123,6 +125,7 @@
             // submitBtn
             // 
             submitBtn.BackColor = Color.LemonChiffon;
+            submitBtn.FlatAppearance.BorderColor = Color.LemonChiffon;
             submitBtn.FlatStyle = FlatStyle.Flat;
             submitBtn.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             submitBtn.Location = new Point(425, 13);
@@ -160,6 +163,7 @@
             // selectTilesBtn
             // 
             selectTilesBtn.BackColor = Color.Silver;
+            selectTilesBtn.FlatAppearance.BorderColor = Color.Silver;
             selectTilesBtn.FlatAppearance.BorderSize = 0;
             selectTilesBtn.FlatStyle = FlatStyle.Flat;
             selectTilesBtn.Location = new Point(10, 140);
@@ -172,6 +176,7 @@
             // selectTableBtn
             // 
             selectTableBtn.BackColor = Color.LightGray;
+            selectTableBtn.FlatAppearance.BorderColor = Color.LightGray;
             selectTableBtn.FlatAppearance.BorderSize = 0;
             selectTableBtn.FlatStyle = FlatStyle.Flat;
             selectTableBtn.Location = new Point(10, 75);
@@ -219,19 +224,19 @@
 
         #endregion
 
-        private Panel viewTablePnl;
+        private RoundedPanel viewTablePnl;
         private Panel indicationPnl;
         private Label indicatorLang2BLbl;
         private Label indicatorLang2ALbl;
         private Label indicatorLang1BLbl;
         private Label indicatorLang1ALbl;
-        private Button submitBtn;
+        private RoundedButton submitBtn;
         private Label textResultLbl;
         private Label resultLbl;
         private Panel tableContentPnl;
         private Panel panel1;
-        private Button selectTilesBtn;
-        private Button selectTableBtn;
-        private Panel viewTilesPnl;
+        private RoundedButton selectTilesBtn;
+        private RoundedButton selectTableBtn;
+        private RoundedPanel viewTilesPnl;
     }
 }

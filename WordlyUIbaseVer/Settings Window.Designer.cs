@@ -1,4 +1,5 @@
-﻿namespace WordlyUIbaseVer
+﻿namespace Wordly_alpha
+
 {
     partial class Settings_Window
     {

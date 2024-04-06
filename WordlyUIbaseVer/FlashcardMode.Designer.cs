@@ -1,4 +1,6 @@
-﻿namespace WordlyUIbaseVer
+﻿using RoundedComponents;
+
+namespace Wordly_alpha
 {
     partial class FlashcardMode
     {
@@ -28,13 +30,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlashcardMode));
-            flashcardBtn = new Button();
-            previousCardBtn = new Button();
-            nextCardBtn = new Button();
-            EndPnl = new Panel();
-            backBtn = new Button();
-            againBtn = new Button();
+            flashcardBtn = new RoundedButton();
+            previousCardBtn = new RoundedButton();
+            nextCardBtn = new RoundedButton();
+            EndPnl = new RoundedPanel();
+            backBtn = new RoundedButton();
+            againBtn = new RoundedButton();
             countLbl = new Label();
             EndPnl.SuspendLayout();
             SuspendLayout();
@@ -43,6 +44,7 @@
             // 
             flashcardBtn.BackColor = Color.GreenYellow;
             flashcardBtn.CausesValidation = false;
+            flashcardBtn.FlatAppearance.BorderColor = Color.GreenYellow;
             flashcardBtn.FlatAppearance.BorderSize = 0;
             flashcardBtn.FlatStyle = FlatStyle.Flat;
             flashcardBtn.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -57,10 +59,12 @@
             // 
             // previousCardBtn
             // 
+            previousCardBtn.BackColor = Color.White;
             previousCardBtn.CausesValidation = false;
+            previousCardBtn.FlatAppearance.BorderColor = Color.White;
             previousCardBtn.FlatAppearance.BorderSize = 0;
             previousCardBtn.FlatStyle = FlatStyle.Flat;
-            previousCardBtn.Image = Properties.Resources.backArrow;
+            previousCardBtn.Image = Properties.Resources.arrowLeft;
             previousCardBtn.Location = new Point(100, 250);
             previousCardBtn.Name = "previousCardBtn";
             previousCardBtn.Size = new Size(75, 150);
@@ -72,10 +76,12 @@
             // 
             // nextCardBtn
             // 
+            nextCardBtn.BackColor = Color.White;
             nextCardBtn.CausesValidation = false;
+            nextCardBtn.FlatAppearance.BorderColor = Color.White;
             nextCardBtn.FlatAppearance.BorderSize = 0;
             nextCardBtn.FlatStyle = FlatStyle.Flat;
-            nextCardBtn.Image = (Image)resources.GetObject("nextCardBtn.Image");
+            nextCardBtn.Image = Properties.Resources.arrowRight;
             nextCardBtn.Location = new Point(875, 250);
             nextCardBtn.Name = "nextCardBtn";
             nextCardBtn.Size = new Size(75, 150);
@@ -100,6 +106,7 @@
             // 
             backBtn.BackColor = SystemColors.HotTrack;
             backBtn.CausesValidation = false;
+            backBtn.FlatAppearance.BorderColor = SystemColors.HotTrack;
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -114,6 +121,7 @@
             // 
             againBtn.BackColor = SystemColors.HotTrack;
             againBtn.CausesValidation = false;
+            againBtn.FlatAppearance.BorderColor = SystemColors.HotTrack;
             againBtn.FlatAppearance.BorderSize = 0;
             againBtn.FlatStyle = FlatStyle.Flat;
             againBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -157,12 +165,12 @@
 
         #endregion
 
-        private Button flashcardBtn;
-        private Button previousCardBtn;
-        private Button nextCardBtn;
-        private Panel EndPnl;
-        private Button againBtn;
-        public Button backBtn;
+        private RoundedButton flashcardBtn;
+        private RoundedButton previousCardBtn;
+        private RoundedButton nextCardBtn;
+        private RoundedPanel EndPnl;
+        private RoundedButton againBtn;
+        public  RoundedButton backBtn;
         private Label countLbl;
     }
 }

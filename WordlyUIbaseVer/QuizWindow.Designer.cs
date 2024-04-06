@@ -1,4 +1,6 @@
-﻿namespace WordlyUIbaseVer
+﻿using RoundedComponents;
+
+namespace Wordly_alpha
 {
     partial class QuizWindow
     {
@@ -29,11 +31,11 @@
         private void InitializeComponent()
         {
             OptionsPnl = new Panel();
-            Option4Btn = new Button();
-            Option3Btn = new Button();
-            Option2Btn = new Button();
-            Option1Btn = new Button();
-            wordListPnl = new Panel();
+            Option4Btn = new RoundedButton();
+            Option3Btn = new RoundedButton();
+            Option2Btn = new RoundedButton();
+            Option1Btn = new RoundedButton();
+            wordListPnl = new RoundedPanel();
             wordContainerPnl = new Panel();
             wordListUnlockScrollPnl = new Panel();
             wordListTitlePnl = new Panel();
@@ -196,11 +198,11 @@
         #endregion
 
         private Panel OptionsPnl;
-        private Button Option1Btn;
-        private Button Option3Btn;
-        private Button Option2Btn;
-        private Button Option4Btn;
-        private Panel wordListPnl;
+        private RoundedButton Option1Btn;
+        private RoundedButton Option2Btn;
+        private RoundedButton Option3Btn;
+        private RoundedButton Option4Btn;
+        private RoundedPanel wordListPnl;
         private Panel wordListTitlePnl;
         private Label wordListTitleTermLbl;
         private Panel wordListTitleSepPnl;

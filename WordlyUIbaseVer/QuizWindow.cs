@@ -1,5 +1,5 @@
-﻿using MYP_extension;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using RoundedComponents;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     public partial class QuizWindow : Form
     {
@@ -44,6 +44,8 @@ namespace WordlyUIbaseVer
             fileDir = file;
             wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(fileDir));
 
+            TermStrArr = new List<string>();
+            MeaningStrArr = new List<string>();
             CreateWordListPnl();
         }
 
@@ -51,8 +53,8 @@ namespace WordlyUIbaseVer
         {
             for (int i = 0; i < wl.Term.Count; i++)
             {
-                TermStrArr.Add(CreateWordString(wl.Term[i]));
-                MeaningStrArr.Add(CreateWordString(wl.Meaning[i]));
+                TermStrArr.Add(CreateWordString(wl.Term[i], " / "));
+                MeaningStrArr.Add(CreateWordString(wl.Meaning[i], ", "));
 
                 WordPnl wp = new WordPnl(10 + i * 90);
                 wp.wordTermLbl.Text = TermStrArr[i];
@@ -60,21 +62,21 @@ namespace WordlyUIbaseVer
                 wordContainerPnl.Controls.Add(wp);
             }
         }
-        private string CreateWordString(string[] arr)
+        private string CreateWordString(string[] arr, string separate)
         {
             string combinedStr = arr[0];
 
             for (int i = 1; i < arr.Length; i++)
             {
-                combinedStr += ", " + arr[i];
+                combinedStr += separate + arr[i];
             }
 
             return combinedStr;
         }
-        private class WordPnl : Panel
+        private class WordPnl : RoundedPanel
         {
-            public Label wordTermLbl = new Label();
-            public Label wordMeaningLbl = new Label();
+            public RoundedLabel wordTermLbl = new ();
+            public RoundedLabel wordMeaningLbl = new ();
 
             public WordPnl(int yLoc)
             {

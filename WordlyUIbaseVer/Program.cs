@@ -1,4 +1,4 @@
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     internal static class Program
     {

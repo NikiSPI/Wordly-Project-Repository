@@ -1,0 +1,29 @@
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.csproj.AssemblyReference.cache
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_Alpha.Properties.Resources.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.csproj.GenerateResource.cache
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.AssemblyInfoInputs.cache
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.AssemblyInfo.cs
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.csproj.CoreCompileInputs.cache
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.sourcelink.json
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly Alpha.exe
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly Alpha.deps.json
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly Alpha.runtimeconfig.json
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly Alpha.dll
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly Alpha.pdb
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Add_Window.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.ChooseListForm.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.ExamMode.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.FlashcardMode.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Home_Window.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.QuizWindow.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Settings_Window.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.WordlyForm.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.WriteMode.resources
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.dll
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\refint\Wordly Alpha.dll
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.pdb
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.genruntimeconfig.cache
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\ref\Wordly Alpha.dll
+D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly a.98B652BA.Up2Date

@@ -60,9 +60,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
-      "projectName": "WordlyUIbaseVer",
-      "projectPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyUIbaseVer.csproj",
+      "projectUniqueName": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\Wordly Alpha.csproj",
+      "projectName": "Wordly Alpha",
+      "projectPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\Wordly Alpha.csproj",
       "packagesPath": "C:\\Users\\Nikola Bozhkov\\.nuget\\packages\\",
       "outputPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\obj\\",
       "projectStyle": "PackageReference",

@@ -3,52 +3,52 @@
   "WorkspaceRootPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\Wordly Alpha.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\Wordly Alpha.csproj|solutionrelative:wordlyuibasever\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\Wordly Alpha.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\Wordly Alpha.csproj|solutionrelative:wordlyuibasever\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\exammode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\exammode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\exammode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\chooselistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\chooselistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\writemode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\writemode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\writemode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\writemode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\flashcardmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,12 +59,16 @@
       "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\wordlyform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\chooselistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\chooselistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordlyuibasever\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{029541C3-2DF8-4562-9F64-015EFA557854}|WordlyUIbaseVer\\WordlyUIbaseVer.csproj|solutionrelative:wordlyuibasever\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,35 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 591,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QuizWindow.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.cs",
-              "RelativeDocumentMoniker": "WordlyUIbaseVer\\QuizWindow.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.cs [Design]",
-              "RelativeToolTip": "WordlyUIbaseVer\\QuizWindow.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T21:54:46.65Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExamMode.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.cs",
-              "RelativeDocumentMoniker": "WordlyUIbaseVer\\ExamMode.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.cs [Design]",
-              "RelativeToolTip": "WordlyUIbaseVer\\ExamMode.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:17:06Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "WordlyForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\WordlyForm.cs",
@@ -114,7 +94,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
+              "Title": "QuizWindow.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.cs",
+              "RelativeDocumentMoniker": "WordlyUIbaseVer\\QuizWindow.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.cs [Design]",
+              "RelativeToolTip": "WordlyUIbaseVer\\QuizWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:53:54.531Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "FlashcardMode.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\FlashcardMode.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\FlashcardMode.cs",
@@ -122,6 +114,30 @@
               "RelativeToolTip": "WordlyUIbaseVer\\FlashcardMode.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-23T15:56:25.168Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WriteMode.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.cs",
+              "RelativeDocumentMoniker": "WordlyUIbaseVer\\WriteMode.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.cs [Design]",
+              "RelativeToolTip": "WordlyUIbaseVer\\WriteMode.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T12:36:57.187Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExamMode.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.cs",
+              "RelativeDocumentMoniker": "WordlyUIbaseVer\\ExamMode.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.cs [Design]",
+              "RelativeToolTip": "WordlyUIbaseVer\\ExamMode.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T13:11:55.11Z",
               "EditorCaption": " [Design]"
             }
           ]
@@ -148,41 +164,42 @@
       "FloatingWindowState": {
         "Id": "9df4a468-0ff6-4c43-9e5c-8f4c7cfe5a80",
         "Display": 0,
-        "X": 2596,
-        "Y": 538,
+        "X": 1852,
+        "Y": 187,
         "Width": 1554,
-        "Height": 682,
+        "Height": 929,
         "WindowState": 0
       },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "WordlyForm.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\WordlyForm.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\WordlyForm.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAIwE0AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:39:18.786Z",
+              "WhenOpened": "2024-04-06T11:43:23.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "ChooseListForm.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ChooseListForm.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\ChooseListForm.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ChooseListForm.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\ChooseListForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:39:18.792Z"
+              "WhenOpened": "2024-03-15T07:39:18.792Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -192,46 +209,46 @@
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\QuizWindow.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\QuizWindow.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAA8wGIAAAAxAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T07:39:18.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "FlashcardMode.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\FlashcardMode.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\FlashcardMode.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\FlashcardMode.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\FlashcardMode.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T07:39:18.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "WriteMode.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\WriteMode.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\WriteMode.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAAJAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAkwJ4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T07:39:18.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ExamMode.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\ExamMode.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\ExamMode.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAqwGUBAAA9AAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAuwEcBAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T11:15:15.402Z",
               "EditorCaption": ""
@@ -244,28 +261,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
+              "Title": "WordlyForm.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.Designer.cs",
+              "RelativeDocumentMoniker": "WordlyUIbaseVer\\WordlyForm.Designer.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.Designer.cs",
+              "RelativeToolTip": "WordlyUIbaseVer\\WordlyForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T07:39:18.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChooseListForm.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ChooseListForm.Designer.cs",
+              "RelativeDocumentMoniker": "WordlyUIbaseVer\\ChooseListForm.Designer.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ChooseListForm.Designer.cs",
+              "RelativeToolTip": "WordlyUIbaseVer\\ChooseListForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T07:39:18.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "QuizWindow.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.Designer.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\QuizWindow.Designer.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\QuizWindow.Designer.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\QuizWindow.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T07:39:18.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WriteMode.Designer.cs",
-              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.Designer.cs",
-              "RelativeDocumentMoniker": "WordlyUIbaseVer\\WriteMode.Designer.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.Designer.cs",
-              "RelativeToolTip": "WordlyUIbaseVer\\WriteMode.Designer.cs",
-              "ViewState": "AQIAAB0BAAAAAAAAAAAAADsBAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:39:18.821Z",
               "EditorCaption": ""
             },
             {
@@ -276,45 +306,33 @@
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\FlashcardMode.Designer.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\FlashcardMode.Designer.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\FlashcardMode.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAowBYAAAAIAAAA",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T07:39:18.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ChooseListForm.Designer.cs",
-              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ChooseListForm.Designer.cs",
-              "RelativeDocumentMoniker": "WordlyUIbaseVer\\ChooseListForm.Designer.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ChooseListForm.Designer.cs",
-              "RelativeToolTip": "WordlyUIbaseVer\\ChooseListForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "WriteMode.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.Designer.cs",
+              "RelativeDocumentMoniker": "WordlyUIbaseVer\\WriteMode.Designer.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WriteMode.Designer.cs",
+              "RelativeToolTip": "WordlyUIbaseVer\\WriteMode.Designer.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAAAOcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:39:18.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WordlyForm.Designer.cs",
-              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.Designer.cs",
-              "RelativeDocumentMoniker": "WordlyUIbaseVer\\WordlyForm.Designer.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\WordlyForm.Designer.cs",
-              "RelativeToolTip": "WordlyUIbaseVer\\WordlyForm.Designer.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAowBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T07:39:18.808Z",
+              "WhenOpened": "2024-03-15T07:39:18.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ExamMode.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.Designer.cs",
               "RelativeDocumentMoniker": "WordlyUIbaseVer\\ExamMode.Designer.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\WordlyUIbaseVer\\ExamMode.Designer.cs",
               "RelativeToolTip": "WordlyUIbaseVer\\ExamMode.Designer.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAowK8AAAA2AAAA",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAAAOwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T11:16:01.552Z",
               "EditorCaption": ""

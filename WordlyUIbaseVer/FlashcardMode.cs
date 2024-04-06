@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WordlyUIbaseVer
+namespace Wordly_alpha
 {
     public partial class FlashcardMode : Form
     {

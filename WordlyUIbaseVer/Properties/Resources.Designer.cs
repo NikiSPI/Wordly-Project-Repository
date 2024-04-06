@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WordlyUIbaseVer.Properties {
+namespace Wordly_alpha.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace WordlyUIbaseVer.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WordlyUIbaseVer.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Wordly_alpha.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace WordlyUIbaseVer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Android_O_Preview_Logo {
+        internal static System.Drawing.Bitmap arrowLeft {
             get {
-                object obj = ResourceManager.GetObject("Android_O_Preview_Logo", resourceCulture);
+                object obj = ResourceManager.GetObject("arrowLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace WordlyUIbaseVer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backArrow {
+        internal static System.Drawing.Bitmap arrowRight {
             get {
-                object obj = ResourceManager.GetObject("backArrow", resourceCulture);
+                object obj = ResourceManager.GetObject("arrowRight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap defaultProfilePicWhite {
+            get {
+                object obj = ResourceManager.GetObject("defaultProfilePicWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,26 +96,6 @@ namespace WordlyUIbaseVer.Properties {
         internal static System.Drawing.Bitmap greenTick {
             get {
                 object obj = ResourceManager.GetObject("greenTick", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap house {
-            get {
-                object obj = ResourceManager.GetObject("house", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo {
-            get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,16 +126,6 @@ namespace WordlyUIbaseVer.Properties {
         internal static System.Drawing.Bitmap tilesBtnBackgroundImg {
             get {
                 object obj = ResourceManager.GetObject("tilesBtnBackgroundImg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wrongCorrectWords {
-            get {
-                object obj = ResourceManager.GetObject("wrongCorrectWords", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

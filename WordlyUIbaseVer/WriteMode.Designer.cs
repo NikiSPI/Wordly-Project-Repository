@@ -1,4 +1,6 @@
-﻿namespace WordlyUIbaseVer
+﻿using RoundedComponents;
+
+namespace Wordly_alpha
 {
     partial class WriteMode
     {
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            incorrectPnl = new Panel();
+            incorrectPnl = new RoundedPanel();
             iShownWordLbl = new Label();
             iAnswerWordLbl = new Label();
             iCorrectMeaningLbl = new Label();
@@ -36,18 +38,19 @@
             iTextCorrectLbl = new Label();
             iTextAnswerLbl = new Label();
             iTextTermLbl = new Label();
-            iContinueBtn = new Button();
-            endPnl = new Panel();
-            eBackBtn = new Button();
-            eAgainBtn = new Button();
-            answerPnl = new Panel();
-            aAnswerTbx = new SizableTextBox();
+            iContinueBtn = new RoundedButton();
+            endPnl = new RoundedPanel();
+            eBackBtn = new RoundedButton();
+            eAgainBtn = new RoundedButton();
+            answerPnl = new RoundedPanel();
+            underlineTbxPnl = new RoundedPanel();
             aShownWordLbl = new Label();
-            aAnswerBtn = new Button();
+            aAnswerBtn = new RoundedButton();
+            aAnswerTbx = new SizableTextBox();
             statNumLeftLbl = new Label();
             statPnl = new Panel();
             optionTextRandomizeLbl = new Label();
-            optionRandomizeTbtn = new Styling_Toggle_Button.SButton();
+            optionRandomizeTbtn = new StylishComponents.SButton();
             statIntersectionPnl = new Panel();
             statWrongPbx = new PictureBox();
             statCorrectPbx = new PictureBox();
@@ -156,6 +159,7 @@
             iContinueBtn.Anchor = AnchorStyles.Bottom;
             iContinueBtn.BackColor = SystemColors.WindowFrame;
             iContinueBtn.CausesValidation = false;
+            iContinueBtn.FlatAppearance.BorderColor = SystemColors.WindowFrame;
             iContinueBtn.FlatAppearance.BorderSize = 0;
             iContinueBtn.FlatStyle = FlatStyle.Flat;
             iContinueBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -184,6 +188,7 @@
             // 
             eBackBtn.BackColor = SystemColors.ScrollBar;
             eBackBtn.CausesValidation = false;
+            eBackBtn.FlatAppearance.BorderColor = SystemColors.ScrollBar;
             eBackBtn.FlatAppearance.BorderSize = 0;
             eBackBtn.FlatStyle = FlatStyle.Flat;
             eBackBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -200,6 +205,7 @@
             eAgainBtn.Anchor = AnchorStyles.Bottom;
             eAgainBtn.BackColor = SystemColors.ScrollBar;
             eAgainBtn.CausesValidation = false;
+            eAgainBtn.FlatAppearance.BorderColor = SystemColors.ScrollBar;
             eAgainBtn.FlatAppearance.BorderSize = 0;
             eAgainBtn.FlatStyle = FlatStyle.Flat;
             eAgainBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -216,23 +222,22 @@
             // 
             answerPnl.BackColor = Color.PeachPuff;
             answerPnl.Controls.Add(incorrectPnl);
-            answerPnl.Controls.Add(aAnswerTbx);
+            answerPnl.Controls.Add(underlineTbxPnl);
             answerPnl.Controls.Add(aShownWordLbl);
             answerPnl.Controls.Add(aAnswerBtn);
+            answerPnl.Controls.Add(aAnswerTbx);
             answerPnl.Location = new Point(75, 100);
             answerPnl.Name = "answerPnl";
             answerPnl.Size = new Size(900, 500);
             answerPnl.TabIndex = 8;
             // 
-            // aAnswerTbx
+            // underlineTbxPnl
             // 
-            aAnswerTbx.BackColor = Color.PeachPuff;
-            aAnswerTbx.BorderStyle = BorderStyle.FixedSingle;
-            aAnswerTbx.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            aAnswerTbx.Location = new Point(50, 160);
-            aAnswerTbx.Name = "aAnswerTbx";
-            aAnswerTbx.Size = new Size(800, 50);
-            aAnswerTbx.TabIndex = 8;
+            underlineTbxPnl.BackColor = Color.Black;
+            underlineTbxPnl.Location = new Point(50, 265);
+            underlineTbxPnl.Name = "underlineTbxPnl";
+            underlineTbxPnl.Size = new Size(800, 3);
+            underlineTbxPnl.TabIndex = 10;
             // 
             // aShownWordLbl
             // 
@@ -250,6 +255,7 @@
             aAnswerBtn.Anchor = AnchorStyles.Bottom;
             aAnswerBtn.BackColor = SystemColors.WindowFrame;
             aAnswerBtn.CausesValidation = false;
+            aAnswerBtn.FlatAppearance.BorderColor = SystemColors.WindowFrame;
             aAnswerBtn.FlatAppearance.BorderSize = 0;
             aAnswerBtn.FlatStyle = FlatStyle.Flat;
             aAnswerBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -262,6 +268,16 @@
             aAnswerBtn.UseMnemonic = false;
             aAnswerBtn.UseVisualStyleBackColor = false;
             aAnswerBtn.Click += aAnswerBtn_Click;
+            // 
+            // aAnswerTbx
+            // 
+            aAnswerTbx.BackColor = Color.PeachPuff;
+            aAnswerTbx.BorderStyle = BorderStyle.None;
+            aAnswerTbx.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            aAnswerTbx.Location = new Point(50, 220);
+            aAnswerTbx.Name = "aAnswerTbx";
+            aAnswerTbx.Size = new Size(800, 50);
+            aAnswerTbx.TabIndex = 8;
             // 
             // statNumLeftLbl
             // 
@@ -389,21 +405,21 @@
 
         #endregion
 
-        private Panel incorrectPnl;
-        private Button iContinueBtn;
+        private RoundedPanel incorrectPnl;
+        private RoundedButton iContinueBtn;
         private Label iShownWordLbl;
         private Label iTextIncorrectLbl;
         private Label iTextCorrectLbl;
         private Label iTextAnswerLbl;
         private Label iTextTermLbl;
         private Label iCorrectMeaningLbl;
-        private Panel answerPnl;
+        private RoundedPanel answerPnl;
         private Label aShownWordLbl;
-        private Button aAnswerBtn;
+        private RoundedButton aAnswerBtn;
         private Label iAnswerWordLbl;
-        private Panel endPnl;
-        public Button eBackBtn;
-        private Button eAgainBtn;
+        private RoundedPanel endPnl;
+        public  RoundedButton eBackBtn;
+        private RoundedButton eAgainBtn;
         private Label statNumLeftLbl;
         private Panel statPnl;
         private Label statNumWrongLbl;
@@ -412,7 +428,8 @@
         private PictureBox statCorrectPbx;
         private Panel statIntersectionPnl;
         private Label optionTextRandomizeLbl;
-        private Styling_Toggle_Button.SButton optionRandomizeTbtn;
+        private StylishComponents.SButton optionRandomizeTbtn;
         private SizableTextBox aAnswerTbx;
+        private RoundedPanel underlineTbxPnl;
     }
 }

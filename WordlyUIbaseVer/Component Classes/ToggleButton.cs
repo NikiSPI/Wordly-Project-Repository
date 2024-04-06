@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 
-namespace Styling_Toggle_Button
+namespace StylishComponents
 {
     public class SButton : CheckBox
     {
@@ -21,7 +21,7 @@ namespace Styling_Toggle_Button
             set
             {
                 onBackColor = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
 
@@ -31,7 +31,7 @@ namespace Styling_Toggle_Button
             set
             {
                 onToggleColor = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         public Color OffBackColor
@@ -40,7 +40,7 @@ namespace Styling_Toggle_Button
             set
             {
                 offBackColor = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         public Color OffToggleColor
@@ -49,7 +49,7 @@ namespace Styling_Toggle_Button
             set
             {
                 offToggleColor = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
 
@@ -66,20 +66,20 @@ namespace Styling_Toggle_Button
             set
             {
                 solidStyle = value;
-                this.Invalidate();
+                Invalidate();
             }
         }
         //Constructor
         public SButton()
         {
-            this.MinimumSize = new Size(45, 22);
+            MinimumSize = new Size(45, 22);
         }
         //Methods
         private GraphicsPath GetFigurePath()
         {
-            int arcSize = this.Height - 1;
+            int arcSize = Height - 1;
             Rectangle leftArc = new Rectangle(0, 0, arcSize, arcSize);
-            Rectangle rightArc = new Rectangle(this.Width - arcSize - 2, 0, arcSize, arcSize);
+            Rectangle rightArc = new Rectangle(Width - arcSize - 2, 0, arcSize, arcSize);
 
             GraphicsPath path = new GraphicsPath();
             path.StartFigure();
@@ -91,11 +91,11 @@ namespace Styling_Toggle_Button
         }
         protected override void OnPaint(PaintEventArgs pevent)
         {
-            int toggleSize = this.Height - 5;
+            int toggleSize = Height - 5;
             pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-            pevent.Graphics.Clear(this.Parent.BackColor);
+            pevent.Graphics.Clear(Parent.BackColor);
 
-            if (this.Checked) //ON
+            if (Checked) //ON
             {
                 //Draw the control surface
                 if (solidStyle)
@@ -103,7 +103,7 @@ namespace Styling_Toggle_Button
                 else pevent.Graphics.DrawPath(new Pen(onBackColor, 2), GetFigurePath());
                 //Draw the toggle
                 pevent.Graphics.FillEllipse(new SolidBrush(onToggleColor),
-                 new Rectangle(this.Width - this.Height + 1, 2, toggleSize, toggleSize));
+                 new Rectangle(Width - Height + 1, 2, toggleSize, toggleSize));
             }
             else //OFF
             {
@@ -120,22 +120,22 @@ namespace Styling_Toggle_Button
 
     }
 
-    public class RoundedButton : Button
+    internal class RoundedButtonS : Button
     {
-        public RoundedButton()
+        public RoundedButtonS()
         {
-            this.BackColor = Color.OrangeRed;
-            this.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlatAppearance.BorderColor = Color.Black;
-            this.FlatAppearance.BorderSize = 1;
-            this.Width = 140;
-            this.Height = 45;
+            BackColor = Color.OrangeRed;
+            FlatStyle = FlatStyle.Flat;
+            FlatAppearance.BorderColor = Color.Black;
+            FlatAppearance.BorderSize = 1;
+            Width = 140;
+            Height = 45;
         }
         public int rdus = 30;
-        System.Drawing.Drawing2D.GraphicsPath GetRoundPath(RectangleF Rect, int radius)
+        GraphicsPath GetRoundPath(RectangleF Rect, int radius)
         {
             float r2 = radius / 2f;
-            System.Drawing.Drawing2D.GraphicsPath GraphPath = new System.Drawing.Drawing2D.GraphicsPath();
+            GraphicsPath GraphPath = new GraphicsPath();
             GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
             GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
             GraphPath.AddArc(Rect.X + Rect.Width - radius, Rect.Y, radius, radius, 270, 90);
@@ -151,13 +151,13 @@ namespace Styling_Toggle_Button
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-            using (System.Drawing.Drawing2D.GraphicsPath GraphPath = GetRoundPath(Rect, rdus))
+            RectangleF Rect = new RectangleF(0, 0, Width, Height);
+            using (GraphicsPath GraphPath = GetRoundPath(Rect, rdus))
             {
-                this.Region = new Region(GraphPath);
+                Region = new Region(GraphPath);
                 using (Pen pen = new Pen(Color.CadetBlue, 1.75f))
                 {
-                    pen.Alignment = System.Drawing.Drawing2D.PenAlignment.Inset;
+                    pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
