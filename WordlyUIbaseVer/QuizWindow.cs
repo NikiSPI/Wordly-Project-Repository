@@ -26,6 +26,8 @@ namespace Wordly_alpha
         public static List<string> TermStrArr = new List<string>();
         public static List<string> MeaningStrArr = new List<string>();
 
+
+
         public void Reset()
         {
             Controls.Clear();
@@ -61,6 +63,10 @@ namespace Wordly_alpha
                 wp.wordMeaningLbl.Text = MeaningStrArr[i];
                 wordContainerPnl.Controls.Add(wp);
             }
+            Panel spacingPnl = new Panel();
+            spacingPnl.Location = new Point(0, wl.Term.Count * 90);
+            spacingPnl.Size = new Size(10, 10);
+            wordContainerPnl.Controls.Add(spacingPnl);
         }
         private string CreateWordString(string[] arr, string separate)
         {
@@ -84,7 +90,7 @@ namespace Wordly_alpha
                 // wordSamplePnl
                 // 
                 Anchor = AnchorStyles.Top | AnchorStyles.Left;
-                BackColor = SystemColors.GradientActiveCaption;
+                BackColor = Color.FromArgb(55,55,55);
                 Controls.Add(wordTermLbl);
                 Controls.Add(wordMeaningLbl);
                 Location = new Point(10, yLoc);
@@ -95,7 +101,8 @@ namespace Wordly_alpha
                 // wordTermLbl
                 // 
                 wordTermLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-                wordTermLbl.BackColor = Color.PowderBlue;
+                wordTermLbl.BackColor = Color.FromArgb(65,65,65);
+                wordTermLbl.ForeColor = Color.FromArgb(200,210,210);
                 wordTermLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 wordTermLbl.Location = new Point(10, 10);
                 wordTermLbl.Name = "wordTermLbl";
@@ -103,11 +110,14 @@ namespace Wordly_alpha
                 wordTermLbl.TabIndex = 0;
                 wordTermLbl.Text = "word 1";
                 wordTermLbl.TextAlign = ContentAlignment.MiddleLeft;
+
+                rdus = 7;
                 // 
                 // wordMeaningLbl
                 // 
                 wordMeaningLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-                wordMeaningLbl.BackColor = Color.PowderBlue;
+                wordMeaningLbl.BackColor = Color.FromArgb(65, 65, 65);
+                wordMeaningLbl.ForeColor = Color.FromArgb(200, 210, 210);
                 wordMeaningLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 wordMeaningLbl.Location = new Point(245, 10);
                 wordMeaningLbl.Name = "wordMeaningLbl";
@@ -115,6 +125,8 @@ namespace Wordly_alpha
                 wordMeaningLbl.TabIndex = 1;
                 wordMeaningLbl.Text = "word 2";
                 wordMeaningLbl.TextAlign = ContentAlignment.MiddleLeft;
+
+                rdus = 7;
             }
         }
 

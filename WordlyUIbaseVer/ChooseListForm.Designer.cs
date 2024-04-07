@@ -28,13 +28,24 @@
         /// </summary>
         public void InitializeComponent()
         {
+            contentPnl = new Panel();
             SuspendLayout();
+            // 
+            // contentPnl
+            // 
+            contentPnl.AutoScroll = true;
+            contentPnl.Location = new Point(125, 50);
+            contentPnl.Name = "contentPnl";
+            contentPnl.Size = new Size(817, 550);
+            contentPnl.TabIndex = 6;
             // 
             // ChooseListForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(1050, 650);
+            Controls.Add(contentPnl);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ChooseListForm";
             Text = "ChooseListForm";
@@ -43,5 +54,6 @@
 
         #endregion
 
+        private Panel contentPnl;
     }
 }

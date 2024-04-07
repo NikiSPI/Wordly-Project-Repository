@@ -32,7 +32,8 @@ namespace Wordly_alpha
             aShownWordLbl.Text = Term[0];
             UpdateStatPnl();
 
-            underlineTbxPnl.rdus = 1;
+            aUnderlineTbxPnl.rdus = 1;
+            statIntersectionPnl.rdus = 1;
             aAnswerTbx.Focus();
         }
 
@@ -48,6 +49,7 @@ namespace Wordly_alpha
             aAnswerTbx.Focus();
 
             endPnl.Visible = false;
+            answerPnl.Visible = true;
             statPnl.Visible = true;
 
         }
@@ -144,6 +146,7 @@ namespace Wordly_alpha
         private void ShowEndScreen()
         {
             statPnl.Visible = false;
+            answerPnl.Visible = false;
             endPnl.Visible = true;
         }
         private void againBtn_Click(object sender, EventArgs e)
@@ -151,11 +154,5 @@ namespace Wordly_alpha
             Reset();
         }
 
-        private void optionRandomizeTbtn_CheckedChanged(object sender, EventArgs e)
-        {
-            if (optionRandomizeTbtn.Checked)
-            {
-            }
-        }
     }
 }

@@ -19,6 +19,9 @@ namespace Wordly_alpha
         private int currentCard = 0;
         private bool isCardFlipped = false;
 
+        private Color fronsideClr = Color.FromArgb(120, 130, 130), backsideClr = Color.FromArgb(100, 110, 110);
+        private Color fronsideFClr = Color.FromArgb(240, 245, 245), backsideFClr = Color.FromArgb(220,225,225);
+
         public FlashcardMode(List<string> term, List<string> meaning)
         {
             InitializeComponent();
@@ -28,13 +31,15 @@ namespace Wordly_alpha
 
             flashcardBtn.Text = Term[currentCard];
             countLbl.Text = "1 / " + Term.Count;
+
+            flashcardBtn.Focus();
         }
 
         private void NextCard()
         {
             if (currentCard >= Term.Count - 1)
             {
-                EndPnl.Visible = true;
+                endPnl.Visible = true;
                 flashcardBtn.BackColor = Color.White;
             }
             else
@@ -58,13 +63,15 @@ namespace Wordly_alpha
         private void FlipCard()
         {
             isCardFlipped = true;
-            flashcardBtn.BackColor = Color.LawnGreen;
+            flashcardBtn.BackColor = backsideClr;
+            flashcardBtn.ForeColor = backsideFClr;
             flashcardBtn.Text = Meaning[currentCard];
         }
         public void UnflipCard()
         {
             isCardFlipped = false;
-            flashcardBtn.BackColor = Color.YellowGreen;
+            flashcardBtn.BackColor = fronsideClr;
+            flashcardBtn.ForeColor = fronsideFClr;
             flashcardBtn.Text = Term[currentCard];
         }
 
@@ -98,7 +105,7 @@ namespace Wordly_alpha
             isCardFlipped = false;
 
             UnflipCard();
-            EndPnl.Visible = false;
+            endPnl.Visible = false;
         }
 
         private void FlashcardMode_KeyDown(object sender, KeyEventArgs e)
@@ -126,7 +133,7 @@ namespace Wordly_alpha
             }
 
         }
-        private void FlashcardMode_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e) 
+        private void FlashcardMode_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             e.IsInputKey = true;  //required for the KeyDown method to detect the arrow 
         }

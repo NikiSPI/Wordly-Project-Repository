@@ -31,13 +31,13 @@ namespace Wordly_alpha
             settingsWindow = (Settings_Window)AddFormFunctions(new Settings_Window());
             contentPnl.Controls.Add(settingsWindow);
 
-            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
+            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + dma, menuPnl.BackColor.G + dma, menuPnl.BackColor.B + dma);
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
+            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + dma, menuPnl.BackColor.G + dma, menuPnl.BackColor.B + dma);
             menuIndicatorPnl.Location = new Point(0, menuHomeBtn.Location.Y);
 
             //optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
@@ -48,7 +48,7 @@ namespace Wordly_alpha
         private void startBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuStartBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
+            menuStartBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + dma, menuPnl.BackColor.G + dma, menuPnl.BackColor.B + dma);
             menuIndicatorPnl.Location = new Point(0, menuStartBtn.Location.Y);
 
             //optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
@@ -59,7 +59,7 @@ namespace Wordly_alpha
         private void createBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuCreateBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
+            menuCreateBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + dma, menuPnl.BackColor.G + dma, menuPnl.BackColor.B + dma);
             menuIndicatorPnl.Location = new Point(0, menuCreateBtn.Location.Y);
 
             //optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
@@ -70,7 +70,7 @@ namespace Wordly_alpha
         private void settingsBtn_Click(object sender, EventArgs e)
         {
             ResetBtnColors();
-            menuSettingsBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R - dma, menuPnl.BackColor.G - dma, menuPnl.BackColor.B - dma);
+            menuSettingsBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + dma, menuPnl.BackColor.G + dma, menuPnl.BackColor.B + dma);
             menuIndicatorPnl.Location = new Point(0, menuSettingsBtn.Location.Y);
 
             //optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
@@ -88,10 +88,10 @@ namespace Wordly_alpha
 
         private void ResetBtnColors()
         {
-            menuHomeBtn.BackColor = Color.Transparent;
-            menuStartBtn.BackColor = Color.Transparent;
-            menuCreateBtn.BackColor = Color.Transparent;
-            menuSettingsBtn.BackColor = Color.Transparent;
+            menuHomeBtn.BackColor = menuPnl.BackColor;
+            menuStartBtn.BackColor = menuPnl.BackColor;
+            menuCreateBtn.BackColor = menuPnl.BackColor;
+            menuSettingsBtn.BackColor = menuPnl.BackColor;
         }
         private void ResetContentVisibility()
         {
@@ -131,6 +131,11 @@ namespace Wordly_alpha
             {
                 //perform undo operation for settings window
             }
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.FromArgb(1,1,1), ButtonBorderStyle.Solid);
         }
     }
 }

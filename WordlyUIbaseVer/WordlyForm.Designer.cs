@@ -1,7 +1,7 @@
 ﻿
 using RoundedComponents;
 
-namespace Wordly_alpha
+namespace Wordly_alpha 
 {
     partial class WordlyForm
     {
@@ -53,7 +53,7 @@ namespace Wordly_alpha
             // 
             // menuPnl
             // 
-            menuPnl.BackColor = SystemColors.GradientInactiveCaption;
+            menuPnl.BackColor = Color.FromArgb(30, 30, 30);
             menuPnl.Controls.Add(menuIndicatorPnl);
             menuPnl.Controls.Add(menuSettingsBtn);
             menuPnl.Controls.Add(menuQuitBtn);
@@ -78,10 +78,11 @@ namespace Wordly_alpha
             // menuSettingsBtn
             // 
             menuSettingsBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            menuSettingsBtn.BackColor = Color.Transparent;
+            menuSettingsBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuSettingsBtn.FlatAppearance.BorderSize = 0;
             menuSettingsBtn.FlatStyle = FlatStyle.Flat;
             menuSettingsBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuSettingsBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuSettingsBtn.Location = new Point(0, 570);
             menuSettingsBtn.Name = "menuSettingsBtn";
             menuSettingsBtn.Size = new Size(230, 70);
@@ -94,11 +95,12 @@ namespace Wordly_alpha
             // menuQuitBtn
             // 
             menuQuitBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            menuQuitBtn.BackColor = Color.Transparent;
-            menuQuitBtn.FlatAppearance.BorderColor = SystemColors.GradientInactiveCaption;
+            menuQuitBtn.BackColor = Color.FromArgb(30, 30, 30);
+            menuQuitBtn.FlatAppearance.BorderColor = Color.FromArgb(30, 30, 30);
             menuQuitBtn.FlatAppearance.BorderSize = 0;
             menuQuitBtn.FlatStyle = FlatStyle.Flat;
             menuQuitBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuQuitBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuQuitBtn.Location = new Point(0, 640);
             menuQuitBtn.Name = "menuQuitBtn";
             menuQuitBtn.Size = new Size(230, 70);
@@ -111,10 +113,11 @@ namespace Wordly_alpha
             // menuCreateBtn
             // 
             menuCreateBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuCreateBtn.BackColor = Color.Transparent;
+            menuCreateBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuCreateBtn.FlatAppearance.BorderSize = 0;
             menuCreateBtn.FlatStyle = FlatStyle.Flat;
             menuCreateBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuCreateBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuCreateBtn.Location = new Point(0, 395);
             menuCreateBtn.Name = "menuCreateBtn";
             menuCreateBtn.Size = new Size(230, 70);
@@ -141,6 +144,7 @@ namespace Wordly_alpha
             titleSloganLbl.BackColor = Color.Transparent;
             titleSloganLbl.Dock = DockStyle.Fill;
             titleSloganLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            titleSloganLbl.ForeColor = Color.FromArgb(190, 200, 200);
             titleSloganLbl.Location = new Point(0, 186);
             titleSloganLbl.Name = "titleSloganLbl";
             titleSloganLbl.Padding = new Padding(0, 0, 0, 15);
@@ -154,6 +158,7 @@ namespace Wordly_alpha
             titleNameLbl.BackColor = Color.Transparent;
             titleNameLbl.Dock = DockStyle.Top;
             titleNameLbl.Font = new Font("Times New Roman", 39.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleNameLbl.ForeColor = Color.FromArgb(190, 200, 200);
             titleNameLbl.Location = new Point(0, 120);
             titleNameLbl.Name = "titleNameLbl";
             titleNameLbl.Size = new Size(230, 66);
@@ -176,10 +181,11 @@ namespace Wordly_alpha
             // menuStartBtn
             // 
             menuStartBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuStartBtn.BackColor = Color.Transparent;
+            menuStartBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuStartBtn.FlatAppearance.BorderSize = 0;
             menuStartBtn.FlatStyle = FlatStyle.Flat;
             menuStartBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuStartBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuStartBtn.Location = new Point(0, 325);
             menuStartBtn.Name = "menuStartBtn";
             menuStartBtn.Size = new Size(230, 70);
@@ -192,10 +198,11 @@ namespace Wordly_alpha
             // menuHomeBtn
             // 
             menuHomeBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuHomeBtn.BackColor = Color.Transparent;
+            menuHomeBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuHomeBtn.FlatAppearance.BorderSize = 0;
             menuHomeBtn.FlatStyle = FlatStyle.Flat;
             menuHomeBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuHomeBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuHomeBtn.Location = new Point(0, 255);
             menuHomeBtn.Name = "menuHomeBtn";
             menuHomeBtn.Size = new Size(230, 70);
@@ -208,9 +215,10 @@ namespace Wordly_alpha
             // optBarPnl
             // 
             optBarPnl.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            optBarPnl.BackColor = Color.MistyRose;
+            optBarPnl.BackColor = Color.FromArgb(40, 40, 40);
             optBarPnl.Controls.Add(backBtn);
             optBarPnl.Dock = DockStyle.Top;
+            optBarPnl.ForeColor = Color.DimGray;
             optBarPnl.Location = new Point(230, 0);
             optBarPnl.Name = "optBarPnl";
             optBarPnl.Size = new Size(1050, 70);
@@ -218,11 +226,12 @@ namespace Wordly_alpha
             // 
             // backBtn
             // 
-            backBtn.BackColor = Color.White;
-            backBtn.FlatAppearance.BorderColor = Color.White;
+            backBtn.BackColor = Color.FromArgb(200, 210, 210);
+            backBtn.FlatAppearance.BorderColor = Color.FromArgb(200, 210, 210);
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            backBtn.ForeColor = Color.Black;
             backBtn.Image = Properties.Resources.arrowLeft;
             backBtn.ImageAlign = ContentAlignment.MiddleRight;
             backBtn.Location = new Point(15, 15);
@@ -236,7 +245,9 @@ namespace Wordly_alpha
             // 
             // contentPnl
             // 
+            contentPnl.BackColor = Color.FromArgb(60, 60, 60);
             contentPnl.Dock = DockStyle.Fill;
+            contentPnl.ForeColor = Color.Transparent;
             contentPnl.Location = new Point(230, 70);
             contentPnl.Name = "contentPnl";
             contentPnl.Size = new Size(1050, 650);
@@ -246,6 +257,7 @@ namespace Wordly_alpha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(1280, 720);
             Controls.Add(contentPnl);
             Controls.Add(optBarPnl);

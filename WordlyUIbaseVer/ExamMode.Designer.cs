@@ -190,7 +190,6 @@ namespace Wordly_alpha
             // 
             viewTilesPnl.AutoScroll = true;
             viewTilesPnl.BackColor = Color.Gainsboro;
-            viewTilesPnl.BorderStyle = BorderStyle.FixedSingle;
             viewTilesPnl.Location = new Point(75, 75);
             viewTilesPnl.Name = "viewTilesPnl";
             viewTilesPnl.Size = new Size(917, 550);
@@ -202,7 +201,7 @@ namespace Wordly_alpha
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = Color.WhiteSmoke;
+            BackColor = Color.FromArgb(240, 242, 237);
             ClientSize = new Size(1050, 650);
             Controls.Add(selectTableBtn);
             Controls.Add(selectTilesBtn);

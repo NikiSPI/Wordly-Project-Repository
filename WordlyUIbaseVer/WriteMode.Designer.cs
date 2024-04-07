@@ -34,7 +34,7 @@ namespace Wordly_alpha
             iShownWordLbl = new Label();
             iAnswerWordLbl = new Label();
             iCorrectMeaningLbl = new Label();
-            iTextIncorrectLbl = new Label();
+            iTextIncorrectLbl = new RoundedLabel();
             iTextCorrectLbl = new Label();
             iTextAnswerLbl = new Label();
             iTextTermLbl = new Label();
@@ -43,15 +43,13 @@ namespace Wordly_alpha
             eBackBtn = new RoundedButton();
             eAgainBtn = new RoundedButton();
             answerPnl = new RoundedPanel();
-            underlineTbxPnl = new RoundedPanel();
+            aUnderlineTbxPnl = new RoundedPanel();
             aShownWordLbl = new Label();
             aAnswerBtn = new RoundedButton();
             aAnswerTbx = new SizableTextBox();
             statNumLeftLbl = new Label();
             statPnl = new Panel();
-            optionTextRandomizeLbl = new Label();
-            optionRandomizeTbtn = new StylishComponents.SButton();
-            statIntersectionPnl = new Panel();
+            statIntersectionPnl = new RoundedPanel();
             statWrongPbx = new PictureBox();
             statCorrectPbx = new PictureBox();
             statNumWrongLbl = new Label();
@@ -66,7 +64,7 @@ namespace Wordly_alpha
             // 
             // incorrectPnl
             // 
-            incorrectPnl.BackColor = SystemColors.InactiveCaption;
+            incorrectPnl.BackColor = Color.FromArgb(65, 65, 65);
             incorrectPnl.Controls.Add(iShownWordLbl);
             incorrectPnl.Controls.Add(iAnswerWordLbl);
             incorrectPnl.Controls.Add(iCorrectMeaningLbl);
@@ -116,10 +114,12 @@ namespace Wordly_alpha
             // iTextIncorrectLbl
             // 
             iTextIncorrectLbl.Anchor = AnchorStyles.Top;
-            iTextIncorrectLbl.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iTextIncorrectLbl.Location = new Point(350, 25);
+            iTextIncorrectLbl.BackColor = Color.FromArgb(230, 200, 200);
+            iTextIncorrectLbl.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iTextIncorrectLbl.ForeColor = Color.FromArgb(30, 10, 10);
+            iTextIncorrectLbl.Location = new Point(340, 25);
             iTextIncorrectLbl.Name = "iTextIncorrectLbl";
-            iTextIncorrectLbl.Size = new Size(200, 50);
+            iTextIncorrectLbl.Size = new Size(220, 55);
             iTextIncorrectLbl.TabIndex = 7;
             iTextIncorrectLbl.Text = "Incorrect";
             iTextIncorrectLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -157,13 +157,13 @@ namespace Wordly_alpha
             // iContinueBtn
             // 
             iContinueBtn.Anchor = AnchorStyles.Bottom;
-            iContinueBtn.BackColor = SystemColors.WindowFrame;
+            iContinueBtn.BackColor = Color.FromArgb(75, 75, 75);
             iContinueBtn.CausesValidation = false;
-            iContinueBtn.FlatAppearance.BorderColor = SystemColors.WindowFrame;
+            iContinueBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             iContinueBtn.FlatAppearance.BorderSize = 0;
             iContinueBtn.FlatStyle = FlatStyle.Flat;
             iContinueBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iContinueBtn.ForeColor = SystemColors.ControlLightLight;
+            iContinueBtn.ForeColor = Color.FromArgb(220, 230, 230);
             iContinueBtn.Location = new Point(340, 390);
             iContinueBtn.Name = "iContinueBtn";
             iContinueBtn.Size = new Size(220, 75);
@@ -175,7 +175,7 @@ namespace Wordly_alpha
             // 
             // endPnl
             // 
-            endPnl.BackColor = Color.MediumSpringGreen;
+            endPnl.BackColor = Color.FromArgb(70, 70, 70);
             endPnl.Controls.Add(eBackBtn);
             endPnl.Controls.Add(eAgainBtn);
             endPnl.Location = new Point(75, 50);
@@ -186,12 +186,13 @@ namespace Wordly_alpha
             // 
             // eBackBtn
             // 
-            eBackBtn.BackColor = SystemColors.ScrollBar;
+            eBackBtn.BackColor = Color.FromArgb(55, 55, 55);
             eBackBtn.CausesValidation = false;
-            eBackBtn.FlatAppearance.BorderColor = SystemColors.ScrollBar;
+            eBackBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             eBackBtn.FlatAppearance.BorderSize = 0;
             eBackBtn.FlatStyle = FlatStyle.Flat;
-            eBackBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eBackBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eBackBtn.ForeColor = Color.FromArgb(200, 210, 210);
             eBackBtn.Location = new Point(475, 425);
             eBackBtn.Name = "eBackBtn";
             eBackBtn.Size = new Size(300, 80);
@@ -203,12 +204,13 @@ namespace Wordly_alpha
             // eAgainBtn
             // 
             eAgainBtn.Anchor = AnchorStyles.Bottom;
-            eAgainBtn.BackColor = SystemColors.ScrollBar;
+            eAgainBtn.BackColor = Color.FromArgb(55, 55, 55);
             eAgainBtn.CausesValidation = false;
-            eAgainBtn.FlatAppearance.BorderColor = SystemColors.ScrollBar;
+            eAgainBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             eAgainBtn.FlatAppearance.BorderSize = 0;
             eAgainBtn.FlatStyle = FlatStyle.Flat;
-            eAgainBtn.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eAgainBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eAgainBtn.ForeColor = Color.FromArgb(200, 210, 210);
             eAgainBtn.Location = new Point(125, 425);
             eAgainBtn.Name = "eAgainBtn";
             eAgainBtn.Size = new Size(300, 80);
@@ -220,29 +222,31 @@ namespace Wordly_alpha
             // 
             // answerPnl
             // 
-            answerPnl.BackColor = Color.PeachPuff;
+            answerPnl.BackColor = Color.FromArgb(65, 65, 65);
             answerPnl.Controls.Add(incorrectPnl);
-            answerPnl.Controls.Add(underlineTbxPnl);
+            answerPnl.Controls.Add(aUnderlineTbxPnl);
             answerPnl.Controls.Add(aShownWordLbl);
             answerPnl.Controls.Add(aAnswerBtn);
             answerPnl.Controls.Add(aAnswerTbx);
-            answerPnl.Location = new Point(75, 100);
+            answerPnl.Location = new Point(75, 120);
             answerPnl.Name = "answerPnl";
             answerPnl.Size = new Size(900, 500);
             answerPnl.TabIndex = 8;
             // 
-            // underlineTbxPnl
+            // aUnderlineTbxPnl
             // 
-            underlineTbxPnl.BackColor = Color.Black;
-            underlineTbxPnl.Location = new Point(50, 265);
-            underlineTbxPnl.Name = "underlineTbxPnl";
-            underlineTbxPnl.Size = new Size(800, 3);
-            underlineTbxPnl.TabIndex = 10;
+            aUnderlineTbxPnl.BackColor = Color.Black;
+            aUnderlineTbxPnl.ForeColor = Color.Black;
+            aUnderlineTbxPnl.Location = new Point(50, 265);
+            aUnderlineTbxPnl.Name = "aUnderlineTbxPnl";
+            aUnderlineTbxPnl.Size = new Size(800, 3);
+            aUnderlineTbxPnl.TabIndex = 10;
             // 
             // aShownWordLbl
             // 
             aShownWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             aShownWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            aShownWordLbl.ForeColor = Color.FromArgb(200, 210, 210);
             aShownWordLbl.Location = new Point(50, 60);
             aShownWordLbl.Name = "aShownWordLbl";
             aShownWordLbl.Size = new Size(800, 50);
@@ -253,7 +257,7 @@ namespace Wordly_alpha
             // aAnswerBtn
             // 
             aAnswerBtn.Anchor = AnchorStyles.Bottom;
-            aAnswerBtn.BackColor = SystemColors.WindowFrame;
+            aAnswerBtn.BackColor = Color.FromArgb(75, 75, 75);
             aAnswerBtn.CausesValidation = false;
             aAnswerBtn.FlatAppearance.BorderColor = SystemColors.WindowFrame;
             aAnswerBtn.FlatAppearance.BorderSize = 0;
@@ -271,7 +275,7 @@ namespace Wordly_alpha
             // 
             // aAnswerTbx
             // 
-            aAnswerTbx.BackColor = Color.PeachPuff;
+            aAnswerTbx.BackColor = Color.FromArgb(65, 65, 65);
             aAnswerTbx.BorderStyle = BorderStyle.None;
             aAnswerTbx.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             aAnswerTbx.Location = new Point(50, 220);
@@ -291,8 +295,7 @@ namespace Wordly_alpha
             // 
             // statPnl
             // 
-            statPnl.Controls.Add(optionTextRandomizeLbl);
-            statPnl.Controls.Add(optionRandomizeTbtn);
+            statPnl.BackColor = Color.FromArgb(50, 50, 50);
             statPnl.Controls.Add(statIntersectionPnl);
             statPnl.Controls.Add(statWrongPbx);
             statPnl.Controls.Add(statCorrectPbx);
@@ -305,36 +308,12 @@ namespace Wordly_alpha
             statPnl.Size = new Size(1050, 90);
             statPnl.TabIndex = 13;
             // 
-            // optionTextRandomizeLbl
-            // 
-            optionTextRandomizeLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            optionTextRandomizeLbl.Location = new Point(825, 10);
-            optionTextRandomizeLbl.Name = "optionTextRandomizeLbl";
-            optionTextRandomizeLbl.Size = new Size(150, 35);
-            optionTextRandomizeLbl.TabIndex = 20;
-            optionTextRandomizeLbl.Text = "Randomize";
-            optionTextRandomizeLbl.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // optionRandomizeTbtn
-            // 
-            optionRandomizeTbtn.Location = new Point(860, 45);
-            optionRandomizeTbtn.MinimumSize = new Size(45, 22);
-            optionRandomizeTbtn.Name = "optionRandomizeTbtn";
-            optionRandomizeTbtn.OffBackColor = Color.Gray;
-            optionRandomizeTbtn.OffToggleColor = Color.Gainsboro;
-            optionRandomizeTbtn.OnBackColor = Color.MediumSlateBlue;
-            optionRandomizeTbtn.OnToggleColor = Color.WhiteSmoke;
-            optionRandomizeTbtn.Size = new Size(80, 35);
-            optionRandomizeTbtn.TabIndex = 19;
-            optionRandomizeTbtn.UseVisualStyleBackColor = true;
-            optionRandomizeTbtn.CheckedChanged += optionRandomizeTbtn_CheckedChanged;
-            // 
             // statIntersectionPnl
             // 
             statIntersectionPnl.BackColor = Color.Black;
             statIntersectionPnl.Location = new Point(340, 10);
             statIntersectionPnl.Name = "statIntersectionPnl";
-            statIntersectionPnl.Size = new Size(5, 80);
+            statIntersectionPnl.Size = new Size(5, 70);
             statIntersectionPnl.TabIndex = 18;
             // 
             // statWrongPbx
@@ -385,6 +364,7 @@ namespace Wordly_alpha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(1050, 650);
             Controls.Add(endPnl);
             Controls.Add(statPnl);
@@ -408,7 +388,7 @@ namespace Wordly_alpha
         private RoundedPanel incorrectPnl;
         private RoundedButton iContinueBtn;
         private Label iShownWordLbl;
-        private Label iTextIncorrectLbl;
+        private RoundedLabel iTextIncorrectLbl;
         private Label iTextCorrectLbl;
         private Label iTextAnswerLbl;
         private Label iTextTermLbl;
@@ -426,10 +406,8 @@ namespace Wordly_alpha
         private Label statNumCorrectLbl;
         private PictureBox statWrongPbx;
         private PictureBox statCorrectPbx;
-        private Panel statIntersectionPnl;
-        private Label optionTextRandomizeLbl;
-        private StylishComponents.SButton optionRandomizeTbtn;
+        private RoundedPanel statIntersectionPnl;
         private SizableTextBox aAnswerTbx;
-        private RoundedPanel underlineTbxPnl;
+        private RoundedPanel aUnderlineTbxPnl;
     }
 }

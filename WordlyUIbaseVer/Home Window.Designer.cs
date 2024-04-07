@@ -47,7 +47,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Red;
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(584, 486);
             Controls.Add(homeLbl);
             Name = "Home_Window";

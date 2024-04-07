@@ -7,6 +7,9 @@
     <Compile Update="ChooseListForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Color Palette\CustomColorExtenderProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="Component Classes\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>

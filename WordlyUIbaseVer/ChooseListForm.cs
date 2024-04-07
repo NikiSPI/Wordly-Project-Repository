@@ -14,24 +14,23 @@ namespace Wordly_alpha
     {
         public static int stepsToUndo = 0;
 
-        public static Panel contentPnl;
         public QuizWindow quizWindow;
+
+        private static Color buttonBackclr = Color.FromArgb(45, 45, 45);
+        private static Color buttonForeclr = Color.FromArgb(230, 240, 240);
 
         public ChooseListForm()
         {
             InitializeComponent();
 
             InitializeFunctions();
-
         }
         public void InitializeFunctions()
         {
-            CreateContentPnl();
-
             DirectoryInfo d = new DirectoryInfo(WordlyForm.projectFolderDir + @"\Word Lists\"); //Assuming this is your Folder
             FileInfo[] files = d.GetFiles(); //Getting files
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < files.Length; i++)
             {
                 WordListBtn btn = new WordListBtn(10 + 110 * i, files[i].Name);
                 contentPnl.Controls.Add(btn);
@@ -40,21 +39,6 @@ namespace Wordly_alpha
                 btn.Click += (sender, EventArgs) => { Button_Click(sender, EventArgs, filePath); };
             }
 
-        }
-        private void CreateContentPnl()
-        {
-            // 
-            // contentPnl
-            // 
-            contentPnl = new Panel();
-            contentPnl.AutoScroll = true;
-            contentPnl.BackColor = SystemColors.ControlLight;
-            contentPnl.Dock = DockStyle.Fill;
-            contentPnl.Location = new Point(0, 0);
-            contentPnl.Name = "contentPnl";
-            contentPnl.Size = new Size(1050, 650);
-            contentPnl.TabIndex = 0;
-            Controls.Add(contentPnl);
         }
 
 
@@ -68,8 +52,8 @@ namespace Wordly_alpha
             quizWindow.TopMost = true;
             quizWindow.FormBorderStyle = FormBorderStyle.None;
 
-            contentPnl.Controls.Clear();
-            contentPnl.Controls.Add(quizWindow);
+            Controls.Clear();
+            Controls.Add(quizWindow);
             quizWindow.Show();
         }
 
@@ -79,13 +63,14 @@ namespace Wordly_alpha
             public WordListBtn(int yPos, string name)
             {
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-                BackColor = Color.Wheat;
+                BackColor = buttonBackclr;
+                ForeColor = buttonForeclr;
                 FlatAppearance.BorderSize = 0;
                 FlatStyle = FlatStyle.Flat;
                 Font = new Font("Yu Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
                 Location = new Point(10, yPos);
                 Name = "wordListBtn";
-                Size = new Size(1030, 100);
+                Size = new Size(780, 100);
                 TabIndex = 5;
                 Text = name.Substring(0, name.Length - 5);
                 UseVisualStyleBackColor = false;
