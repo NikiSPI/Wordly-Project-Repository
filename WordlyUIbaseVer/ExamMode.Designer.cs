@@ -129,8 +129,8 @@ namespace Wordly_alpha
             // 
             // submitBtn
             // 
-            submitBtn.BackColor = Color.FromArgb(220, 230, 230);
-            submitBtn.FlatAppearance.BorderColor = Color.FromArgb(220, 230, 230);
+            submitBtn.BackColor = Color.FromArgb(210, 220, 220);
+            submitBtn.FlatAppearance.BorderColor = Color.FromArgb(210, 220, 220);
             submitBtn.FlatStyle = FlatStyle.Flat;
             submitBtn.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             submitBtn.ForeColor = Color.FromArgb(50, 50, 50);
@@ -138,7 +138,9 @@ namespace Wordly_alpha
             submitBtn.Name = "submitBtn";
             submitBtn.Size = new Size(200, 50);
             submitBtn.TabIndex = 1;
+            submitBtn.TabStop = false;
             submitBtn.Text = "Submit";
+            submitBtn.UseMnemonic = false;
             submitBtn.UseVisualStyleBackColor = false;
             submitBtn.Click += SubmitBtn_Click;
             // 
@@ -146,7 +148,7 @@ namespace Wordly_alpha
             // 
             textResultLbl.CausesValidation = false;
             textResultLbl.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textResultLbl.ForeColor = Color.FromArgb(250, 230, 230);
+            textResultLbl.ForeColor = Color.FromArgb(240, 250, 250);
             textResultLbl.Location = new Point(675, 8);
             textResultLbl.Name = "textResultLbl";
             textResultLbl.Size = new Size(150, 30);
@@ -159,7 +161,7 @@ namespace Wordly_alpha
             // 
             resultLbl.CausesValidation = false;
             resultLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            resultLbl.ForeColor = Color.FromArgb(250, 230, 230);
+            resultLbl.ForeColor = Color.FromArgb(240, 250, 250);
             resultLbl.Location = new Point(675, 35);
             resultLbl.Name = "resultLbl";
             resultLbl.Size = new Size(150, 30);
@@ -173,11 +175,14 @@ namespace Wordly_alpha
             selectTilesBtn.BackColor = Color.Silver;
             selectTilesBtn.FlatAppearance.BorderColor = Color.Silver;
             selectTilesBtn.FlatAppearance.BorderSize = 0;
+            selectTilesBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 95, 95);
             selectTilesBtn.FlatStyle = FlatStyle.Flat;
             selectTilesBtn.Location = new Point(10, 140);
             selectTilesBtn.Name = "selectTilesBtn";
             selectTilesBtn.Size = new Size(56, 56);
             selectTilesBtn.TabIndex = 4;
+            selectTilesBtn.TabStop = false;
+            selectTilesBtn.UseMnemonic = false;
             selectTilesBtn.UseVisualStyleBackColor = false;
             selectTilesBtn.Click += selectTilesButton_Click;
             // 
@@ -186,11 +191,14 @@ namespace Wordly_alpha
             selectTableBtn.BackColor = Color.LightGray;
             selectTableBtn.FlatAppearance.BorderColor = Color.LightGray;
             selectTableBtn.FlatAppearance.BorderSize = 0;
+            selectTableBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 95, 95);
             selectTableBtn.FlatStyle = FlatStyle.Flat;
             selectTableBtn.Location = new Point(10, 75);
             selectTableBtn.Name = "selectTableBtn";
             selectTableBtn.Size = new Size(56, 56);
             selectTableBtn.TabIndex = 5;
+            selectTableBtn.TabStop = false;
+            selectTableBtn.UseMnemonic = false;
             selectTableBtn.UseVisualStyleBackColor = false;
             selectTableBtn.Click += selectTableBtn_Click;
             // 

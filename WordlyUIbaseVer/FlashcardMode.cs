@@ -19,8 +19,9 @@ namespace Wordly_alpha
         private int currentCard = 0;
         private bool isCardFlipped = false;
 
-        private Color fronsideClr = Color.FromArgb(120, 130, 130), backsideClr = Color.FromArgb(100, 110, 110);
-        private Color fronsideFClr = Color.FromArgb(240, 245, 245), backsideFClr = Color.FromArgb(220,225,225);
+        private Color frontsideClr = Color.FromArgb(120, 130, 130), backsideClr = Color.FromArgb(100, 110, 110);
+        private Color frontsideHoverClr = Color.FromArgb(115, 125, 125), backsideHoverClr = Color.FromArgb(95, 105, 105);
+        private Color frontsideForeClr = Color.FromArgb(240, 245, 245), backsideForeClr = Color.FromArgb(220,225,225);
 
         public FlashcardMode(List<string> term, List<string> meaning)
         {
@@ -31,8 +32,6 @@ namespace Wordly_alpha
 
             flashcardBtn.Text = Term[currentCard];
             countLbl.Text = "1 / " + Term.Count;
-
-            flashcardBtn.Focus();
         }
 
         private void NextCard()
@@ -40,7 +39,6 @@ namespace Wordly_alpha
             if (currentCard >= Term.Count - 1)
             {
                 endPnl.Visible = true;
-                flashcardBtn.BackColor = Color.White;
             }
             else
             {
@@ -63,15 +61,23 @@ namespace Wordly_alpha
         private void FlipCard()
         {
             isCardFlipped = true;
+
             flashcardBtn.BackColor = backsideClr;
-            flashcardBtn.ForeColor = backsideFClr;
+            flashcardBtn.ForeColor = backsideForeClr;
+            flashcardBtn.FlatAppearance.MouseOverBackColor = backsideHoverClr;
+            flashcardBtn.FlatAppearance.MouseDownBackColor = frontsideClr;
+
             flashcardBtn.Text = Meaning[currentCard];
         }
         public void UnflipCard()
         {
             isCardFlipped = false;
-            flashcardBtn.BackColor = fronsideClr;
-            flashcardBtn.ForeColor = fronsideFClr;
+
+            flashcardBtn.BackColor = frontsideClr;
+            flashcardBtn.ForeColor = frontsideForeClr;
+            flashcardBtn.FlatAppearance.MouseOverBackColor = frontsideHoverClr;
+            flashcardBtn.FlatAppearance.MouseDownBackColor = backsideClr;
+
             flashcardBtn.Text = Term[currentCard];
         }
 
@@ -110,7 +116,6 @@ namespace Wordly_alpha
 
         private void FlashcardMode_KeyDown(object sender, KeyEventArgs e)
         {
-            Focus();
 
             if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
             {

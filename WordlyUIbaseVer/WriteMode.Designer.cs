@@ -161,6 +161,7 @@ namespace Wordly_alpha
             iContinueBtn.CausesValidation = false;
             iContinueBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             iContinueBtn.FlatAppearance.BorderSize = 0;
+            iContinueBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
             iContinueBtn.FlatStyle = FlatStyle.Flat;
             iContinueBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             iContinueBtn.ForeColor = Color.FromArgb(220, 230, 230);
@@ -168,6 +169,7 @@ namespace Wordly_alpha
             iContinueBtn.Name = "iContinueBtn";
             iContinueBtn.Size = new Size(220, 75);
             iContinueBtn.TabIndex = 0;
+            iContinueBtn.TabStop = false;
             iContinueBtn.Text = "Continue";
             iContinueBtn.UseMnemonic = false;
             iContinueBtn.UseVisualStyleBackColor = false;
@@ -190,6 +192,7 @@ namespace Wordly_alpha
             eBackBtn.CausesValidation = false;
             eBackBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             eBackBtn.FlatAppearance.BorderSize = 0;
+            eBackBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             eBackBtn.FlatStyle = FlatStyle.Flat;
             eBackBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             eBackBtn.ForeColor = Color.FromArgb(200, 210, 210);
@@ -197,6 +200,7 @@ namespace Wordly_alpha
             eBackBtn.Name = "eBackBtn";
             eBackBtn.Size = new Size(300, 80);
             eBackBtn.TabIndex = 3;
+            eBackBtn.TabStop = false;
             eBackBtn.Text = "Back";
             eBackBtn.UseMnemonic = false;
             eBackBtn.UseVisualStyleBackColor = false;
@@ -208,6 +212,7 @@ namespace Wordly_alpha
             eAgainBtn.CausesValidation = false;
             eAgainBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             eAgainBtn.FlatAppearance.BorderSize = 0;
+            eAgainBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             eAgainBtn.FlatStyle = FlatStyle.Flat;
             eAgainBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             eAgainBtn.ForeColor = Color.FromArgb(200, 210, 210);
@@ -215,6 +220,7 @@ namespace Wordly_alpha
             eAgainBtn.Name = "eAgainBtn";
             eAgainBtn.Size = new Size(300, 80);
             eAgainBtn.TabIndex = 2;
+            eAgainBtn.TabStop = false;
             eAgainBtn.Text = "Revise Again";
             eAgainBtn.UseMnemonic = false;
             eAgainBtn.UseVisualStyleBackColor = false;
@@ -261,6 +267,7 @@ namespace Wordly_alpha
             aAnswerBtn.CausesValidation = false;
             aAnswerBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             aAnswerBtn.FlatAppearance.BorderSize = 0;
+            aAnswerBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
             aAnswerBtn.FlatStyle = FlatStyle.Flat;
             aAnswerBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             aAnswerBtn.ForeColor = SystemColors.ControlLightLight;
@@ -268,6 +275,7 @@ namespace Wordly_alpha
             aAnswerBtn.Name = "aAnswerBtn";
             aAnswerBtn.Size = new Size(220, 75);
             aAnswerBtn.TabIndex = 5;
+            aAnswerBtn.TabStop = false;
             aAnswerBtn.Text = "Answer";
             aAnswerBtn.UseMnemonic = false;
             aAnswerBtn.UseVisualStyleBackColor = false;
@@ -284,6 +292,7 @@ namespace Wordly_alpha
             aAnswerTbx.Name = "aAnswerTbx";
             aAnswerTbx.Size = new Size(800, 50);
             aAnswerTbx.TabIndex = 8;
+            aAnswerTbx.TabStop = false;
             // 
             // statNumLeftLbl
             // 

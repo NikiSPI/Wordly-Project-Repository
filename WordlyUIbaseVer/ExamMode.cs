@@ -27,8 +27,9 @@ namespace Wordly_alpha
 
         private bool answerWithMeaning = false, answerWithBoth = true;
 
-        public static Color defaultTableTbxClr, defaultTableTbxBorderClr, defaultTilesTbxClr = Color.White;
-        private Color incorrectAnswerClr = Color.MistyRose, selectedBtnClr;
+        public static Color defaultTableTbxClr = Color.FromArgb(80,80,80), defaultTilesSecondaryClr = Color.FromArgb(220, 230, 230);
+        private Color incorrectAnswerTableClr, incorrectAnswerTilesClr , selectedBtnClr;
+        private int RAI = 40; //RAI = rednessAmountOnIncorrect
 
         public ExamMode()
         {
@@ -44,8 +45,8 @@ namespace Wordly_alpha
 
         private void InitializeComponentsByHand()
         {
-            defaultTableTbxClr = Color.FromArgb(tableContentPnl.BackColor.R + 25, tableContentPnl.BackColor.G + 25, tableContentPnl.BackColor.B + 25);
-            defaultTableTbxBorderClr = tableContentPnl.BackColor;
+            incorrectAnswerTableClr = Color.FromArgb( defaultTableTbxClr.R + RAI / 2, defaultTableTbxClr.G, defaultTableTbxClr.B );            
+            incorrectAnswerTilesClr = Color.FromArgb( defaultTilesSecondaryClr.R - 10 + RAI, defaultTilesSecondaryClr.G - 20, defaultTilesSecondaryClr.B - 20 );
 
             selectedBtnClr = Color.FromArgb(BackColor.R + 10, BackColor.G + 15, BackColor.B + 15);
 
@@ -178,12 +179,12 @@ namespace Wordly_alpha
                 {
                     correctAnswers++;
                     wordTextBoxes[i].BackColor = defaultTableTbxClr;
-                    wordTilePanels[i].answerWordTbx.BackColor = defaultTilesTbxClr;
+                    wordTilePanels[i].underlinePnl.BackColor = wordTilePanels[i].answerWordTbx.ForeColor;
                 }
                 else
                 {
-                    wordTextBoxes[i].BackColor = incorrectAnswerClr;
-                    wordTilePanels[i].answerWordTbx.BackColor = incorrectAnswerClr;
+                    wordTextBoxes[i].BackColor = incorrectAnswerTableClr;
+                    wordTilePanels[i].underlinePnl.BackColor = incorrectAnswerTilesClr;
                 }
             }
             resultLbl.Text = Math.Round((double)correctAnswers / (double)wordCount * 100) + "% " + correctAnswers + "/" + wordCount;
@@ -317,7 +318,7 @@ namespace Wordly_alpha
             }
             void this_Paint(object sender, PaintEventArgs e)
             {
-                ControlPaint.DrawBorder(e.Graphics, DisplayRectangle, defaultTableTbxBorderClr, ButtonBorderStyle.Solid); ;
+                ControlPaint.DrawBorder(e.Graphics, DisplayRectangle, Color.FromArgb(55, 55, 55), ButtonBorderStyle.Solid); ;
             }
         }
         private class TableBox : AdvancedTextBox
@@ -331,7 +332,7 @@ namespace Wordly_alpha
                 BackColor = ExamMode.defaultTableTbxClr;
                 ForeColor = Color.FromArgb(220,230,230);
 
-                BorderColor = defaultTableTbxBorderClr;
+                BorderColor = Color.FromArgb(55, 55, 55);
             }
         }
 
@@ -357,7 +358,7 @@ namespace Wordly_alpha
                 // 
                 // shownWordLbl
                 //                 
-                shownWordLbl.ForeColor = Color.FromArgb(220,230,230);
+                shownWordLbl.ForeColor = defaultTilesSecondaryClr;
                 shownWordLbl.Location = new Point(50, 30);
                 shownWordLbl.Size = new Size(750, 100);
                 shownWordLbl.Anchor = AnchorStyles.Left | AnchorStyles.Right;
@@ -368,7 +369,7 @@ namespace Wordly_alpha
                 // answerWordTbx
                 // 
                 answerWordTbx.BackColor = BackColor;
-                answerWordTbx.ForeColor = shownWordLbl.ForeColor;
+                answerWordTbx.ForeColor = defaultTilesSecondaryClr;
                 answerWordTbx.Location = new Point(50, 120);
                 answerWordTbx.Size = new Size(750, 36);
                 answerWordTbx.Anchor = AnchorStyles.Left | AnchorStyles.Right;
@@ -377,7 +378,7 @@ namespace Wordly_alpha
                 //
                 // underlinePnl
                 //
-                underlinePnl.BackColor = answerWordTbx.ForeColor;
+                underlinePnl.BackColor = defaultTilesSecondaryClr;
                 underlinePnl.Location = new Point(answerWordTbx.Location.X, answerWordTbx.Location.Y + answerWordTbx.Height);
                 underlinePnl.Size = new Size(answerWordTbx.Width, 5);
 

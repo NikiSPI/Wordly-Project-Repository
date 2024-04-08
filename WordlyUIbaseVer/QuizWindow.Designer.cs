@@ -65,6 +65,7 @@ namespace Wordly_alpha
             Option4Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option4Btn.BackColor = Color.FromArgb(45, 45, 45);
             Option4Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
+            Option4Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option4Btn.FlatStyle = FlatStyle.Flat;
             Option4Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option4Btn.ForeColor = Color.FromArgb(230, 240, 240);
@@ -72,7 +73,9 @@ namespace Wordly_alpha
             Option4Btn.Name = "Option4Btn";
             Option4Btn.Size = new Size(300, 100);
             Option4Btn.TabIndex = 3;
+            Option4Btn.TabStop = false;
             Option4Btn.Text = "Custom";
+            Option4Btn.UseMnemonic = false;
             Option4Btn.UseVisualStyleBackColor = false;
             // 
             // Option3Btn
@@ -80,6 +83,7 @@ namespace Wordly_alpha
             Option3Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option3Btn.BackColor = Color.FromArgb(45, 45, 45);
             Option3Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
+            Option3Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option3Btn.FlatStyle = FlatStyle.Flat;
             Option3Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option3Btn.ForeColor = Color.FromArgb(230, 240, 240);
@@ -87,7 +91,9 @@ namespace Wordly_alpha
             Option3Btn.Name = "Option3Btn";
             Option3Btn.Size = new Size(300, 100);
             Option3Btn.TabIndex = 2;
+            Option3Btn.TabStop = false;
             Option3Btn.Text = "Exam Mode";
+            Option3Btn.UseMnemonic = false;
             Option3Btn.UseVisualStyleBackColor = false;
             Option3Btn.Click += Option3Btn_Click;
             // 
@@ -96,6 +102,7 @@ namespace Wordly_alpha
             Option2Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option2Btn.BackColor = Color.FromArgb(45, 45, 45);
             Option2Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
+            Option2Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option2Btn.FlatStyle = FlatStyle.Flat;
             Option2Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option2Btn.ForeColor = Color.FromArgb(230, 240, 240);
@@ -103,7 +110,9 @@ namespace Wordly_alpha
             Option2Btn.Name = "Option2Btn";
             Option2Btn.Size = new Size(300, 100);
             Option2Btn.TabIndex = 1;
+            Option2Btn.TabStop = false;
             Option2Btn.Text = "Write Mode";
+            Option2Btn.UseMnemonic = false;
             Option2Btn.UseVisualStyleBackColor = false;
             Option2Btn.Click += Option2Btn_Click;
             // 
@@ -112,6 +121,7 @@ namespace Wordly_alpha
             Option1Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option1Btn.BackColor = Color.FromArgb(45, 45, 45);
             Option1Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
+            Option1Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option1Btn.FlatStyle = FlatStyle.Flat;
             Option1Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option1Btn.ForeColor = Color.FromArgb(230, 240, 240);
@@ -119,7 +129,9 @@ namespace Wordly_alpha
             Option1Btn.Name = "Option1Btn";
             Option1Btn.Size = new Size(300, 100);
             Option1Btn.TabIndex = 0;
+            Option1Btn.TabStop = false;
             Option1Btn.Text = "Flashcards";
+            Option1Btn.UseMnemonic = false;
             Option1Btn.UseVisualStyleBackColor = false;
             Option1Btn.Click += Option1Btn_Click;
             // 
@@ -127,7 +139,7 @@ namespace Wordly_alpha
             // 
             wordListPnl.Anchor = AnchorStyles.None;
             wordListPnl.AutoScroll = true;
-            wordListPnl.BackColor = SystemColors.GradientInactiveCaption;
+            wordListPnl.BackColor = Color.FromArgb(50, 50, 50);
             wordListPnl.Controls.Add(wordContainerPnl);
             wordListPnl.Controls.Add(wordListTitlePnl);
             wordListPnl.Location = new Point(483, 50);

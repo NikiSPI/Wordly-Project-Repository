@@ -46,6 +46,8 @@ namespace Wordly_alpha
             flashcardBtn.CausesValidation = false;
             flashcardBtn.FlatAppearance.BorderColor = Color.FromArgb(120, 130, 130);
             flashcardBtn.FlatAppearance.BorderSize = 0;
+            flashcardBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(100, 110, 110);
+            flashcardBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(115, 125, 125);
             flashcardBtn.FlatStyle = FlatStyle.Flat;
             flashcardBtn.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             flashcardBtn.ForeColor = Color.FromArgb(240, 245, 245);
@@ -55,6 +57,7 @@ namespace Wordly_alpha
             flashcardBtn.TabIndex = 0;
             flashcardBtn.TabStop = false;
             flashcardBtn.Text = "sth";
+            flashcardBtn.UseMnemonic = false;
             flashcardBtn.UseVisualStyleBackColor = false;
             flashcardBtn.Click += FlashcardBtn_Click;
             flashcardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
@@ -72,6 +75,7 @@ namespace Wordly_alpha
             previousCardBtn.Size = new Size(60, 90);
             previousCardBtn.TabIndex = 0;
             previousCardBtn.TabStop = false;
+            previousCardBtn.UseMnemonic = false;
             previousCardBtn.UseVisualStyleBackColor = false;
             previousCardBtn.Click += PreviousCardBtn_Click;
             previousCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
@@ -89,6 +93,7 @@ namespace Wordly_alpha
             nextCardBtn.Size = new Size(60, 90);
             nextCardBtn.TabIndex = 0;
             nextCardBtn.TabStop = false;
+            nextCardBtn.UseMnemonic = false;
             nextCardBtn.UseVisualStyleBackColor = false;
             nextCardBtn.Click += NextCardBtn_Click;
             nextCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
@@ -110,6 +115,7 @@ namespace Wordly_alpha
             backBtn.CausesValidation = false;
             backBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             backBtn.FlatAppearance.BorderSize = 0;
+            backBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             backBtn.ForeColor = Color.FromArgb(210, 220, 220);
@@ -117,7 +123,9 @@ namespace Wordly_alpha
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(300, 80);
             backBtn.TabIndex = 1;
+            backBtn.TabStop = false;
             backBtn.Text = "Back";
+            backBtn.UseMnemonic = false;
             backBtn.UseVisualStyleBackColor = false;
             // 
             // againBtn
@@ -126,6 +134,7 @@ namespace Wordly_alpha
             againBtn.CausesValidation = false;
             againBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             againBtn.FlatAppearance.BorderSize = 0;
+            againBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             againBtn.FlatStyle = FlatStyle.Flat;
             againBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             againBtn.ForeColor = Color.FromArgb(210, 220, 220);
@@ -133,7 +142,9 @@ namespace Wordly_alpha
             againBtn.Name = "againBtn";
             againBtn.Size = new Size(300, 80);
             againBtn.TabIndex = 0;
+            againBtn.TabStop = false;
             againBtn.Text = "Revise Again";
+            againBtn.UseMnemonic = false;
             againBtn.UseVisualStyleBackColor = false;
             againBtn.Click += AgainBtn_Click;
             // 

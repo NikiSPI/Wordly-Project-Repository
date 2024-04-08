@@ -69,7 +69,7 @@ namespace Wordly_alpha
             // 
             // menuIndicatorPnl
             // 
-            menuIndicatorPnl.BackColor = Color.Black;
+            menuIndicatorPnl.BackColor = Color.FromArgb(190, 200, 200);
             menuIndicatorPnl.Location = new Point(0, 255);
             menuIndicatorPnl.Name = "menuIndicatorPnl";
             menuIndicatorPnl.Size = new Size(5, 70);
@@ -80,15 +80,18 @@ namespace Wordly_alpha
             menuSettingsBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             menuSettingsBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuSettingsBtn.FlatAppearance.BorderSize = 0;
+            menuSettingsBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
             menuSettingsBtn.FlatStyle = FlatStyle.Flat;
             menuSettingsBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuSettingsBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuSettingsBtn.Location = new Point(0, 570);
             menuSettingsBtn.Name = "menuSettingsBtn";
             menuSettingsBtn.Size = new Size(230, 70);
-            menuSettingsBtn.TabIndex = 7;
+            menuSettingsBtn.TabIndex = 0;
+            menuSettingsBtn.TabStop = false;
             menuSettingsBtn.Text = " Settings";
             menuSettingsBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuSettingsBtn.UseMnemonic = false;
             menuSettingsBtn.UseVisualStyleBackColor = false;
             menuSettingsBtn.Click += settingsBtn_Click;
             // 
@@ -98,15 +101,18 @@ namespace Wordly_alpha
             menuQuitBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuQuitBtn.FlatAppearance.BorderColor = Color.FromArgb(30, 30, 30);
             menuQuitBtn.FlatAppearance.BorderSize = 0;
+            menuQuitBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
             menuQuitBtn.FlatStyle = FlatStyle.Flat;
             menuQuitBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuQuitBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuQuitBtn.Location = new Point(0, 640);
             menuQuitBtn.Name = "menuQuitBtn";
             menuQuitBtn.Size = new Size(230, 70);
-            menuQuitBtn.TabIndex = 6;
+            menuQuitBtn.TabIndex = 0;
+            menuQuitBtn.TabStop = false;
             menuQuitBtn.Text = " Quit";
             menuQuitBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuQuitBtn.UseMnemonic = false;
             menuQuitBtn.UseVisualStyleBackColor = false;
             menuQuitBtn.Click += quitBtn_Click;
             // 
@@ -114,16 +120,20 @@ namespace Wordly_alpha
             // 
             menuCreateBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             menuCreateBtn.BackColor = Color.FromArgb(30, 30, 30);
+            menuCreateBtn.FlatAppearance.BorderColor = Color.FromArgb(30, 30, 30);
             menuCreateBtn.FlatAppearance.BorderSize = 0;
+            menuCreateBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
             menuCreateBtn.FlatStyle = FlatStyle.Flat;
             menuCreateBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuCreateBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuCreateBtn.Location = new Point(0, 395);
             menuCreateBtn.Name = "menuCreateBtn";
             menuCreateBtn.Size = new Size(230, 70);
-            menuCreateBtn.TabIndex = 5;
+            menuCreateBtn.TabIndex = 0;
+            menuCreateBtn.TabStop = false;
             menuCreateBtn.Text = " Create List";
             menuCreateBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuCreateBtn.UseMnemonic = false;
             menuCreateBtn.UseVisualStyleBackColor = false;
             menuCreateBtn.Click += createBtn_Click;
             // 
@@ -183,15 +193,18 @@ namespace Wordly_alpha
             menuStartBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             menuStartBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuStartBtn.FlatAppearance.BorderSize = 0;
+            menuStartBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
             menuStartBtn.FlatStyle = FlatStyle.Flat;
             menuStartBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStartBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuStartBtn.Location = new Point(0, 325);
             menuStartBtn.Name = "menuStartBtn";
             menuStartBtn.Size = new Size(230, 70);
-            menuStartBtn.TabIndex = 4;
+            menuStartBtn.TabIndex = 0;
+            menuStartBtn.TabStop = false;
             menuStartBtn.Text = " Start Quiz";
             menuStartBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuStartBtn.UseMnemonic = false;
             menuStartBtn.UseVisualStyleBackColor = false;
             menuStartBtn.Click += startBtn_Click;
             // 
@@ -200,15 +213,18 @@ namespace Wordly_alpha
             menuHomeBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             menuHomeBtn.BackColor = Color.FromArgb(30, 30, 30);
             menuHomeBtn.FlatAppearance.BorderSize = 0;
+            menuHomeBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
             menuHomeBtn.FlatStyle = FlatStyle.Flat;
             menuHomeBtn.Font = new Font("Microsoft Sans Serif", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuHomeBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuHomeBtn.Location = new Point(0, 255);
             menuHomeBtn.Name = "menuHomeBtn";
             menuHomeBtn.Size = new Size(230, 70);
-            menuHomeBtn.TabIndex = 1;
+            menuHomeBtn.TabIndex = 0;
+            menuHomeBtn.TabStop = false;
             menuHomeBtn.Text = " Home";
             menuHomeBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuHomeBtn.UseMnemonic = false;
             menuHomeBtn.UseVisualStyleBackColor = false;
             menuHomeBtn.Click += homeBtn_Click;
             // 
@@ -226,9 +242,11 @@ namespace Wordly_alpha
             // 
             // backBtn
             // 
-            backBtn.BackColor = Color.FromArgb(200, 210, 210);
-            backBtn.FlatAppearance.BorderColor = Color.FromArgb(200, 210, 210);
+            backBtn.BackColor = Color.FromArgb(220, 230, 230);
+            backBtn.FlatAppearance.BorderColor = Color.FromArgb(220, 230, 230);
             backBtn.FlatAppearance.BorderSize = 0;
+            backBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(170, 180, 180);
+            backBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(200, 210, 210);
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             backBtn.ForeColor = Color.Black;
@@ -237,7 +255,8 @@ namespace Wordly_alpha
             backBtn.Location = new Point(15, 15);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(110, 40);
-            backBtn.TabIndex = 3;
+            backBtn.TabIndex = 0;
+            backBtn.TabStop = false;
             backBtn.Text = " BACK";
             backBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
             backBtn.UseVisualStyleBackColor = false;
@@ -266,7 +285,7 @@ namespace Wordly_alpha
             Margin = new Padding(3, 2, 3, 2);
             Name = "WordlyForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Wordly";
             menuPnl.ResumeLayout(false);
             titlePnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)titleLogoImage).EndInit();

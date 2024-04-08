@@ -66,12 +66,14 @@ namespace Wordly_alpha
                 BackColor = buttonBackclr;
                 ForeColor = buttonForeclr;
                 FlatAppearance.BorderSize = 0;
+                FlatAppearance.MouseDownBackColor = Color.FromArgb(buttonBackclr.R + 30, buttonBackclr.G + 30, buttonBackclr.B + 30);
                 FlatStyle = FlatStyle.Flat;
                 Font = new Font("Yu Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
                 Location = new Point(10, yPos);
                 Name = "wordListBtn";
                 Size = new Size(780, 100);
-                TabIndex = 5;
+                TabStop = false;
+                UseMnemonic = false;
                 Text = name.Substring(0, name.Length - 5);
                 UseVisualStyleBackColor = false;
             }

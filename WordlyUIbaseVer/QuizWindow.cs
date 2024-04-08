@@ -27,31 +27,29 @@ namespace Wordly_alpha
         public static List<string> MeaningStrArr = new List<string>();
 
 
-
-        public void Reset()
-        {
-            Controls.Clear();
-            InitializeComponent();
-
-            TermStrArr = new List<string>();
-            MeaningStrArr = new List<string>();
-            CreateWordListPnl();
-        }
-
-
         public QuizWindow(string file)
         {
-            InitializeComponent();
-
             fileDir = file;
             wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(fileDir));
 
+            InitializeComponent();
+            InitializeByHand();
+        }
+        private void InitializeByHand()
+        {
             TermStrArr = new List<string>();
             MeaningStrArr = new List<string>();
             CreateWordListPnl();
 
             wordListTitleSepPnl.rdus = 1;
         }
+        public void Reset()
+        {
+            Controls.Clear();
+            InitializeComponent();
+            InitializeByHand();
+        }
+
 
         private void CreateWordListPnl()
         {
