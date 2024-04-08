@@ -59,6 +59,7 @@ namespace Wordly_alpha
             // 
             // tableContentPnl
             // 
+            tableContentPnl.BackColor = Color.FromArgb(55, 55, 55);
             tableContentPnl.Dock = DockStyle.Fill;
             tableContentPnl.Location = new Point(0, 50);
             tableContentPnl.Name = "tableContentPnl";
@@ -67,7 +68,7 @@ namespace Wordly_alpha
             // 
             // indicationPnl
             // 
-            indicationPnl.BackColor = SystemColors.ButtonShadow;
+            indicationPnl.BackColor = Color.FromArgb(70, 70, 70);
             indicationPnl.Controls.Add(indicatorLang2BLbl);
             indicationPnl.Controls.Add(indicatorLang2ALbl);
             indicationPnl.Controls.Add(indicatorLang1BLbl);
@@ -82,6 +83,7 @@ namespace Wordly_alpha
             // 
             indicatorLang2BLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             indicatorLang2BLbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            indicatorLang2BLbl.ForeColor = Color.FromArgb(210, 220, 220);
             indicatorLang2BLbl.Location = new Point(675, 0);
             indicatorLang2BLbl.Name = "indicatorLang2BLbl";
             indicatorLang2BLbl.Size = new Size(225, 50);
@@ -93,17 +95,19 @@ namespace Wordly_alpha
             // 
             indicatorLang2ALbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             indicatorLang2ALbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            indicatorLang2ALbl.ForeColor = Color.FromArgb(210, 220, 220);
             indicatorLang2ALbl.Location = new Point(450, 0);
             indicatorLang2ALbl.Name = "indicatorLang2ALbl";
             indicatorLang2ALbl.Size = new Size(225, 50);
             indicatorLang2ALbl.TabIndex = 2;
-            indicatorLang2ALbl.Text = "Definition";
+            indicatorLang2ALbl.Text = "Meaning";
             indicatorLang2ALbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // indicatorLang1BLbl
             // 
             indicatorLang1BLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             indicatorLang1BLbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            indicatorLang1BLbl.ForeColor = Color.FromArgb(210, 220, 220);
             indicatorLang1BLbl.Location = new Point(225, 0);
             indicatorLang1BLbl.Name = "indicatorLang1BLbl";
             indicatorLang1BLbl.Size = new Size(225, 50);
@@ -115,19 +119,21 @@ namespace Wordly_alpha
             // 
             indicatorLang1ALbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             indicatorLang1ALbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            indicatorLang1ALbl.ForeColor = Color.FromArgb(210, 220, 220);
             indicatorLang1ALbl.Location = new Point(0, 0);
             indicatorLang1ALbl.Name = "indicatorLang1ALbl";
             indicatorLang1ALbl.Size = new Size(225, 50);
             indicatorLang1ALbl.TabIndex = 0;
-            indicatorLang1ALbl.Text = "Definition";
+            indicatorLang1ALbl.Text = "Meaning";
             indicatorLang1ALbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // submitBtn
             // 
-            submitBtn.BackColor = Color.LemonChiffon;
-            submitBtn.FlatAppearance.BorderColor = Color.LemonChiffon;
+            submitBtn.BackColor = Color.FromArgb(220, 230, 230);
+            submitBtn.FlatAppearance.BorderColor = Color.FromArgb(220, 230, 230);
             submitBtn.FlatStyle = FlatStyle.Flat;
             submitBtn.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            submitBtn.ForeColor = Color.FromArgb(50, 50, 50);
             submitBtn.Location = new Point(425, 13);
             submitBtn.Name = "submitBtn";
             submitBtn.Size = new Size(200, 50);
@@ -140,6 +146,7 @@ namespace Wordly_alpha
             // 
             textResultLbl.CausesValidation = false;
             textResultLbl.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textResultLbl.ForeColor = Color.FromArgb(250, 230, 230);
             textResultLbl.Location = new Point(675, 8);
             textResultLbl.Name = "textResultLbl";
             textResultLbl.Size = new Size(150, 30);
@@ -152,6 +159,7 @@ namespace Wordly_alpha
             // 
             resultLbl.CausesValidation = false;
             resultLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            resultLbl.ForeColor = Color.FromArgb(250, 230, 230);
             resultLbl.Location = new Point(675, 35);
             resultLbl.Name = "resultLbl";
             resultLbl.Size = new Size(150, 30);
@@ -189,7 +197,7 @@ namespace Wordly_alpha
             // viewTilesPnl
             // 
             viewTilesPnl.AutoScroll = true;
-            viewTilesPnl.BackColor = Color.Gainsboro;
+            viewTilesPnl.BackColor = Color.FromArgb(80, 80, 80);
             viewTilesPnl.Location = new Point(75, 75);
             viewTilesPnl.Name = "viewTilesPnl";
             viewTilesPnl.Size = new Size(917, 550);
@@ -201,15 +209,15 @@ namespace Wordly_alpha
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = Color.FromArgb(240, 242, 237);
+            BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(1050, 650);
+            Controls.Add(viewTilesPnl);
             Controls.Add(selectTableBtn);
             Controls.Add(selectTilesBtn);
             Controls.Add(resultLbl);
             Controls.Add(textResultLbl);
             Controls.Add(submitBtn);
             Controls.Add(viewTablePnl);
-            Controls.Add(viewTilesPnl);
             FormBorderStyle = FormBorderStyle.None;
             KeyPreview = true;
             Name = "ExamMode";

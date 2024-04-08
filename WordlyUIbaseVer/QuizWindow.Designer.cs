@@ -39,7 +39,7 @@ namespace Wordly_alpha
             wordContainerPnl = new Panel();
             wordListUnlockScrollPnl = new Panel();
             wordListTitlePnl = new Panel();
-            wordListTitleSepPnl = new Panel();
+            wordListTitleSepPnl = new RoundedPanel();
             wordListTitleMeaningLbl = new Label();
             wordListTitleTermLbl = new Label();
             OptionsPnl.SuspendLayout();
@@ -168,7 +168,7 @@ namespace Wordly_alpha
             // wordListTitleSepPnl
             // 
             wordListTitleSepPnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            wordListTitleSepPnl.BackColor = Color.FromArgb(200, 210, 210);
+            wordListTitleSepPnl.BackColor = Color.Black;
             wordListTitleSepPnl.Location = new Point(248, 7);
             wordListTitleSepPnl.Name = "wordListTitleSepPnl";
             wordListTitleSepPnl.Size = new Size(5, 76);
@@ -225,7 +225,7 @@ namespace Wordly_alpha
         private RoundedPanel wordListPnl;
         private Panel wordListTitlePnl;
         private Label wordListTitleTermLbl;
-        private Panel wordListTitleSepPnl;
+        private RoundedPanel wordListTitleSepPnl;
         private Label wordListTitleMeaningLbl;
         private Panel wordContainerPnl;
         private Panel wordListUnlockScrollPnl;

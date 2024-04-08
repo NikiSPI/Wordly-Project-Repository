@@ -113,9 +113,9 @@ namespace Wordly_alpha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tableBtnBackgroundImg {
+        internal static System.Drawing.Bitmap tableBtnBackgroundImgBlack {
             get {
-                object obj = ResourceManager.GetObject("tableBtnBackgroundImg", resourceCulture);
+                object obj = ResourceManager.GetObject("tableBtnBackgroundImgBlack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,29 @@ namespace Wordly_alpha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tilesBtnBackgroundImg {
+        internal static System.Drawing.Bitmap tableBtnBackgroundImgWhite {
             get {
-                object obj = ResourceManager.GetObject("tilesBtnBackgroundImg", resourceCulture);
+                object obj = ResourceManager.GetObject("tableBtnBackgroundImgWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tilesBtnBackgroundImg_Blackpng {
+            get {
+                object obj = ResourceManager.GetObject("tilesBtnBackgroundImg_Blackpng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tilesBtnBackgroundImgWhite {
+            get {
+                object obj = ResourceManager.GetObject("tilesBtnBackgroundImgWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

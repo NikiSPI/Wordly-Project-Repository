@@ -27,3 +27,32 @@ D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-w
 D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly Alpha.genruntimeconfig.cache
 D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\ref\Wordly Alpha.dll
 D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly a.98B652BA.Up2Date
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly alpha.exe
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly alpha.deps.json
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly alpha.runtimeconfig.json
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly alpha.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Wordly alpha.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Add_Window.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.ChooseListForm.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.ExamMode.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.FlashcardMode.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Home_Window.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Properties.Resources.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.QuizWindow.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.Settings_Window.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.WordlyForm.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly_alpha.WriteMode.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.csproj.GenerateResource.cache
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.sourcelink.json
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly a.98B652BA.Up2Date
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\refint\Wordly alpha.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\Wordly alpha.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\obj\Debug\net8.0-windows\ref\Wordly alpha.dll

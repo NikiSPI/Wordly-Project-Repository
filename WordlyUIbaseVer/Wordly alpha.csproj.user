@@ -10,6 +10,9 @@
     <Compile Update="Color Palette\CustomColorExtenderProvider.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Component Classes\AdvancedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="Component Classes\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -17,9 +20,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="Component Classes\RoundedPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="Component Classes\SizableTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="ExamMode.cs">

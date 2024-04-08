@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.Pkcs;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,8 +27,8 @@ namespace Wordly_alpha
 
         private bool answerWithMeaning = false, answerWithBoth = true;
 
-        public static Color defaultTableTbxClr = Color.White, defaultTilesTbxClr = Color.White;
-        private Color incorrectAnswerClr = Color.MistyRose, selectedBtnClr = Color.FromArgb(230,230,230);
+        public static Color defaultTableTbxClr, defaultTableTbxBorderClr, defaultTilesTbxClr = Color.White;
+        private Color incorrectAnswerClr = Color.MistyRose, selectedBtnClr;
 
         public ExamMode()
         {
@@ -38,18 +39,23 @@ namespace Wordly_alpha
             switchAnswerWords();
 
             setUpTable(); 
-            setUpTiles();
+            setUpTiles();            
         }
 
         private void InitializeComponentsByHand()
         {
-            selectTableBtn.BackgroundImage = Properties.Resources.tableBtnBackgroundImg;
+            defaultTableTbxClr = Color.FromArgb(tableContentPnl.BackColor.R + 25, tableContentPnl.BackColor.G + 25, tableContentPnl.BackColor.B + 25);
+            defaultTableTbxBorderClr = tableContentPnl.BackColor;
+
+            selectedBtnClr = Color.FromArgb(BackColor.R + 10, BackColor.G + 15, BackColor.B + 15);
+
+            selectTableBtn.BackgroundImage = Properties.Resources.tableBtnBackgroundImgWhite;
             selectTableBtn.BackgroundImageLayout = ImageLayout.Zoom;
             selectTableBtn.BackColor = selectedBtnClr;
 
-            selectTilesBtn.BackgroundImage = Properties.Resources.tilesBtnBackgroundImg;
+            selectTilesBtn.BackgroundImage = Properties.Resources.tilesBtnBackgroundImgWhite;
             selectTilesBtn.BackgroundImageLayout = ImageLayout.Zoom;
-            selectTilesBtn.BackColor = Color.WhiteSmoke;
+            selectTilesBtn.BackColor = BackColor;
         }
 
         private void randomizeWords()
@@ -82,16 +88,16 @@ namespace Wordly_alpha
                 loopNum = wordCount / 2;
 
                 indicatorLang1ALbl.Text = "Term";
-                indicatorLang1BLbl.Text = "Definition";
+                indicatorLang1BLbl.Text = "Meaning";
             }
             else if (answerWithMeaning)
             {
                 loopNum = wordCount;
 
                 indicatorLang1ALbl.Text = "Term";
-                indicatorLang1BLbl.Text = "Definition";
+                indicatorLang1BLbl.Text = "Meaning";
                 indicatorLang2ALbl.Text = "Term";
-                indicatorLang2BLbl.Text = "Definition";
+                indicatorLang2BLbl.Text = "Meaning";
             }
 
             string temp;
@@ -281,45 +287,51 @@ namespace Wordly_alpha
             updateAnswers();
 
             selectTableBtn.BackColor = selectedBtnClr;
-            selectTilesBtn.BackColor = Color.WhiteSmoke;
+            selectTilesBtn.BackColor = BackColor;
 
-            viewTablePnl.Visible = true;
             viewTilesPnl.Visible = false;
         }
         private void selectTilesButton_Click(object sender, EventArgs e)
         {
             updateAnswers();
 
-            selectTableBtn.BackColor = Color.WhiteSmoke;
+            selectTableBtn.BackColor = BackColor;
             selectTilesBtn.BackColor = selectedBtnClr;
 
-            viewTablePnl.Visible = false;
             viewTilesPnl.Visible = true;
         }
 
 
         private class TableLabel : Label
         {
+            
             public TableLabel(int x, int y)
             {
-                BorderStyle = BorderStyle.FixedSingle;
                 Location = new Point(x, y);
                 Size = new Size(226, 21);
                 TextAlign = ContentAlignment.MiddleLeft;
-                Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
                 BackColor = ExamMode.defaultTableTbxClr;
+                ForeColor = Color.FromArgb(220, 230, 230);
+                Paint += this_Paint;
+            }
+            void this_Paint(object sender, PaintEventArgs e)
+            {
+                ControlPaint.DrawBorder(e.Graphics, DisplayRectangle, defaultTableTbxBorderClr, ButtonBorderStyle.Solid); ;
             }
         }
-        private class TableBox : TextBox
+        private class TableBox : AdvancedTextBox
         {
             public TableBox(int x, int y)
             {
-                Location = new Point(x, y);
-                AutoSize = false;
-                Size = new Size(225, 21);
                 BorderStyle = BorderStyle.FixedSingle;
+                Location = new Point(x, y);
+                Size = new Size(225, 21);
                 Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 204);
                 BackColor = ExamMode.defaultTableTbxClr;
+                ForeColor = Color.FromArgb(220,230,230);
+
+                BorderColor = defaultTableTbxBorderClr;
             }
         }
 
@@ -327,6 +339,7 @@ namespace Wordly_alpha
         {
             public Label shownWordLbl = new Label();
             public TextBox answerWordTbx = new ();
+            public RoundedPanel underlinePnl = new();
 
             public TilePanel()
             {
@@ -335,28 +348,40 @@ namespace Wordly_alpha
                 // 
                 Location = new Point(25, 25);
                 Size = new Size(850, 200);
-                BackColor = Color.WhiteSmoke;
+                BackColor = Color.FromArgb(70,70,70);
 
                 Controls.Add(shownWordLbl);
                 Controls.Add(answerWordTbx);
+                Controls.Add(underlinePnl);
 
                 // 
                 // shownWordLbl
-                // 
+                //                 
+                shownWordLbl.ForeColor = Color.FromArgb(220,230,230);
                 shownWordLbl.Location = new Point(50, 30);
-                shownWordLbl.Size = new Size(750, 50);
+                shownWordLbl.Size = new Size(750, 100);
                 shownWordLbl.Anchor = AnchorStyles.Left | AnchorStyles.Right;
                 shownWordLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-                shownWordLbl.TextAlign = ContentAlignment.MiddleLeft;
+                shownWordLbl.TextAlign = ContentAlignment.TopLeft;
 
                 // 
                 // answerWordTbx
                 // 
+                answerWordTbx.BackColor = BackColor;
+                answerWordTbx.ForeColor = shownWordLbl.ForeColor;
                 answerWordTbx.Location = new Point(50, 120);
                 answerWordTbx.Size = new Size(750, 36);
                 answerWordTbx.Anchor = AnchorStyles.Left | AnchorStyles.Right;
                 answerWordTbx.BorderStyle = BorderStyle.None;
-                answerWordTbx.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                answerWordTbx.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                //
+                // underlinePnl
+                //
+                underlinePnl.BackColor = answerWordTbx.ForeColor;
+                underlinePnl.Location = new Point(answerWordTbx.Location.X, answerWordTbx.Location.Y + answerWordTbx.Height);
+                underlinePnl.Size = new Size(answerWordTbx.Width, 5);
+
+                underlinePnl.rdus = 1;
 
             }
         }

@@ -49,6 +49,8 @@ namespace Wordly_alpha
             TermStrArr = new List<string>();
             MeaningStrArr = new List<string>();
             CreateWordListPnl();
+
+            wordListTitleSepPnl.rdus = 1;
         }
 
         private void CreateWordListPnl()

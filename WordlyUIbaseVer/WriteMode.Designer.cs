@@ -46,7 +46,7 @@ namespace Wordly_alpha
             aUnderlineTbxPnl = new RoundedPanel();
             aShownWordLbl = new Label();
             aAnswerBtn = new RoundedButton();
-            aAnswerTbx = new SizableTextBox();
+            aAnswerTbx = new AdvancedTextBox();
             statNumLeftLbl = new Label();
             statPnl = new Panel();
             statIntersectionPnl = new RoundedPanel();
@@ -235,7 +235,7 @@ namespace Wordly_alpha
             // 
             // aUnderlineTbxPnl
             // 
-            aUnderlineTbxPnl.BackColor = Color.Black;
+            aUnderlineTbxPnl.BackColor = Color.FromArgb(220, 230, 230);
             aUnderlineTbxPnl.ForeColor = Color.Black;
             aUnderlineTbxPnl.Location = new Point(50, 265);
             aUnderlineTbxPnl.Name = "aUnderlineTbxPnl";
@@ -259,7 +259,7 @@ namespace Wordly_alpha
             aAnswerBtn.Anchor = AnchorStyles.Bottom;
             aAnswerBtn.BackColor = Color.FromArgb(75, 75, 75);
             aAnswerBtn.CausesValidation = false;
-            aAnswerBtn.FlatAppearance.BorderColor = SystemColors.WindowFrame;
+            aAnswerBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             aAnswerBtn.FlatAppearance.BorderSize = 0;
             aAnswerBtn.FlatStyle = FlatStyle.Flat;
             aAnswerBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -276,8 +276,10 @@ namespace Wordly_alpha
             // aAnswerTbx
             // 
             aAnswerTbx.BackColor = Color.FromArgb(65, 65, 65);
+            aAnswerTbx.BorderColor = Color.Empty;
             aAnswerTbx.BorderStyle = BorderStyle.None;
             aAnswerTbx.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            aAnswerTbx.ForeColor = Color.FromArgb(220, 230, 230);
             aAnswerTbx.Location = new Point(50, 220);
             aAnswerTbx.Name = "aAnswerTbx";
             aAnswerTbx.Size = new Size(800, 50);
@@ -407,7 +409,7 @@ namespace Wordly_alpha
         private PictureBox statWrongPbx;
         private PictureBox statCorrectPbx;
         private RoundedPanel statIntersectionPnl;
-        private SizableTextBox aAnswerTbx;
+        private AdvancedTextBox aAnswerTbx;
         private RoundedPanel aUnderlineTbxPnl;
     }
 }

@@ -35,7 +35,7 @@ namespace Wordly_alpha
             aUnderlineTbxPnl.rdus = 1;
             statIntersectionPnl.rdus = 1;
             aAnswerTbx.Focus();
-        }
+        }   
 
         private void Reset()
         {
