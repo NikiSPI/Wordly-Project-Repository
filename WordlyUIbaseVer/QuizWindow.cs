@@ -26,7 +26,7 @@ namespace Wordly_alpha
         public static List<string> TermStrArr = new List<string>();
         public static List<string> MeaningStrArr = new List<string>();
 
-        public static bool answerWithMeaning = false, answerWithBoth = false;
+        public static bool answerWithMeaning = true, answerWithBoth = false;
 
 
         public QuizWindow(string file)

@@ -180,7 +180,7 @@ namespace Wordly_alpha
             // wordListTitleSepPnl
             // 
             wordListTitleSepPnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            wordListTitleSepPnl.BackColor = Color.Black;
+            wordListTitleSepPnl.BackColor = Color.FromArgb(30, 30, 30);
             wordListTitleSepPnl.Location = new Point(248, 7);
             wordListTitleSepPnl.Name = "wordListTitleSepPnl";
             wordListTitleSepPnl.Size = new Size(5, 76);

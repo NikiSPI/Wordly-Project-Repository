@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Wordly_alpha
-build_property.ProjectDir = D:\Programming\Visual Studio\Solutions\Wordly\WordlyUIbaseVer\
+build_property.ProjectDir = C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\WordlyUIbaseVer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

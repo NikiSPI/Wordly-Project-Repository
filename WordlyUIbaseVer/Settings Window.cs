@@ -15,6 +15,8 @@ namespace Wordly_alpha
         public Settings_Window()
         {
             InitializeComponent();
+
+            kbTitleSepPnl.rdus = 1;
         }
 
         private void switch1Opt1SBtn_CheckedChanged(object sender, EventArgs e)
