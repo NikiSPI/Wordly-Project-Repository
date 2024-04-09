@@ -17,7 +17,7 @@ namespace Wordly_alpha
         public QuizWindow quizWindow;
 
         private static Color buttonBackclr = Color.FromArgb(45, 45, 45);
-        private static Color buttonForeclr = Color.FromArgb(230, 240, 240);
+        private static Color buttonForeclr = Color.FromArgb(210, 220, 220);
 
         public ChooseListForm()
         {

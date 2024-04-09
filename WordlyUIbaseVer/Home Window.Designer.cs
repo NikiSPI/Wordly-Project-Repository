@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Window));
             backPnl = new Panel();
             contentPnl = new Panel();
             contentTipsPnl = new Panel();
@@ -37,6 +38,7 @@
             titleTipsLbl = new Label();
             kbTextFlashcardTitleLbl = new Label();
             panel1 = new Panel();
+            roundedPanel2 = new RoundedComponents.RoundedPanel();
             label3 = new Label();
             roundedPanel1 = new RoundedComponents.RoundedPanel();
             label2 = new Label();
@@ -46,6 +48,7 @@
             contentTipsPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            roundedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -82,20 +85,20 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Cambria", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(210, 220, 220);
             label1.Location = new Point(22, 160);
             label1.Name = "label1";
             label1.Size = new Size(818, 60);
             label1.TabIndex = 15;
-            label1.Text = "For more seamless and comfortable experience you can use the built-in Key Binds. A list of them can be found in the bottom part of the Settings Menu.";
+            label1.Text = "For more seamless and comfortable experience you can use the built-in Key Binds. A list of them can be found in the bottom part of the Settings menu.";
             // 
             // tipsTitleSepPnl
             // 
-            tipsTitleSepPnl.BackColor = Color.FromArgb(230, 240, 240);
-            tipsTitleSepPnl.Location = new Point(185, 42);
+            tipsTitleSepPnl.BackColor = Color.FromArgb(210, 250, 250);
+            tipsTitleSepPnl.Location = new Point(170, 42);
             tipsTitleSepPnl.Name = "tipsTitleSepPnl";
-            tipsTitleSepPnl.Size = new Size(655, 5);
+            tipsTitleSepPnl.Size = new Size(670, 5);
             tipsTitleSepPnl.TabIndex = 9;
             // 
             // pictureBox1
@@ -110,8 +113,8 @@
             // 
             // titleTipsLbl
             // 
-            titleTipsLbl.Font = new Font("Segoe UI", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            titleTipsLbl.ForeColor = Color.FromArgb(230, 240, 240);
+            titleTipsLbl.Font = new Font("Calibri", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleTipsLbl.ForeColor = Color.FromArgb(210, 250, 250);
             titleTipsLbl.ImageAlign = ContentAlignment.MiddleLeft;
             titleTipsLbl.Location = new Point(75, 0);
             titleTipsLbl.Name = "titleTipsLbl";
@@ -122,7 +125,7 @@
             // 
             // kbTextFlashcardTitleLbl
             // 
-            kbTextFlashcardTitleLbl.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            kbTextFlashcardTitleLbl.Font = new Font("Candara", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             kbTextFlashcardTitleLbl.ForeColor = Color.FromArgb(235, 245, 245);
             kbTextFlashcardTitleLbl.Location = new Point(24, 80);
             kbTextFlashcardTitleLbl.Name = "kbTextFlashcardTitleLbl";
@@ -133,38 +136,48 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(roundedPanel2);
             panel1.Controls.Add(roundedPanel1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(0, 250);
+            panel1.Location = new Point(0, 270);
             panel1.Name = "panel1";
             panel1.Size = new Size(850, 400);
             panel1.TabIndex = 20;
             // 
+            // roundedPanel2
+            // 
+            roundedPanel2.BackColor = Color.FromArgb(50, 50, 50);
+            roundedPanel2.Controls.Add(label3);
+            roundedPanel2.Dock = DockStyle.Bottom;
+            roundedPanel2.Location = new Point(0, 90);
+            roundedPanel2.Name = "roundedPanel2";
+            roundedPanel2.Size = new Size(850, 310);
+            roundedPanel2.TabIndex = 21;
+            // 
             // label3
             // 
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Cambria", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(210, 220, 220);
-            label3.Location = new Point(275, 106);
+            label3.Location = new Point(275, 100);
             label3.Name = "label3";
-            label3.Size = new Size(300, 82);
+            label3.Size = new Size(300, 110);
             label3.TabIndex = 20;
             label3.Text = "*no recent word lists*";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // roundedPanel1
             // 
-            roundedPanel1.BackColor = Color.FromArgb(230, 240, 240);
-            roundedPanel1.Location = new Point(367, 42);
+            roundedPanel1.BackColor = Color.FromArgb(210, 250, 250);
+            roundedPanel1.Location = new Point(335, 42);
             roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(473, 5);
+            roundedPanel1.Size = new Size(505, 5);
             roundedPanel1.TabIndex = 18;
             // 
             // label2
             // 
-            label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(230, 240, 240);
+            label2.Font = new Font("Calibri", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(210, 250, 250);
             label2.ImageAlign = ContentAlignment.MiddleLeft;
             label2.Location = new Point(75, 0);
             label2.Name = "label2";
@@ -191,6 +204,7 @@
             ClientSize = new Size(1050, 650);
             Controls.Add(backPnl);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Home_Window";
             Text = "Main_Window";
             backPnl.ResumeLayout(false);
@@ -198,6 +212,7 @@
             contentTipsPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
+            roundedPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -217,5 +232,6 @@
         private Label label2;
         private PictureBox pictureBox2;
         private Label label3;
+        private RoundedComponents.RoundedPanel roundedPanel2;
     }
 }

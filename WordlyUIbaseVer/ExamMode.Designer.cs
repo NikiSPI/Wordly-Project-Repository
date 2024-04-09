@@ -129,10 +129,10 @@ namespace Wordly_alpha
             // 
             // submitBtn
             // 
-            submitBtn.BackColor = Color.FromArgb(210, 220, 220);
-            submitBtn.FlatAppearance.BorderColor = Color.FromArgb(210, 220, 220);
+            submitBtn.BackColor = Color.FromArgb(210, 230, 230);
+            submitBtn.FlatAppearance.BorderColor = Color.FromArgb(210, 230, 230);
             submitBtn.FlatStyle = FlatStyle.Flat;
-            submitBtn.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            submitBtn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             submitBtn.ForeColor = Color.FromArgb(50, 50, 50);
             submitBtn.Location = new Point(425, 13);
             submitBtn.Name = "submitBtn";

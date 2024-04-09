@@ -31,6 +31,7 @@ namespace Wordly_alpha
         private void InitializeComponent()
         {
             OptionsPnl = new Panel();
+            label1 = new Label();
             Option4Btn = new RoundedButton();
             Option3Btn = new RoundedButton();
             Option2Btn = new RoundedButton();
@@ -51,6 +52,7 @@ namespace Wordly_alpha
             // OptionsPnl
             // 
             OptionsPnl.Anchor = AnchorStyles.None;
+            OptionsPnl.Controls.Add(label1);
             OptionsPnl.Controls.Add(Option4Btn);
             OptionsPnl.Controls.Add(Option3Btn);
             OptionsPnl.Controls.Add(Option2Btn);
@@ -60,14 +62,26 @@ namespace Wordly_alpha
             OptionsPnl.Size = new Size(300, 430);
             OptionsPnl.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(45, 45, 45);
+            label1.ForeColor = SystemColors.ActiveBorder;
+            label1.Location = new Point(104, 405);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 15);
+            label1.TabIndex = 10;
+            label1.Text = "(coming soon)";
+            // 
             // Option4Btn
             // 
             Option4Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option4Btn.BackColor = Color.FromArgb(45, 45, 45);
             Option4Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
-            Option4Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
+            Option4Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(45, 45, 45);
+            Option4Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 45);
             Option4Btn.FlatStyle = FlatStyle.Flat;
-            Option4Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Option4Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold);
             Option4Btn.ForeColor = Color.FromArgb(230, 240, 240);
             Option4Btn.Location = new Point(0, 330);
             Option4Btn.Name = "Option4Btn";
@@ -85,7 +99,7 @@ namespace Wordly_alpha
             Option3Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
             Option3Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option3Btn.FlatStyle = FlatStyle.Flat;
-            Option3Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Option3Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold);
             Option3Btn.ForeColor = Color.FromArgb(230, 240, 240);
             Option3Btn.Location = new Point(0, 220);
             Option3Btn.Name = "Option3Btn";
@@ -104,7 +118,7 @@ namespace Wordly_alpha
             Option2Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
             Option2Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option2Btn.FlatStyle = FlatStyle.Flat;
-            Option2Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Option2Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option2Btn.ForeColor = Color.FromArgb(230, 240, 240);
             Option2Btn.Location = new Point(0, 110);
             Option2Btn.Name = "Option2Btn";
@@ -123,7 +137,7 @@ namespace Wordly_alpha
             Option1Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
             Option1Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
             Option1Btn.FlatStyle = FlatStyle.Flat;
-            Option1Btn.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Option1Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option1Btn.ForeColor = Color.FromArgb(230, 240, 240);
             Option1Btn.Location = new Point(0, 0);
             Option1Btn.Name = "Option1Btn";
@@ -189,7 +203,7 @@ namespace Wordly_alpha
             // wordListTitleMeaningLbl
             // 
             wordListTitleMeaningLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            wordListTitleMeaningLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            wordListTitleMeaningLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             wordListTitleMeaningLbl.ForeColor = Color.FromArgb(200, 210, 210);
             wordListTitleMeaningLbl.Location = new Point(252, 0);
             wordListTitleMeaningLbl.Name = "wordListTitleMeaningLbl";
@@ -201,7 +215,7 @@ namespace Wordly_alpha
             // wordListTitleTermLbl
             // 
             wordListTitleTermLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            wordListTitleTermLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            wordListTitleTermLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             wordListTitleTermLbl.ForeColor = Color.FromArgb(200, 210, 210);
             wordListTitleTermLbl.Location = new Point(0, 0);
             wordListTitleTermLbl.Name = "wordListTitleTermLbl";
@@ -221,6 +235,7 @@ namespace Wordly_alpha
             FormBorderStyle = FormBorderStyle.None;
             Name = "QuizWindow";
             OptionsPnl.ResumeLayout(false);
+            OptionsPnl.PerformLayout();
             wordListPnl.ResumeLayout(false);
             wordContainerPnl.ResumeLayout(false);
             wordListTitlePnl.ResumeLayout(false);
@@ -241,5 +256,6 @@ namespace Wordly_alpha
         private Label wordListTitleMeaningLbl;
         private Panel wordContainerPnl;
         private Panel wordListUnlockScrollPnl;
+        private Label label1;
     }
 }

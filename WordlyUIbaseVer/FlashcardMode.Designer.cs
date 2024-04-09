@@ -59,14 +59,14 @@ namespace Wordly_alpha
             flashcardBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(100, 110, 110);
             flashcardBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(115, 125, 125);
             flashcardBtn.FlatStyle = FlatStyle.Flat;
-            flashcardBtn.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            flashcardBtn.Font = new Font("Calibri", 44.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             flashcardBtn.ForeColor = Color.FromArgb(240, 245, 245);
             flashcardBtn.Location = new Point(200, 50);
             flashcardBtn.Name = "flashcardBtn";
             flashcardBtn.Size = new Size(650, 550);
             flashcardBtn.TabIndex = 0;
             flashcardBtn.TabStop = false;
-            flashcardBtn.Text = "sth";
+            flashcardBtn.Text = "something";
             flashcardBtn.UseMnemonic = false;
             flashcardBtn.UseVisualStyleBackColor = false;
             flashcardBtn.Click += FlashcardBtn_Click;
@@ -139,7 +139,7 @@ namespace Wordly_alpha
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             backBtn.FlatStyle = FlatStyle.Flat;
-            backBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            backBtn.Font = new Font("Calibri", 26.25F, FontStyle.Bold);
             backBtn.ForeColor = Color.FromArgb(210, 220, 220);
             backBtn.Location = new Point(475, 425);
             backBtn.Name = "backBtn";
@@ -158,7 +158,7 @@ namespace Wordly_alpha
             againBtn.FlatAppearance.BorderSize = 0;
             againBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             againBtn.FlatStyle = FlatStyle.Flat;
-            againBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            againBtn.Font = new Font("Calibri", 26.25F, FontStyle.Bold);
             againBtn.ForeColor = Color.FromArgb(210, 220, 220);
             againBtn.Location = new Point(125, 425);
             againBtn.Name = "againBtn";
@@ -174,11 +174,11 @@ namespace Wordly_alpha
             // 
             countLbl.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             countLbl.ForeColor = Color.FromArgb(210, 220, 220);
-            countLbl.Location = new Point(875, 50);
+            countLbl.Location = new Point(850, 50);
             countLbl.Name = "countLbl";
-            countLbl.Size = new Size(150, 50);
+            countLbl.Size = new Size(200, 50);
             countLbl.TabIndex = 4;
-            countLbl.Text = "xxx / yyy";
+            countLbl.Text = "123 / 456";
             countLbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // statPnl
@@ -214,7 +214,7 @@ namespace Wordly_alpha
             // 
             // statIncorrectLbl
             // 
-            statIncorrectLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statIncorrectLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             statIncorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
             statIncorrectLbl.Location = new Point(52, 60);
             statIncorrectLbl.Name = "statIncorrectLbl";
@@ -225,7 +225,7 @@ namespace Wordly_alpha
             // 
             // statCorrectLbl
             // 
-            statCorrectLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statCorrectLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             statCorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
             statCorrectLbl.Location = new Point(52, 0);
             statCorrectLbl.Name = "statCorrectLbl";

@@ -246,6 +246,22 @@ namespace Wordly_alpha
                     }
 
                     break;
+                
+                case Keys.Tab:
+
+                    if (ctrlPressed)
+                    {
+                        if (viewTilesPnl.Visible)
+                        {
+                            selectTableBtn_Click();
+                        }
+                        else
+                        {
+                            selectTilesButton_Click();
+                        }
+                    }
+
+                    break;
 
                 case Keys.ControlKey:
 
@@ -281,7 +297,7 @@ namespace Wordly_alpha
                 checkResults();
             }
         }
-        private void selectTableBtn_Click(object sender, EventArgs e)
+        private void selectTableBtn_Click(object sender = null, EventArgs e = null)
         {
             updateAnswers();
 
@@ -290,7 +306,7 @@ namespace Wordly_alpha
 
             viewTilesPnl.Visible = false;
         }
-        private void selectTilesButton_Click(object sender, EventArgs e)
+        private void selectTilesButton_Click(object sender = null, EventArgs e = null)
         {
             updateAnswers();
 
@@ -309,7 +325,7 @@ namespace Wordly_alpha
                 Location = new Point(x, y);
                 Size = new Size(226, 21);
                 TextAlign = ContentAlignment.MiddleLeft;
-                Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                Font = new Font("Cambria", 11F);
                 BackColor = ExamMode.defaultTableTbxClr;
                 ForeColor = Color.FromArgb(220, 230, 230);
                 Paint += this_Paint;
@@ -326,7 +342,7 @@ namespace Wordly_alpha
                 BorderStyle = BorderStyle.FixedSingle;
                 Location = new Point(x, y);
                 Size = new Size(225, 21);
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 204);
+                Font = new Font("Candara", 11F);
                 BackColor = ExamMode.defaultTableTbxClr;
                 ForeColor = Color.FromArgb(220,230,230);
 
@@ -359,8 +375,7 @@ namespace Wordly_alpha
                 shownWordLbl.ForeColor = defaultTilesSecondaryClr;
                 shownWordLbl.Location = new Point(50, 30);
                 shownWordLbl.Size = new Size(750, 100);
-                shownWordLbl.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-                shownWordLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                shownWordLbl.Font = new Font("Calibri", 22F);
                 shownWordLbl.TextAlign = ContentAlignment.TopLeft;
 
                 // 
@@ -370,9 +385,8 @@ namespace Wordly_alpha
                 answerWordTbx.ForeColor = defaultTilesSecondaryClr;
                 answerWordTbx.Location = new Point(50, 120);
                 answerWordTbx.Size = new Size(750, 36);
-                answerWordTbx.Anchor = AnchorStyles.Left | AnchorStyles.Right;
                 answerWordTbx.BorderStyle = BorderStyle.None;
-                answerWordTbx.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+                answerWordTbx.Font = new Font("Candara", 22F);
                 //
                 // underlinePnl
                 //

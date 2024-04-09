@@ -34,6 +34,10 @@
             switch1Opt1SBtn = new StylishComponents.SButton();
             contentPnl = new RoundedComponents.RoundedPanel();
             contentKeybindsPnl = new Panel();
+            label12 = new Label();
+            label13 = new Label();
+            label10 = new Label();
+            label11 = new Label();
             label8 = new Label();
             label9 = new Label();
             label6 = new Label();
@@ -64,7 +68,7 @@
             // 
             // text1Opt1Lbl
             // 
-            text1Opt1Lbl.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            text1Opt1Lbl.Font = new Font("Candara", 24F);
             text1Opt1Lbl.ForeColor = Color.FromArgb(210, 220, 220);
             text1Opt1Lbl.Location = new Point(40, 30);
             text1Opt1Lbl.Name = "text1Opt1Lbl";
@@ -119,6 +123,10 @@
             // 
             // contentKeybindsPnl
             // 
+            contentKeybindsPnl.Controls.Add(label12);
+            contentKeybindsPnl.Controls.Add(label13);
+            contentKeybindsPnl.Controls.Add(label10);
+            contentKeybindsPnl.Controls.Add(label11);
             contentKeybindsPnl.Controls.Add(label8);
             contentKeybindsPnl.Controls.Add(label9);
             contentKeybindsPnl.Controls.Add(label6);
@@ -140,14 +148,56 @@
             contentKeybindsPnl.Controls.Add(label1);
             contentKeybindsPnl.Location = new Point(0, 220);
             contentKeybindsPnl.Name = "contentKeybindsPnl";
-            contentKeybindsPnl.Size = new Size(750, 830);
+            contentKeybindsPnl.Size = new Size(750, 948);
             contentKeybindsPnl.TabIndex = 11;
+            // 
+            // label12
+            // 
+            label12.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.FromArgb(200, 220, 220);
+            label12.Location = new Point(510, 585);
+            label12.Name = "label12";
+            label12.Size = new Size(200, 65);
+            label12.TabIndex = 31;
+            label12.Text = "Ctrl + Enter";
+            label12.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label13
+            // 
+            label13.Font = new Font("Candara", 24F);
+            label13.ForeColor = Color.FromArgb(210, 220, 220);
+            label13.Location = new Point(40, 585);
+            label13.Name = "label13";
+            label13.Size = new Size(580, 65);
+            label13.TabIndex = 30;
+            label13.Text = "I was Correct";
+            // 
+            // label10
+            // 
+            label10.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.FromArgb(200, 220, 220);
+            label10.Location = new Point(510, 870);
+            label10.Name = "label10";
+            label10.Size = new Size(200, 65);
+            label10.TabIndex = 29;
+            label10.Text = "Ctrl + Tab";
+            label10.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label11
+            // 
+            label11.Font = new Font("Candara", 24F);
+            label11.ForeColor = Color.FromArgb(210, 220, 220);
+            label11.Location = new Point(40, 870);
+            label11.Name = "label11";
+            label11.Size = new Size(580, 65);
+            label11.TabIndex = 28;
+            label11.Text = "Switch Panels";
             // 
             // label8
             // 
             label8.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.FromArgb(200, 220, 220);
-            label8.Location = new Point(510, 740);
+            label8.Location = new Point(510, 805);
             label8.Name = "label8";
             label8.Size = new Size(200, 65);
             label8.TabIndex = 27;
@@ -156,9 +206,9 @@
             // 
             // label9
             // 
-            label9.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Candara", 24F);
             label9.ForeColor = Color.FromArgb(210, 220, 220);
-            label9.Location = new Point(40, 740);
+            label9.Location = new Point(40, 805);
             label9.Name = "label9";
             label9.Size = new Size(580, 65);
             label9.TabIndex = 26;
@@ -168,7 +218,7 @@
             // 
             label6.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(200, 220, 220);
-            label6.Location = new Point(410, 675);
+            label6.Location = new Point(410, 740);
             label6.Name = "label6";
             label6.Size = new Size(300, 65);
             label6.TabIndex = 25;
@@ -177,9 +227,9 @@
             // 
             // label7
             // 
-            label7.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Candara", 24F);
             label7.ForeColor = Color.FromArgb(210, 220, 220);
-            label7.Location = new Point(40, 675);
+            label7.Location = new Point(40, 740);
             label7.Name = "label7";
             label7.Size = new Size(580, 65);
             label7.TabIndex = 24;
@@ -188,8 +238,8 @@
             // label5
             // 
             label5.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(210, 220, 220);
-            label5.Location = new Point(40, 590);
+            label5.ForeColor = Color.FromArgb(220, 230, 230);
+            label5.Location = new Point(40, 655);
             label5.Name = "label5";
             label5.Size = new Size(580, 80);
             label5.TabIndex = 23;
@@ -209,7 +259,7 @@
             // 
             // label4
             // 
-            label4.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Candara", 24F);
             label4.ForeColor = Color.FromArgb(210, 220, 220);
             label4.Location = new Point(40, 520);
             label4.Name = "label4";
@@ -220,7 +270,7 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(210, 220, 220);
+            label2.ForeColor = Color.FromArgb(220, 230, 230);
             label2.Location = new Point(40, 435);
             label2.Name = "label2";
             label2.Size = new Size(580, 80);
@@ -274,7 +324,7 @@
             // 
             // kbTextShowPreviousCardLbl
             // 
-            kbTextShowPreviousCardLbl.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            kbTextShowPreviousCardLbl.Font = new Font("Candara", 24F);
             kbTextShowPreviousCardLbl.ForeColor = Color.FromArgb(210, 220, 220);
             kbTextShowPreviousCardLbl.Location = new Point(40, 365);
             kbTextShowPreviousCardLbl.Name = "kbTextShowPreviousCardLbl";
@@ -284,7 +334,7 @@
             // 
             // kbTextMarkAsIncorrectLbl
             // 
-            kbTextMarkAsIncorrectLbl.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            kbTextMarkAsIncorrectLbl.Font = new Font("Candara", 24F);
             kbTextMarkAsIncorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
             kbTextMarkAsIncorrectLbl.Location = new Point(40, 300);
             kbTextMarkAsIncorrectLbl.Name = "kbTextMarkAsIncorrectLbl";
@@ -294,7 +344,7 @@
             // 
             // kbTextMarkAsCorrectLbl
             // 
-            kbTextMarkAsCorrectLbl.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            kbTextMarkAsCorrectLbl.Font = new Font("Candara", 24F);
             kbTextMarkAsCorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
             kbTextMarkAsCorrectLbl.Location = new Point(40, 235);
             kbTextMarkAsCorrectLbl.Name = "kbTextMarkAsCorrectLbl";
@@ -305,7 +355,7 @@
             // kbTextFlashcardTitleLbl
             // 
             kbTextFlashcardTitleLbl.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kbTextFlashcardTitleLbl.ForeColor = Color.FromArgb(210, 220, 220);
+            kbTextFlashcardTitleLbl.ForeColor = Color.FromArgb(220, 230, 230);
             kbTextFlashcardTitleLbl.Location = new Point(40, 85);
             kbTextFlashcardTitleLbl.Name = "kbTextFlashcardTitleLbl";
             kbTextFlashcardTitleLbl.Size = new Size(580, 80);
@@ -315,7 +365,7 @@
             // 
             // kbTextFlipCardLbl
             // 
-            kbTextFlipCardLbl.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            kbTextFlipCardLbl.Font = new Font("Candara", 24F);
             kbTextFlipCardLbl.ForeColor = Color.FromArgb(210, 220, 220);
             kbTextFlipCardLbl.Location = new Point(40, 170);
             kbTextFlipCardLbl.Name = "kbTextFlipCardLbl";
@@ -325,16 +375,16 @@
             // 
             // kbTitleSepPnl
             // 
-            kbTitleSepPnl.BackColor = Color.FromArgb(210, 220, 220);
-            kbTitleSepPnl.Location = new Point(210, 40);
+            kbTitleSepPnl.BackColor = Color.FromArgb(210, 250, 250);
+            kbTitleSepPnl.Location = new Point(190, 40);
             kbTitleSepPnl.Name = "kbTitleSepPnl";
-            kbTitleSepPnl.Size = new Size(500, 5);
+            kbTitleSepPnl.Size = new Size(520, 5);
             kbTitleSepPnl.TabIndex = 7;
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(210, 220, 220);
+            label1.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(210, 250, 250);
             label1.ImageAlign = ContentAlignment.MiddleLeft;
             label1.Location = new Point(25, 0);
             label1.Name = "label1";
@@ -345,7 +395,7 @@
             // 
             // text1Opt2Lbl
             // 
-            text1Opt2Lbl.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            text1Opt2Lbl.Font = new Font("Candara", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             text1Opt2Lbl.ForeColor = Color.FromArgb(210, 220, 220);
             text1Opt2Lbl.Location = new Point(40, 110);
             text1Opt2Lbl.Name = "text1Opt2Lbl";
@@ -356,8 +406,8 @@
             // 
             // switchable1Opt1Lbl
             // 
-            switchable1Opt1Lbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            switchable1Opt1Lbl.ForeColor = Color.FromArgb(230, 240, 240);
+            switchable1Opt1Lbl.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            switchable1Opt1Lbl.ForeColor = Color.FromArgb(200, 220, 220);
             switchable1Opt1Lbl.Location = new Point(465, 30);
             switchable1Opt1Lbl.Name = "switchable1Opt1Lbl";
             switchable1Opt1Lbl.Size = new Size(160, 75);
@@ -428,5 +478,9 @@
         private Label label7;
         private Label label8;
         private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
     }
 }

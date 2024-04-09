@@ -91,42 +91,33 @@ namespace Wordly_alpha
                 // 
                 // wordSamplePnl
                 // 
-                Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 BackColor = Color.FromArgb(55, 55, 55);
                 Controls.Add(wordTermLbl);
                 Controls.Add(wordMeaningLbl);
                 Location = new Point(10, yLoc);
-                Name = "wordSamplePnl";
                 Size = new Size(480, 80);
-                TabIndex = 0;
                 // 
                 // wordTermLbl
                 // 
-                wordTermLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
                 wordTermLbl.BackColor = Color.FromArgb(65, 65, 65);
-                wordTermLbl.ForeColor = Color.FromArgb(200, 210, 210);
-                wordTermLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                wordTermLbl.ForeColor = Color.FromArgb(220, 230, 230);
+                wordTermLbl.Font = new Font("Cambria", 15F);
                 wordTermLbl.Location = new Point(10, 10);
-                wordTermLbl.Name = "wordTermLbl";
                 wordTermLbl.Size = new Size(225, 60);
-                wordTermLbl.TabIndex = 0;
-                wordTermLbl.Text = "word 1";
                 wordTermLbl.TextAlign = ContentAlignment.MiddleLeft;
+                AutoSize = false;
 
                 rdus = 7;
                 // 
                 // wordMeaningLbl
                 // 
-                wordMeaningLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
                 wordMeaningLbl.BackColor = Color.FromArgb(65, 65, 65);
-                wordMeaningLbl.ForeColor = Color.FromArgb(200, 210, 210);
-                wordMeaningLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                wordMeaningLbl.ForeColor = Color.FromArgb(220, 230, 230);
+                wordMeaningLbl.Font = new Font("Cambria", 12F);
                 wordMeaningLbl.Location = new Point(245, 10);
-                wordMeaningLbl.Name = "wordMeaningLbl";
                 wordMeaningLbl.Size = new Size(225, 60);
-                wordMeaningLbl.TabIndex = 1;
-                wordMeaningLbl.Text = "word 2";
                 wordMeaningLbl.TextAlign = ContentAlignment.MiddleLeft;
+                AutoSize = false;
 
                 rdus = 7;
             }

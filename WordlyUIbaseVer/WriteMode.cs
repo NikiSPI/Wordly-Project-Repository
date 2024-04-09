@@ -40,7 +40,7 @@ namespace Wordly_alpha
 
             aUnderlineTbxPnl.rdus = 1;
             statIntersectionPnl.rdus = 1;
-            aAnswerTbx.Focus();
+            ActiveControl = aAnswerTbx;
         }
 
         private void Reset()
@@ -84,7 +84,7 @@ namespace Wordly_alpha
             }
 
 
-                if (!wordMatches)
+            if (!wordMatches)
             {
                 incorrectCount++;
                 ShowNUpdateCorrectionScreen();
@@ -122,28 +122,43 @@ namespace Wordly_alpha
         }
 
 
-        private void iContinueBtn_Click(object sender, EventArgs e)
+        private void aAnswerBtn_Click(object sender = null, EventArgs e = null)
+        {
+            wordHanded();
+        }
+        private void iContinueBtn_Click(object sender = null, EventArgs e = null)
         {
             NextWord();
             incorrectPnl.Visible = false;
             aAnswerTbx.Focus();
         }
-        private void aAnswerBtn_Click(object sender, EventArgs e)
+
+        private void iWasCorrectBtn_Click(object sender = null, EventArgs e = null)
         {
+            incorrectCount--;
+            correctCount++;
+
+            NextWord();
+            incorrectPnl.Visible = false;
             aAnswerTbx.Focus();
-            wordHanded();
         }
 
 
+        private bool ctrlPressed = false;
         private void WriteMode_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && !endPnl.Visible)
             {
                 if (incorrectPnl.Visible)
                 {
-                    NextWord();
-                    incorrectPnl.Visible = false;
-                    aAnswerTbx.Focus();
+                    if(ctrlPressed)
+                    {
+                        iWasCorrectBtn_Click();
+                    }
+                    else
+                    {
+                        iContinueBtn_Click();
+                    }
                 }
                 else
                 {
@@ -153,6 +168,18 @@ namespace Wordly_alpha
                 //to surpress the 'ding' sound when pressing enter
                 e.Handled = true;
                 e.SuppressKeyPress = true;
+            }
+            else if (e.KeyCode == Keys.ControlKey)
+            {
+                ctrlPressed = true;
+            }
+        }
+
+        private void WriteMode_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.ControlKey)
+            {
+                ctrlPressed = false;
             }
         }
 
@@ -168,6 +195,5 @@ namespace Wordly_alpha
         {
             Reset();
         }
-
     }
 }

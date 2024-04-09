@@ -31,6 +31,7 @@ namespace Wordly_alpha
         private void InitializeComponent()
         {
             incorrectPnl = new RoundedPanel();
+            iWasCorrectBtn = new RoundedButton();
             iShownWordLbl = new Label();
             iAnswerWordLbl = new Label();
             iCorrectMeaningLbl = new Label();
@@ -66,6 +67,7 @@ namespace Wordly_alpha
             // incorrectPnl
             // 
             incorrectPnl.BackColor = Color.FromArgb(65, 65, 65);
+            incorrectPnl.Controls.Add(iWasCorrectBtn);
             incorrectPnl.Controls.Add(iShownWordLbl);
             incorrectPnl.Controls.Add(iAnswerWordLbl);
             incorrectPnl.Controls.Add(iCorrectMeaningLbl);
@@ -80,11 +82,33 @@ namespace Wordly_alpha
             incorrectPnl.TabIndex = 7;
             incorrectPnl.Visible = false;
             // 
+            // iWasCorrectBtn
+            // 
+            iWasCorrectBtn.Anchor = AnchorStyles.Bottom;
+            iWasCorrectBtn.BackColor = Color.FromArgb(75, 75, 75);
+            iWasCorrectBtn.CausesValidation = false;
+            iWasCorrectBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
+            iWasCorrectBtn.FlatAppearance.BorderSize = 0;
+            iWasCorrectBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
+            iWasCorrectBtn.FlatStyle = FlatStyle.Flat;
+            iWasCorrectBtn.Font = new Font("Calibri", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iWasCorrectBtn.ForeColor = Color.FromArgb(250, 230, 230);
+            iWasCorrectBtn.Location = new Point(475, 390);
+            iWasCorrectBtn.Name = "iWasCorrectBtn";
+            iWasCorrectBtn.Size = new Size(220, 75);
+            iWasCorrectBtn.TabIndex = 10;
+            iWasCorrectBtn.TabStop = false;
+            iWasCorrectBtn.Text = "I was correct";
+            iWasCorrectBtn.UseMnemonic = false;
+            iWasCorrectBtn.UseVisualStyleBackColor = false;
+            iWasCorrectBtn.Click += iWasCorrectBtn_Click;
+            // 
             // iShownWordLbl
             // 
             iShownWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            iShownWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iShownWordLbl.Location = new Point(50, 111);
+            iShownWordLbl.Font = new Font("Calibri", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iShownWordLbl.ForeColor = Color.FromArgb(200, 210, 210);
+            iShownWordLbl.Location = new Point(70, 111);
             iShownWordLbl.Name = "iShownWordLbl";
             iShownWordLbl.Size = new Size(800, 50);
             iShownWordLbl.TabIndex = 2;
@@ -94,8 +118,9 @@ namespace Wordly_alpha
             // iAnswerWordLbl
             // 
             iAnswerWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            iAnswerWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iAnswerWordLbl.Location = new Point(50, 223);
+            iAnswerWordLbl.Font = new Font("Calibri", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iAnswerWordLbl.ForeColor = Color.FromArgb(220, 230, 230);
+            iAnswerWordLbl.Location = new Point(70, 215);
             iAnswerWordLbl.Name = "iAnswerWordLbl";
             iAnswerWordLbl.Size = new Size(800, 50);
             iAnswerWordLbl.TabIndex = 9;
@@ -104,8 +129,9 @@ namespace Wordly_alpha
             // 
             // iCorrectMeaningLbl
             // 
-            iCorrectMeaningLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iCorrectMeaningLbl.Location = new Point(50, 322);
+            iCorrectMeaningLbl.Font = new Font("Calibri", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iCorrectMeaningLbl.ForeColor = Color.FromArgb(220, 230, 230);
+            iCorrectMeaningLbl.Location = new Point(70, 315);
             iCorrectMeaningLbl.Name = "iCorrectMeaningLbl";
             iCorrectMeaningLbl.RightToLeft = RightToLeft.No;
             iCorrectMeaningLbl.Size = new Size(800, 50);
@@ -116,7 +142,7 @@ namespace Wordly_alpha
             // 
             iTextIncorrectLbl.Anchor = AnchorStyles.Top;
             iTextIncorrectLbl.BackColor = Color.FromArgb(230, 200, 200);
-            iTextIncorrectLbl.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iTextIncorrectLbl.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
             iTextIncorrectLbl.ForeColor = Color.FromArgb(30, 10, 10);
             iTextIncorrectLbl.Location = new Point(340, 25);
             iTextIncorrectLbl.Name = "iTextIncorrectLbl";
@@ -127,8 +153,9 @@ namespace Wordly_alpha
             // 
             // iTextCorrectLbl
             // 
-            iTextCorrectLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            iTextCorrectLbl.Location = new Point(50, 287);
+            iTextCorrectLbl.Font = new Font("Cambria", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iTextCorrectLbl.ForeColor = Color.FromArgb(220, 230, 230);
+            iTextCorrectLbl.Location = new Point(50, 280);
             iTextCorrectLbl.Name = "iTextCorrectLbl";
             iTextCorrectLbl.Size = new Size(266, 35);
             iTextCorrectLbl.TabIndex = 6;
@@ -137,8 +164,9 @@ namespace Wordly_alpha
             // 
             // iTextAnswerLbl
             // 
-            iTextAnswerLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            iTextAnswerLbl.Location = new Point(50, 177);
+            iTextAnswerLbl.Font = new Font("Cambria", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iTextAnswerLbl.ForeColor = Color.FromArgb(220, 230, 230);
+            iTextAnswerLbl.Location = new Point(50, 170);
             iTextAnswerLbl.Name = "iTextAnswerLbl";
             iTextAnswerLbl.Size = new Size(175, 46);
             iTextAnswerLbl.TabIndex = 5;
@@ -147,7 +175,8 @@ namespace Wordly_alpha
             // 
             // iTextTermLbl
             // 
-            iTextTermLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iTextTermLbl.Font = new Font("Cambria", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            iTextTermLbl.ForeColor = Color.FromArgb(200, 210, 210);
             iTextTermLbl.Location = new Point(50, 63);
             iTextTermLbl.Name = "iTextTermLbl";
             iTextTermLbl.Size = new Size(123, 48);
@@ -164,9 +193,9 @@ namespace Wordly_alpha
             iContinueBtn.FlatAppearance.BorderSize = 0;
             iContinueBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
             iContinueBtn.FlatStyle = FlatStyle.Flat;
-            iContinueBtn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iContinueBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
             iContinueBtn.ForeColor = Color.FromArgb(220, 230, 230);
-            iContinueBtn.Location = new Point(340, 390);
+            iContinueBtn.Location = new Point(205, 390);
             iContinueBtn.Name = "iContinueBtn";
             iContinueBtn.Size = new Size(220, 75);
             iContinueBtn.TabIndex = 0;
@@ -207,7 +236,7 @@ namespace Wordly_alpha
             eBackBtn.FlatAppearance.BorderSize = 0;
             eBackBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             eBackBtn.FlatStyle = FlatStyle.Flat;
-            eBackBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eBackBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
             eBackBtn.ForeColor = Color.FromArgb(200, 210, 210);
             eBackBtn.Location = new Point(475, 425);
             eBackBtn.Name = "eBackBtn";
@@ -227,7 +256,7 @@ namespace Wordly_alpha
             eAgainBtn.FlatAppearance.BorderSize = 0;
             eAgainBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
             eAgainBtn.FlatStyle = FlatStyle.Flat;
-            eAgainBtn.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            eAgainBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
             eAgainBtn.ForeColor = Color.FromArgb(200, 210, 210);
             eAgainBtn.Location = new Point(125, 425);
             eAgainBtn.Name = "eAgainBtn";
@@ -264,7 +293,7 @@ namespace Wordly_alpha
             // aShownWordLbl
             // 
             aShownWordLbl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            aShownWordLbl.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            aShownWordLbl.Font = new Font("Calibri", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
             aShownWordLbl.ForeColor = Color.FromArgb(200, 210, 210);
             aShownWordLbl.Location = new Point(50, 60);
             aShownWordLbl.Name = "aShownWordLbl";
@@ -299,7 +328,7 @@ namespace Wordly_alpha
             aAnswerTbx.BackColor = Color.FromArgb(65, 65, 65);
             aAnswerTbx.BorderColor = Color.Empty;
             aAnswerTbx.BorderStyle = BorderStyle.None;
-            aAnswerTbx.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            aAnswerTbx.Font = new Font("Candara", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             aAnswerTbx.ForeColor = Color.FromArgb(220, 230, 230);
             aAnswerTbx.Location = new Point(50, 220);
             aAnswerTbx.Name = "aAnswerTbx";
@@ -310,6 +339,7 @@ namespace Wordly_alpha
             // statNumLeftLbl
             // 
             statNumLeftLbl.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statNumLeftLbl.ForeColor = Color.FromArgb(200, 210, 210);
             statNumLeftLbl.Location = new Point(345, 0);
             statNumLeftLbl.Name = "statNumLeftLbl";
             statNumLeftLbl.Size = new Size(150, 90);
@@ -366,6 +396,7 @@ namespace Wordly_alpha
             statNumWrongLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             statNumWrongLbl.BackColor = Color.Transparent;
             statNumWrongLbl.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statNumWrongLbl.ForeColor = Color.FromArgb(210, 220, 220);
             statNumWrongLbl.Location = new Point(250, 0);
             statNumWrongLbl.Name = "statNumWrongLbl";
             statNumWrongLbl.Size = new Size(90, 90);
@@ -377,6 +408,7 @@ namespace Wordly_alpha
             // 
             statNumCorrectLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             statNumCorrectLbl.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statNumCorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
             statNumCorrectLbl.Location = new Point(125, 0);
             statNumCorrectLbl.Name = "statNumCorrectLbl";
             statNumCorrectLbl.Size = new Size(90, 90);
@@ -398,6 +430,7 @@ namespace Wordly_alpha
             Name = "WriteMode";
             Text = "WriteMode";
             KeyDown += WriteMode_KeyDown;
+            KeyUp += WriteMode_KeyUp;
             incorrectPnl.ResumeLayout(false);
             endPnl.ResumeLayout(false);
             answerPnl.ResumeLayout(false);
@@ -434,5 +467,6 @@ namespace Wordly_alpha
         private AdvancedTextBox aAnswerTbx;
         private RoundedPanel aUnderlineTbxPnl;
         private Label resultLbl;
+        private RoundedButton iWasCorrectBtn;
     }
 }
