@@ -153,14 +153,14 @@ namespace Wordly_alpha
             // 
             titleSloganLbl.BackColor = Color.Transparent;
             titleSloganLbl.Dock = DockStyle.Fill;
-            titleSloganLbl.Font = new Font("Lexend ExtraBold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleSloganLbl.Font = new Font("Cambria", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             titleSloganLbl.ForeColor = Color.FromArgb(190, 200, 200);
-            titleSloganLbl.Location = new Point(0, 186);
+            titleSloganLbl.Location = new Point(0, 170);
             titleSloganLbl.Name = "titleSloganLbl";
             titleSloganLbl.Padding = new Padding(0, 0, 0, 15);
-            titleSloganLbl.Size = new Size(230, 54);
+            titleSloganLbl.Size = new Size(230, 70);
             titleSloganLbl.TabIndex = 12;
-            titleSloganLbl.Text = "something";
+            titleSloganLbl.Text = "The Ultimate\r\n Word Check Helper";
             titleSloganLbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // titleNameLbl
@@ -169,9 +169,9 @@ namespace Wordly_alpha
             titleNameLbl.Dock = DockStyle.Top;
             titleNameLbl.Font = new Font("Times New Roman", 39.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleNameLbl.ForeColor = Color.FromArgb(190, 200, 200);
-            titleNameLbl.Location = new Point(0, 120);
+            titleNameLbl.Location = new Point(0, 100);
             titleNameLbl.Name = "titleNameLbl";
-            titleNameLbl.Size = new Size(230, 66);
+            titleNameLbl.Size = new Size(230, 70);
             titleNameLbl.TabIndex = 11;
             titleNameLbl.Text = "Wordly";
             titleNameLbl.TextAlign = ContentAlignment.TopCenter;
@@ -183,7 +183,7 @@ namespace Wordly_alpha
             titleLogoImage.Image = Properties.Resources.defaultProfilePicWhite;
             titleLogoImage.Location = new Point(0, 0);
             titleLogoImage.Name = "titleLogoImage";
-            titleLogoImage.Size = new Size(230, 120);
+            titleLogoImage.Size = new Size(230, 100);
             titleLogoImage.SizeMode = PictureBoxSizeMode.Zoom;
             titleLogoImage.TabIndex = 9;
             titleLogoImage.TabStop = false;
@@ -285,7 +285,7 @@ namespace Wordly_alpha
             Margin = new Padding(3, 2, 3, 2);
             Name = "WordlyForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Wordly";
+            Text = "Wordly (alpha)";
             menuPnl.ResumeLayout(false);
             titlePnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)titleLogoImage).EndInit();

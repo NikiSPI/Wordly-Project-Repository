@@ -34,6 +34,11 @@
             switch1Opt1SBtn = new StylishComponents.SButton();
             contentPnl = new RoundedComponents.RoundedPanel();
             contentKeybindsPnl = new Panel();
+            label8 = new Label();
+            label9 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label5 = new Label();
             label3 = new Label();
             label4 = new Label();
             label2 = new Label();
@@ -52,11 +57,6 @@
             switchable1Opt1Lbl = new Label();
             backPnl = new Panel();
             spacingPnl = new Panel();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
             contentPnl.SuspendLayout();
             contentKeybindsPnl.SuspendLayout();
             backPnl.SuspendLayout();
@@ -75,12 +75,12 @@
             // 
             // switch1Opt2SBtn
             // 
-            switch1Opt2SBtn.Location = new Point(640, 132);
+            switch1Opt2SBtn.Location = new Point(630, 132);
             switch1Opt2SBtn.MinimumSize = new Size(45, 22);
             switch1Opt2SBtn.Name = "switch1Opt2SBtn";
             switch1Opt2SBtn.OffBackColor = Color.Gray;
             switch1Opt2SBtn.OffToggleColor = Color.Gainsboro;
-            switch1Opt2SBtn.OnBackColor = Color.FromArgb(150, 200, 200);
+            switch1Opt2SBtn.OnBackColor = Color.FromArgb(150, 180, 180);
             switch1Opt2SBtn.OnToggleColor = Color.WhiteSmoke;
             switch1Opt2SBtn.Size = new Size(80, 36);
             switch1Opt2SBtn.TabIndex = 7;
@@ -91,12 +91,12 @@
             // 
             switch1Opt1SBtn.Checked = true;
             switch1Opt1SBtn.CheckState = CheckState.Checked;
-            switch1Opt1SBtn.Location = new Point(640, 52);
+            switch1Opt1SBtn.Location = new Point(630, 52);
             switch1Opt1SBtn.MinimumSize = new Size(45, 22);
             switch1Opt1SBtn.Name = "switch1Opt1SBtn";
-            switch1Opt1SBtn.OffBackColor = Color.Gray;
+            switch1Opt1SBtn.OffBackColor = SystemColors.WindowFrame;
             switch1Opt1SBtn.OffToggleColor = Color.Gainsboro;
-            switch1Opt1SBtn.OnBackColor = Color.FromArgb(150, 200, 200);
+            switch1Opt1SBtn.OnBackColor = Color.FromArgb(100, 110, 110);
             switch1Opt1SBtn.OnToggleColor = Color.WhiteSmoke;
             switch1Opt1SBtn.Size = new Size(80, 36);
             switch1Opt1SBtn.TabIndex = 3;
@@ -142,6 +142,59 @@
             contentKeybindsPnl.Name = "contentKeybindsPnl";
             contentKeybindsPnl.Size = new Size(750, 830);
             contentKeybindsPnl.TabIndex = 11;
+            // 
+            // label8
+            // 
+            label8.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FromArgb(200, 220, 220);
+            label8.Location = new Point(510, 740);
+            label8.Name = "label8";
+            label8.Size = new Size(200, 65);
+            label8.TabIndex = 27;
+            label8.Text = "Ctrl + Enter";
+            label8.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label9
+            // 
+            label9.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(210, 220, 220);
+            label9.Location = new Point(40, 740);
+            label9.Name = "label9";
+            label9.Size = new Size(580, 65);
+            label9.TabIndex = 26;
+            label9.Text = "Submit Answers";
+            // 
+            // label6
+            // 
+            label6.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(200, 220, 220);
+            label6.Location = new Point(410, 675);
+            label6.Name = "label6";
+            label6.Size = new Size(300, 65);
+            label6.TabIndex = 25;
+            label6.Text = "Tab / Arrow Keys";
+            label6.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label7
+            // 
+            label7.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.FromArgb(210, 220, 220);
+            label7.Location = new Point(40, 675);
+            label7.Name = "label7";
+            label7.Size = new Size(580, 65);
+            label7.TabIndex = 24;
+            label7.Text = "Navigate";
+            // 
+            // label5
+            // 
+            label5.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FromArgb(210, 220, 220);
+            label5.Location = new Point(40, 590);
+            label5.Name = "label5";
+            label5.Size = new Size(580, 80);
+            label5.TabIndex = 23;
+            label5.Text = "Exam Mode";
+            label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -275,7 +328,7 @@
             kbTitleSepPnl.BackColor = Color.FromArgb(210, 220, 220);
             kbTitleSepPnl.Location = new Point(210, 40);
             kbTitleSepPnl.Name = "kbTitleSepPnl";
-            kbTitleSepPnl.Size = new Size(520, 5);
+            kbTitleSepPnl.Size = new Size(500, 5);
             kbTitleSepPnl.TabIndex = 7;
             // 
             // label1
@@ -283,7 +336,7 @@
             label1.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(210, 220, 220);
             label1.ImageAlign = ContentAlignment.MiddleLeft;
-            label1.Location = new Point(15, 0);
+            label1.Location = new Point(25, 0);
             label1.Name = "label1";
             label1.Size = new Size(195, 80);
             label1.TabIndex = 6;
@@ -305,7 +358,7 @@
             // 
             switchable1Opt1Lbl.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             switchable1Opt1Lbl.ForeColor = Color.FromArgb(230, 240, 240);
-            switchable1Opt1Lbl.Location = new Point(475, 30);
+            switchable1Opt1Lbl.Location = new Point(465, 30);
             switchable1Opt1Lbl.Name = "switchable1Opt1Lbl";
             switchable1Opt1Lbl.Size = new Size(160, 75);
             switchable1Opt1Lbl.TabIndex = 4;
@@ -329,59 +382,6 @@
             spacingPnl.Name = "spacingPnl";
             spacingPnl.Size = new Size(50, 50);
             spacingPnl.TabIndex = 11;
-            // 
-            // label5
-            // 
-            label5.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(210, 220, 220);
-            label5.Location = new Point(40, 590);
-            label5.Name = "label5";
-            label5.Size = new Size(580, 80);
-            label5.TabIndex = 23;
-            label5.Text = "Exam Mode";
-            label5.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            label6.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(200, 220, 220);
-            label6.Location = new Point(410, 675);
-            label6.Name = "label6";
-            label6.Size = new Size(300, 65);
-            label6.TabIndex = 25;
-            label6.Text = "Tab / Arrow Keys";
-            label6.TextAlign = ContentAlignment.TopRight;
-            // 
-            // label7
-            // 
-            label7.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(210, 220, 220);
-            label7.Location = new Point(40, 675);
-            label7.Name = "label7";
-            label7.Size = new Size(580, 65);
-            label7.TabIndex = 24;
-            label7.Text = "Navigate";
-            // 
-            // label8
-            // 
-            label8.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.FromArgb(200, 220, 220);
-            label8.Location = new Point(510, 740);
-            label8.Name = "label8";
-            label8.Size = new Size(200, 65);
-            label8.TabIndex = 27;
-            label8.Text = "Ctrl + Enter";
-            label8.TextAlign = ContentAlignment.TopRight;
-            // 
-            // label9
-            // 
-            label9.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.FromArgb(210, 220, 220);
-            label9.Location = new Point(40, 740);
-            label9.Name = "label9";
-            label9.Size = new Size(580, 65);
-            label9.TabIndex = 26;
-            label9.Text = "Submit Answers";
             // 
             // Settings_Window
             // 

@@ -145,4 +145,16 @@
   <data name="tilesBtnBackgroundImg_Blackpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\tilesBtnBackgroundImg.Blackpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HW_light_bulb_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\HW light bulb black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HW_light_bulb_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\HW light bulb white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HW_recent_lists_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\HW recent lists black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HW_recent_lists_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\HW recent lists white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

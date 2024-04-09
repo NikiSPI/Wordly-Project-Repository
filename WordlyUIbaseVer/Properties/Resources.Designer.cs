@@ -103,6 +103,46 @@ namespace Wordly_alpha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HW_light_bulb_black {
+            get {
+                object obj = ResourceManager.GetObject("HW_light_bulb_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HW_light_bulb_white {
+            get {
+                object obj = ResourceManager.GetObject("HW_light_bulb_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HW_recent_lists_black {
+            get {
+                object obj = ResourceManager.GetObject("HW_recent_lists_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HW_recent_lists_white {
+            get {
+                object obj = ResourceManager.GetObject("HW_recent_lists_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap redCross {
             get {
                 object obj = ResourceManager.GetObject("redCross", resourceCulture);

@@ -28,37 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            homeLbl = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            backPnl = new Panel();
+            contentPnl = new Panel();
+            contentTipsPnl = new Panel();
+            label1 = new Label();
+            tipsTitleSepPnl = new RoundedComponents.RoundedPanel();
+            pictureBox1 = new PictureBox();
+            titleTipsLbl = new Label();
+            kbTextFlashcardTitleLbl = new Label();
+            panel1 = new Panel();
+            label3 = new Label();
+            roundedPanel1 = new RoundedComponents.RoundedPanel();
+            label2 = new Label();
+            pictureBox2 = new PictureBox();
+            backPnl.SuspendLayout();
+            contentPnl.SuspendLayout();
+            contentTipsPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // homeLbl
+            // backPnl
             // 
-            homeLbl.AutoSize = true;
-            homeLbl.BackColor = Color.Transparent;
-            homeLbl.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            homeLbl.Location = new Point(200, 217);
-            homeLbl.Name = "homeLbl";
-            homeLbl.Size = new Size(230, 86);
-            homeLbl.TabIndex = 0;
-            homeLbl.Text = "HOME";
+            backPnl.AutoScroll = true;
+            backPnl.Controls.Add(contentPnl);
+            backPnl.Dock = DockStyle.Fill;
+            backPnl.Location = new Point(0, 0);
+            backPnl.Name = "backPnl";
+            backPnl.Size = new Size(1050, 650);
+            backPnl.TabIndex = 0;
+            // 
+            // contentPnl
+            // 
+            contentPnl.Controls.Add(contentTipsPnl);
+            contentPnl.Controls.Add(panel1);
+            contentPnl.Location = new Point(100, 50);
+            contentPnl.Name = "contentPnl";
+            contentPnl.Size = new Size(850, 750);
+            contentPnl.TabIndex = 0;
+            // 
+            // contentTipsPnl
+            // 
+            contentTipsPnl.Controls.Add(label1);
+            contentTipsPnl.Controls.Add(tipsTitleSepPnl);
+            contentTipsPnl.Controls.Add(pictureBox1);
+            contentTipsPnl.Controls.Add(titleTipsLbl);
+            contentTipsPnl.Controls.Add(kbTextFlashcardTitleLbl);
+            contentTipsPnl.Location = new Point(0, 0);
+            contentTipsPnl.Name = "contentTipsPnl";
+            contentTipsPnl.Size = new Size(850, 220);
+            contentTipsPnl.TabIndex = 16;
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(210, 220, 220);
+            label1.Location = new Point(22, 160);
+            label1.Name = "label1";
+            label1.Size = new Size(818, 60);
+            label1.TabIndex = 15;
+            label1.Text = "For more seamless and comfortable experience you can use the built-in Key Binds. A list of them can be found in the bottom part of the Settings Menu.";
+            // 
+            // tipsTitleSepPnl
+            // 
+            tipsTitleSepPnl.BackColor = Color.FromArgb(230, 240, 240);
+            tipsTitleSepPnl.Location = new Point(185, 42);
+            tipsTitleSepPnl.Name = "tipsTitleSepPnl";
+            tipsTitleSepPnl.Size = new Size(655, 5);
+            tipsTitleSepPnl.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.HW_light_bulb_white;
+            pictureBox1.Location = new Point(5, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(70, 70);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            // 
+            // titleTipsLbl
+            // 
+            titleTipsLbl.Font = new Font("Segoe UI", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleTipsLbl.ForeColor = Color.FromArgb(230, 240, 240);
+            titleTipsLbl.ImageAlign = ContentAlignment.MiddleLeft;
+            titleTipsLbl.Location = new Point(75, 0);
+            titleTipsLbl.Name = "titleTipsLbl";
+            titleTipsLbl.Size = new Size(150, 80);
+            titleTipsLbl.TabIndex = 8;
+            titleTipsLbl.Text = "Tips";
+            titleTipsLbl.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // kbTextFlashcardTitleLbl
+            // 
+            kbTextFlashcardTitleLbl.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            kbTextFlashcardTitleLbl.ForeColor = Color.FromArgb(235, 245, 245);
+            kbTextFlashcardTitleLbl.Location = new Point(24, 80);
+            kbTextFlashcardTitleLbl.Name = "kbTextFlashcardTitleLbl";
+            kbTextFlashcardTitleLbl.Size = new Size(580, 80);
+            kbTextFlashcardTitleLbl.TabIndex = 13;
+            kbTextFlashcardTitleLbl.Text = "• Look up the Key Binds";
+            kbTextFlashcardTitleLbl.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(roundedPanel1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new Point(0, 250);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(850, 400);
+            panel1.TabIndex = 20;
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(210, 220, 220);
+            label3.Location = new Point(275, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(300, 82);
+            label3.TabIndex = 20;
+            label3.Text = "*no recent word lists*";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel1
+            // 
+            roundedPanel1.BackColor = Color.FromArgb(230, 240, 240);
+            roundedPanel1.Location = new Point(367, 42);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(473, 5);
+            roundedPanel1.TabIndex = 18;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(230, 240, 240);
+            label2.ImageAlign = ContentAlignment.MiddleLeft;
+            label2.Location = new Point(75, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(300, 80);
+            label2.TabIndex = 17;
+            label2.Text = "Recent Word Lists";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.HW_recent_lists_white;
+            pictureBox2.Location = new Point(10, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(60, 60);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 19;
+            pictureBox2.TabStop = false;
             // 
             // Home_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(60, 60, 60);
-            ClientSize = new Size(584, 486);
-            Controls.Add(homeLbl);
+            ClientSize = new Size(1050, 650);
+            Controls.Add(backPnl);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Home_Window";
             Text = "Main_Window";
+            backPnl.ResumeLayout(false);
+            contentPnl.ResumeLayout(false);
+            contentTipsPnl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label homeLbl;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Panel backPnl;
+        private Panel contentPnl;
+        private RoundedComponents.RoundedPanel tipsTitleSepPnl;
+        private Label titleTipsLbl;
+        private Label kbTextFlashcardTitleLbl;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Panel contentTipsPnl;
+        private Panel panel1;
+        private RoundedComponents.RoundedPanel roundedPanel1;
+        private Label label2;
+        private PictureBox pictureBox2;
+        private Label label3;
     }
 }
