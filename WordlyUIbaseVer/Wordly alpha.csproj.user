@@ -7,9 +7,6 @@
     <Compile Update="ChooseListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Color Palette\CustomColorExtenderProvider.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Update="Component Classes\AdvancedTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -29,6 +26,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Component Classes\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\NonSelectableButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="WordlyForm.cs">

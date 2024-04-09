@@ -55,7 +55,7 @@ namespace Wordly_alpha
             OptionsPnl.Controls.Add(Option3Btn);
             OptionsPnl.Controls.Add(Option2Btn);
             OptionsPnl.Controls.Add(Option1Btn);
-            OptionsPnl.Location = new Point(91, 110);
+            OptionsPnl.Location = new Point(100, 110);
             OptionsPnl.Name = "OptionsPnl";
             OptionsPnl.Size = new Size(300, 430);
             OptionsPnl.TabIndex = 0;
@@ -142,7 +142,7 @@ namespace Wordly_alpha
             wordListPnl.BackColor = Color.FromArgb(50, 50, 50);
             wordListPnl.Controls.Add(wordContainerPnl);
             wordListPnl.Controls.Add(wordListTitlePnl);
-            wordListPnl.Location = new Point(483, 50);
+            wordListPnl.Location = new Point(500, 50);
             wordListPnl.Name = "wordListPnl";
             wordListPnl.Size = new Size(517, 550);
             wordListPnl.TabIndex = 2;

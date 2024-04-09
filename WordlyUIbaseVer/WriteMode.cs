@@ -12,24 +12,30 @@ namespace Wordly_alpha
 {
     public partial class WriteMode : Form
     {
-        private List<string[]> TermS;
-        private List<string[]> MeaningS;
+        private List<string> Shown;
+        private List<string> Answer;
+        private List<string[]> AnswerS;
 
-        private List<string> Term;
-        private List<string> Meaning;
-
-        private int currentCard = 0, correctWords = 0, wrongWords = 0;
+        private int currentCard = 0, correctCount = 0, incorrectCount = 0;
 
         public WriteMode()
         {
             InitializeComponent();
 
-            TermS = QuizWindow.wl.Term;
-            MeaningS = QuizWindow.wl.Meaning;
-            Term = QuizWindow.TermStrArr;
-            Meaning = QuizWindow.MeaningStrArr;
+            if (QuizWindow.answerWithMeaning)
+            {
+                Shown = QuizWindow.TermStrArr;
+                Answer = QuizWindow.MeaningStrArr;
+                AnswerS = QuizWindow.wl.Meaning;
+            }
+            else
+            {
+                Shown = QuizWindow.MeaningStrArr;
+                Answer = QuizWindow.TermStrArr;
+                AnswerS = QuizWindow.wl.Term;
+            }
 
-            aShownWordLbl.Text = Term[0];
+            aShownWordLbl.Text = Shown[0];
             UpdateStatPnl();
 
             aUnderlineTbxPnl.rdus = 1;
@@ -40,11 +46,11 @@ namespace Wordly_alpha
         private void Reset()
         {
             currentCard = 0;
-            correctWords = 0;
-            wrongWords = 0;
+            correctCount = 0;
+            incorrectCount = 0;
             UpdateStatPnl();
 
-            aShownWordLbl.Text = Term[0];
+            aShownWordLbl.Text = Shown[0];
             aAnswerTbx.Clear();
             aAnswerTbx.Focus();
 
@@ -58,28 +64,36 @@ namespace Wordly_alpha
         {
             bool wordMatches = false;
 
-            for (int i = 0; i < MeaningS[currentCard].Length; i++)
+            for (int i = 0; i < AnswerS[currentCard].Length; i++)
             {
-                if (aAnswerTbx.Text.Equals(MeaningS[currentCard][i]))
+                if (aAnswerTbx.Text.Equals(AnswerS[currentCard][i]))
                 {
-                    correctWords++;
+                    correctCount++;
                     NextWord();
 
                     wordMatches = true;
                     break;
                 }
             }
-
-            if (!wordMatches)
+            if (aAnswerTbx.Text.Equals(Answer[currentCard]))
             {
-                wrongWords++;
+                correctCount++;
+                NextWord();
+
+                wordMatches = true;
+            }
+
+
+                if (!wordMatches)
+            {
+                incorrectCount++;
                 ShowNUpdateCorrectionScreen();
             }
 
         }
         private void NextWord()
         {
-            if (currentCard >= TermS.Count - 1)
+            if (currentCard >= Shown.Count - 1)
             {
                 ShowEndScreen();
             }
@@ -88,23 +102,23 @@ namespace Wordly_alpha
                 currentCard++;
                 UpdateStatPnl();
 
-                aShownWordLbl.Text = Term[currentCard];
+                aShownWordLbl.Text = Shown[currentCard];
                 aAnswerTbx.Clear();
             }
         }
 
         private void ShowNUpdateCorrectionScreen()
         {
-            iShownWordLbl.Text = Term[currentCard];
+            iShownWordLbl.Text = Shown[currentCard];
             iAnswerWordLbl.Text = aAnswerTbx.Text;
-            iCorrectMeaningLbl.Text = Meaning[currentCard];
+            iCorrectMeaningLbl.Text = Answer[currentCard];
             incorrectPnl.Visible = true;
         }
         private void UpdateStatPnl()
         {
-            statNumCorrectLbl.Text = correctWords.ToString();
-            statNumWrongLbl.Text = wrongWords.ToString();
-            statNumLeftLbl.Text = currentCard.ToString() + " / " + TermS.Count;
+            statNumCorrectLbl.Text = correctCount.ToString();
+            statNumWrongLbl.Text = incorrectCount.ToString();
+            statNumLeftLbl.Text = currentCard.ToString() + " / " + Shown.Count;
         }
 
 
@@ -148,6 +162,7 @@ namespace Wordly_alpha
             statPnl.Visible = false;
             answerPnl.Visible = false;
             endPnl.Visible = true;
+            resultLbl.Text = ((double)(10000 * correctCount / Shown.Count) / 100) + "% " + correctCount + "/" + Shown.Count;
         }
         private void againBtn_Click(object sender, EventArgs e)
         {

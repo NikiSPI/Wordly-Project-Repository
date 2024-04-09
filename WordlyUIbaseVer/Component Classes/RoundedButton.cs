@@ -15,6 +15,8 @@ namespace RoundedComponents
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 0;
             BackColor = Color.White;
+
+            SetStyle(ControlStyles.Selectable, false);                    
         }
         protected override void OnPaint(PaintEventArgs e)
         {

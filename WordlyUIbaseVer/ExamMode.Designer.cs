@@ -49,7 +49,7 @@ namespace Wordly_alpha
             // 
             // viewTablePnl
             // 
-            viewTablePnl.BackColor = Color.White;
+            viewTablePnl.BackColor = Color.FromArgb(55, 55, 55);
             viewTablePnl.Controls.Add(tableContentPnl);
             viewTablePnl.Controls.Add(indicationPnl);
             viewTablePnl.Location = new Point(75, 75);

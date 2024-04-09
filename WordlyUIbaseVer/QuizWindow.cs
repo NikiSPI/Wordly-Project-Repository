@@ -26,6 +26,8 @@ namespace Wordly_alpha
         public static List<string> TermStrArr = new List<string>();
         public static List<string> MeaningStrArr = new List<string>();
 
+        public static bool answerWithMeaning = false, answerWithBoth = false;
+
 
         public QuizWindow(string file)
         {
@@ -81,8 +83,8 @@ namespace Wordly_alpha
         }
         private class WordPnl : RoundedPanel
         {
-            public RoundedLabel wordTermLbl = new ();
-            public RoundedLabel wordMeaningLbl = new ();
+            public RoundedLabel wordTermLbl = new();
+            public RoundedLabel wordMeaningLbl = new();
 
             public WordPnl(int yLoc)
             {
@@ -90,7 +92,7 @@ namespace Wordly_alpha
                 // wordSamplePnl
                 // 
                 Anchor = AnchorStyles.Top | AnchorStyles.Left;
-                BackColor = Color.FromArgb(55,55,55);
+                BackColor = Color.FromArgb(55, 55, 55);
                 Controls.Add(wordTermLbl);
                 Controls.Add(wordMeaningLbl);
                 Location = new Point(10, yLoc);
@@ -101,8 +103,8 @@ namespace Wordly_alpha
                 // wordTermLbl
                 // 
                 wordTermLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-                wordTermLbl.BackColor = Color.FromArgb(65,65,65);
-                wordTermLbl.ForeColor = Color.FromArgb(200,210,210);
+                wordTermLbl.BackColor = Color.FromArgb(65, 65, 65);
+                wordTermLbl.ForeColor = Color.FromArgb(200, 210, 210);
                 wordTermLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 wordTermLbl.Location = new Point(10, 10);
                 wordTermLbl.Name = "wordTermLbl";
@@ -136,7 +138,7 @@ namespace Wordly_alpha
         {
             ChooseListForm.stepsToUndo = 2;
 
-            FlashcardMode flashcardWindow = new FlashcardMode(TermStrArr, MeaningStrArr);
+            FlashcardMode flashcardWindow = new FlashcardMode();
             flashcardWindow.Dock = DockStyle.Fill;
             flashcardWindow.TopLevel = false;
             flashcardWindow.TopMost = true;
@@ -187,5 +189,6 @@ namespace Wordly_alpha
             Controls.Add(examWindow);
             examWindow.Show();
         }
+
     }
 }

@@ -153,7 +153,7 @@ namespace Wordly_alpha
             // 
             titleSloganLbl.BackColor = Color.Transparent;
             titleSloganLbl.Dock = DockStyle.Fill;
-            titleSloganLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            titleSloganLbl.Font = new Font("Lexend ExtraBold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             titleSloganLbl.ForeColor = Color.FromArgb(190, 200, 200);
             titleSloganLbl.Location = new Point(0, 186);
             titleSloganLbl.Name = "titleSloganLbl";

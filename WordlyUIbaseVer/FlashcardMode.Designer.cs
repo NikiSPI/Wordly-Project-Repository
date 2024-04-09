@@ -32,12 +32,22 @@ namespace Wordly_alpha
         {
             flashcardBtn = new RoundedButton();
             previousCardBtn = new RoundedButton();
-            nextCardBtn = new RoundedButton();
+            nextCardCBtn = new RoundedButton();
             endPnl = new RoundedPanel();
+            resultLbl = new Label();
             backBtn = new RoundedButton();
             againBtn = new RoundedButton();
             countLbl = new Label();
+            statPnl = new Panel();
+            statCorrectPbx = new PictureBox();
+            statIncorrectPbx = new PictureBox();
+            statIncorrectLbl = new Label();
+            statCorrectLbl = new Label();
+            nextCardIBtn = new RoundedButton();
             endPnl.SuspendLayout();
+            statPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)statCorrectPbx).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)statIncorrectPbx).BeginInit();
             SuspendLayout();
             // 
             // flashcardBtn
@@ -80,27 +90,28 @@ namespace Wordly_alpha
             previousCardBtn.Click += PreviousCardBtn_Click;
             previousCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
-            // nextCardBtn
+            // nextCardCBtn
             // 
-            nextCardBtn.BackColor = Color.FromArgb(190, 200, 200);
-            nextCardBtn.CausesValidation = false;
-            nextCardBtn.FlatAppearance.BorderColor = Color.FromArgb(190, 200, 200);
-            nextCardBtn.FlatAppearance.BorderSize = 0;
-            nextCardBtn.FlatStyle = FlatStyle.Flat;
-            nextCardBtn.Image = Properties.Resources.arrowRight;
-            nextCardBtn.Location = new Point(870, 280);
-            nextCardBtn.Name = "nextCardBtn";
-            nextCardBtn.Size = new Size(60, 90);
-            nextCardBtn.TabIndex = 0;
-            nextCardBtn.TabStop = false;
-            nextCardBtn.UseMnemonic = false;
-            nextCardBtn.UseVisualStyleBackColor = false;
-            nextCardBtn.Click += NextCardBtn_Click;
-            nextCardBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
+            nextCardCBtn.BackColor = Color.FromArgb(190, 250, 200);
+            nextCardCBtn.CausesValidation = false;
+            nextCardCBtn.FlatAppearance.BorderColor = Color.FromArgb(190, 250, 200);
+            nextCardCBtn.FlatAppearance.BorderSize = 0;
+            nextCardCBtn.FlatStyle = FlatStyle.Flat;
+            nextCardCBtn.Image = Properties.Resources.arrowRight;
+            nextCardCBtn.Location = new Point(870, 230);
+            nextCardCBtn.Name = "nextCardCBtn";
+            nextCardCBtn.Size = new Size(60, 90);
+            nextCardCBtn.TabIndex = 0;
+            nextCardCBtn.TabStop = false;
+            nextCardCBtn.UseMnemonic = false;
+            nextCardCBtn.UseVisualStyleBackColor = false;
+            nextCardCBtn.Click += NextCardBtn_Click;
+            nextCardCBtn.PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             // 
             // endPnl
             // 
             endPnl.BackColor = Color.FromArgb(70, 70, 70);
+            endPnl.Controls.Add(resultLbl);
             endPnl.Controls.Add(backBtn);
             endPnl.Controls.Add(againBtn);
             endPnl.Location = new Point(75, 50);
@@ -108,6 +119,17 @@ namespace Wordly_alpha
             endPnl.Size = new Size(900, 550);
             endPnl.TabIndex = 3;
             endPnl.Visible = false;
+            // 
+            // resultLbl
+            // 
+            resultLbl.Font = new Font("Segoe UI Semibold", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            resultLbl.ForeColor = Color.FromArgb(230, 240, 240);
+            resultLbl.Location = new Point(200, 100);
+            resultLbl.Name = "resultLbl";
+            resultLbl.Size = new Size(500, 200);
+            resultLbl.TabIndex = 2;
+            resultLbl.Text = "100% 123/125";
+            resultLbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // backBtn
             // 
@@ -150,13 +172,84 @@ namespace Wordly_alpha
             // 
             // countLbl
             // 
-            countLbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            countLbl.Location = new Point(75, 50);
+            countLbl.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            countLbl.ForeColor = Color.FromArgb(210, 220, 220);
+            countLbl.Location = new Point(875, 50);
             countLbl.Name = "countLbl";
-            countLbl.Size = new Size(125, 50);
+            countLbl.Size = new Size(150, 50);
             countLbl.TabIndex = 4;
-            countLbl.Text = "x / y";
+            countLbl.Text = "xxx / yyy";
             countLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // statPnl
+            // 
+            statPnl.Controls.Add(statCorrectPbx);
+            statPnl.Controls.Add(statIncorrectPbx);
+            statPnl.Controls.Add(statIncorrectLbl);
+            statPnl.Controls.Add(statCorrectLbl);
+            statPnl.Location = new Point(50, 50);
+            statPnl.Name = "statPnl";
+            statPnl.Size = new Size(150, 120);
+            statPnl.TabIndex = 4;
+            // 
+            // statCorrectPbx
+            // 
+            statCorrectPbx.Image = Properties.Resources.greenTick;
+            statCorrectPbx.Location = new Point(0, 7);
+            statCorrectPbx.Name = "statCorrectPbx";
+            statCorrectPbx.Size = new Size(52, 52);
+            statCorrectPbx.SizeMode = PictureBoxSizeMode.Zoom;
+            statCorrectPbx.TabIndex = 0;
+            statCorrectPbx.TabStop = false;
+            // 
+            // statIncorrectPbx
+            // 
+            statIncorrectPbx.Image = Properties.Resources.redCross;
+            statIncorrectPbx.Location = new Point(7, 74);
+            statIncorrectPbx.Name = "statIncorrectPbx";
+            statIncorrectPbx.Size = new Size(38, 38);
+            statIncorrectPbx.SizeMode = PictureBoxSizeMode.Zoom;
+            statIncorrectPbx.TabIndex = 3;
+            statIncorrectPbx.TabStop = false;
+            // 
+            // statIncorrectLbl
+            // 
+            statIncorrectLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statIncorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
+            statIncorrectLbl.Location = new Point(52, 60);
+            statIncorrectLbl.Name = "statIncorrectLbl";
+            statIncorrectLbl.Size = new Size(98, 60);
+            statIncorrectLbl.TabIndex = 2;
+            statIncorrectLbl.Text = "0";
+            statIncorrectLbl.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // statCorrectLbl
+            // 
+            statCorrectLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            statCorrectLbl.ForeColor = Color.FromArgb(210, 220, 220);
+            statCorrectLbl.Location = new Point(52, 0);
+            statCorrectLbl.Name = "statCorrectLbl";
+            statCorrectLbl.Size = new Size(98, 60);
+            statCorrectLbl.TabIndex = 1;
+            statCorrectLbl.Text = "0";
+            statCorrectLbl.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // nextCardIBtn
+            // 
+            nextCardIBtn.BackColor = Color.FromArgb(240, 200, 200);
+            nextCardIBtn.CausesValidation = false;
+            nextCardIBtn.FlatAppearance.BorderColor = Color.FromArgb(240, 200, 200);
+            nextCardIBtn.FlatAppearance.BorderSize = 0;
+            nextCardIBtn.FlatStyle = FlatStyle.Flat;
+            nextCardIBtn.Image = Properties.Resources.arrowRight;
+            nextCardIBtn.Location = new Point(870, 330);
+            nextCardIBtn.Name = "nextCardIBtn";
+            nextCardIBtn.Size = new Size(60, 90);
+            nextCardIBtn.TabIndex = 5;
+            nextCardIBtn.TabStop = false;
+            nextCardIBtn.UseMnemonic = false;
+            nextCardIBtn.UseVisualStyleBackColor = false;
+            nextCardIBtn.Click += NextCardBtn_Click;
             // 
             // FlashcardMode
             // 
@@ -165,10 +258,12 @@ namespace Wordly_alpha
             BackColor = Color.FromArgb(60, 60, 60);
             ClientSize = new Size(1050, 650);
             Controls.Add(endPnl);
-            Controls.Add(countLbl);
-            Controls.Add(nextCardBtn);
+            Controls.Add(nextCardIBtn);
+            Controls.Add(statPnl);
+            Controls.Add(nextCardCBtn);
             Controls.Add(previousCardBtn);
             Controls.Add(flashcardBtn);
+            Controls.Add(countLbl);
             FormBorderStyle = FormBorderStyle.None;
             KeyPreview = true;
             Name = "FlashcardMode";
@@ -176,6 +271,9 @@ namespace Wordly_alpha
             KeyDown += FlashcardMode_KeyDown;
             PreviewKeyDown += FlashcardMode_PreviewKeyDown;
             endPnl.ResumeLayout(false);
+            statPnl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)statCorrectPbx).EndInit();
+            ((System.ComponentModel.ISupportInitialize)statIncorrectPbx).EndInit();
             ResumeLayout(false);
         }
 
@@ -183,10 +281,17 @@ namespace Wordly_alpha
 
         private RoundedButton flashcardBtn;
         private RoundedButton previousCardBtn;
-        private RoundedButton nextCardBtn;
+        private RoundedButton nextCardCBtn;
         private RoundedPanel endPnl;
         private RoundedButton againBtn;
         public  RoundedButton backBtn;
         private Label countLbl;
+        private Panel statPnl;
+        private Label statCorrectLbl;
+        private PictureBox statCorrectPbx;
+        private Label statIncorrectLbl;
+        private PictureBox statIncorrectPbx;
+        private RoundedButton nextCardIBtn;
+        private Label resultLbl;
     }
 }

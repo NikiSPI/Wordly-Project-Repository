@@ -20,6 +20,7 @@ namespace Wordly_alpha
 
         public WordlyForm()
         {
+            this.
             InitializeComponent();
 
             homeWindow = (Home_Window)AddFormFunctions(new Home_Window(), true);

@@ -54,6 +54,7 @@ namespace Wordly_alpha
             statCorrectPbx = new PictureBox();
             statNumWrongLbl = new Label();
             statNumCorrectLbl = new Label();
+            resultLbl = new Label();
             incorrectPnl.SuspendLayout();
             endPnl.SuspendLayout();
             answerPnl.SuspendLayout();
@@ -178,6 +179,7 @@ namespace Wordly_alpha
             // endPnl
             // 
             endPnl.BackColor = Color.FromArgb(70, 70, 70);
+            endPnl.Controls.Add(resultLbl);
             endPnl.Controls.Add(eBackBtn);
             endPnl.Controls.Add(eAgainBtn);
             endPnl.Location = new Point(75, 50);
@@ -371,6 +373,17 @@ namespace Wordly_alpha
             statNumCorrectLbl.Text = "COR";
             statNumCorrectLbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // resultLbl
+            // 
+            resultLbl.Font = new Font("Segoe UI Semibold", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            resultLbl.ForeColor = Color.FromArgb(230, 240, 240);
+            resultLbl.Location = new Point(200, 100);
+            resultLbl.Name = "resultLbl";
+            resultLbl.Size = new Size(500, 200);
+            resultLbl.TabIndex = 4;
+            resultLbl.Text = "100% 123/125";
+            resultLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // WriteMode
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -420,5 +433,6 @@ namespace Wordly_alpha
         private RoundedPanel statIntersectionPnl;
         private AdvancedTextBox aAnswerTbx;
         private RoundedPanel aUnderlineTbxPnl;
+        private Label resultLbl;
     }
 }

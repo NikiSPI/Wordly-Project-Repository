@@ -25,8 +25,6 @@ namespace Wordly_alpha
 
         private string[] answers = new string[50];
 
-        private bool answerWithMeaning = false, answerWithBoth = true;
-
         public static Color defaultTableTbxClr = Color.FromArgb(80,80,80), defaultTilesSecondaryClr = Color.FromArgb(220, 230, 230);
         private Color incorrectAnswerTableClr, incorrectAnswerTilesClr , selectedBtnClr;
         private int RAI = 40; //RAI = rednessAmountOnIncorrect
@@ -84,14 +82,14 @@ namespace Wordly_alpha
         private void switchAnswerWords()
         {
             int loopNum = 0;
-            if (answerWithBoth)
+            if (QuizWindow.answerWithBoth)
             {
                 loopNum = wordCount / 2;
 
                 indicatorLang1ALbl.Text = "Term";
                 indicatorLang1BLbl.Text = "Meaning";
             }
-            else if (answerWithMeaning)
+            else if (QuizWindow.answerWithMeaning)
             {
                 loopNum = wordCount;
 
