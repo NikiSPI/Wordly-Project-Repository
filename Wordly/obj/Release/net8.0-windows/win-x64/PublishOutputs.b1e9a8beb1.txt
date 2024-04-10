@@ -1,0 +1,7 @@
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\Wordly.pdb
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\D3DCompiler_47_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\PenImc_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\PresentationNative_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\vcruntime140_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\wpfgfx_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\publish\win-x64\Wordly.exe

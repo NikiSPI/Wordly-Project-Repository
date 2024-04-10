@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\Programming\Visual Studio\Solutions\Wordly\Wordly\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="ChooseListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Component Classes\AdvancedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\NonSelectableButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\RoundedLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Component Classes\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Add Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ExamMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FlashcardMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Home Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QuizWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Settings Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WordlyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WriteMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
