@@ -11,18 +11,15 @@ namespace Wordly
         }
         public static WordList wl;
 
-        private string fileDir;
-
         public static List<string> TermStrArr = new List<string>();
         public static List<string> MeaningStrArr = new List<string>();
 
         public static bool answerWithMeaning = true, answerWithBoth = false;
 
 
-        public QuizWindow(string file)
+        public QuizWindow()
         {
-            fileDir = file;
-            wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(fileDir));
+            wl = JsonConvert.DeserializeObject<WordList>(File.ReadAllText(ChooseListForm.listFilePath));
 
             InitializeComponent();
             InitializeByHand();

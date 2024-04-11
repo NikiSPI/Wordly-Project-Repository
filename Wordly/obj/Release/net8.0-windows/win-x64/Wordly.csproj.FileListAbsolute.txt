@@ -485,3 +485,6 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\win-x64\Wordly.pdb
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\win-x64\Wordly.genruntimeconfig.cache
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\win-x64\ref\Wordly.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\Word Lists\ABC (for testing).json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\Word Lists\April Wordcheck List.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\win-x64\Wordly.sourcelink.json

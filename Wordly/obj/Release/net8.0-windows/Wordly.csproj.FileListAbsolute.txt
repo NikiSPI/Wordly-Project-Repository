@@ -26,3 +26,6 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\Wordly.pdb
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\Wordly.genruntimeconfig.cache
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\ref\Wordly.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Word Lists\ABC (for testing).json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Word Lists\April Wordcheck List.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\Wordly.sourcelink.json

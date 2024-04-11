@@ -5,6 +5,7 @@
         public static int stepsToUndo = 0;
 
         public QuizWindow quizWindow;
+        public static string? listFilePath;
 
         private static Color buttonBackclr = Color.FromArgb(45, 45, 45);
         private static Color buttonForeclr = Color.FromArgb(210, 220, 220);
@@ -17,9 +18,11 @@
         }
         public void InitializeFunctions()
         {
-            DirectoryInfo d = new DirectoryInfo(WordlyForm.projectFolderDir + @"\Word Lists\"); //Assuming this is your Folder
-            FileInfo[] files = d.GetFiles(); //Getting files
+            string fullname = new FileInfo("Word Lists").FullName; //the name of the folder that is seeked
 
+            DirectoryInfo d = new DirectoryInfo(fullname); //Assuming this is your Folder
+            FileInfo[] files = d.GetFiles(); //Getting files
+            
             for (int i = 0; i < files.Length; i++)
             {
                 WordListBtn btn = new WordListBtn(10 + 110 * i, files[i].Name);
@@ -32,11 +35,13 @@
         }
 
 
-        private void Button_Click(object sender, EventArgs e, string listFileName)
+        private void Button_Click(object sender, EventArgs e, string filePath)
         {
             stepsToUndo = 1;
 
-            quizWindow = new QuizWindow(listFileName);
+            listFilePath = filePath;
+
+            quizWindow = new QuizWindow();
             quizWindow.Dock = DockStyle.Fill;
             quizWindow.TopLevel = false;
             quizWindow.TopMost = true;

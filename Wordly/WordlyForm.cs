@@ -2,9 +2,6 @@ namespace Wordly
 {
     public partial class WordlyForm : Form
     {
-        private static System.Diagnostics.StackFrame stackFrame = new System.Diagnostics.StackTrace(new System.Diagnostics.StackFrame(true)).GetFrame(0);
-        public static string projectFolderDir = Path.GetDirectoryName(stackFrame.GetFileName());
-
         private int lma = 15; //LMA = lighten menubutton amount; the amount of darkening that the selected button gets
 
         private Home_Window homeWindow;

@@ -26,3 +26,6 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wo
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.WordlyForm.resources
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.WriteMode.resources
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.Up2Date
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.sourcelink.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Word Lists\ABC (for testing).json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Word Lists\April Wordcheck List.json
