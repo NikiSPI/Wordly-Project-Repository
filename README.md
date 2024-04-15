@@ -1,2 +1,2 @@
-# CSharp-WordTester
- a quizlet analog
+# Wordly
+## The Ultimate Word Check Helper
