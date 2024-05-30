@@ -28,36 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            addLbl = new Label();
             SuspendLayout();
-            // 
-            // addLbl
-            // 
-            addLbl.AutoSize = true;
-            addLbl.BackColor = Color.Transparent;
-            addLbl.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addLbl.Location = new Point(197, 200);
-            addLbl.Name = "addLbl";
-            addLbl.Size = new Size(176, 86);
-            addLbl.TabIndex = 2;
-            addLbl.Text = "ADD";
             // 
             // Add_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(60, 60, 60);
-            ClientSize = new Size(584, 486);
-            Controls.Add(addLbl);
+            BackColor = Color.FromArgb(50, 50, 50);
+            ClientSize = new Size(1050, 650);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Add_Window";
             RightToLeftLayout = true;
             Text = "Add_Window";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label addLbl;
     }
 }

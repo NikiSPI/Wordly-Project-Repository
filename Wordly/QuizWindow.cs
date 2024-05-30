@@ -70,6 +70,9 @@ namespace Wordly
         }
         private class WordPnl : RoundedPanel
         {
+            //private Color 
+
+
             public RoundedLabel wordTermLbl = new();
             public RoundedLabel wordMeaningLbl = new();
 
@@ -78,7 +81,7 @@ namespace Wordly
                 // 
                 // wordSamplePnl
                 // 
-                BackColor = Color.FromArgb(55, 55, 55);
+                BackColor = Color.FromArgb(60,60,60);
                 Controls.Add(wordTermLbl);
                 Controls.Add(wordMeaningLbl);
                 Location = new Point(10, yLoc);
@@ -168,5 +171,9 @@ namespace Wordly
             examWindow.Show();
         }
 
+        private void Option4Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

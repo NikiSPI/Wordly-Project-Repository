@@ -47,7 +47,7 @@
             // 
             // viewTablePnl
             // 
-            viewTablePnl.BackColor = Color.FromArgb(55, 55, 55);
+            viewTablePnl.BackColor = Color.FromArgb(65, 65, 65);
             viewTablePnl.Controls.Add(tableContentPnl);
             viewTablePnl.Controls.Add(indicationPnl);
             viewTablePnl.Location = new Point(75, 75);
@@ -57,7 +57,7 @@
             // 
             // tableContentPnl
             // 
-            tableContentPnl.BackColor = Color.FromArgb(55, 55, 55);
+            tableContentPnl.BackColor = Color.FromArgb(30, 30, 30);
             tableContentPnl.Dock = DockStyle.Fill;
             tableContentPnl.Location = new Point(0, 50);
             tableContentPnl.Name = "tableContentPnl";
@@ -66,7 +66,7 @@
             // 
             // indicationPnl
             // 
-            indicationPnl.BackColor = Color.FromArgb(70, 70, 70);
+            indicationPnl.BackColor = Color.FromArgb(55, 55, 55);
             indicationPnl.Controls.Add(indicatorLang2BLbl);
             indicationPnl.Controls.Add(indicatorLang2ALbl);
             indicationPnl.Controls.Add(indicatorLang1BLbl);
@@ -131,7 +131,7 @@
             submitBtn.FlatAppearance.BorderColor = Color.FromArgb(210, 230, 230);
             submitBtn.FlatStyle = FlatStyle.Flat;
             submitBtn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            submitBtn.ForeColor = Color.FromArgb(50, 50, 50);
+            submitBtn.ForeColor = Color.FromArgb(60, 60, 60);
             submitBtn.Location = new Point(425, 13);
             submitBtn.Name = "submitBtn";
             submitBtn.Size = new Size(200, 50);
@@ -203,7 +203,8 @@
             // viewTilesPnl
             // 
             viewTilesPnl.AutoScroll = true;
-            viewTilesPnl.BackColor = Color.FromArgb(80, 80, 80);
+            viewTilesPnl.BackColor = Color.FromArgb(65, 65, 65);
+            viewTilesPnl.ForeColor = Color.FromArgb(220, 230, 230);
             viewTilesPnl.Location = new Point(75, 75);
             viewTilesPnl.Name = "viewTilesPnl";
             viewTilesPnl.Size = new Size(917, 550);
@@ -215,7 +216,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = Color.FromArgb(60, 60, 60);
+            BackColor = Color.FromArgb(50, 50, 50);
             ClientSize = new Size(1050, 650);
             Controls.Add(viewTilesPnl);
             Controls.Add(selectTableBtn);

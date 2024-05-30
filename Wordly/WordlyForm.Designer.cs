@@ -35,33 +35,34 @@
             menuSettingsBtn = new Button();
             menuQuitBtn = new Button();
             menuCreateBtn = new Button();
+            menuStartBtn = new Button();
+            menuHomeBtn = new Button();
             titlePnl = new Panel();
             titleSloganLbl = new Label();
             titleNameLbl = new Label();
-            titleLogoImage = new PictureBox();
-            menuStartBtn = new Button();
-            menuHomeBtn = new Button();
+            titleIconBox = new IconBox();
             optBarPnl = new Panel();
             backBtn = new RoundedButton();
             contentPnl = new Panel();
             menuPnl.SuspendLayout();
             titlePnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)titleLogoImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)titleIconBox).BeginInit();
             optBarPnl.SuspendLayout();
             SuspendLayout();
             // 
             // menuPnl
             // 
-            menuPnl.BackColor = Color.FromArgb(30, 30, 30);
+            menuPnl.BackColor = Color.FromArgb(38, 38, 38);
             menuPnl.Controls.Add(label1);
             menuPnl.Controls.Add(menuIndicatorPnl);
             menuPnl.Controls.Add(menuSettingsBtn);
             menuPnl.Controls.Add(menuQuitBtn);
             menuPnl.Controls.Add(menuCreateBtn);
-            menuPnl.Controls.Add(titlePnl);
             menuPnl.Controls.Add(menuStartBtn);
             menuPnl.Controls.Add(menuHomeBtn);
+            menuPnl.Controls.Add(titlePnl);
             menuPnl.Dock = DockStyle.Left;
+            menuPnl.ForeColor = Color.FromArgb(210, 220, 220);
             menuPnl.Location = new Point(0, 0);
             menuPnl.Name = "menuPnl";
             menuPnl.Size = new Size(230, 720);
@@ -79,7 +80,7 @@
             // 
             // menuIndicatorPnl
             // 
-            menuIndicatorPnl.BackColor = Color.FromArgb(190, 200, 200);
+            menuIndicatorPnl.BackColor = Color.FromArgb(200, 210, 210);
             menuIndicatorPnl.Location = new Point(0, 255);
             menuIndicatorPnl.Name = "menuIndicatorPnl";
             menuIndicatorPnl.Size = new Size(5, 70);
@@ -88,12 +89,12 @@
             // menuSettingsBtn
             // 
             menuSettingsBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            menuSettingsBtn.BackColor = Color.FromArgb(30, 30, 30);
+            menuSettingsBtn.BackColor = Color.FromArgb(38, 38, 38);
             menuSettingsBtn.FlatAppearance.BorderSize = 0;
-            menuSettingsBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
+            menuSettingsBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
             menuSettingsBtn.FlatStyle = FlatStyle.Flat;
             menuSettingsBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
-            menuSettingsBtn.ForeColor = Color.FromArgb(190, 200, 200);
+            menuSettingsBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuSettingsBtn.Location = new Point(0, 570);
             menuSettingsBtn.Name = "menuSettingsBtn";
             menuSettingsBtn.Size = new Size(230, 70);
@@ -108,13 +109,13 @@
             // menuQuitBtn
             // 
             menuQuitBtn.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            menuQuitBtn.BackColor = Color.FromArgb(30, 30, 30);
+            menuQuitBtn.BackColor = Color.FromArgb(38, 38, 38);
             menuQuitBtn.FlatAppearance.BorderColor = Color.FromArgb(30, 30, 30);
             menuQuitBtn.FlatAppearance.BorderSize = 0;
-            menuQuitBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
+            menuQuitBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
             menuQuitBtn.FlatStyle = FlatStyle.Flat;
             menuQuitBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
-            menuQuitBtn.ForeColor = Color.FromArgb(190, 200, 200);
+            menuQuitBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuQuitBtn.Location = new Point(0, 640);
             menuQuitBtn.Name = "menuQuitBtn";
             menuQuitBtn.Size = new Size(230, 70);
@@ -129,14 +130,14 @@
             // menuCreateBtn
             // 
             menuCreateBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuCreateBtn.BackColor = Color.FromArgb(30, 30, 30);
+            menuCreateBtn.BackColor = Color.FromArgb(38, 38, 38);
             menuCreateBtn.FlatAppearance.BorderColor = Color.FromArgb(30, 30, 30);
             menuCreateBtn.FlatAppearance.BorderSize = 0;
             menuCreateBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 30, 30);
             menuCreateBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, 30, 30);
             menuCreateBtn.FlatStyle = FlatStyle.Flat;
             menuCreateBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
-            menuCreateBtn.ForeColor = Color.FromArgb(190, 200, 200);
+            menuCreateBtn.ForeColor = Color.FromArgb(210, 220, 220);
             menuCreateBtn.Location = new Point(0, 395);
             menuCreateBtn.Name = "menuCreateBtn";
             menuCreateBtn.Size = new Size(230, 70);
@@ -146,13 +147,54 @@
             menuCreateBtn.TextAlign = ContentAlignment.MiddleLeft;
             menuCreateBtn.UseMnemonic = false;
             menuCreateBtn.UseVisualStyleBackColor = false;
+            menuCreateBtn.Click += createBtn_Click;
+            // 
+            // menuStartBtn
+            // 
+            menuStartBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            menuStartBtn.BackColor = Color.FromArgb(38, 38, 38);
+            menuStartBtn.FlatAppearance.BorderSize = 0;
+            menuStartBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
+            menuStartBtn.FlatStyle = FlatStyle.Flat;
+            menuStartBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
+            menuStartBtn.ForeColor = Color.FromArgb(210, 220, 220);
+            menuStartBtn.Location = new Point(0, 325);
+            menuStartBtn.Name = "menuStartBtn";
+            menuStartBtn.Size = new Size(230, 70);
+            menuStartBtn.TabIndex = 0;
+            menuStartBtn.TabStop = false;
+            menuStartBtn.Text = " Start Quiz";
+            menuStartBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuStartBtn.UseMnemonic = false;
+            menuStartBtn.UseVisualStyleBackColor = false;
+            menuStartBtn.Click += startBtn_Click;
+            // 
+            // menuHomeBtn
+            // 
+            menuHomeBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            menuHomeBtn.BackColor = Color.FromArgb(38, 38, 38);
+            menuHomeBtn.FlatAppearance.BorderSize = 0;
+            menuHomeBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
+            menuHomeBtn.FlatStyle = FlatStyle.Flat;
+            menuHomeBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuHomeBtn.ForeColor = Color.FromArgb(210, 220, 220);
+            menuHomeBtn.Location = new Point(0, 255);
+            menuHomeBtn.Name = "menuHomeBtn";
+            menuHomeBtn.Size = new Size(230, 70);
+            menuHomeBtn.TabIndex = 0;
+            menuHomeBtn.TabStop = false;
+            menuHomeBtn.Text = " Home";
+            menuHomeBtn.TextAlign = ContentAlignment.MiddleLeft;
+            menuHomeBtn.UseMnemonic = false;
+            menuHomeBtn.UseVisualStyleBackColor = false;
+            menuHomeBtn.Click += homeBtn_Click;
             // 
             // titlePnl
             // 
             titlePnl.BackColor = Color.Transparent;
             titlePnl.Controls.Add(titleSloganLbl);
             titlePnl.Controls.Add(titleNameLbl);
-            titlePnl.Controls.Add(titleLogoImage);
+            titlePnl.Controls.Add(titleIconBox);
             titlePnl.Dock = DockStyle.Top;
             titlePnl.Location = new Point(0, 0);
             titlePnl.Name = "titlePnl";
@@ -182,66 +224,28 @@
             titleNameLbl.Location = new Point(0, 100);
             titleNameLbl.Name = "titleNameLbl";
             titleNameLbl.Size = new Size(230, 70);
-            titleNameLbl.TabIndex = 11;
+            titleNameLbl.TabIndex = 100;
             titleNameLbl.Text = "Wordly";
             titleNameLbl.TextAlign = ContentAlignment.TopCenter;
             // 
-            // titleLogoImage
+            // titleIconBox
             // 
-            titleLogoImage.BackColor = Color.Transparent;
-            titleLogoImage.Dock = DockStyle.Top;
-            titleLogoImage.Image = Properties.Resources.defaultProfilePicWhite;
-            titleLogoImage.Location = new Point(0, 0);
-            titleLogoImage.Name = "titleLogoImage";
-            titleLogoImage.Size = new Size(230, 100);
-            titleLogoImage.SizeMode = PictureBoxSizeMode.Zoom;
-            titleLogoImage.TabIndex = 9;
-            titleLogoImage.TabStop = false;
-            // 
-            // menuStartBtn
-            // 
-            menuStartBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuStartBtn.BackColor = Color.FromArgb(30, 30, 30);
-            menuStartBtn.FlatAppearance.BorderSize = 0;
-            menuStartBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(70, 70, 70);
-            menuStartBtn.FlatStyle = FlatStyle.Flat;
-            menuStartBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
-            menuStartBtn.ForeColor = Color.FromArgb(190, 200, 200);
-            menuStartBtn.Location = new Point(0, 325);
-            menuStartBtn.Name = "menuStartBtn";
-            menuStartBtn.Size = new Size(230, 70);
-            menuStartBtn.TabIndex = 0;
-            menuStartBtn.TabStop = false;
-            menuStartBtn.Text = " Start Quiz";
-            menuStartBtn.TextAlign = ContentAlignment.MiddleLeft;
-            menuStartBtn.UseMnemonic = false;
-            menuStartBtn.UseVisualStyleBackColor = false;
-            menuStartBtn.Click += startBtn_Click;
-            // 
-            // menuHomeBtn
-            // 
-            menuHomeBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            menuHomeBtn.BackColor = Color.FromArgb(30, 30, 30);
-            menuHomeBtn.FlatAppearance.BorderSize = 0;
-            menuHomeBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
-            menuHomeBtn.FlatStyle = FlatStyle.Flat;
-            menuHomeBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            menuHomeBtn.ForeColor = Color.FromArgb(190, 200, 200);
-            menuHomeBtn.Location = new Point(0, 255);
-            menuHomeBtn.Name = "menuHomeBtn";
-            menuHomeBtn.Size = new Size(230, 70);
-            menuHomeBtn.TabIndex = 0;
-            menuHomeBtn.TabStop = false;
-            menuHomeBtn.Text = " Home";
-            menuHomeBtn.TextAlign = ContentAlignment.MiddleLeft;
-            menuHomeBtn.UseMnemonic = false;
-            menuHomeBtn.UseVisualStyleBackColor = false;
-            menuHomeBtn.Click += homeBtn_Click;
+            titleIconBox.Dock = DockStyle.Top;
+            titleIconBox.Image = (Image)resources.GetObject("titleIconBox.Image");
+            titleIconBox.Location = new Point(0, 0);
+            titleIconBox.MaxSize = new Size(500, 500);
+            titleIconBox.Name = "titleIconBox";
+            titleIconBox.ReplacementColor = Color.FromArgb(210, 250, 250);
+            titleIconBox.Resizable = false;
+            titleIconBox.Size = new Size(230, 100);
+            titleIconBox.SizeMode = PictureBoxSizeMode.Zoom;
+            titleIconBox.TabIndex = 0;
+            titleIconBox.TabStop = false;
             // 
             // optBarPnl
             // 
             optBarPnl.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            optBarPnl.BackColor = Color.FromArgb(40, 40, 40);
+            optBarPnl.BackColor = Color.FromArgb(45, 45, 45);
             optBarPnl.Controls.Add(backBtn);
             optBarPnl.Dock = DockStyle.Top;
             optBarPnl.ForeColor = Color.DimGray;
@@ -274,7 +278,7 @@
             // 
             // contentPnl
             // 
-            contentPnl.BackColor = Color.FromArgb(60, 60, 60);
+            contentPnl.BackColor = Color.FromArgb(50, 50, 50);
             contentPnl.Dock = DockStyle.Fill;
             contentPnl.ForeColor = Color.Transparent;
             contentPnl.Location = new Point(230, 70);
@@ -300,7 +304,7 @@
             menuPnl.ResumeLayout(false);
             menuPnl.PerformLayout();
             titlePnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)titleLogoImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)titleIconBox).EndInit();
             optBarPnl.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -315,7 +319,6 @@
         private Button menuCreateBtn;
         private Button menuStartBtn;
         private Button menuHomeBtn;
-        private PictureBox titleLogoImage;
         private Panel titlePnl;
         private Label titleNameLbl;
         private Label titleSloganLbl;
@@ -323,5 +326,6 @@
         private Button menuSettingsBtn;
         private RoundedButton backBtn;
         private Label label1;
+        private IconBox titleIconBox;
     }
 }

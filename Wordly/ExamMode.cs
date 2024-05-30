@@ -13,9 +13,8 @@
 
         private string[] answers = new string[50];
 
-        public static Color defaultTableTbxClr = Color.FromArgb(80, 80, 80), defaultTilesSecondaryClr = Color.FromArgb(220, 230, 230);
         private Color incorrectAnswerTableClr, incorrectAnswerTilesClr, selectedBtnClr;
-        private int RAI = 40; //RAI = rednessAmountOnIncorrect
+        private int RAOI = 40; //RAOI = rednessAmountOnIncorrect
 
         public ExamMode()
         {
@@ -31,8 +30,8 @@
 
         private void InitializeComponentsByHand()
         {
-            incorrectAnswerTableClr = Color.FromArgb(defaultTableTbxClr.R + RAI / 2, defaultTableTbxClr.G, defaultTableTbxClr.B);
-            incorrectAnswerTilesClr = Color.FromArgb(defaultTilesSecondaryClr.R - 10 + RAI, defaultTilesSecondaryClr.G - 20, defaultTilesSecondaryClr.B - 20);
+            incorrectAnswerTableClr = Color.FromArgb(TableBox.backClr.R + RAOI / 3, TableBox.backClr.G, TableBox.backClr.B);
+            incorrectAnswerTilesClr = Color.FromArgb(viewTilesPnl.ForeColor.R - 10 + RAOI, viewTilesPnl.ForeColor.G - 20, viewTilesPnl.ForeColor.B - 20);
 
             selectedBtnClr = Color.FromArgb(BackColor.R + 10, BackColor.G + 15, BackColor.B + 15);
 
@@ -164,7 +163,7 @@
                 if (answers[i].Equals(required[i]))
                 {
                     correctAnswers++;
-                    wordTextBoxes[i].BackColor = defaultTableTbxClr;
+                    wordTextBoxes[i].BackColor = wordTextBoxes[i].BackColor;
                     wordTilePanels[i].underlinePnl.BackColor = wordTilePanels[i].answerWordTbx.ForeColor;
                 }
                 else
@@ -279,7 +278,7 @@
 
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to submit your answers?", "Wordly / Exam Mode", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure you want to submit your answers?", "Wordly \\ Exam Mode", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 updateAnswers();
                 checkResults();
@@ -307,39 +306,50 @@
 
         private class TableLabel : Label
         {
+            private Color backClr = Color.FromArgb(65, 65, 65);
+            private Color foreClr = Color.FromArgb(220, 230, 230);
+            private Color borderClr = Color.FromArgb(30,30,30);
 
             public TableLabel(int x, int y)
             {
                 Location = new Point(x, y);
                 Size = new Size(226, 21);
                 TextAlign = ContentAlignment.MiddleLeft;
-                Font = new Font("Cambria", 11F);
-                BackColor = ExamMode.defaultTableTbxClr;
-                ForeColor = Color.FromArgb(220, 230, 230);
+                Font = new Font("Cambria", 10.5F);
+                BackColor = backClr;
+                ForeColor = foreClr;
                 Paint += this_Paint;
             }
             void this_Paint(object sender, PaintEventArgs e)
             {
-                ControlPaint.DrawBorder(e.Graphics, DisplayRectangle, Color.FromArgb(55, 55, 55), ButtonBorderStyle.Solid); ;
+                ControlPaint.DrawBorder(e.Graphics, DisplayRectangle, borderClr, ButtonBorderStyle.Solid); ;
             }
         }
         private class TableBox : AdvancedTextBox
         {
+            public static Color backClr = Color.FromArgb(65, 65, 65);
+            private Color foreClr = Color.FromArgb(220, 230, 230);
+            private Color borderClr = Color.FromArgb(30, 30, 30);
+
+
             public TableBox(int x, int y)
             {
                 BorderStyle = BorderStyle.FixedSingle;
                 Location = new Point(x, y);
                 Size = new Size(225, 21);
                 Font = new Font("Candara", 11F);
-                BackColor = ExamMode.defaultTableTbxClr;
-                ForeColor = Color.FromArgb(220, 230, 230);
+                BackColor = backClr;
+                ForeColor = foreClr;
 
-                BorderColor = Color.FromArgb(55, 55, 55);
+                BorderColor = borderClr;
             }
         }
 
         private class TilePanel : RoundedPanel
         {
+            private Color pnlBackClr = Color.FromArgb(70,70,70);
+            private Color foreClr = Color.FromArgb(220,230,230);
+
             public Label shownWordLbl = new Label();
             public TextBox answerWordTbx = new();
             public RoundedPanel underlinePnl = new();
@@ -351,7 +361,7 @@
                 // 
                 Location = new Point(25, 25);
                 Size = new Size(850, 200);
-                BackColor = Color.FromArgb(70, 70, 70);
+                BackColor = pnlBackClr;
 
                 Controls.Add(shownWordLbl);
                 Controls.Add(answerWordTbx);
@@ -360,7 +370,7 @@
                 // 
                 // shownWordLbl
                 //                 
-                shownWordLbl.ForeColor = defaultTilesSecondaryClr;
+                shownWordLbl.ForeColor = foreClr;
                 shownWordLbl.Location = new Point(50, 30);
                 shownWordLbl.Size = new Size(750, 100);
                 shownWordLbl.Font = new Font("Calibri", 22F);
@@ -370,7 +380,7 @@
                 // answerWordTbx
                 // 
                 answerWordTbx.BackColor = BackColor;
-                answerWordTbx.ForeColor = defaultTilesSecondaryClr;
+                answerWordTbx.ForeColor = foreClr;
                 answerWordTbx.Location = new Point(50, 120);
                 answerWordTbx.Size = new Size(750, 36);
                 answerWordTbx.BorderStyle = BorderStyle.None;
@@ -378,7 +388,7 @@
                 //
                 // underlinePnl
                 //
-                underlinePnl.BackColor = defaultTilesSecondaryClr;
+                underlinePnl.BackColor = foreClr;
                 underlinePnl.Location = new Point(answerWordTbx.Location.X, answerWordTbx.Location.Y + answerWordTbx.Height);
                 underlinePnl.Size = new Size(answerWordTbx.Width, 5);
 

@@ -37,7 +37,7 @@
             wordListPnl = new RoundedPanel();
             wordContainerPnl = new Panel();
             wordListUnlockScrollPnl = new Panel();
-            wordListTitlePnl = new Panel();
+            wordListTitlePnl = new RoundedPanel();
             wordListTitleSepPnl = new RoundedPanel();
             wordListTitleMeaningLbl = new Label();
             wordListTitleTermLbl = new Label();
@@ -63,7 +63,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(45, 45, 45);
+            label1.BackColor = Color.Transparent;
             label1.ForeColor = SystemColors.ActiveBorder;
             label1.Location = new Point(104, 405);
             label1.Name = "label1";
@@ -74,34 +74,34 @@
             // Option4Btn
             // 
             Option4Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Option4Btn.BackColor = Color.FromArgb(45, 45, 45);
-            Option4Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
-            Option4Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(45, 45, 45);
-            Option4Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 45);
+            Option4Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option4Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            Option4Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option4Btn.FlatStyle = FlatStyle.Flat;
             Option4Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold);
             Option4Btn.ForeColor = Color.FromArgb(230, 240, 240);
-            Option4Btn.Location = new Point(0, 330);
+            Option4Btn.Location = new Point(0, 333);
             Option4Btn.Name = "Option4Btn";
-            Option4Btn.Size = new Size(300, 100);
+            Option4Btn.Size = new Size(300, 97);
             Option4Btn.TabIndex = 3;
             Option4Btn.TabStop = false;
             Option4Btn.Text = "Custom";
             Option4Btn.UseMnemonic = false;
             Option4Btn.UseVisualStyleBackColor = false;
+            Option4Btn.Click += Option4Btn_Click;
             // 
             // Option3Btn
             // 
             Option3Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Option3Btn.BackColor = Color.FromArgb(45, 45, 45);
-            Option3Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
-            Option3Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
+            Option3Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option3Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            Option3Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option3Btn.FlatStyle = FlatStyle.Flat;
             Option3Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold);
             Option3Btn.ForeColor = Color.FromArgb(230, 240, 240);
-            Option3Btn.Location = new Point(0, 220);
+            Option3Btn.Location = new Point(0, 222);
             Option3Btn.Name = "Option3Btn";
-            Option3Btn.Size = new Size(300, 100);
+            Option3Btn.Size = new Size(300, 97);
             Option3Btn.TabIndex = 2;
             Option3Btn.TabStop = false;
             Option3Btn.Text = "Exam Mode";
@@ -112,15 +112,15 @@
             // Option2Btn
             // 
             Option2Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Option2Btn.BackColor = Color.FromArgb(45, 45, 45);
-            Option2Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
-            Option2Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
+            Option2Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option2Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            Option2Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option2Btn.FlatStyle = FlatStyle.Flat;
             Option2Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option2Btn.ForeColor = Color.FromArgb(230, 240, 240);
-            Option2Btn.Location = new Point(0, 110);
+            Option2Btn.Location = new Point(0, 111);
             Option2Btn.Name = "Option2Btn";
-            Option2Btn.Size = new Size(300, 100);
+            Option2Btn.Size = new Size(300, 97);
             Option2Btn.TabIndex = 1;
             Option2Btn.TabStop = false;
             Option2Btn.Text = "Write Mode";
@@ -131,15 +131,15 @@
             // Option1Btn
             // 
             Option1Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Option1Btn.BackColor = Color.FromArgb(45, 45, 45);
-            Option1Btn.FlatAppearance.BorderColor = Color.FromArgb(45, 45, 45);
-            Option1Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(75, 75, 75);
+            Option1Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option1Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
+            Option1Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option1Btn.FlatStyle = FlatStyle.Flat;
             Option1Btn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Option1Btn.ForeColor = Color.FromArgb(230, 240, 240);
             Option1Btn.Location = new Point(0, 0);
             Option1Btn.Name = "Option1Btn";
-            Option1Btn.Size = new Size(300, 100);
+            Option1Btn.Size = new Size(300, 97);
             Option1Btn.TabIndex = 0;
             Option1Btn.TabStop = false;
             Option1Btn.Text = "Flashcards";
@@ -179,7 +179,7 @@
             // 
             // wordListTitlePnl
             // 
-            wordListTitlePnl.BackColor = Color.FromArgb(45, 45, 45);
+            wordListTitlePnl.BackColor = Color.FromArgb(55, 55, 55);
             wordListTitlePnl.Controls.Add(wordListTitleSepPnl);
             wordListTitlePnl.Controls.Add(wordListTitleMeaningLbl);
             wordListTitlePnl.Controls.Add(wordListTitleTermLbl);
@@ -192,7 +192,8 @@
             // wordListTitleSepPnl
             // 
             wordListTitleSepPnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            wordListTitleSepPnl.BackColor = Color.FromArgb(30, 30, 30);
+            wordListTitleSepPnl.BackColor = Color.FromArgb(160, 170, 170);
+            wordListTitleSepPnl.ForeColor = Color.FromArgb(80, 80, 80);
             wordListTitleSepPnl.Location = new Point(248, 7);
             wordListTitleSepPnl.Name = "wordListTitleSepPnl";
             wordListTitleSepPnl.Size = new Size(5, 76);
@@ -214,7 +215,7 @@
             // 
             wordListTitleTermLbl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             wordListTitleTermLbl.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            wordListTitleTermLbl.ForeColor = Color.FromArgb(200, 210, 210);
+            wordListTitleTermLbl.ForeColor = Color.FromArgb(210, 220, 220);
             wordListTitleTermLbl.Location = new Point(0, 0);
             wordListTitleTermLbl.Name = "wordListTitleTermLbl";
             wordListTitleTermLbl.Size = new Size(248, 90);
@@ -226,7 +227,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(60, 60, 60);
+            BackColor = Color.FromArgb(50, 50, 50);
             ClientSize = new Size(1050, 650);
             Controls.Add(wordListPnl);
             Controls.Add(OptionsPnl);
@@ -248,7 +249,7 @@
         private RoundedButton Option3Btn;
         private RoundedButton Option4Btn;
         private RoundedPanel wordListPnl;
-        private Panel wordListTitlePnl;
+        private RoundedPanel wordListTitlePnl;
         private Label wordListTitleTermLbl;
         private RoundedPanel wordListTitleSepPnl;
         private Label wordListTitleMeaningLbl;

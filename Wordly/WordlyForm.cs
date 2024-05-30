@@ -2,7 +2,7 @@ namespace Wordly
 {
     public partial class WordlyForm : Form
     {
-        private int lma = 15; //LMA = lighten menubutton amount; the amount of darkening that the selected button gets
+        private int lma = 20; //LMA = lighten menubutton amount; the amount of darkening that the selected button gets
 
         private Home_Window homeWindow;
         private ChooseListForm listChoiceWindow;
@@ -25,48 +25,33 @@ namespace Wordly
             contentPnl.Controls.Add(settingsWindow);
 
             menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
+            menuHomeBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
-            ResetBtnColors();
-            menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
-            menuIndicatorPnl.Location = new Point(0, menuHomeBtn.Location.Y);
-
-            //optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
+            UpdateSelLayout(0);
 
             ResetContentVisibility();
             homeWindow.Visible = true;
         }
         private void startBtn_Click(object sender, EventArgs e)
         {
-            ResetBtnColors();
-            menuStartBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
-            menuIndicatorPnl.Location = new Point(0, menuStartBtn.Location.Y);
-
-            //optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
+            UpdateSelLayout(1);
 
             ResetContentVisibility();
             listChoiceWindow.Visible = true;
         }
         private void createBtn_Click(object sender, EventArgs e)
         {
-            ResetBtnColors();
-            menuCreateBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
-            menuIndicatorPnl.Location = new Point(0, menuCreateBtn.Location.Y);
-
-            //optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
+            UpdateSelLayout(2);
 
             ResetContentVisibility();
             listCreationWindow.Visible = true;
         }
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            ResetBtnColors();
-            menuSettingsBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
-            menuIndicatorPnl.Location = new Point(0, menuSettingsBtn.Location.Y);
-
-            //optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
+            UpdateSelLayout(3);
 
             ResetContentVisibility();
             settingsWindow.Visible = true;
@@ -79,12 +64,62 @@ namespace Wordly
             }
         }
 
-        private void ResetBtnColors()
+        private void UpdateSelLayout(int select)
         {
             menuHomeBtn.BackColor = menuPnl.BackColor;
             menuStartBtn.BackColor = menuPnl.BackColor;
             menuCreateBtn.BackColor = menuPnl.BackColor;
             menuSettingsBtn.BackColor = menuPnl.BackColor;
+
+            menuHomeBtn.ForeColor = menuPnl.ForeColor;
+            menuStartBtn.ForeColor = menuPnl.ForeColor;
+            menuCreateBtn.ForeColor = menuPnl.ForeColor;
+            menuSettingsBtn.ForeColor = menuPnl.ForeColor;
+
+            switch (select)
+            {
+                case 0: //home
+
+                    menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
+                    menuHomeBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
+                    menuIndicatorPnl.Location = new Point(0, menuHomeBtn.Location.Y);
+
+                    //optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
+
+                    break;
+
+                case 1: //start quiz
+
+                    menuStartBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
+                    menuStartBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
+                    menuIndicatorPnl.Location = new Point(0, menuStartBtn.Location.Y);
+
+                    //optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
+
+                    break;
+
+                case 2: //create quiz
+
+                    menuCreateBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
+                    menuCreateBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
+                    menuIndicatorPnl.Location = new Point(0, menuCreateBtn.Location.Y);
+
+                    //optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
+
+                    break;
+
+                case 3: //settings
+
+                    menuSettingsBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
+                    menuSettingsBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
+                    menuIndicatorPnl.Location = new Point(0, menuSettingsBtn.Location.Y);
+
+                    //optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
+
+                    break;
+
+
+            }
         }
         private void ResetContentVisibility()
         {
@@ -93,6 +128,8 @@ namespace Wordly
             listCreationWindow.Visible = false;
             settingsWindow.Visible = false;
         }
+
+
         public static Form AddFormFunctions(Form form, bool isVisible = false)
         {
             form.FormBorderStyle = FormBorderStyle.None;
@@ -124,11 +161,6 @@ namespace Wordly
             {
                 //perform undo operation for settings window
             }
-        }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.FromArgb(1, 1, 1), ButtonBorderStyle.Solid);
         }
     }
 }

@@ -34,22 +34,22 @@
             contentTipsPnl = new Panel();
             label1 = new Label();
             tipsTitleSepPnl = new RoundedPanel();
-            pictureBox1 = new PictureBox();
             titleTipsLbl = new Label();
             kbTextFlashcardTitleLbl = new Label();
+            iconBox1 = new IconBox();
             panel1 = new Panel();
             roundedPanel2 = new RoundedPanel();
             label3 = new Label();
             roundedPanel1 = new RoundedPanel();
             label2 = new Label();
-            pictureBox2 = new PictureBox();
+            iconBox2 = new IconBox();
             backPnl.SuspendLayout();
             contentPnl.SuspendLayout();
             contentTipsPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconBox1).BeginInit();
             panel1.SuspendLayout();
             roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconBox2).BeginInit();
             SuspendLayout();
             // 
             // backPnl
@@ -75,9 +75,9 @@
             // 
             contentTipsPnl.Controls.Add(label1);
             contentTipsPnl.Controls.Add(tipsTitleSepPnl);
-            contentTipsPnl.Controls.Add(pictureBox1);
             contentTipsPnl.Controls.Add(titleTipsLbl);
             contentTipsPnl.Controls.Add(kbTextFlashcardTitleLbl);
+            contentTipsPnl.Controls.Add(iconBox1);
             contentTipsPnl.Location = new Point(0, 0);
             contentTipsPnl.Name = "contentTipsPnl";
             contentTipsPnl.Size = new Size(850, 220);
@@ -100,16 +100,6 @@
             tipsTitleSepPnl.Name = "tipsTitleSepPnl";
             tipsTitleSepPnl.Size = new Size(670, 5);
             tipsTitleSepPnl.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.HW_light_bulb_white;
-            pictureBox1.Location = new Point(5, 5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(70, 70);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 14;
-            pictureBox1.TabStop = false;
             // 
             // titleTipsLbl
             // 
@@ -134,12 +124,25 @@
             kbTextFlashcardTitleLbl.Text = "• Look up the Key Binds";
             kbTextFlashcardTitleLbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // iconBox1
+            // 
+            iconBox1.Image = (Image)resources.GetObject("iconBox1.Image");
+            iconBox1.Location = new Point(5, 5);
+            iconBox1.MaxSize = new Size(100, 100);
+            iconBox1.Name = "iconBox1";
+            iconBox1.ReplacementColor = Color.FromArgb(210, 250, 250);
+            iconBox1.Resizable = true;
+            iconBox1.Size = new Size(70, 70);
+            iconBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            iconBox1.TabIndex = 1;
+            iconBox1.TabStop = false;
+            // 
             // panel1
             // 
             panel1.Controls.Add(roundedPanel2);
             panel1.Controls.Add(roundedPanel1);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(iconBox2);
             panel1.Location = new Point(0, 270);
             panel1.Name = "panel1";
             panel1.Size = new Size(850, 400);
@@ -186,21 +189,24 @@
             label2.Text = "Recent Word Lists";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // pictureBox2
+            // iconBox2
             // 
-            pictureBox2.Image = Properties.Resources.HW_recent_lists_white;
-            pictureBox2.Location = new Point(10, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(60, 60);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 19;
-            pictureBox2.TabStop = false;
+            iconBox2.Image = (Image)resources.GetObject("iconBox2.Image");
+            iconBox2.Location = new Point(10, 12);
+            iconBox2.MaxSize = new Size(500, 500);
+            iconBox2.Name = "iconBox2";
+            iconBox2.ReplacementColor = Color.FromArgb(210, 250, 250);
+            iconBox2.Resizable = false;
+            iconBox2.Size = new Size(60, 60);
+            iconBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            iconBox2.TabIndex = 19;
+            iconBox2.TabStop = false;
             // 
             // Home_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(60, 60, 60);
+            BackColor = Color.FromArgb(50, 50, 50);
             ClientSize = new Size(1050, 650);
             Controls.Add(backPnl);
             FormBorderStyle = FormBorderStyle.None;
@@ -210,10 +216,10 @@
             backPnl.ResumeLayout(false);
             contentPnl.ResumeLayout(false);
             contentTipsPnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconBox1).EndInit();
             panel1.ResumeLayout(false);
             roundedPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -224,14 +230,14 @@
         private RoundedPanel tipsTitleSepPnl;
         private Label titleTipsLbl;
         private Label kbTextFlashcardTitleLbl;
-        private PictureBox pictureBox1;
         private Label label1;
         private Panel contentTipsPnl;
         private Panel panel1;
         private RoundedPanel roundedPanel1;
         private Label label2;
-        private PictureBox pictureBox2;
+        private IconBox iconBox2;
         private Label label3;
         private RoundedPanel roundedPanel2;
+        private IconBox iconBox1;
     }
 }
