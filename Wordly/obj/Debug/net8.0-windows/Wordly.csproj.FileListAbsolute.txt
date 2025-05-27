@@ -60,3 +60,5 @@ C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\ne
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.pdb
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\MetroFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Experimental.CustomScrollPanel.resources

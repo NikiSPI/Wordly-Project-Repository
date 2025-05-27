@@ -28,16 +28,26 @@
         /// </summary>
         public void InitializeComponent()
         {
-            contentPnl = new Panel();
+            contentPnl = new Experimental.CustomScrollPanel();
             SuspendLayout();
             // 
             // contentPnl
             // 
             contentPnl.AutoScroll = true;
+            contentPnl.BackColor = Color.FromArgb(40, 40, 40);
             contentPnl.Location = new Point(125, 50);
             contentPnl.Name = "contentPnl";
+            contentPnl.PanelRadius = 10;
             contentPnl.Size = new Size(817, 550);
             contentPnl.TabIndex = 6;
+            contentPnl.ThumbColor = Color.FromArgb(210, 220, 220);
+            contentPnl.ThumbColorChange_Hold = 30;
+            contentPnl.ThumbColorChange_Hover = 20;
+            contentPnl.ThumbHoldEnlargement = new Size(1, 1);
+            contentPnl.ThumbMargin = new Size(4, 8);
+            contentPnl.ThumbMinHeight = 50;
+            contentPnl.ThumbRadius = 3;
+            contentPnl.ThumbWidth = 7;
             // 
             // ChooseListForm
             // 
@@ -54,6 +64,6 @@
 
         #endregion
 
-        private Panel contentPnl;
+        private Experimental.CustomScrollPanel contentPnl;
     }
 }

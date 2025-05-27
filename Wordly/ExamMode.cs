@@ -391,8 +391,7 @@
                 underlinePnl.BackColor = foreClr;
                 underlinePnl.Location = new Point(answerWordTbx.Location.X, answerWordTbx.Location.Y + answerWordTbx.Height);
                 underlinePnl.Size = new Size(answerWordTbx.Width, 5);
-
-                underlinePnl.rdus = 1;
+                underlinePnl.CornerRadius = 1;
 
             }
         }

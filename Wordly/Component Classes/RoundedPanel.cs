@@ -4,7 +4,17 @@ namespace Wordly
 {
     public class RoundedPanel : Panel
     {
-        public int rdus = 10;
+        public int CornerRadius
+        {
+            get { return rdus; }
+            set 
+            { 
+                rdus = value;
+                Invalidate();
+            }
+        }
+
+        private int rdus = 8;
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);

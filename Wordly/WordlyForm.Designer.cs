@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordlyForm));
             menuPnl = new Panel();
             label1 = new Label();
-            menuIndicatorPnl = new Panel();
+            menuIndicatorPnl = new RoundedPanel();
             menuSettingsBtn = new Button();
             menuQuitBtn = new Button();
             menuCreateBtn = new Button();
@@ -81,7 +81,8 @@
             // menuIndicatorPnl
             // 
             menuIndicatorPnl.BackColor = Color.FromArgb(200, 210, 210);
-            menuIndicatorPnl.Location = new Point(0, 255);
+            menuIndicatorPnl.CornerRadius = 2;
+            menuIndicatorPnl.Location = new Point(1, 255);
             menuIndicatorPnl.Name = "menuIndicatorPnl";
             menuIndicatorPnl.Size = new Size(5, 70);
             menuIndicatorPnl.TabIndex = 6;
@@ -257,6 +258,7 @@
             // backBtn
             // 
             backBtn.BackColor = Color.FromArgb(220, 230, 230);
+            backBtn.CornerRadius = 10;
             backBtn.FlatAppearance.BorderColor = Color.FromArgb(220, 230, 230);
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(170, 180, 180);
@@ -315,7 +317,7 @@
         private Panel menuPnl;
         private Panel optBarPnl;
         private Panel contentPnl;
-        private Panel menuIndicatorPnl;
+        private RoundedPanel menuIndicatorPnl;
         private Button menuCreateBtn;
         private Button menuStartBtn;
         private Button menuHomeBtn;

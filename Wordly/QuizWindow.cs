@@ -30,7 +30,6 @@ namespace Wordly
             MeaningStrArr = new List<string>();
             CreateWordListPnl();
 
-            wordListTitleSepPnl.rdus = 1;
         }
         public void Reset()
         {
@@ -95,9 +94,9 @@ namespace Wordly
                 wordTermLbl.Location = new Point(10, 10);
                 wordTermLbl.Size = new Size(225, 60);
                 wordTermLbl.TextAlign = ContentAlignment.MiddleLeft;
+                wordMeaningLbl.CornerRadius = 7;
                 AutoSize = false;
 
-                rdus = 7;
                 // 
                 // wordMeaningLbl
                 // 
@@ -107,9 +106,9 @@ namespace Wordly
                 wordMeaningLbl.Location = new Point(245, 10);
                 wordMeaningLbl.Size = new Size(225, 60);
                 wordMeaningLbl.TextAlign = ContentAlignment.MiddleLeft;
+                wordMeaningLbl.CornerRadius = 7;
                 AutoSize = false;
 
-                rdus = 7;
             }
         }
 

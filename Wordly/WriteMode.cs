@@ -27,9 +27,6 @@
 
             aShownWordLbl.Text = Showns[0];
             UpdateStatPnl();
-
-            aUnderlineTbxPnl.rdus = 1;
-            statIntersectionPnl.rdus = 1;
             ActiveControl = aAnswerTbx;
         }
 

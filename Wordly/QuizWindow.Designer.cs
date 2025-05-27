@@ -35,7 +35,7 @@
             Option2Btn = new RoundedButton();
             Option1Btn = new RoundedButton();
             wordListPnl = new RoundedPanel();
-            wordContainerPnl = new Panel();
+            wordContainerPnl = new Experimental.CustomScrollPanel();
             wordListUnlockScrollPnl = new Panel();
             wordListTitlePnl = new RoundedPanel();
             wordListTitleSepPnl = new RoundedPanel();
@@ -75,6 +75,7 @@
             // 
             Option4Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option4Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option4Btn.CornerRadius = 10;
             Option4Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
             Option4Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option4Btn.FlatStyle = FlatStyle.Flat;
@@ -94,6 +95,7 @@
             // 
             Option3Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option3Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option3Btn.CornerRadius = 10;
             Option3Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
             Option3Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option3Btn.FlatStyle = FlatStyle.Flat;
@@ -113,6 +115,7 @@
             // 
             Option2Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option2Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option2Btn.CornerRadius = 10;
             Option2Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
             Option2Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option2Btn.FlatStyle = FlatStyle.Flat;
@@ -132,6 +135,7 @@
             // 
             Option1Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Option1Btn.BackColor = Color.FromArgb(60, 60, 60);
+            Option1Btn.CornerRadius = 10;
             Option1Btn.FlatAppearance.BorderColor = Color.FromArgb(60, 60, 60);
             Option1Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 90, 90);
             Option1Btn.FlatStyle = FlatStyle.Flat;
@@ -154,6 +158,7 @@
             wordListPnl.BackColor = Color.FromArgb(50, 50, 50);
             wordListPnl.Controls.Add(wordContainerPnl);
             wordListPnl.Controls.Add(wordListTitlePnl);
+            wordListPnl.CornerRadius = 8;
             wordListPnl.Location = new Point(500, 50);
             wordListPnl.Name = "wordListPnl";
             wordListPnl.Size = new Size(517, 550);
@@ -167,8 +172,17 @@
             wordContainerPnl.Controls.Add(wordListUnlockScrollPnl);
             wordContainerPnl.Location = new Point(0, 90);
             wordContainerPnl.Name = "wordContainerPnl";
+            wordContainerPnl.PanelRadius = 10;
             wordContainerPnl.Size = new Size(517, 460);
             wordContainerPnl.TabIndex = 1;
+            wordContainerPnl.ThumbColor = Color.FromArgb(210, 220, 220);
+            wordContainerPnl.ThumbColorChange_Hold = 40;
+            wordContainerPnl.ThumbColorChange_Hover = 30;
+            wordContainerPnl.ThumbHoldEnlargement = new Size(1, 1);
+            wordContainerPnl.ThumbMargin = new Size(4, 8);
+            wordContainerPnl.ThumbMinHeight = 40;
+            wordContainerPnl.ThumbRadius = 3;
+            wordContainerPnl.ThumbWidth = 7;
             // 
             // wordListUnlockScrollPnl
             // 
@@ -183,6 +197,7 @@
             wordListTitlePnl.Controls.Add(wordListTitleSepPnl);
             wordListTitlePnl.Controls.Add(wordListTitleMeaningLbl);
             wordListTitlePnl.Controls.Add(wordListTitleTermLbl);
+            wordListTitlePnl.CornerRadius = 8;
             wordListTitlePnl.Dock = DockStyle.Top;
             wordListTitlePnl.Location = new Point(0, 0);
             wordListTitlePnl.Name = "wordListTitlePnl";
@@ -193,6 +208,7 @@
             // 
             wordListTitleSepPnl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             wordListTitleSepPnl.BackColor = Color.FromArgb(160, 170, 170);
+            wordListTitleSepPnl.CornerRadius = 8;
             wordListTitleSepPnl.ForeColor = Color.FromArgb(80, 80, 80);
             wordListTitleSepPnl.Location = new Point(248, 7);
             wordListTitleSepPnl.Name = "wordListTitleSepPnl";
@@ -253,7 +269,7 @@
         private Label wordListTitleTermLbl;
         private RoundedPanel wordListTitleSepPnl;
         private Label wordListTitleMeaningLbl;
-        private Panel wordContainerPnl;
+        private Experimental.CustomScrollPanel wordContainerPnl;
         private Panel wordListUnlockScrollPnl;
         private Label label1;
     }
