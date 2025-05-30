@@ -49,12 +49,13 @@ namespace Wordly
                 WordPnl wp = new WordPnl(10 + i * 90);
                 wp.wordTermLbl.Text = TermStrArr[i];
                 wp.wordMeaningLbl.Text = MeaningStrArr[i];
-                wordContainerPnl.Controls.Add(wp);
+                wordContainerInnerPnl.Controls.Add(wp);
             }
             Panel spacingPnl = new Panel();
             spacingPnl.Location = new Point(0, wl.Term.Count * 90);
             spacingPnl.Size = new Size(10, 10);
-            wordContainerPnl.Controls.Add(spacingPnl);
+            wordContainerInnerPnl.Controls.Add(spacingPnl);
+            wordContainerInnerPnl.Size = new Size(wordContainerInnerPnl.Width, spacingPnl.Location.Y+spacingPnl.Height);
         }
         private string CreateWordString(string[] arr, string separate)
         {
@@ -69,9 +70,6 @@ namespace Wordly
         }
         private class WordPnl : RoundedPanel
         {
-            //private Color 
-
-
             public RoundedLabel wordTermLbl = new();
             public RoundedLabel wordMeaningLbl = new();
 

@@ -21,14 +21,7 @@ namespace Wordly
             FlatAppearance.BorderSize = 0;
             BackColor = Color.White;
 
-            OnControlAdded += RoundedButtonOnControlAdded;
-
             SetStyle(ControlStyles.Selectable, false);
-        }
-
-        private void RoundedButtonOnControlAdded(ControlEventArgs args)
-        {
-            throw new NotImplementedException();
         }
 
         protected override void OnPaint(PaintEventArgs e)

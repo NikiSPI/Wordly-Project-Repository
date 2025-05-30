@@ -15,7 +15,7 @@ namespace Experimental
             this.Load += CustomScrollPanel_Load;
 
             thumbRefreshTimer = new Timer();
-            thumbRefreshTimer.Interval = 10;
+            thumbRefreshTimer.Interval = 20;
             thumbRefreshTimer.Tick += Thumb_TimeCicle;
 
             SetValues();
@@ -147,6 +147,8 @@ namespace Experimental
                 thumbClr_default = thumb.BackColor;
                 thumbClr_hover = SetThumbClrVariants(thumb.BackColor, thumbClrChange_hover);
                 thumbClr_held = SetThumbClrVariants(thumb.BackColor, thumbClrChange_hold);
+
+                //foreach (Control c in this.Controls) c.Invalidate();
 
                 Invalidate();
             }
