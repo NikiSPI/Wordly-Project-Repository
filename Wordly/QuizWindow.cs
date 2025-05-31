@@ -29,7 +29,6 @@ namespace Wordly
             TermStrArr = new List<string>();
             MeaningStrArr = new List<string>();
             CreateWordListPnl();
-
         }
         public void Reset()
         {
@@ -49,13 +48,12 @@ namespace Wordly
                 WordPnl wp = new WordPnl(10 + i * 90);
                 wp.wordTermLbl.Text = TermStrArr[i];
                 wp.wordMeaningLbl.Text = MeaningStrArr[i];
-                wordContainerInnerPnl.Controls.Add(wp);
+                wordContainerPnl.Controls.Add(wp);
             }
             Panel spacingPnl = new Panel();
             spacingPnl.Location = new Point(0, wl.Term.Count * 90);
             spacingPnl.Size = new Size(10, 10);
-            wordContainerInnerPnl.Controls.Add(spacingPnl);
-            wordContainerInnerPnl.Size = new Size(wordContainerInnerPnl.Width, spacingPnl.Location.Y+spacingPnl.Height);
+            wordContainerPnl.Controls.Add(spacingPnl);
         }
         private string CreateWordString(string[] arr, string separate)
         {
@@ -83,30 +81,29 @@ namespace Wordly
                 Controls.Add(wordMeaningLbl);
                 Location = new Point(10, yLoc);
                 Size = new Size(480, 80);
+                CornerRadius = 12;
                 // 
                 // wordTermLbl
                 // 
                 wordTermLbl.BackColor = Color.FromArgb(65, 65, 65);
                 wordTermLbl.ForeColor = Color.FromArgb(220, 230, 230);
-                wordTermLbl.Font = new Font("Cambria", 15F);
+                wordTermLbl.Font = new Font("Cambria", 13F);
                 wordTermLbl.Location = new Point(10, 10);
                 wordTermLbl.Size = new Size(225, 60);
                 wordTermLbl.TextAlign = ContentAlignment.MiddleLeft;
-                wordMeaningLbl.CornerRadius = 7;
                 AutoSize = false;
-
+                wordTermLbl.CornerRadius = 7;
                 // 
                 // wordMeaningLbl
                 // 
                 wordMeaningLbl.BackColor = Color.FromArgb(65, 65, 65);
                 wordMeaningLbl.ForeColor = Color.FromArgb(220, 230, 230);
-                wordMeaningLbl.Font = new Font("Cambria", 12F);
+                wordMeaningLbl.Font = new Font("Cambria", 13F);
                 wordMeaningLbl.Location = new Point(245, 10);
                 wordMeaningLbl.Size = new Size(225, 60);
                 wordMeaningLbl.TextAlign = ContentAlignment.MiddleLeft;
-                wordMeaningLbl.CornerRadius = 7;
                 AutoSize = false;
-
+                wordMeaningLbl.CornerRadius = 7;
             }
         }
 

@@ -40,7 +40,7 @@
             resultLbl = new Label();
             selectTilesBtn = new RoundedButton();
             selectTableBtn = new RoundedButton();
-            viewTilesPnl = new Experimental.CustomScrollPanel();
+            viewTilesPnl = new RoundedPanel();
             viewTablePnl.SuspendLayout();
             indicationPnl.SuspendLayout();
             SuspendLayout();
@@ -50,7 +50,6 @@
             viewTablePnl.BackColor = Color.FromArgb(65, 65, 65);
             viewTablePnl.Controls.Add(tableContentPnl);
             viewTablePnl.Controls.Add(indicationPnl);
-            viewTablePnl.CornerRadius = 8;
             viewTablePnl.Location = new Point(75, 75);
             viewTablePnl.Name = "viewTablePnl";
             viewTablePnl.Size = new Size(900, 550);
@@ -129,7 +128,6 @@
             // submitBtn
             // 
             submitBtn.BackColor = Color.FromArgb(210, 230, 230);
-            submitBtn.CornerRadius = 10;
             submitBtn.FlatAppearance.BorderColor = Color.FromArgb(210, 230, 230);
             submitBtn.FlatStyle = FlatStyle.Flat;
             submitBtn.Font = new Font("Calibri", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -173,7 +171,6 @@
             // selectTilesBtn
             // 
             selectTilesBtn.BackColor = Color.Silver;
-            selectTilesBtn.CornerRadius = 10;
             selectTilesBtn.FlatAppearance.BorderColor = Color.Silver;
             selectTilesBtn.FlatAppearance.BorderSize = 0;
             selectTilesBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 95, 95);
@@ -190,7 +187,6 @@
             // selectTableBtn
             // 
             selectTableBtn.BackColor = Color.LightGray;
-            selectTableBtn.CornerRadius = 10;
             selectTableBtn.FlatAppearance.BorderColor = Color.LightGray;
             selectTableBtn.FlatAppearance.BorderSize = 0;
             selectTableBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(90, 95, 95);
@@ -211,17 +207,8 @@
             viewTilesPnl.ForeColor = Color.FromArgb(220, 230, 230);
             viewTilesPnl.Location = new Point(75, 75);
             viewTilesPnl.Name = "viewTilesPnl";
-            viewTilesPnl.PanelRadius = 10;
             viewTilesPnl.Size = new Size(917, 550);
             viewTilesPnl.TabIndex = 0;
-            viewTilesPnl.ThumbColor = Color.FromArgb(225, 235, 235);
-            viewTilesPnl.ThumbColorChange_Hold = 40;
-            viewTilesPnl.ThumbColorChange_Hover = 30;
-            viewTilesPnl.ThumbHoldEnlargement = new Size(1, 1);
-            viewTilesPnl.ThumbMargin = new Size(4, 8);
-            viewTilesPnl.ThumbMinHeight = 50;
-            viewTilesPnl.ThumbRadius = 2;
-            viewTilesPnl.ThumbWidth = 6;
             viewTilesPnl.Visible = false;
             // 
             // ExamMode
@@ -263,6 +250,6 @@
         private Panel tableContentPnl;
         private RoundedButton selectTilesBtn;
         private RoundedButton selectTableBtn;
-        private Experimental.CustomScrollPanel viewTilesPnl;
+        private RoundedPanel viewTilesPnl;
     }
 }

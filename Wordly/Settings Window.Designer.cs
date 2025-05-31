@@ -98,10 +98,10 @@
             switch1Opt1SBtn.Location = new Point(630, 52);
             switch1Opt1SBtn.MinimumSize = new Size(45, 22);
             switch1Opt1SBtn.Name = "switch1Opt1SBtn";
-            switch1Opt1SBtn.OffBackColor = Color.Gray;
+            switch1Opt1SBtn.OffBackColor = SystemColors.WindowFrame;
             switch1Opt1SBtn.OffToggleColor = Color.Gainsboro;
-            switch1Opt1SBtn.OnBackColor = Color.Gray;
-            switch1Opt1SBtn.OnToggleColor = Color.Gainsboro;
+            switch1Opt1SBtn.OnBackColor = Color.FromArgb(100, 110, 110);
+            switch1Opt1SBtn.OnToggleColor = Color.WhiteSmoke;
             switch1Opt1SBtn.Size = new Size(80, 36);
             switch1Opt1SBtn.TabIndex = 3;
             switch1Opt1SBtn.UseVisualStyleBackColor = true;
@@ -110,13 +110,15 @@
             // contentPnl
             // 
             contentPnl.BackColor = Color.FromArgb(50, 50, 50);
+            contentPnl.BorderColor = Color.Black;
+            contentPnl.BorderThickness = 0F;
             contentPnl.Controls.Add(contentKeybindsPnl);
             contentPnl.Controls.Add(switch1Opt2SBtn);
             contentPnl.Controls.Add(switch1Opt1SBtn);
             contentPnl.Controls.Add(text1Opt2Lbl);
             contentPnl.Controls.Add(switchable1Opt1Lbl);
             contentPnl.Controls.Add(text1Opt1Lbl);
-            contentPnl.CornerRadius = 8;
+            contentPnl.CornerRadius = 5;
             contentPnl.Location = new Point(150, 50);
             contentPnl.Name = "contentPnl";
             contentPnl.Size = new Size(750, 1500);
@@ -377,6 +379,8 @@
             // kbTitleSepPnl
             // 
             kbTitleSepPnl.BackColor = Color.FromArgb(210, 250, 250);
+            kbTitleSepPnl.BorderColor = Color.Black;
+            kbTitleSepPnl.BorderThickness = 0F;
             kbTitleSepPnl.CornerRadius = 1;
             kbTitleSepPnl.Location = new Point(190, 40);
             kbTitleSepPnl.Name = "kbTitleSepPnl";

@@ -27,6 +27,7 @@
 
             aShownWordLbl.Text = Showns[0];
             UpdateStatPnl();
+
             ActiveControl = aAnswerTbx;
         }
 

@@ -7,7 +7,7 @@
         public QuizWindow quizWindow;
         public static string? listFilePath;
 
-        private static Color buttonBackclr = Color.FromArgb(45, 45, 45);
+        private static Color buttonBackclr = Color.FromArgb(42, 42, 42);
         private static Color buttonForeclr = Color.FromArgb(210, 220, 220);
 
         public ChooseListForm()
@@ -61,7 +61,8 @@
                 BackColor = buttonBackclr;
                 ForeColor = buttonForeclr;
                 FlatAppearance.BorderSize = 0;
-                FlatAppearance.MouseDownBackColor = Color.FromArgb(buttonBackclr.R + 30, buttonBackclr.G + 30, buttonBackclr.B + 30);
+                FlatAppearance.MouseOverBackColor = Color.FromArgb(buttonBackclr.R + 0, buttonBackclr.G + 5, buttonBackclr.B + 5);
+                FlatAppearance.MouseDownBackColor = Color.FromArgb(buttonBackclr.R + 15, buttonBackclr.G + 15, buttonBackclr.B + 15);
                 FlatStyle = FlatStyle.Flat;
                 Font = new Font("Yu Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
                 Location = new Point(10, yPos);
@@ -71,6 +72,7 @@
                 UseMnemonic = false;
                 Text = name.Substring(0, name.Length - 5);
                 UseVisualStyleBackColor = false;
+                CornerRadius = 20;
             }
         }
 

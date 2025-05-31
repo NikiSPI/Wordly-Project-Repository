@@ -81,10 +81,9 @@
             // menuIndicatorPnl
             // 
             menuIndicatorPnl.BackColor = Color.FromArgb(200, 210, 210);
-            menuIndicatorPnl.CornerRadius = 2;
-            menuIndicatorPnl.Location = new Point(1, 255);
+            menuIndicatorPnl.Location = new Point(0, 255);
             menuIndicatorPnl.Name = "menuIndicatorPnl";
-            menuIndicatorPnl.Size = new Size(5, 70);
+            menuIndicatorPnl.Size = new Size(10, 70);
             menuIndicatorPnl.TabIndex = 6;
             // 
             // menuSettingsBtn
@@ -258,7 +257,6 @@
             // backBtn
             // 
             backBtn.BackColor = Color.FromArgb(220, 230, 230);
-            backBtn.CornerRadius = 10;
             backBtn.FlatAppearance.BorderColor = Color.FromArgb(220, 230, 230);
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(170, 180, 180);

@@ -10,9 +10,6 @@
     <Compile Update="Component Classes\AdvancedTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Component Classes\CustomScrollPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Update="Component Classes\IconBox.cs">
       <SubType>Component</SubType>
     </Compile>

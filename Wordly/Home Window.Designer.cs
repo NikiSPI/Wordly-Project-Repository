@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Window));
-            backPnl = new Experimental.CustomScrollPanel();
+            backPnl = new Panel();
             contentPnl = new Panel();
             contentTipsPnl = new Panel();
             label1 = new Label();
@@ -55,22 +55,12 @@
             // backPnl
             // 
             backPnl.AutoScroll = true;
-            backPnl.BackColor = Color.FromArgb(50, 50, 50);
             backPnl.Controls.Add(contentPnl);
             backPnl.Dock = DockStyle.Fill;
             backPnl.Location = new Point(0, 0);
             backPnl.Name = "backPnl";
-            backPnl.PanelRadius = 10;
             backPnl.Size = new Size(1050, 650);
             backPnl.TabIndex = 0;
-            backPnl.ThumbColor = Color.FromArgb(200, 240, 240);
-            backPnl.ThumbColorChange_Hold = 30;
-            backPnl.ThumbColorChange_Hover = 20;
-            backPnl.ThumbHoldEnlargement = new Size(1, 1);
-            backPnl.ThumbMargin = new Size(4, 8);
-            backPnl.ThumbMinHeight = 50;
-            backPnl.ThumbRadius = 3;
-            backPnl.ThumbWidth = 7;
             // 
             // contentPnl
             // 
@@ -106,6 +96,8 @@
             // tipsTitleSepPnl
             // 
             tipsTitleSepPnl.BackColor = Color.FromArgb(210, 250, 250);
+            tipsTitleSepPnl.BorderColor = Color.Black;
+            tipsTitleSepPnl.BorderThickness = 0F;
             tipsTitleSepPnl.CornerRadius = 1;
             tipsTitleSepPnl.Location = new Point(170, 42);
             tipsTitleSepPnl.Name = "tipsTitleSepPnl";
@@ -162,8 +154,10 @@
             // roundedPanel2
             // 
             roundedPanel2.BackColor = Color.FromArgb(50, 50, 50);
+            roundedPanel2.BorderColor = Color.Black;
+            roundedPanel2.BorderThickness = 0F;
             roundedPanel2.Controls.Add(label3);
-            roundedPanel2.CornerRadius = 8;
+            roundedPanel2.CornerRadius = 5;
             roundedPanel2.Dock = DockStyle.Bottom;
             roundedPanel2.Location = new Point(0, 90);
             roundedPanel2.Name = "roundedPanel2";
@@ -184,6 +178,8 @@
             // roundedPanel1
             // 
             roundedPanel1.BackColor = Color.FromArgb(210, 250, 250);
+            roundedPanel1.BorderColor = Color.Black;
+            roundedPanel1.BorderThickness = 0F;
             roundedPanel1.CornerRadius = 1;
             roundedPanel1.Location = new Point(335, 42);
             roundedPanel1.Name = "roundedPanel1";
@@ -238,7 +234,7 @@
 
         #endregion
 
-        private Experimental.CustomScrollPanel backPnl;
+        private Panel backPnl;
         private Panel contentPnl;
         private RoundedPanel tipsTitleSepPnl;
         private Label titleTipsLbl;

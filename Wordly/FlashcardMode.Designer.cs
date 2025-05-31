@@ -51,7 +51,10 @@
             // flashcardBtn
             // 
             flashcardBtn.BackColor = Color.FromArgb(120, 130, 130);
+            flashcardBtn.BorderColor = Color.Black;
+            flashcardBtn.BorderThickness = 0F;
             flashcardBtn.CausesValidation = false;
+            flashcardBtn.CornerRadius = 5;
             flashcardBtn.FlatAppearance.BorderColor = Color.FromArgb(120, 130, 130);
             flashcardBtn.FlatAppearance.BorderSize = 0;
             flashcardBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(100, 110, 110);
@@ -73,7 +76,10 @@
             // previousCardBtn
             // 
             previousCardBtn.BackColor = Color.FromArgb(190, 200, 200);
+            previousCardBtn.BorderColor = Color.Black;
+            previousCardBtn.BorderThickness = 0F;
             previousCardBtn.CausesValidation = false;
+            previousCardBtn.CornerRadius = 5;
             previousCardBtn.FlatAppearance.BorderColor = Color.FromArgb(190, 200, 200);
             previousCardBtn.FlatAppearance.BorderSize = 0;
             previousCardBtn.FlatStyle = FlatStyle.Flat;
@@ -91,7 +97,10 @@
             // nextCardCBtn
             // 
             nextCardCBtn.BackColor = Color.FromArgb(190, 250, 200);
+            nextCardCBtn.BorderColor = Color.Black;
+            nextCardCBtn.BorderThickness = 0F;
             nextCardCBtn.CausesValidation = false;
+            nextCardCBtn.CornerRadius = 5;
             nextCardCBtn.FlatAppearance.BorderColor = Color.FromArgb(190, 250, 200);
             nextCardCBtn.FlatAppearance.BorderSize = 0;
             nextCardCBtn.FlatStyle = FlatStyle.Flat;
@@ -109,9 +118,12 @@
             // endPnl
             // 
             endPnl.BackColor = Color.FromArgb(70, 70, 70);
+            endPnl.BorderColor = Color.Black;
+            endPnl.BorderThickness = 0F;
             endPnl.Controls.Add(resultLbl);
             endPnl.Controls.Add(backBtn);
             endPnl.Controls.Add(againBtn);
+            endPnl.CornerRadius = 5;
             endPnl.Location = new Point(75, 50);
             endPnl.Name = "endPnl";
             endPnl.Size = new Size(900, 550);
@@ -132,7 +144,10 @@
             // backBtn
             // 
             backBtn.BackColor = Color.FromArgb(55, 55, 55);
+            backBtn.BorderColor = Color.Black;
+            backBtn.BorderThickness = 0F;
             backBtn.CausesValidation = false;
+            backBtn.CornerRadius = 5;
             backBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
@@ -151,7 +166,10 @@
             // againBtn
             // 
             againBtn.BackColor = Color.FromArgb(55, 55, 55);
+            againBtn.BorderColor = Color.Black;
+            againBtn.BorderThickness = 0F;
             againBtn.CausesValidation = false;
+            againBtn.CornerRadius = 5;
             againBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             againBtn.FlatAppearance.BorderSize = 0;
             againBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
@@ -235,7 +253,10 @@
             // nextCardIBtn
             // 
             nextCardIBtn.BackColor = Color.FromArgb(240, 200, 200);
+            nextCardIBtn.BorderColor = Color.Black;
+            nextCardIBtn.BorderThickness = 0F;
             nextCardIBtn.CausesValidation = false;
+            nextCardIBtn.CornerRadius = 5;
             nextCardIBtn.FlatAppearance.BorderColor = Color.FromArgb(240, 200, 200);
             nextCardIBtn.FlatAppearance.BorderSize = 0;
             nextCardIBtn.FlatStyle = FlatStyle.Flat;

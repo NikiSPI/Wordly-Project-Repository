@@ -65,6 +65,8 @@
             // incorrectPnl
             // 
             incorrectPnl.BackColor = Color.FromArgb(65, 65, 65);
+            incorrectPnl.BorderColor = Color.Black;
+            incorrectPnl.BorderThickness = 0F;
             incorrectPnl.Controls.Add(iWasCorrectBtn);
             incorrectPnl.Controls.Add(iShownWordLbl);
             incorrectPnl.Controls.Add(iAnswerWordLbl);
@@ -74,7 +76,7 @@
             incorrectPnl.Controls.Add(iTextAnswerLbl);
             incorrectPnl.Controls.Add(iTextTermLbl);
             incorrectPnl.Controls.Add(iContinueBtn);
-            incorrectPnl.CornerRadius = 8;
+            incorrectPnl.CornerRadius = 5;
             incorrectPnl.Location = new Point(0, 0);
             incorrectPnl.Name = "incorrectPnl";
             incorrectPnl.Size = new Size(900, 500);
@@ -85,8 +87,10 @@
             // 
             iWasCorrectBtn.Anchor = AnchorStyles.Bottom;
             iWasCorrectBtn.BackColor = Color.FromArgb(75, 75, 75);
+            iWasCorrectBtn.BorderColor = Color.Black;
+            iWasCorrectBtn.BorderThickness = 0F;
             iWasCorrectBtn.CausesValidation = false;
-            iWasCorrectBtn.CornerRadius = 10;
+            iWasCorrectBtn.CornerRadius = 5;
             iWasCorrectBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             iWasCorrectBtn.FlatAppearance.BorderSize = 0;
             iWasCorrectBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
@@ -142,7 +146,9 @@
             // 
             iTextIncorrectLbl.Anchor = AnchorStyles.Top;
             iTextIncorrectLbl.BackColor = Color.FromArgb(230, 200, 200);
-            iTextIncorrectLbl.CornerRadius = 8;
+            iTextIncorrectLbl.BorderColor = Color.Black;
+            iTextIncorrectLbl.BorderThickness = 0F;
+            iTextIncorrectLbl.CornerRadius = 5;
             iTextIncorrectLbl.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
             iTextIncorrectLbl.ForeColor = Color.FromArgb(30, 10, 10);
             iTextIncorrectLbl.Location = new Point(340, 25);
@@ -189,8 +195,10 @@
             // 
             iContinueBtn.Anchor = AnchorStyles.Bottom;
             iContinueBtn.BackColor = Color.FromArgb(75, 75, 75);
+            iContinueBtn.BorderColor = Color.Black;
+            iContinueBtn.BorderThickness = 0F;
             iContinueBtn.CausesValidation = false;
-            iContinueBtn.CornerRadius = 10;
+            iContinueBtn.CornerRadius = 5;
             iContinueBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             iContinueBtn.FlatAppearance.BorderSize = 0;
             iContinueBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
@@ -210,10 +218,12 @@
             // endPnl
             // 
             endPnl.BackColor = Color.FromArgb(70, 70, 70);
+            endPnl.BorderColor = Color.Black;
+            endPnl.BorderThickness = 0F;
             endPnl.Controls.Add(resultLbl);
             endPnl.Controls.Add(eBackBtn);
             endPnl.Controls.Add(eAgainBtn);
-            endPnl.CornerRadius = 8;
+            endPnl.CornerRadius = 5;
             endPnl.Location = new Point(75, 50);
             endPnl.Name = "endPnl";
             endPnl.Size = new Size(900, 550);
@@ -234,8 +244,10 @@
             // eBackBtn
             // 
             eBackBtn.BackColor = Color.FromArgb(55, 55, 55);
+            eBackBtn.BorderColor = Color.Black;
+            eBackBtn.BorderThickness = 0F;
             eBackBtn.CausesValidation = false;
-            eBackBtn.CornerRadius = 10;
+            eBackBtn.CornerRadius = 5;
             eBackBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             eBackBtn.FlatAppearance.BorderSize = 0;
             eBackBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
@@ -255,8 +267,10 @@
             // 
             eAgainBtn.Anchor = AnchorStyles.Bottom;
             eAgainBtn.BackColor = Color.FromArgb(55, 55, 55);
+            eAgainBtn.BorderColor = Color.Black;
+            eAgainBtn.BorderThickness = 0F;
             eAgainBtn.CausesValidation = false;
-            eAgainBtn.CornerRadius = 10;
+            eAgainBtn.CornerRadius = 5;
             eAgainBtn.FlatAppearance.BorderColor = Color.FromArgb(55, 55, 55);
             eAgainBtn.FlatAppearance.BorderSize = 0;
             eAgainBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 85, 85);
@@ -276,12 +290,14 @@
             // answerPnl
             // 
             answerPnl.BackColor = Color.FromArgb(65, 65, 65);
+            answerPnl.BorderColor = Color.Black;
+            answerPnl.BorderThickness = 0F;
             answerPnl.Controls.Add(incorrectPnl);
             answerPnl.Controls.Add(aUnderlineTbxPnl);
             answerPnl.Controls.Add(aShownWordLbl);
             answerPnl.Controls.Add(aAnswerBtn);
             answerPnl.Controls.Add(aAnswerTbx);
-            answerPnl.CornerRadius = 8;
+            answerPnl.CornerRadius = 5;
             answerPnl.Location = new Point(75, 120);
             answerPnl.Name = "answerPnl";
             answerPnl.Size = new Size(900, 500);
@@ -290,6 +306,8 @@
             // aUnderlineTbxPnl
             // 
             aUnderlineTbxPnl.BackColor = Color.FromArgb(220, 230, 230);
+            aUnderlineTbxPnl.BorderColor = Color.Black;
+            aUnderlineTbxPnl.BorderThickness = 0F;
             aUnderlineTbxPnl.CornerRadius = 1;
             aUnderlineTbxPnl.ForeColor = Color.Black;
             aUnderlineTbxPnl.Location = new Point(50, 265);
@@ -313,8 +331,10 @@
             // 
             aAnswerBtn.Anchor = AnchorStyles.Bottom;
             aAnswerBtn.BackColor = Color.FromArgb(75, 75, 75);
+            aAnswerBtn.BorderColor = Color.Black;
+            aAnswerBtn.BorderThickness = 0F;
             aAnswerBtn.CausesValidation = false;
-            aAnswerBtn.CornerRadius = 10;
+            aAnswerBtn.CornerRadius = 5;
             aAnswerBtn.FlatAppearance.BorderColor = Color.FromArgb(75, 75, 75);
             aAnswerBtn.FlatAppearance.BorderSize = 0;
             aAnswerBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(95, 95, 95);
@@ -373,6 +393,8 @@
             // statIntersectionPnl
             // 
             statIntersectionPnl.BackColor = Color.FromArgb(30, 30, 30);
+            statIntersectionPnl.BorderColor = Color.Black;
+            statIntersectionPnl.BorderThickness = 0F;
             statIntersectionPnl.CornerRadius = 1;
             statIntersectionPnl.Location = new Point(340, 10);
             statIntersectionPnl.Name = "statIntersectionPnl";
