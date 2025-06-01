@@ -28,7 +28,7 @@
     <Compile Update="Component Classes\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Add Window.cs">
+    <Compile Update="Creation Window.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ExamMode.cs">

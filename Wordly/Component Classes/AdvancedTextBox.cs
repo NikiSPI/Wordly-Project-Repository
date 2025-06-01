@@ -2,10 +2,14 @@
 {
     public class AdvancedTextBox : TextBox
     {
-        //additions: auto size - off; customizable border color
+        // | Additions: automatic resizing based on lines; customizable border color
+
         public AdvancedTextBox()
         {
-            AutoSize = false;
+            TextChanged += AdvancedTextBox_TextChanged;
+            currentLineCount = LineCount();
+            
+            LineCountChanged += AdvancedTextBox_LineCountChanged;
         }
 
 
@@ -34,6 +38,45 @@
         {
             base.OnPaint(e);
             borderColor = BackColor;
+        }
+
+
+
+        public int LineCount()
+        {
+            return (GetLineFromCharIndex(Text.Length-1) + 1);
+        }
+
+
+
+        private int currentLineCount;
+
+        public event EventHandler LineCountChanged;
+        private void AdvancedTextBox_TextChanged(object? sender, EventArgs e)
+        {
+
+            // |Invoking the LineCountChanged event|; when there is a new LineCount() value
+            if (currentLineCount != LineCount())
+            {
+                LineCountChanged?.Invoke(this, EventArgs.Empty);
+                currentLineCount = LineCount();
+            }
+        }
+
+
+
+        public bool AutomaticResize
+        {
+            get { return automaticResize; }
+            set { automaticResize = value; }
+        }
+        private bool automaticResize = false;
+        private void AdvancedTextBox_LineCountChanged(object? sender, EventArgs e)
+        {
+            if (automaticResize)
+            {
+                Size = new Size(Width, 1 + (PreferredHeight + 1) * LineCount());
+            }
         }
     }
 }

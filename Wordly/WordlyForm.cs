@@ -6,7 +6,7 @@ namespace Wordly
 
         private Home_Window homeWindow;
         private ChooseListForm listChoiceWindow;
-        private Add_Window listCreationWindow;
+        private Creation_Window listCreationWindow;
         private Settings_Window settingsWindow;
 
         public WordlyForm()
@@ -19,7 +19,7 @@ namespace Wordly
 
             listChoiceWindow = (ChooseListForm)AddFormFunctions(new ChooseListForm());
             contentPnl.Controls.Add(listChoiceWindow);
-            listCreationWindow = (Add_Window)AddFormFunctions(new Add_Window());
+            listCreationWindow = (Creation_Window)AddFormFunctions(new Creation_Window());
             contentPnl.Controls.Add(listCreationWindow);
             settingsWindow = (Settings_Window)AddFormFunctions(new Settings_Window());
             contentPnl.Controls.Add(settingsWindow);
@@ -30,28 +30,28 @@ namespace Wordly
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
-            UpdateSelLayout(0);
+            UpdateMenuLayout(0);
 
             ResetContentVisibility();
             homeWindow.Visible = true;
         }
         private void startBtn_Click(object sender, EventArgs e)
         {
-            UpdateSelLayout(1);
+            UpdateMenuLayout(1);
 
             ResetContentVisibility();
             listChoiceWindow.Visible = true;
         }
         private void createBtn_Click(object sender, EventArgs e)
         {
-            UpdateSelLayout(2);
+            UpdateMenuLayout(2);
 
             ResetContentVisibility();
             listCreationWindow.Visible = true;
         }
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            UpdateSelLayout(3);
+            UpdateMenuLayout(3);
 
             ResetContentVisibility();
             settingsWindow.Visible = true;
@@ -64,7 +64,7 @@ namespace Wordly
             }
         }
 
-        private void UpdateSelLayout(int select)
+        private void UpdateMenuLayout(int select)
         {
             menuHomeBtn.BackColor = menuPnl.BackColor;
             menuStartBtn.BackColor = menuPnl.BackColor;

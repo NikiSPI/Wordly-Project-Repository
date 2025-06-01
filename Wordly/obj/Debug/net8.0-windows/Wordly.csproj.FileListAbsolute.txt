@@ -15,7 +15,6 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wo
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.AssemblyReference.cache
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Add_Window.resources
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ChooseListForm.resources
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ExamMode.resources
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.FlashcardMode.resources
@@ -90,3 +89,4 @@ C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\Wordly.pdb
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Creation_Window.resources
