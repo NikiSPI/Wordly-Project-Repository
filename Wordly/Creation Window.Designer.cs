@@ -36,12 +36,13 @@
             comboBox2 = new ComboBox();
             roundedPanel1 = new RoundedPanel();
             roundedPanel4 = new RoundedPanel();
-            richTextBox1 = new RichTextBox();
+            meaningTB = new AdvancedTextBox();
             roundedPanel2 = new RoundedPanel();
             termTB = new AdvancedTextBox();
             label4 = new Label();
             roundedPanel1.SuspendLayout();
             roundedPanel4.SuspendLayout();
+            roundedPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // advancedTextBox1
@@ -51,6 +52,7 @@
             advancedTextBox1.BorderStyle = BorderStyle.FixedSingle;
             advancedTextBox1.Font = new Font("Segoe UI", 25F);
             advancedTextBox1.Location = new Point(459, 77);
+            advancedTextBox1.MaxLineCount = 10;
             advancedTextBox1.Name = "advancedTextBox1";
             advancedTextBox1.PlaceholderText = "Type here";
             advancedTextBox1.Size = new Size(284, 52);
@@ -112,59 +114,65 @@
             roundedPanel1.BackColor = SystemColors.Highlight;
             roundedPanel1.BorderColor = Color.Black;
             roundedPanel1.BorderThickness = 0F;
-            roundedPanel1.Controls.Add(termTB);
             roundedPanel1.Controls.Add(roundedPanel4);
             roundedPanel1.Controls.Add(roundedPanel2);
             roundedPanel1.CornerRadius = 15;
-            roundedPanel1.Location = new Point(114, 450);
+            roundedPanel1.Location = new Point(100, 450);
             roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(832, 775);
+            roundedPanel1.Size = new Size(850, 110);
             roundedPanel1.TabIndex = 6;
             // 
             // roundedPanel4
             // 
-            roundedPanel4.BackColor = Color.Salmon;
+            roundedPanel4.BackColor = Color.RosyBrown;
             roundedPanel4.BorderColor = Color.Black;
             roundedPanel4.BorderThickness = 0F;
-            roundedPanel4.Controls.Add(richTextBox1);
-            roundedPanel4.CornerRadius = 5;
-            roundedPanel4.Location = new Point(445, 40);
+            roundedPanel4.Controls.Add(meaningTB);
+            roundedPanel4.CornerRadius = 15;
+            roundedPanel4.Location = new Point(440, 20);
             roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new Size(351, 66);
+            roundedPanel4.Size = new Size(380, 70);
             roundedPanel4.TabIndex = 2;
             // 
-            // richTextBox1
+            // meaningTB
             // 
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Location = new Point(25, 3);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ScrollBars = RichTextBoxScrollBars.None;
-            richTextBox1.Size = new Size(310, 60);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "";
+            meaningTB.AutomaticResize = true;
+            meaningTB.BackColor = Color.RosyBrown;
+            meaningTB.BorderColor = Color.Empty;
+            meaningTB.BorderStyle = BorderStyle.None;
+            meaningTB.Font = new Font("Segoe UI", 15F);
+            meaningTB.Location = new Point(20, 20);
+            meaningTB.MaxLineCount = 10;
+            meaningTB.Multiline = true;
+            meaningTB.Name = "meaningTB";
+            meaningTB.Size = new Size(340, 29);
+            meaningTB.TabIndex = 1;
+            meaningTB.LineCountChanged += meaningTB_LineCountChanged;
             // 
             // roundedPanel2
             // 
-            roundedPanel2.BackColor = Color.SandyBrown;
+            roundedPanel2.BackColor = Color.RosyBrown;
             roundedPanel2.BorderColor = Color.Black;
             roundedPanel2.BorderThickness = 0F;
-            roundedPanel2.CornerRadius = 5;
-            roundedPanel2.Location = new Point(47, 40);
+            roundedPanel2.Controls.Add(termTB);
+            roundedPanel2.CornerRadius = 15;
+            roundedPanel2.Location = new Point(30, 0);
             roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(355, 70);
+            roundedPanel2.Size = new Size(380, 110);
             roundedPanel2.TabIndex = 0;
             // 
             // termTB
             // 
             termTB.AutomaticResize = true;
-            termTB.BackColor = Color.LightCoral;
+            termTB.BackColor = Color.IndianRed;
             termTB.BorderColor = Color.Empty;
             termTB.BorderStyle = BorderStyle.None;
             termTB.Font = new Font("Segoe UI", 15F);
-            termTB.Location = new Point(47, 61);
+            termTB.Location = new Point(27, 20);
+            termTB.MaxLineCount = 3;
             termTB.Multiline = true;
             termTB.Name = "termTB";
-            termTB.Size = new Size(349, 29);
+            termTB.Size = new Size(340, 29);
             termTB.TabIndex = 0;
             termTB.LineCountChanged += termTB_LineCountChanged;
             // 
@@ -197,8 +205,10 @@
             Name = "Creation_Window";
             Text = "Creation_Window";
             roundedPanel1.ResumeLayout(false);
-            roundedPanel1.PerformLayout();
             roundedPanel4.ResumeLayout(false);
+            roundedPanel4.PerformLayout();
+            roundedPanel2.ResumeLayout(false);
+            roundedPanel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -215,7 +225,7 @@
         private RoundedPanel roundedPanel4;
         private RoundedPanel roundedPanel2;
         private AdvancedTextBox termTB;
-        private RichTextBox richTextBox1;
         private Label label4;
+        private AdvancedTextBox meaningTB;
     }
 }

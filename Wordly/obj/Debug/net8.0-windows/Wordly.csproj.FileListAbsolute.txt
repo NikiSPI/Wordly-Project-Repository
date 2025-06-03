@@ -37,7 +37,6 @@ C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\ne
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.pdb
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Add_Window.resources
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ChooseListForm.resources
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ExamMode.resources
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.FlashcardMode.resources
@@ -90,3 +89,4 @@ C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Creation_Window.resources
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Creation_Window.resources

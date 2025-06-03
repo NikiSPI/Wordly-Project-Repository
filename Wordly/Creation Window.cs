@@ -26,9 +26,15 @@ namespace Wordly
         private int inYLoc; //initial Y location
         private void termTB_LineCountChanged(object sender, EventArgs e)
         {
-            termTB.Location = new Point(termTB.Location.X, inYLoc - (termTB.PreferredHeight + 1) / 2 * (termTB.LineCount() - 1) );
+            termTB.Location = new Point(termTB.Location.X, inYLoc - (termTB.PreferredHeight + 1) / 2 * (termTB.LineCount() - 1));
+            
 
         }
 
+        private void meaningTB_LineCountChanged(object sender, EventArgs e)
+        {
+            meaningTB.Location = new Point(meaningTB.Location.X, inYLoc - (meaningTB.PreferredHeight + 1) / 2 * (meaningTB.LineCount() - 1));
+
+        }
     }
 }

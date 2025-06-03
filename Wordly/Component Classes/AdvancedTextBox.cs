@@ -1,4 +1,6 @@
-﻿namespace Wordly
+﻿using System.Diagnostics.Eventing.Reader;
+
+namespace Wordly
 {
     public class AdvancedTextBox : TextBox
     {
@@ -44,7 +46,10 @@
 
         public int LineCount()
         {
-            return (GetLineFromCharIndex(Text.Length-1) + 1);
+            if (Text[Text.Length - 1] == '\n')
+                return (GetLineFromCharIndex(Text.Length - 1) + 1);
+
+            return (GetLineFromCharIndex(Text.Length - 1) + 1);
         }
 
 
@@ -65,18 +70,41 @@
 
 
 
+        private bool automaticResize = false;
         public bool AutomaticResize
         {
             get { return automaticResize; }
             set { automaticResize = value; }
         }
-        private bool automaticResize = false;
+
+        private int maxLineCount = 10;
+        public int MaxLineCount
+        {
+            get { return maxLineCount; }
+            set { maxLineCount = value; }
+        }
+
+        public event EventHandler MaxLineCountReached;
+
         private void AdvancedTextBox_LineCountChanged(object? sender, EventArgs e)
         {
-            if (automaticResize)
+            if (LineCount() > maxLineCount)
+            {
+
+                Text = Text.Substring(0, Text.Length - 1);
+                SelectionStart = Text.Length;
+
+
+                //'MAX LENGTH REACHED'
+                LineCountChanged?.Invoke(this, EventArgs.Empty);
+            }
+            else if (automaticResize)
             {
                 Size = new Size(Width, 1 + (PreferredHeight + 1) * LineCount());
             }
+            
+
+
         }
     }
 }
