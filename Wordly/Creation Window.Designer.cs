@@ -156,19 +156,19 @@
             roundedPanel2.BorderThickness = 0F;
             roundedPanel2.Controls.Add(termTB);
             roundedPanel2.CornerRadius = 15;
-            roundedPanel2.Location = new Point(30, 0);
+            roundedPanel2.Location = new Point(30, 20);
             roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(380, 110);
+            roundedPanel2.Size = new Size(380, 70);
             roundedPanel2.TabIndex = 0;
             // 
             // termTB
             // 
             termTB.AutomaticResize = true;
-            termTB.BackColor = Color.IndianRed;
+            termTB.BackColor = Color.RosyBrown;
             termTB.BorderColor = Color.Empty;
             termTB.BorderStyle = BorderStyle.None;
             termTB.Font = new Font("Segoe UI", 15F);
-            termTB.Location = new Point(27, 20);
+            termTB.Location = new Point(20, 20);
             termTB.MaxLineCount = 3;
             termTB.Multiline = true;
             termTB.Name = "termTB";

@@ -46,8 +46,10 @@ namespace Wordly
 
         public int LineCount()
         {
-            if (Text[Text.Length - 1] == '\n')
-                return (GetLineFromCharIndex(Text.Length - 1) + 1);
+            if(Text == "")
+                return 1;
+            else if (Text[Text.Length - 1] == '\n')
+                return (GetLineFromCharIndex(Text.Length - 1) + 2);
 
             return (GetLineFromCharIndex(Text.Length - 1) + 1);
         }
@@ -90,6 +92,8 @@ namespace Wordly
         {
             if (LineCount() > maxLineCount)
             {
+                if (Text[Text.Length - 1] == '\n') //acounting for some strange character that comes alongside the new line 
+                    Text = Text.Substring(0, Text.Length - 1);
 
                 Text = Text.Substring(0, Text.Length - 1);
                 SelectionStart = Text.Length;
