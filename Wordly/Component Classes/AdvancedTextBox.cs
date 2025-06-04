@@ -100,7 +100,7 @@ namespace Wordly
 
 
                 //'MAX LENGTH REACHED'
-                LineCountChanged?.Invoke(this, EventArgs.Empty);
+                MaxLineCountReached?.Invoke(this, EventArgs.Empty);
             }
             else if (automaticResize)
             {
