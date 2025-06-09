@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\creation window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\component classes\\advancedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\component classes\\advancedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -47,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,14 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|c:\\users\\lenovo\\documents\\visual studio 2022\\projects\\wordly\\wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -114,11 +114,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 140,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "AdvancedTextBox.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Component Classes\\AdvancedTextBox.cs",
+              "RelativeDocumentMoniker": "Wordly\\Component Classes\\AdvancedTextBox.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Component Classes\\AdvancedTextBox.cs",
+              "RelativeToolTip": "Wordly\\Component Classes\\AdvancedTextBox.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwGYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:08:46.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Wordly\\Properties\\Resources.resx",
@@ -129,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "WordlyForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\WordlyForm.cs",
               "RelativeDocumentMoniker": "Wordly\\WordlyForm.cs",
@@ -140,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Home Window.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Home Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Home Window.cs",
@@ -161,29 +174,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "QuizWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\QuizWindow.cs",
               "RelativeDocumentMoniker": "Wordly\\QuizWindow.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\QuizWindow.cs [Design]",
               "RelativeToolTip": "Wordly\\QuizWindow.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:21:21.271Z"
+              "WhenOpened": "2024-04-19T05:21:21.271Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "FlashcardMode.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\FlashcardMode.cs",
               "RelativeDocumentMoniker": "Wordly\\FlashcardMode.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\FlashcardMode.cs [Design]",
               "RelativeToolTip": "Wordly\\FlashcardMode.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T12:22:45.719Z"
+              "WhenOpened": "2024-04-18T12:22:45.719Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "WriteMode.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\WriteMode.cs",
               "RelativeDocumentMoniker": "Wordly\\WriteMode.cs",
@@ -194,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ExamMode.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\ExamMode.cs",
               "RelativeDocumentMoniker": "Wordly\\ExamMode.cs",
@@ -204,26 +219,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Creation Window.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Creation Window.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.cs [Design]",
-              "RelativeToolTip": "Wordly\\Creation Window.cs [Design]",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.cs [Design]*",
+              "RelativeToolTip": "Wordly\\Creation Window.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T14:08:00.308Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "Settings Window.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Settings Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Settings Window.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Settings Window.cs [Design]",
               "RelativeToolTip": "Wordly\\Settings Window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:03:44.777Z"
+              "WhenOpened": "2024-04-19T05:03:44.777Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },
@@ -273,10 +289,10 @@
       "FloatingWindowState": {
         "Id": "5e6872d9-3c38-454c-9dee-5d5c2bd451c7",
         "Display": 0,
-        "X": 171,
-        "Y": -9,
-        "Width": 1758,
-        "Height": 1058,
+        "X": 170,
+        "Y": -8,
+        "Width": 1554,
+        "Height": 882,
         "WindowState": 2
       },
       "DocumentGroups": [
@@ -286,7 +302,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "WordlyForm.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\WordlyForm.cs",
               "RelativeDocumentMoniker": "Wordly\\WordlyForm.cs",
@@ -310,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ChooseListForm.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\ChooseListForm.cs",
               "RelativeDocumentMoniker": "Wordly\\ChooseListForm.cs",
@@ -322,31 +338,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 5,
               "Title": "QuizWindow.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\QuizWindow.cs",
               "RelativeDocumentMoniker": "Wordly\\QuizWindow.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\QuizWindow.cs",
               "RelativeToolTip": "Wordly\\QuizWindow.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAmwGQAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:06:52.591Z"
+              "WhenOpened": "2024-04-11T09:06:52.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "FlashcardMode.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\FlashcardMode.cs",
               "RelativeDocumentMoniker": "Wordly\\FlashcardMode.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\FlashcardMode.cs",
               "RelativeToolTip": "Wordly\\FlashcardMode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T14:32:05.969Z"
+              "WhenOpened": "2025-05-31T14:32:05.969Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "WriteMode.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\WriteMode.cs",
               "RelativeDocumentMoniker": "Wordly\\WriteMode.cs",
@@ -358,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ExamMode.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\ExamMode.cs",
               "RelativeDocumentMoniker": "Wordly\\ExamMode.cs",
@@ -370,20 +388,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Creation Window.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Creation Window.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.cs",
-              "RelativeToolTip": "Wordly\\Creation Window.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.cs*",
+              "RelativeToolTip": "Wordly\\Creation Window.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwE4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T11:00:10.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Settings Window.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Settings Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Settings Window.cs",
@@ -401,7 +419,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "WordlyForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\WordlyForm.Designer.cs",
               "RelativeDocumentMoniker": "Wordly\\WordlyForm.Designer.cs",
@@ -445,7 +463,8 @@
               "RelativeToolTip": "Wordly\\QuizWindow.Designer.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwCcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:20:23.01Z"
+              "WhenOpened": "2024-04-19T05:20:23.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -467,43 +486,9 @@
               "RelativeDocumentMoniker": "Wordly\\Creation Window.Designer.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Creation Window.Designer.cs",
               "RelativeToolTip": "Wordly\\Creation Window.Designer.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAowNUAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAANQAAAAAAAAAAAAowPcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T11:00:34.919Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ddbd66af-7ab3-4db9-bdfa-f757713fc990",
-        "Display": 0,
-        "X": 421,
-        "Y": 567,
-        "Width": 1377,
-        "Height": 363,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdvancedTextBox.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Component Classes\\AdvancedTextBox.cs",
-              "RelativeDocumentMoniker": "Wordly\\Component Classes\\AdvancedTextBox.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\Component Classes\\AdvancedTextBox.cs",
-              "RelativeToolTip": "Wordly\\Component Classes\\AdvancedTextBox.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T11:08:46.923Z",
               "EditorCaption": ""
             }
           ]

@@ -35,14 +35,15 @@
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             roundedPanel1 = new RoundedPanel();
-            meaningMaxLntLbl = new RoundedLabel();
-            termMaxLntLbl = new RoundedLabel();
+            meaningMessageLbl = new RoundedLabel();
+            termMessageLbl = new RoundedLabel();
             roundedPanel4 = new RoundedPanel();
             meaningTB = new AdvancedTextBox();
             roundedPanel2 = new RoundedPanel();
             termTB = new AdvancedTextBox();
             label4 = new Label();
             addWordPairBtn = new RoundedButton();
+            inputTB = new AdvancedTextBox();
             roundedPanel1.SuspendLayout();
             roundedPanel4.SuspendLayout();
             roundedPanel2.SuspendLayout();
@@ -117,48 +118,53 @@
             roundedPanel1.BackColor = SystemColors.Highlight;
             roundedPanel1.BorderColor = Color.Black;
             roundedPanel1.BorderThickness = 0F;
-            roundedPanel1.Controls.Add(meaningMaxLntLbl);
-            roundedPanel1.Controls.Add(termMaxLntLbl);
+            roundedPanel1.Controls.Add(meaningMessageLbl);
+            roundedPanel1.Controls.Add(termMessageLbl);
             roundedPanel1.Controls.Add(roundedPanel4);
             roundedPanel1.Controls.Add(roundedPanel2);
             roundedPanel1.CornerRadius = 15;
-            roundedPanel1.Location = new Point(100, 450);
+            roundedPanel1.Location = new Point(100, 708);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(850, 110);
             roundedPanel1.TabIndex = 6;
             // 
-            // meaningMaxLntLbl
+            // meaningMessageLbl
             // 
-            meaningMaxLntLbl.BackColor = Color.Salmon;
-            meaningMaxLntLbl.BorderColor = Color.Black;
-            meaningMaxLntLbl.BorderThickness = 0F;
-            meaningMaxLntLbl.CornerRadius = 4;
-            meaningMaxLntLbl.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
-            meaningMaxLntLbl.ForeColor = Color.Black;
-            meaningMaxLntLbl.Location = new Point(663, 87);
-            meaningMaxLntLbl.Name = "meaningMaxLntLbl";
-            meaningMaxLntLbl.Size = new Size(141, 20);
-            meaningMaxLntLbl.TabIndex = 3;
-            meaningMaxLntLbl.Text = "Meaning is too long!";
-            meaningMaxLntLbl.Visible = false;
+            meaningMessageLbl.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            meaningMessageLbl.AutoSize = true;
+            meaningMessageLbl.BackColor = Color.Salmon;
+            meaningMessageLbl.BorderColor = Color.Black;
+            meaningMessageLbl.BorderThickness = 0F;
+            meaningMessageLbl.CornerRadius = 4;
+            meaningMessageLbl.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
+            meaningMessageLbl.ForeColor = Color.Black;
+            meaningMessageLbl.Location = new Point(663, 87);
+            meaningMessageLbl.Name = "meaningMessageLbl";
+            meaningMessageLbl.Size = new Size(142, 19);
+            meaningMessageLbl.TabIndex = 3;
+            meaningMessageLbl.Text = "Meaning is too long! ";
+            meaningMessageLbl.Visible = false;
             // 
-            // termMaxLntLbl
+            // termMessageLbl
             // 
-            termMaxLntLbl.BackColor = Color.Salmon;
-            termMaxLntLbl.BorderColor = Color.Black;
-            termMaxLntLbl.BorderThickness = 0F;
-            termMaxLntLbl.CornerRadius = 4;
-            termMaxLntLbl.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
-            termMaxLntLbl.ForeColor = Color.Black;
-            termMaxLntLbl.Location = new Point(276, 87);
-            termMaxLntLbl.Name = "termMaxLntLbl";
-            termMaxLntLbl.Size = new Size(118, 20);
-            termMaxLntLbl.TabIndex = 1;
-            termMaxLntLbl.Text = "Term is too long!";
-            termMaxLntLbl.Visible = false;
+            termMessageLbl.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            termMessageLbl.AutoSize = true;
+            termMessageLbl.BackColor = Color.Salmon;
+            termMessageLbl.BorderColor = Color.Black;
+            termMessageLbl.BorderThickness = 0F;
+            termMessageLbl.CornerRadius = 4;
+            termMessageLbl.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
+            termMessageLbl.ForeColor = Color.Black;
+            termMessageLbl.Location = new Point(276, 87);
+            termMessageLbl.Name = "termMessageLbl";
+            termMessageLbl.Size = new Size(119, 19);
+            termMessageLbl.TabIndex = 1;
+            termMessageLbl.Text = "Term is too long! ";
+            termMessageLbl.Visible = false;
             // 
             // roundedPanel4
             // 
+            roundedPanel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             roundedPanel4.BackColor = Color.RosyBrown;
             roundedPanel4.BorderColor = Color.Black;
             roundedPanel4.BorderThickness = 0F;
@@ -187,6 +193,7 @@
             // 
             // roundedPanel2
             // 
+            roundedPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             roundedPanel2.BackColor = Color.RosyBrown;
             roundedPanel2.BorderColor = Color.Black;
             roundedPanel2.BorderThickness = 0F;
@@ -234,11 +241,25 @@
             addWordPairBtn.FlatAppearance.BorderColor = Color.Chartreuse;
             addWordPairBtn.FlatAppearance.BorderSize = 0;
             addWordPairBtn.FlatStyle = FlatStyle.Flat;
-            addWordPairBtn.Location = new Point(105, 362);
+            addWordPairBtn.Location = new Point(105, 620);
             addWordPairBtn.Name = "addWordPairBtn";
             addWordPairBtn.Size = new Size(70, 70);
             addWordPairBtn.TabIndex = 8;
             addWordPairBtn.UseVisualStyleBackColor = false;
+            addWordPairBtn.Click += addWordPairBtn_Click;
+            // 
+            // inputTB
+            // 
+            inputTB.AutomaticResize = false;
+            inputTB.BackColor = Color.Yellow;
+            inputTB.BorderColor = Color.Empty;
+            inputTB.Font = new Font("Segoe UI", 12F);
+            inputTB.Location = new Point(109, 331);
+            inputTB.MaxLineCount = 10;
+            inputTB.Multiline = true;
+            inputTB.Name = "inputTB";
+            inputTB.Size = new Size(837, 262);
+            inputTB.TabIndex = 9;
             // 
             // Creation_Window
             // 
@@ -247,6 +268,7 @@
             AutoScroll = true;
             BackColor = Color.Green;
             ClientSize = new Size(1050, 650);
+            Controls.Add(inputTB);
             Controls.Add(addWordPairBtn);
             Controls.Add(label4);
             Controls.Add(roundedPanel1);
@@ -260,6 +282,7 @@
             Name = "Creation_Window";
             Text = "Creation_Window";
             roundedPanel1.ResumeLayout(false);
+            roundedPanel1.PerformLayout();
             roundedPanel4.ResumeLayout(false);
             roundedPanel4.PerformLayout();
             roundedPanel2.ResumeLayout(false);
@@ -283,7 +306,8 @@
         private Label label4;
         private AdvancedTextBox meaningTB;
         private RoundedButton addWordPairBtn;
-        private RoundedLabel termMaxLntLbl;
-        private RoundedLabel meaningMaxLntLbl;
+        private RoundedLabel termMessageLbl;
+        private RoundedLabel meaningMessageLbl;
+        private AdvancedTextBox inputTB;
     }
 }
