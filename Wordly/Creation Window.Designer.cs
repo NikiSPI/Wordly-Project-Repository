@@ -44,6 +44,7 @@
             label4 = new Label();
             addWordPairBtn = new RoundedButton();
             inputTB = new AdvancedTextBox();
+            roundedButton1 = new RoundedButton();
             roundedPanel1.SuspendLayout();
             roundedPanel4.SuspendLayout();
             roundedPanel2.SuspendLayout();
@@ -123,9 +124,9 @@
             roundedPanel1.Controls.Add(roundedPanel4);
             roundedPanel1.Controls.Add(roundedPanel2);
             roundedPanel1.CornerRadius = 15;
-            roundedPanel1.Location = new Point(100, 708);
+            roundedPanel1.Location = new Point(183, 306);
             roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(850, 110);
+            roundedPanel1.Size = new Size(750, 110);
             roundedPanel1.TabIndex = 6;
             // 
             // meaningMessageLbl
@@ -138,7 +139,7 @@
             meaningMessageLbl.CornerRadius = 4;
             meaningMessageLbl.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
             meaningMessageLbl.ForeColor = Color.Black;
-            meaningMessageLbl.Location = new Point(663, 87);
+            meaningMessageLbl.Location = new Point(576, 87);
             meaningMessageLbl.Name = "meaningMessageLbl";
             meaningMessageLbl.Size = new Size(142, 19);
             meaningMessageLbl.TabIndex = 3;
@@ -155,7 +156,7 @@
             termMessageLbl.CornerRadius = 4;
             termMessageLbl.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
             termMessageLbl.ForeColor = Color.Black;
-            termMessageLbl.Location = new Point(276, 87);
+            termMessageLbl.Location = new Point(231, 87);
             termMessageLbl.Name = "termMessageLbl";
             termMessageLbl.Size = new Size(119, 19);
             termMessageLbl.TabIndex = 1;
@@ -170,9 +171,9 @@
             roundedPanel4.BorderThickness = 0F;
             roundedPanel4.Controls.Add(meaningTB);
             roundedPanel4.CornerRadius = 15;
-            roundedPanel4.Location = new Point(440, 20);
+            roundedPanel4.Location = new Point(385, 20);
             roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new Size(380, 70);
+            roundedPanel4.Size = new Size(350, 70);
             roundedPanel4.TabIndex = 2;
             // 
             // meaningTB
@@ -186,7 +187,7 @@
             meaningTB.MaxLineCount = 3;
             meaningTB.Multiline = true;
             meaningTB.Name = "meaningTB";
-            meaningTB.Size = new Size(340, 29);
+            meaningTB.Size = new Size(310, 29);
             meaningTB.TabIndex = 1;
             meaningTB.LineCountChanged += meaningTB_LineCountChanged;
             meaningTB.MaxLineCountReached += meaningTB_MaxLineCountReached;
@@ -199,9 +200,9 @@
             roundedPanel2.BorderThickness = 0F;
             roundedPanel2.Controls.Add(termTB);
             roundedPanel2.CornerRadius = 15;
-            roundedPanel2.Location = new Point(30, 20);
+            roundedPanel2.Location = new Point(15, 20);
             roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(380, 70);
+            roundedPanel2.Size = new Size(350, 70);
             roundedPanel2.TabIndex = 0;
             // 
             // termTB
@@ -215,7 +216,7 @@
             termTB.MaxLineCount = 3;
             termTB.Multiline = true;
             termTB.Name = "termTB";
-            termTB.Size = new Size(340, 29);
+            termTB.Size = new Size(310, 29);
             termTB.TabIndex = 0;
             termTB.LineCountChanged += termTB_LineCountChanged;
             termTB.MaxLineCountReached += termTB_MaxLineCountReached;
@@ -241,7 +242,7 @@
             addWordPairBtn.FlatAppearance.BorderColor = Color.Chartreuse;
             addWordPairBtn.FlatAppearance.BorderSize = 0;
             addWordPairBtn.FlatStyle = FlatStyle.Flat;
-            addWordPairBtn.Location = new Point(105, 620);
+            addWordPairBtn.Location = new Point(84, 326);
             addWordPairBtn.Name = "addWordPairBtn";
             addWordPairBtn.Size = new Size(70, 70);
             addWordPairBtn.TabIndex = 8;
@@ -254,12 +255,29 @@
             inputTB.BackColor = Color.Yellow;
             inputTB.BorderColor = Color.Empty;
             inputTB.Font = new Font("Segoe UI", 12F);
-            inputTB.Location = new Point(109, 331);
+            inputTB.Location = new Point(96, 452);
             inputTB.MaxLineCount = 10;
             inputTB.Multiline = true;
             inputTB.Name = "inputTB";
-            inputTB.Size = new Size(837, 262);
+            inputTB.Size = new Size(837, 346);
             inputTB.TabIndex = 9;
+            // 
+            // roundedButton1
+            // 
+            roundedButton1.BackColor = Color.White;
+            roundedButton1.BorderColor = Color.Black;
+            roundedButton1.BorderThickness = 0F;
+            roundedButton1.CornerRadius = 5;
+            roundedButton1.FlatAppearance.BorderColor = Color.White;
+            roundedButton1.FlatAppearance.BorderSize = 0;
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Location = new Point(848, 56);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(101, 88);
+            roundedButton1.TabIndex = 10;
+            roundedButton1.Text = "roundedButton1";
+            roundedButton1.UseVisualStyleBackColor = false;
+            roundedButton1.Click += roundedButton1_Click;
             // 
             // Creation_Window
             // 
@@ -268,6 +286,7 @@
             AutoScroll = true;
             BackColor = Color.Green;
             ClientSize = new Size(1050, 650);
+            Controls.Add(roundedButton1);
             Controls.Add(inputTB);
             Controls.Add(addWordPairBtn);
             Controls.Add(label4);
@@ -309,5 +328,6 @@
         private RoundedLabel termMessageLbl;
         private RoundedLabel meaningMessageLbl;
         private AdvancedTextBox inputTB;
+        private RoundedButton roundedButton1;
     }
 }

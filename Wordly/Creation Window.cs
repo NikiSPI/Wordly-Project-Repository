@@ -1,8 +1,5 @@
-﻿using System.Reflection.Emit;
-using System.Runtime.CompilerServices;
-using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
-
+﻿using Newtonsoft.Json;
+using System.Diagnostics;
 namespace Wordly
 {
     public partial class Creation_Window : Form
@@ -10,17 +7,14 @@ namespace Wordly
 
         public class WordList
         {
-            public required List<string[]> Term;
-            public required List<string[]> Meaning;
+            public List<string[]> Term;
+            public List<string[]> Meaning;
         }
         public static WordList wl;
 
-        public static List<string> TermStrArr = new List<string>();
-        public static List<string> MeaningStrArr = new List<string>();
 
-
-        
-        private string separateWordSign = "-", separatePairSign = Environment.NewLine;
+        private char separateWordSign = '-', separatePairSign = '\n';// !!!! = Environment.NewLine;
+        private bool sPairSignIsNewLine = true;
 
         public Creation_Window()
         {
@@ -28,8 +22,7 @@ namespace Wordly
             initTBsYLoc = termTB.Location.Y;
             initMsgLblsYLoc = termMessageLbl.Location.Y;
 
-
-
+            wl = new WordList();
         }
 
 
@@ -51,22 +44,15 @@ namespace Wordly
 
             else
             {
-                for(int i = 0; i < termTB.Text.Length; i++)
-                    if (termTB.Text[i] == '\n')
-                    {
-                        termTB.Text = termTB.Text.Substring(0, i - 1);
-                        break;
-                    }
-                for (int i = 0; i < meaningTB.Text.Length; i++)
-                    if (meaningTB.Text[i] == '\n')
-                    {
-                        meaningTB.Text = termTB.Text.Substring(0, i - 1);
-                        break;
-                    }
+                termTB.Text = RemoveNewLinesFromTB(termTB.Text);
+                meaningTB.Text = RemoveNewLinesFromTB(meaningTB.Text);
 
 
                 if (!string.IsNullOrEmpty(inputTB.Text))
-                    inputTB.Text += separatePairSign;
+                    if (separatePairSign == '\n')
+                        inputTB.Text += Environment.NewLine;
+                    else
+                        inputTB.Text += separatePairSign;
 
                 inputTB.Text += termTB.Text + separateWordSign + meaningTB.Text;
 
@@ -79,8 +65,119 @@ namespace Wordly
 
 
 
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            int n = 0, j = 0;
+            while (j < inputTB.Text.Length)
+            {
+                if (inputTB.Text[j] == separateWordSign)
+                    n++;
+                j++;
+            }
+            List<string[]> terms = new List<string[]>();
+            List<string[]> meanings = new List<string[]>();
 
 
+
+            
+            label4.Text = Convert.ToString(n);
+
+
+            for (int i = 0; i < n; i++)
+            {
+                string[] termTemp = new string[1];
+                string[] meaningTemp = new string[1];
+
+
+                j = 0;
+                while (true)
+                {
+                    if (inputTB.Text[j] == separateWordSign)
+                    {
+                        termTemp[0] = RemoveNewLinesFromTB(inputTB.Text.Substring(0, j));
+                        inputTB.Text = inputTB.Text.Substring(j + 1);
+
+
+                        break;
+                    }
+
+                    j++;
+                }
+
+                j = 0;
+                while (true)
+                {
+                    if (inputTB.Text[j] == separatePairSign)
+                    {
+                        if (sPairSignIsNewLine)
+                        {
+                            meaningTemp[0] = inputTB.Text.Substring(0, j - 1);
+                        }
+                        else
+                        {
+                            meaningTemp[0] = RemoveNewLinesFromTB(inputTB.Text.Substring(0, j));
+                        }
+                        inputTB.Text = inputTB.Text.Substring(j + 1);
+
+                        break;
+                    }
+
+                    j++;
+
+                    if (j >= inputTB.Text.Length)
+                    {
+                        meaningTemp[0] = RemoveNewLinesFromTB(inputTB.Text);
+                        inputTB.Text = string.Empty;
+
+                        break;
+                    }
+                }
+
+
+                terms.Add(termTemp);
+                meanings.Add(meaningTemp);
+            }
+
+            label4.Text += "\n" + (terms[0])[0] + (terms[1])[0] + "," + meanings[0][0] + meanings[1][0];
+
+            wl.Term = terms;
+            wl.Meaning = meanings;
+
+
+
+            string s = @"C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\Word Lists";//new FileInfo("Word Lists").FullName;
+
+
+
+            File.WriteAllText(s + @"\abc.json", JsonConvert.SerializeObject(wl));
+
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private string RemoveNewLinesFromTB(string s)
+        {
+            for (int i = 0; i < s.Length; i++)
+                if (s[i] == '\n')
+                    return s.Substring(0, i - 1);
+
+            return s;
+        }
 
 
 
@@ -113,7 +210,7 @@ namespace Wordly
                 t1.Tick += (object sender, EventArgs e) =>
                 {
                     termMessageLbl.Location = new Point(termMessageLbl.Location.X, termMessageLbl.Location.Y + 2);
-                    
+
                     if (t1.Interval >= 25) //max speed
                         t1.Interval -= 5; //acceleration
 
@@ -173,7 +270,7 @@ namespace Wordly
             };
             t2.Start();
         }
-        
+
 
 
 
@@ -200,7 +297,7 @@ namespace Wordly
 
         private void meaningTB_MaxLineCountReached(object sender, EventArgs e)
         {
-            PopMeaningMessage("Meaning is too long! ", 2000);            
+            PopMeaningMessage("Meaning is too long! ", 2000);
         }
 
     }
