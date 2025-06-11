@@ -24,6 +24,12 @@ namespace Wordly
         public Creation_Window()
         {
             InitializeComponent();
+
+            InitializeByHand();
+        }
+
+        private void InitializeByHand()
+        {
             inputTB.perHeightAddition = -1;
             inputTB.initHeightAddition = 6;
             wordSignCB.SelectedIndex = 2;
@@ -36,8 +42,18 @@ namespace Wordly
             wl = new WordList();
 
             UpdateTable();
+
         }
 
+
+        private void Reset()
+        {
+            this.Controls.Clear();
+
+            InitializeComponent();
+
+            InitializeByHand();
+        }
 
 
         private void addWordPairBtn_Click(object sender, EventArgs e)
@@ -80,6 +96,7 @@ namespace Wordly
             if (string.IsNullOrEmpty(nameTB.Text))
             {
                 nameTB.BorderWidth = 5;
+                nameTB.BorderColor = Color.Red;
                 createList = false;
             }
             if (string.IsNullOrEmpty(inputTB.Text))
@@ -94,17 +111,23 @@ namespace Wordly
             }
 
         }
-
-
         private void PerformWordListCreation()
         {
             UpdateWordList();
 
-            string s = new FileInfo("Word Lists").FullName;
+            var result = MessageBox.Show("Are you sure that you would like to save the list?", "Saving Word List", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                string s = new FileInfo("Word Lists").FullName;
 
-            File.WriteAllText(s + "\\" + nameTB.Text + ".json", JsonConvert.SerializeObject(wl));
+                File.WriteAllText(s + "\\" + nameTB.Text + ".json", JsonConvert.SerializeObject(wl));
 
+                MessageBox.Show("\'" + wl.name + "\' has been successfully saved!", "Saving successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Reset();
+            }
         }
+
 
         private void UpdateWordList()
         {
@@ -175,12 +198,12 @@ namespace Wordly
             wl.name = nameTB.Text;
             wl.count = n;
             //wl.termLanguage
-            if (termLanguageCB.SelectedItem == null)
+            if (termLanguageCB.SelectedItem == null || termLanguageCB.SelectedIndex == 4)
                 wl.termLanguage = "unknown";
             else
                 wl.termLanguage = termLanguageCB.Text;
             //wl.meaningLanguage
-            if (meaningLanguageCB.SelectedItem == null)
+            if (meaningLanguageCB.SelectedItem == null || meaningLanguageCB.SelectedIndex == 4)
                 wl.meaningLanguage = "unknown";
             else
                 wl.meaningLanguage = meaningLanguageCB.Text;
@@ -201,6 +224,11 @@ namespace Wordly
         }
 
 
+
+
+
+
+
         private void UpdateTable()
         {
             int tempASPy = this.AutoScrollPosition.Y;
@@ -213,14 +241,14 @@ namespace Wordly
                 tablePnl.Controls.Clear();
 
             int initControlCount = tablePnl.Controls.Count;
-            if (n > tablePnl.Controls.Count / 2)
+            if (n > initControlCount / 2)
             {
                 for (int i = 0; i < n - initControlCount / 2; i++)
                 {
                     AddTablePair();
                 }
             }
-            else if (n < tablePnl.Controls.Count / 2)
+            else if (n < initControlCount / 2)
             {
                 for (int i = 0; i < initControlCount / 2 - n; i++)
                 {
@@ -249,9 +277,9 @@ namespace Wordly
             }
 
             tablePnl.Height = tablePnl.Controls.Count / 2 * tableLabelHeight;
+            borderTPnl.Height = 4 + tablePnl.Height;
 
-
-            this.AutoScrollPosition = new Point(0, -tempASPy);
+            this.AutoScrollPosition = new Point(0, tempASPy);
         }
 
         private void AddTablePair()
@@ -272,27 +300,11 @@ namespace Wordly
             lbl.BorderStyle = BorderStyle.FixedSingle;
             lbl.Font = new Font("Segoe UI", 15F);
             lbl.Location = new Point(450 * Convert.ToInt32(!isLeft), y);
-            lbl.Size = new Size(450 + Convert.ToInt32(isLeft), tableLabelHeight);
+            lbl.Size = new Size(450 + Convert.ToInt32(isLeft), tableLabelHeight + 1);
             lbl.ForeColor = Color.White;
 
             return lbl;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -313,8 +325,6 @@ namespace Wordly
 
             return s;
         }
-
-
 
 
 
@@ -436,6 +446,8 @@ namespace Wordly
             PopMeaningMessage("Meaning is too long! ", 2000);
         }
 
+
+
         private void inputTB_SizeChanged(object sender, EventArgs e)
         {
             if (inputTB.Size.Height < inputTBPnl.Size.Height)
@@ -459,7 +471,6 @@ namespace Wordly
         {
             if (wordSignCB.SelectedIndex == pairSignCB.SelectedIndex)
             {
-                label4.Text = "cannot";
                 wordSignCB.SelectedIndex = 2;
                 pairSignCB.SelectedIndex = 6;
             }
@@ -470,9 +481,26 @@ namespace Wordly
 
         }
 
-        private void roundedButton1_Click(object sender, EventArgs e)
+
+
+        private System.Windows.Forms.Timer tableRefreshT = new();
+        private void inputTB_TextChanged(object sender, EventArgs e)
         {
-            UpdateTable();
+            tableRefreshT.Stop();
+
+            refreshingLbl.Visible = true;
+
+            tableRefreshT.Interval = 1000;
+            tableRefreshT.Tick += (object sender, EventArgs e) =>
+            {
+                UpdateTable();
+
+                refreshingLbl.Visible = false;
+
+                tableRefreshT.Stop();
+            };
+            tableRefreshT.Start();
+
         }
     }
 }

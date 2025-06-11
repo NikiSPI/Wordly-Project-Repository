@@ -18,13 +18,13 @@ namespace Wordly
         }
         public float BorderThickness
         {
-            get {
-                if (this.borderPen.Width == 0) return 0;
-                return ((this.borderPen.Width - 1) / 2); 
+            get 
+            {
+                return ((this.borderPen.Width )); 
             }
             set
             {
-                this.borderPen.Width = (value * 2 + 1);
+                this.borderPen.Width = value;
 
                 Invalidate();
             }
@@ -68,7 +68,7 @@ namespace Wordly
             //|Border|
             BorderStyle = BorderStyle.None;
 
-            if (borderPen.Width > 2)
+            if (borderPen.Width > 0)
             {
                 GraphicsPath GraphPathB = new GraphicsPath();
                 tR = new Rectangle(0, 0, Width - 1, Height - 1);//temporary Rectangle 

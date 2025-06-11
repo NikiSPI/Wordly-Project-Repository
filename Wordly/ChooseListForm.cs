@@ -1,4 +1,6 @@
-﻿namespace Wordly
+﻿using System.Runtime.CompilerServices;
+
+namespace Wordly
 {
     public partial class ChooseListForm : Form
     {
@@ -16,6 +18,15 @@
 
             InitializeFunctions();
         }
+        public void Reset()
+        {
+            this.Controls.Clear();
+
+            InitializeComponent();
+
+            InitializeFunctions();
+        }
+
         public void InitializeFunctions()
         {
             string fullname = new FileInfo("Word Lists").FullName; //the name of the folder that is seeked

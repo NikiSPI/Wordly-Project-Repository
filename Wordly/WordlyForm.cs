@@ -11,7 +11,6 @@ namespace Wordly
 
         public WordlyForm()
         {
-            this.
             InitializeComponent();
 
             homeWindow = (Home_Window)AddFormFunctions(new Home_Window(), true);
@@ -34,6 +33,7 @@ namespace Wordly
 
             ResetContentVisibility();
             homeWindow.Visible = true;
+
         }
         private void startBtn_Click(object sender, EventArgs e)
         {
@@ -41,6 +41,8 @@ namespace Wordly
 
             ResetContentVisibility();
             listChoiceWindow.Visible = true;
+
+            listChoiceWindow.Reset();
         }
         private void createBtn_Click(object sender, EventArgs e)
         {
@@ -48,6 +50,7 @@ namespace Wordly
 
             ResetContentVisibility();
             listCreationWindow.Visible = true;
+
         }
         private void settingsBtn_Click(object sender, EventArgs e)
         {
@@ -55,6 +58,7 @@ namespace Wordly
 
             ResetContentVisibility();
             settingsWindow.Visible = true;
+
         }
         private void quitBtn_Click(object sender, EventArgs e)
         {
