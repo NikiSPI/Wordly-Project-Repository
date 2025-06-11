@@ -248,9 +248,11 @@
             // deletionBtn
             // 
             deletionBtn.BackColor = Color.FromArgb(43, 43, 43);
+            deletionBtn.BackgroundImage = Properties.Resources.trashbin;
+            deletionBtn.BackgroundImageLayout = ImageLayout.Zoom;
             deletionBtn.BorderColor = Color.Black;
             deletionBtn.BorderThickness = 0F;
-            deletionBtn.CornerRadius = 5;
+            deletionBtn.CornerRadius = 27;
             deletionBtn.FlatAppearance.BorderColor = Color.FromArgb(43, 43, 43);
             deletionBtn.FlatAppearance.BorderSize = 0;
             deletionBtn.FlatStyle = FlatStyle.Flat;

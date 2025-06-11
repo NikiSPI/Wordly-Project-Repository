@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Window));
             backPnl = new Panel();
-            contentPnl = new Panel();
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             roundedPanel2 = new RoundedPanel();
             label3 = new Label();
             roundedPanel1 = new RoundedPanel();
             label2 = new Label();
-            iconBox2 = new IconBox();
+            contentPnl = new Panel();
             contentTipsPnl = new Panel();
             WBcontainterPnl = new RoundedPanel();
             label4 = new Label();
@@ -44,14 +44,14 @@
             tipsTitleSepPnl = new RoundedPanel();
             titleTipsLbl = new Label();
             kbTextFlashcardTitleLbl = new Label();
-            iconBox1 = new IconBox();
+            pictureBox1 = new PictureBox();
             backPnl.SuspendLayout();
-            contentPnl.SuspendLayout();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconBox2).BeginInit();
+            contentPnl.SuspendLayout();
             contentTipsPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // backPnl
@@ -65,24 +65,26 @@
             backPnl.Size = new Size(1050, 650);
             backPnl.TabIndex = 0;
             // 
-            // contentPnl
-            // 
-            contentPnl.Controls.Add(contentTipsPnl);
-            contentPnl.Location = new Point(100, 50);
-            contentPnl.Name = "contentPnl";
-            contentPnl.Size = new Size(850, 1321);
-            contentPnl.TabIndex = 0;
-            // 
             // panel1
             // 
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(roundedPanel2);
             panel1.Controls.Add(roundedPanel1);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(iconBox2);
             panel1.Location = new Point(100, 874);
             panel1.Name = "panel1";
             panel1.Size = new Size(850, 283);
             panel1.TabIndex = 20;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.list;
+            pictureBox2.Location = new Point(-1, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(80, 80);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
             // 
             // roundedPanel2
             // 
@@ -131,18 +133,13 @@
             label2.Text = "Recent Word Lists";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // iconBox2
+            // contentPnl
             // 
-            iconBox2.Image = (Image)resources.GetObject("iconBox2.Image");
-            iconBox2.Location = new Point(10, 12);
-            iconBox2.MaxSize = new Size(500, 500);
-            iconBox2.Name = "iconBox2";
-            iconBox2.ReplacementColor = Color.FromArgb(210, 250, 250);
-            iconBox2.Resizable = false;
-            iconBox2.Size = new Size(60, 60);
-            iconBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            iconBox2.TabIndex = 19;
-            iconBox2.TabStop = false;
+            contentPnl.Controls.Add(contentTipsPnl);
+            contentPnl.Location = new Point(100, 50);
+            contentPnl.Name = "contentPnl";
+            contentPnl.Size = new Size(850, 1321);
+            contentPnl.TabIndex = 0;
             // 
             // contentTipsPnl
             // 
@@ -152,7 +149,7 @@
             contentTipsPnl.Controls.Add(tipsTitleSepPnl);
             contentTipsPnl.Controls.Add(titleTipsLbl);
             contentTipsPnl.Controls.Add(kbTextFlashcardTitleLbl);
-            contentTipsPnl.Controls.Add(iconBox1);
+            contentTipsPnl.Controls.Add(pictureBox1);
             contentTipsPnl.Location = new Point(0, 0);
             contentTipsPnl.Name = "contentTipsPnl";
             contentTipsPnl.Size = new Size(850, 818);
@@ -224,18 +221,15 @@
             kbTextFlashcardTitleLbl.Text = "• Look up the Key Binds";
             kbTextFlashcardTitleLbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // iconBox1
+            // pictureBox1
             // 
-            iconBox1.Image = (Image)resources.GetObject("iconBox1.Image");
-            iconBox1.Location = new Point(5, 5);
-            iconBox1.MaxSize = new Size(100, 100);
-            iconBox1.Name = "iconBox1";
-            iconBox1.ReplacementColor = Color.FromArgb(210, 250, 250);
-            iconBox1.Resizable = true;
-            iconBox1.Size = new Size(70, 70);
-            iconBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            iconBox1.TabIndex = 1;
-            iconBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.lightbulb;
+            pictureBox1.Location = new Point(13, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(70, 70);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
             // 
             // Home_Window
             // 
@@ -249,12 +243,12 @@
             Name = "Home_Window";
             Text = "Main_Window";
             backPnl.ResumeLayout(false);
-            contentPnl.ResumeLayout(false);
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             roundedPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)iconBox2).EndInit();
+            contentPnl.ResumeLayout(false);
             contentTipsPnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)iconBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -270,11 +264,11 @@
         private Panel panel1;
         private RoundedPanel roundedPanel1;
         private Label label2;
-        private IconBox iconBox2;
         private Label label3;
         private RoundedPanel roundedPanel2;
-        private IconBox iconBox1;
         private Label label4;
         private RoundedPanel WBcontainterPnl;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
