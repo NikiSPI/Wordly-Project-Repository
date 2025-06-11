@@ -31,30 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Window));
             backPnl = new Panel();
             contentPnl = new Panel();
-            contentTipsPnl = new Panel();
-            label1 = new Label();
-            tipsTitleSepPnl = new RoundedPanel();
-            titleTipsLbl = new Label();
-            kbTextFlashcardTitleLbl = new Label();
-            iconBox1 = new IconBox();
             panel1 = new Panel();
             roundedPanel2 = new RoundedPanel();
             label3 = new Label();
             roundedPanel1 = new RoundedPanel();
             label2 = new Label();
             iconBox2 = new IconBox();
+            contentTipsPnl = new Panel();
+            WBcontainterPnl = new RoundedPanel();
+            label4 = new Label();
+            label1 = new Label();
+            tipsTitleSepPnl = new RoundedPanel();
+            titleTipsLbl = new Label();
+            kbTextFlashcardTitleLbl = new Label();
+            iconBox1 = new IconBox();
             backPnl.SuspendLayout();
             contentPnl.SuspendLayout();
-            contentTipsPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconBox1).BeginInit();
             panel1.SuspendLayout();
             roundedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconBox2).BeginInit();
+            contentTipsPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconBox1).BeginInit();
             SuspendLayout();
             // 
             // backPnl
             // 
             backPnl.AutoScroll = true;
+            backPnl.Controls.Add(panel1);
             backPnl.Controls.Add(contentPnl);
             backPnl.Dock = DockStyle.Fill;
             backPnl.Location = new Point(0, 0);
@@ -64,15 +67,87 @@
             // 
             // contentPnl
             // 
-            contentPnl.Controls.Add(panel1);
             contentPnl.Controls.Add(contentTipsPnl);
             contentPnl.Location = new Point(100, 50);
             contentPnl.Name = "contentPnl";
-            contentPnl.Size = new Size(850, 826);
+            contentPnl.Size = new Size(850, 1321);
             contentPnl.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(roundedPanel2);
+            panel1.Controls.Add(roundedPanel1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(iconBox2);
+            panel1.Location = new Point(100, 874);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(850, 283);
+            panel1.TabIndex = 20;
+            // 
+            // roundedPanel2
+            // 
+            roundedPanel2.BackColor = Color.FromArgb(50, 50, 50);
+            roundedPanel2.BorderColor = Color.Black;
+            roundedPanel2.BorderThickness = 0F;
+            roundedPanel2.Controls.Add(label3);
+            roundedPanel2.CornerRadius = 5;
+            roundedPanel2.Dock = DockStyle.Bottom;
+            roundedPanel2.Location = new Point(0, 112);
+            roundedPanel2.Name = "roundedPanel2";
+            roundedPanel2.Size = new Size(850, 171);
+            roundedPanel2.TabIndex = 21;
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Cambria", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(210, 220, 220);
+            label3.Location = new Point(275, 31);
+            label3.Name = "label3";
+            label3.Size = new Size(300, 110);
+            label3.TabIndex = 20;
+            label3.Text = "*no recent word lists*";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel1
+            // 
+            roundedPanel1.BackColor = Color.FromArgb(210, 250, 250);
+            roundedPanel1.BorderColor = Color.Black;
+            roundedPanel1.BorderThickness = 0F;
+            roundedPanel1.CornerRadius = 1;
+            roundedPanel1.Location = new Point(335, 42);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(505, 5);
+            roundedPanel1.TabIndex = 18;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Calibri", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(210, 250, 250);
+            label2.ImageAlign = ContentAlignment.MiddleLeft;
+            label2.Location = new Point(75, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(300, 80);
+            label2.TabIndex = 17;
+            label2.Text = "Recent Word Lists";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // iconBox2
+            // 
+            iconBox2.Image = (Image)resources.GetObject("iconBox2.Image");
+            iconBox2.Location = new Point(10, 12);
+            iconBox2.MaxSize = new Size(500, 500);
+            iconBox2.Name = "iconBox2";
+            iconBox2.ReplacementColor = Color.FromArgb(210, 250, 250);
+            iconBox2.Resizable = false;
+            iconBox2.Size = new Size(60, 60);
+            iconBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            iconBox2.TabIndex = 19;
+            iconBox2.TabStop = false;
             // 
             // contentTipsPnl
             // 
+            contentTipsPnl.Controls.Add(WBcontainterPnl);
+            contentTipsPnl.Controls.Add(label4);
             contentTipsPnl.Controls.Add(label1);
             contentTipsPnl.Controls.Add(tipsTitleSepPnl);
             contentTipsPnl.Controls.Add(titleTipsLbl);
@@ -80,8 +155,30 @@
             contentTipsPnl.Controls.Add(iconBox1);
             contentTipsPnl.Location = new Point(0, 0);
             contentTipsPnl.Name = "contentTipsPnl";
-            contentTipsPnl.Size = new Size(850, 267);
+            contentTipsPnl.Size = new Size(850, 818);
             contentTipsPnl.TabIndex = 16;
+            // 
+            // WBcontainterPnl
+            // 
+            WBcontainterPnl.BackColor = Color.Black;
+            WBcontainterPnl.BorderColor = Color.Black;
+            WBcontainterPnl.BorderThickness = 0F;
+            WBcontainterPnl.CornerRadius = 5;
+            WBcontainterPnl.Location = new Point(0, 320);
+            WBcontainterPnl.Name = "WBcontainterPnl";
+            WBcontainterPnl.Size = new Size(850, 478);
+            WBcontainterPnl.TabIndex = 22;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Candara", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.FromArgb(235, 245, 245);
+            label4.Location = new Point(24, 242);
+            label4.Name = "label4";
+            label4.Size = new Size(656, 80);
+            label4.TabIndex = 21;
+            label4.Text = "• Watch the Video Tutorial on YouTube";
+            label4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -140,77 +237,6 @@
             iconBox1.TabIndex = 1;
             iconBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(roundedPanel2);
-            panel1.Controls.Add(roundedPanel1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(iconBox2);
-            panel1.Location = new Point(0, 578);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(850, 400);
-            panel1.TabIndex = 20;
-            // 
-            // roundedPanel2
-            // 
-            roundedPanel2.BackColor = Color.FromArgb(50, 50, 50);
-            roundedPanel2.BorderColor = Color.Black;
-            roundedPanel2.BorderThickness = 0F;
-            roundedPanel2.Controls.Add(label3);
-            roundedPanel2.CornerRadius = 5;
-            roundedPanel2.Dock = DockStyle.Bottom;
-            roundedPanel2.Location = new Point(0, 90);
-            roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(850, 310);
-            roundedPanel2.TabIndex = 21;
-            // 
-            // label3
-            // 
-            label3.Font = new Font("Cambria", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(210, 220, 220);
-            label3.Location = new Point(275, 100);
-            label3.Name = "label3";
-            label3.Size = new Size(300, 110);
-            label3.TabIndex = 20;
-            label3.Text = "*no recent word lists*";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // roundedPanel1
-            // 
-            roundedPanel1.BackColor = Color.FromArgb(210, 250, 250);
-            roundedPanel1.BorderColor = Color.Black;
-            roundedPanel1.BorderThickness = 0F;
-            roundedPanel1.CornerRadius = 1;
-            roundedPanel1.Location = new Point(335, 42);
-            roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(505, 5);
-            roundedPanel1.TabIndex = 18;
-            // 
-            // label2
-            // 
-            label2.Font = new Font("Calibri", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(210, 250, 250);
-            label2.ImageAlign = ContentAlignment.MiddleLeft;
-            label2.Location = new Point(75, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(300, 80);
-            label2.TabIndex = 17;
-            label2.Text = "Recent Word Lists";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // iconBox2
-            // 
-            iconBox2.Image = (Image)resources.GetObject("iconBox2.Image");
-            iconBox2.Location = new Point(10, 12);
-            iconBox2.MaxSize = new Size(500, 500);
-            iconBox2.Name = "iconBox2";
-            iconBox2.ReplacementColor = Color.FromArgb(210, 250, 250);
-            iconBox2.Resizable = false;
-            iconBox2.Size = new Size(60, 60);
-            iconBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            iconBox2.TabIndex = 19;
-            iconBox2.TabStop = false;
-            // 
             // Home_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -224,11 +250,11 @@
             Text = "Main_Window";
             backPnl.ResumeLayout(false);
             contentPnl.ResumeLayout(false);
-            contentTipsPnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)iconBox1).EndInit();
             panel1.ResumeLayout(false);
             roundedPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)iconBox2).EndInit();
+            contentTipsPnl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)iconBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -248,5 +274,7 @@
         private Label label3;
         private RoundedPanel roundedPanel2;
         private IconBox iconBox1;
+        private Label label4;
+        private RoundedPanel WBcontainterPnl;
     }
 }
