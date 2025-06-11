@@ -3,44 +3,60 @@
   "WorkspaceRootPath": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\home window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\home window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\component classes\\advancedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\component classes\\advancedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\component classes\\advancedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\component classes\\advancedtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\creation window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\home window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\home window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\home window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\home window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\chooselistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\settings window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\wordlyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\creation window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\writemode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\flashcardmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|D:\\Programming\\Visual Studio\\Solutions\\Wordly\\wordly\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\exammode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\wordlyform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\wordlyform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\exammode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\exammode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|solutionrelative:wordly\\quizwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{904A7FF1-206B-4EB8-8795-07BF44A10AEF}|Wordly\\Wordly.csproj|d:\\programming\\visual studio\\solutions\\wordly\\wordly\\chooselistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,24 +106,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 239,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AdvancedTextBox.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Component Classes\\AdvancedTextBox.cs",
               "RelativeDocumentMoniker": "Wordly\\Component Classes\\AdvancedTextBox.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Component Classes\\AdvancedTextBox.cs",
               "RelativeToolTip": "Wordly\\Component Classes\\AdvancedTextBox.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwHMAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAA4wHMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T11:08:46.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "WordlyForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WordlyForm.cs",
               "RelativeDocumentMoniker": "Wordly\\WordlyForm.cs",
@@ -135,15 +135,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Home Window.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Home Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Home Window.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Home Window.cs [Design]",
               "RelativeToolTip": "Wordly\\Home Window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T12:27:12.604Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-18T12:27:12.604Z"
             },
             {
               "$type": "Document",
@@ -151,26 +150,27 @@
               "Title": "ChooseListForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ChooseListForm.cs",
               "RelativeDocumentMoniker": "Wordly\\ChooseListForm.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ChooseListForm.cs [Design]",
-              "RelativeToolTip": "Wordly\\ChooseListForm.cs [Design]",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ChooseListForm.cs [Design]*",
+              "RelativeToolTip": "Wordly\\ChooseListForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T05:27:23.56Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "QuizWindow.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.cs",
               "RelativeDocumentMoniker": "Wordly\\QuizWindow.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.cs [Design]",
               "RelativeToolTip": "Wordly\\QuizWindow.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:21:21.271Z"
+              "WhenOpened": "2024-04-19T05:21:21.271Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "FlashcardMode.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\FlashcardMode.cs",
               "RelativeDocumentMoniker": "Wordly\\FlashcardMode.cs",
@@ -180,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "WriteMode.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WriteMode.cs",
               "RelativeDocumentMoniker": "Wordly\\WriteMode.cs",
@@ -191,37 +191,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 9,
               "Title": "ExamMode.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ExamMode.cs",
               "RelativeDocumentMoniker": "Wordly\\ExamMode.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\Visual Studio 2022\\Projects\\Wordly\\Wordly\\ExamMode.cs [Design]",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ExamMode.cs [Design]",
+              "RelativeToolTip": "Wordly\\ExamMode.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T05:29:43.934Z"
+              "WhenOpened": "2024-04-18T05:29:43.934Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "Creation Window.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Creation Window.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.cs [Design]*",
-              "RelativeToolTip": "Wordly\\Creation Window.cs [Design]*",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.cs [Design]",
+              "RelativeToolTip": "Wordly\\Creation Window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T14:08:00.308Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Settings Window.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Settings Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Settings Window.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Settings Window.cs [Design]",
               "RelativeToolTip": "Wordly\\Settings Window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:03:44.777Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-19T05:03:44.777Z"
             }
           ]
         },
@@ -282,24 +283,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "WordlyForm.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WordlyForm.cs",
               "RelativeDocumentMoniker": "Wordly\\WordlyForm.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WordlyForm.cs",
               "RelativeToolTip": "Wordly\\WordlyForm.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T08:02:58.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Home Window.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Home Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Home Window.cs",
@@ -307,25 +308,37 @@
               "RelativeToolTip": "Wordly\\Home Window.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T13:43:38.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T13:43:38.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "ChooseListForm.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ChooseListForm.cs",
               "RelativeDocumentMoniker": "Wordly\\ChooseListForm.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ChooseListForm.cs",
-              "RelativeToolTip": "Wordly\\ChooseListForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ChooseListForm.cs*",
+              "RelativeToolTip": "Wordly\\ChooseListForm.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwGIAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T08:03:29.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
+              "Title": "QuizWindow.cs",
+              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.cs",
+              "RelativeDocumentMoniker": "Wordly\\QuizWindow.cs",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.cs",
+              "RelativeToolTip": "Wordly\\QuizWindow.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T09:06:52.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "WriteMode.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WriteMode.cs",
               "RelativeDocumentMoniker": "Wordly\\WriteMode.cs",
@@ -337,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ExamMode.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ExamMode.cs",
               "RelativeDocumentMoniker": "Wordly\\ExamMode.cs",
@@ -349,13 +362,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Creation Window.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Creation Window.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.cs*",
-              "RelativeToolTip": "Wordly\\Creation Window.cs*",
-              "ViewState": "AgIAAO4AAAAAAAAAAADwvy4BAABTAAAAAAAAAA==",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.cs",
+              "RelativeToolTip": "Wordly\\Creation Window.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwOcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T11:00:10.242Z",
               "EditorCaption": ""
@@ -363,18 +376,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "QuizWindow.cs",
-              "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.cs",
-              "RelativeDocumentMoniker": "Wordly\\QuizWindow.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.cs",
-              "RelativeToolTip": "Wordly\\QuizWindow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:06:52.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Settings Window.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Settings Window.cs",
               "RelativeDocumentMoniker": "Wordly\\Settings Window.cs",
@@ -382,14 +383,13 @@
               "RelativeToolTip": "Wordly\\Settings Window.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T14:29:48.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T14:29:48.242Z"
             }
           ]
         },
         {
           "DockedWidth": 186,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -406,24 +406,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
               "Title": "QuizWindow.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.Designer.cs",
               "RelativeDocumentMoniker": "Wordly\\QuizWindow.Designer.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\QuizWindow.Designer.cs",
               "RelativeToolTip": "Wordly\\QuizWindow.Designer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCcAAAAqAAAA",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAowAQBAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:20:23.01Z"
+              "WhenOpened": "2024-04-19T05:20:23.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Creation Window.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.Designer.cs",
               "RelativeDocumentMoniker": "Wordly\\Creation Window.Designer.cs",
-              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.Designer.cs*",
-              "RelativeToolTip": "Wordly\\Creation Window.Designer.cs*",
+              "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Creation Window.Designer.cs",
+              "RelativeToolTip": "Wordly\\Creation Window.Designer.cs",
               "ViewState": "AgIAAEcBAAAAAAAAAAAowHABAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T11:00:34.919Z",
@@ -431,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Home Window.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\Home Window.Designer.cs",
               "RelativeDocumentMoniker": "Wordly\\Home Window.Designer.cs",
@@ -439,25 +440,24 @@
               "RelativeToolTip": "Wordly\\Home Window.Designer.cs",
               "ViewState": "AgIAAIcAAAAAAAAAAAAowCIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T13:44:16.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T13:44:16.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "WordlyForm.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WordlyForm.Designer.cs",
               "RelativeDocumentMoniker": "Wordly\\WordlyForm.Designer.cs",
               "ToolTip": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\WordlyForm.Designer.cs",
               "RelativeToolTip": "Wordly\\WordlyForm.Designer.cs",
-              "ViewState": "AgIAACUBAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAIBJwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T08:03:03.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ExamMode.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Visual Studio\\Solutions\\Wordly\\Wordly\\ExamMode.Designer.cs",
               "RelativeDocumentMoniker": "Wordly\\ExamMode.Designer.cs",
@@ -465,7 +465,8 @@
               "RelativeToolTip": "Wordly\\ExamMode.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAPsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T05:54:39.73Z"
+              "WhenOpened": "2024-04-18T05:54:39.73Z",
+              "EditorCaption": ""
             }
           ]
         }

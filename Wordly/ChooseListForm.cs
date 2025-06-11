@@ -58,6 +58,9 @@ namespace Wordly
             quizWindow.TopMost = true;
             quizWindow.FormBorderStyle = FormBorderStyle.None;
 
+            quizWindow.deletionBtn.Click += deletionBtn_Click;
+
+
             Controls.Clear();
             Controls.Add(quizWindow);
             quizWindow.Show();
@@ -88,13 +91,29 @@ namespace Wordly
         }
 
 
+
+
+
+        private void deletionBtn_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Are you sure you want to delete this Word List?\n(this cannot be undone)", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                File.Delete(ChooseListForm.listFilePath);
+
+                Reset();
+            }
+        }
+
+
+
+
+
+
         public void UndoFunction()
         {
             if (stepsToUndo == 1)
             {
-                Controls.Clear();
-                InitializeComponent();
-                InitializeFunctions();
+                Reset();
             }
 
             else if (stepsToUndo == 2)
@@ -104,5 +123,6 @@ namespace Wordly
 
             stepsToUndo--;
         }
+
     }
 }

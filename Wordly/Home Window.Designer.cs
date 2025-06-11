@@ -64,11 +64,11 @@
             // 
             // contentPnl
             // 
-            contentPnl.Controls.Add(contentTipsPnl);
             contentPnl.Controls.Add(panel1);
+            contentPnl.Controls.Add(contentTipsPnl);
             contentPnl.Location = new Point(100, 50);
             contentPnl.Name = "contentPnl";
-            contentPnl.Size = new Size(850, 750);
+            contentPnl.Size = new Size(850, 826);
             contentPnl.TabIndex = 0;
             // 
             // contentTipsPnl
@@ -80,7 +80,7 @@
             contentTipsPnl.Controls.Add(iconBox1);
             contentTipsPnl.Location = new Point(0, 0);
             contentTipsPnl.Name = "contentTipsPnl";
-            contentTipsPnl.Size = new Size(850, 220);
+            contentTipsPnl.Size = new Size(850, 267);
             contentTipsPnl.TabIndex = 16;
             // 
             // label1
@@ -146,7 +146,7 @@
             panel1.Controls.Add(roundedPanel1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(iconBox2);
-            panel1.Location = new Point(0, 270);
+            panel1.Location = new Point(0, 578);
             panel1.Name = "panel1";
             panel1.Size = new Size(850, 400);
             panel1.TabIndex = 20;

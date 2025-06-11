@@ -41,6 +41,7 @@
             wordListTitleSepPnl = new RoundedPanel();
             wordListTitleMeaningLbl = new Label();
             wordListTitleTermLbl = new Label();
+            deletionBtn = new RoundedButton();
             OptionsPnl.SuspendLayout();
             wordListPnl.SuspendLayout();
             wordContainerPnl.SuspendLayout();
@@ -244,12 +245,28 @@
             wordListTitleTermLbl.Text = "Term";
             wordListTitleTermLbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // deletionBtn
+            // 
+            deletionBtn.BackColor = Color.FromArgb(43, 43, 43);
+            deletionBtn.BorderColor = Color.Black;
+            deletionBtn.BorderThickness = 0F;
+            deletionBtn.CornerRadius = 5;
+            deletionBtn.FlatAppearance.BorderColor = Color.FromArgb(43, 43, 43);
+            deletionBtn.FlatAppearance.BorderSize = 0;
+            deletionBtn.FlatStyle = FlatStyle.Flat;
+            deletionBtn.Location = new Point(27, 23);
+            deletionBtn.Name = "deletionBtn";
+            deletionBtn.Size = new Size(60, 60);
+            deletionBtn.TabIndex = 3;
+            deletionBtn.UseVisualStyleBackColor = false;
+            // 
             // QuizWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 50, 50);
             ClientSize = new Size(1050, 650);
+            Controls.Add(deletionBtn);
             Controls.Add(wordListPnl);
             Controls.Add(OptionsPnl);
             FormBorderStyle = FormBorderStyle.None;
@@ -277,5 +294,6 @@
         private Panel wordContainerPnl;
         private Panel wordListUnlockScrollPnl;
         private Label label1;
+        public RoundedButton deletionBtn;
     }
 }

@@ -10,8 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Word Lists\ABC %28for testing%29.json" />
-    <None Remove="Word Lists\April Wordcheck List.json" />
+    <Compile Remove="Word Lists\**" />
+    <EmbeddedResource Remove="Word Lists\**" />
+    <None Remove="Word Lists\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,15 +36,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Word Lists\ABC (for testing).json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Word Lists\April Wordcheck List.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>

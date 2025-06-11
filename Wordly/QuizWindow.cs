@@ -76,7 +76,7 @@ namespace Wordly
                 // 
                 // wordSamplePnl
                 // 
-                BackColor = Color.FromArgb(60,60,60);
+                BackColor = Color.FromArgb(60, 60, 60);
                 Controls.Add(wordTermLbl);
                 Controls.Add(wordMeaningLbl);
                 Location = new Point(10, yLoc);
@@ -169,5 +169,6 @@ namespace Wordly
         {
 
         }
+
     }
 }
