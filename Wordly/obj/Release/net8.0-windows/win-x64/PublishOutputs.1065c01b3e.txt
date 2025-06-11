@@ -1,4 +1,14 @@
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Wordly.pdb
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Word Lists\ABC (for testing).json
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Word Lists\April Wordcheck List.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\runtimes\win-x64\native\WebView2Loader.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\D3DCompiler_47_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\PenImc_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\PresentationNative_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\vcruntime140_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\wpfgfx_cor3.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\WebView2Loader.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Microsoft.Web.WebView2.Core.xml
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Microsoft.Web.WebView2.WinForms.xml
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Microsoft.Web.WebView2.Wpf.xml
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Wordly.exe

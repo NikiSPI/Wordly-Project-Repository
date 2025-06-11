@@ -29,3 +29,12 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Release\net8.0-windows\ref\Wordly.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Word Lists\ABC (for testing).json
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Word Lists\April Wordcheck List.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml

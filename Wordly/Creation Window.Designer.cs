@@ -201,6 +201,7 @@
             meaningTB.BorderStyle = BorderStyle.None;
             meaningTB.BorderWidth = 1;
             meaningTB.Font = new Font("Segoe UI", 15F);
+            meaningTB.ForeColor = Color.WhiteSmoke;
             meaningTB.Location = new Point(20, 20);
             meaningTB.MaxLineCount = 3;
             meaningTB.Multiline = true;
@@ -231,6 +232,7 @@
             termTB.BorderStyle = BorderStyle.None;
             termTB.BorderWidth = 1;
             termTB.Font = new Font("Segoe UI", 15F);
+            termTB.ForeColor = Color.WhiteSmoke;
             termTB.Location = new Point(20, 20);
             termTB.MaxLineCount = 3;
             termTB.Multiline = true;

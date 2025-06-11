@@ -38,20 +38,23 @@
             label2 = new Label();
             contentPnl = new Panel();
             contentTipsPnl = new Panel();
-            WBcontainterPnl = new RoundedPanel();
+            videoContainterPnl = new RoundedPanel();
             label4 = new Label();
             label1 = new Label();
             tipsTitleSepPnl = new RoundedPanel();
             titleTipsLbl = new Label();
             kbTextFlashcardTitleLbl = new Label();
             pictureBox1 = new PictureBox();
+            webView22 = new Microsoft.Web.WebView2.WinForms.WebView2();
             backPnl.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             roundedPanel2.SuspendLayout();
             contentPnl.SuspendLayout();
             contentTipsPnl.SuspendLayout();
+            videoContainterPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)webView22).BeginInit();
             SuspendLayout();
             // 
             // backPnl
@@ -143,7 +146,7 @@
             // 
             // contentTipsPnl
             // 
-            contentTipsPnl.Controls.Add(WBcontainterPnl);
+            contentTipsPnl.Controls.Add(videoContainterPnl);
             contentTipsPnl.Controls.Add(label4);
             contentTipsPnl.Controls.Add(label1);
             contentTipsPnl.Controls.Add(tipsTitleSepPnl);
@@ -155,16 +158,17 @@
             contentTipsPnl.Size = new Size(850, 818);
             contentTipsPnl.TabIndex = 16;
             // 
-            // WBcontainterPnl
+            // videoContainterPnl
             // 
-            WBcontainterPnl.BackColor = Color.Black;
-            WBcontainterPnl.BorderColor = Color.Black;
-            WBcontainterPnl.BorderThickness = 0F;
-            WBcontainterPnl.CornerRadius = 5;
-            WBcontainterPnl.Location = new Point(0, 320);
-            WBcontainterPnl.Name = "WBcontainterPnl";
-            WBcontainterPnl.Size = new Size(850, 478);
-            WBcontainterPnl.TabIndex = 22;
+            videoContainterPnl.BackColor = Color.Black;
+            videoContainterPnl.BorderColor = Color.Black;
+            videoContainterPnl.BorderThickness = 0F;
+            videoContainterPnl.Controls.Add(webView22);
+            videoContainterPnl.CornerRadius = 5;
+            videoContainterPnl.Location = new Point(0, 320);
+            videoContainterPnl.Name = "videoContainterPnl";
+            videoContainterPnl.Size = new Size(850, 478);
+            videoContainterPnl.TabIndex = 22;
             // 
             // label4
             // 
@@ -231,6 +235,19 @@
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
             // 
+            // webView22
+            // 
+            webView22.AllowExternalDrop = true;
+            webView22.CreationProperties = null;
+            webView22.DefaultBackgroundColor = Color.White;
+            webView22.Dock = DockStyle.Fill;
+            webView22.Location = new Point(0, 0);
+            webView22.Name = "webView22";
+            webView22.Size = new Size(850, 478);
+            webView22.Source = new Uri("https://www.youtube.com/embed/VELfH99f-pU", UriKind.Absolute);
+            webView22.TabIndex = 1;
+            webView22.ZoomFactor = 1D;
+            // 
             // Home_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -248,7 +265,9 @@
             roundedPanel2.ResumeLayout(false);
             contentPnl.ResumeLayout(false);
             contentTipsPnl.ResumeLayout(false);
+            videoContainterPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)webView22).EndInit();
             ResumeLayout(false);
         }
 
@@ -267,8 +286,9 @@
         private Label label3;
         private RoundedPanel roundedPanel2;
         private Label label4;
-        private RoundedPanel WBcontainterPnl;
+        private RoundedPanel videoContainterPnl;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView22;
     }
 }
