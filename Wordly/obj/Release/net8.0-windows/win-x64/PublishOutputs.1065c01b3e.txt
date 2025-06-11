@@ -1,0 +1,4 @@
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Wordly.pdb
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Word Lists\ABC (for testing).json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Word Lists\April Wordcheck List.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\publish\Wordly.exe

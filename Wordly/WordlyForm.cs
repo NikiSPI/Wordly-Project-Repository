@@ -86,7 +86,7 @@ namespace Wordly
 
                     menuHomeBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
                     menuHomeBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
-                    menuIndicatorPnl.Location = new Point(0, menuHomeBtn.Location.Y);
+                    menuIndicatorPnl.Location = new Point(menuIndicatorPnl.Location.X, menuHomeBtn.Location.Y);
 
                     //optBarImage.Image = Image.FromFile(imagesFolderDir + "house.png");
 
@@ -96,7 +96,7 @@ namespace Wordly
 
                     menuStartBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
                     menuStartBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
-                    menuIndicatorPnl.Location = new Point(0, menuStartBtn.Location.Y);
+                    menuIndicatorPnl.Location = new Point(menuIndicatorPnl.Location.X, menuStartBtn.Location.Y);
 
                     //optBarImage.Image = Image.FromFile(imagesFolderDir + "language sign.png");
 
@@ -106,7 +106,7 @@ namespace Wordly
 
                     menuCreateBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
                     menuCreateBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
-                    menuIndicatorPnl.Location = new Point(0, menuCreateBtn.Location.Y);
+                    menuIndicatorPnl.Location = new Point(menuIndicatorPnl.Location.X, menuCreateBtn.Location.Y);
 
                     //optBarImage.Image = Image.FromFile(imagesFolderDir + "plus icon.png");
 
@@ -116,7 +116,7 @@ namespace Wordly
 
                     menuSettingsBtn.BackColor = Color.FromArgb(menuPnl.BackColor.R + lma, menuPnl.BackColor.G + lma, menuPnl.BackColor.B + lma);
                     menuSettingsBtn.ForeColor = Color.FromArgb(menuPnl.ForeColor.R - lma, menuPnl.ForeColor.G - lma, menuPnl.ForeColor.B - lma);
-                    menuIndicatorPnl.Location = new Point(0, menuSettingsBtn.Location.Y);
+                    menuIndicatorPnl.Location = new Point(menuIndicatorPnl.Location.X, menuSettingsBtn.Location.Y);
 
                     //optBarImage.Image = Image.FromFile(imagesFolderDir + "Settings-icon.png");
 

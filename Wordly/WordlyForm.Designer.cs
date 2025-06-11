@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordlyForm));
             menuPnl = new Panel();
-            label1 = new Label();
             menuIndicatorPnl = new RoundedPanel();
             menuSettingsBtn = new Button();
             menuQuitBtn = new Button();
@@ -53,7 +52,6 @@
             // menuPnl
             // 
             menuPnl.BackColor = Color.FromArgb(38, 38, 38);
-            menuPnl.Controls.Add(label1);
             menuPnl.Controls.Add(menuIndicatorPnl);
             menuPnl.Controls.Add(menuSettingsBtn);
             menuPnl.Controls.Add(menuQuitBtn);
@@ -68,25 +66,15 @@
             menuPnl.Size = new Size(230, 720);
             menuPnl.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = SystemColors.ActiveBorder;
-            label1.Location = new Point(62, 450);
-            label1.Name = "label1";
-            label1.Size = new Size(85, 15);
-            label1.TabIndex = 9;
-            label1.Text = "(coming soon)";
-            // 
             // menuIndicatorPnl
             // 
             menuIndicatorPnl.BackColor = Color.FromArgb(200, 210, 210);
             menuIndicatorPnl.BorderColor = Color.Black;
             menuIndicatorPnl.BorderThickness = 0F;
-            menuIndicatorPnl.CornerRadius = 5;
-            menuIndicatorPnl.Location = new Point(0, 255);
+            menuIndicatorPnl.CornerRadius = 2;
+            menuIndicatorPnl.Location = new Point(-14, 255);
             menuIndicatorPnl.Name = "menuIndicatorPnl";
-            menuIndicatorPnl.Size = new Size(10, 70);
+            menuIndicatorPnl.Size = new Size(20, 70);
             menuIndicatorPnl.TabIndex = 6;
             // 
             // menuSettingsBtn
@@ -134,10 +122,8 @@
             // 
             menuCreateBtn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             menuCreateBtn.BackColor = Color.FromArgb(38, 38, 38);
-            menuCreateBtn.FlatAppearance.BorderColor = Color.FromArgb(30, 30, 30);
             menuCreateBtn.FlatAppearance.BorderSize = 0;
-            menuCreateBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 30, 30);
-            menuCreateBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, 30, 30);
+            menuCreateBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 60, 60);
             menuCreateBtn.FlatStyle = FlatStyle.Flat;
             menuCreateBtn.Font = new Font("Calibri", 27.75F, FontStyle.Bold);
             menuCreateBtn.ForeColor = Color.FromArgb(210, 220, 220);
@@ -308,7 +294,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Wordly (alpha)";
             menuPnl.ResumeLayout(false);
-            menuPnl.PerformLayout();
             titlePnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)titleIconBox).EndInit();
             optBarPnl.ResumeLayout(false);
@@ -331,7 +316,6 @@
         private Button menuQuitBtn;
         private Button menuSettingsBtn;
         private RoundedButton backBtn;
-        private Label label1;
         private IconBox titleIconBox;
     }
 }

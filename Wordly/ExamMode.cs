@@ -336,12 +336,14 @@
             {
                 BorderStyle = BorderStyle.FixedSingle;
                 Location = new Point(x, y);
+                Multiline = true;
                 Size = new Size(225, 21);
                 Font = new Font("Candara", 11F);
                 BackColor = backClr;
                 ForeColor = foreClr;
 
                 BorderColor = borderClr;
+                BorderWidth = 0;
             }
         }
 

@@ -10,7 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Word Lists\ABC %28for testing%29.json" />
+    <None Remove="Word Lists\April Wordcheck List.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Images\tempIcon.ico" />
+    <Content Include="Word Lists\ABC (for testing).json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Word Lists\April Wordcheck List.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
