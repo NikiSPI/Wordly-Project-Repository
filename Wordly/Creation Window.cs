@@ -7,32 +7,41 @@ namespace Wordly
 
         public class WordList
         {
+            public string name;
+            public int count;
+            public string termLanguage;
+            public string meaningLanguage;
+
             public List<string[]> Term;
             public List<string[]> Meaning;
+
         }
         public static WordList wl;
 
 
-        private char separateWordSign = '-', separatePairSign = '\n';// !!!! = Environment.NewLine;
-        private bool sPairSignIsNewLine = true;
+        private char wordSign = '-', pairSign = '\n';// !!!! = Environment.NewLine;
 
         public Creation_Window()
         {
             InitializeComponent();
+            inputTB.perHeightAddition = -1;
+            inputTB.initHeightAddition = 6;
+            wordSignCB.SelectedIndex = 2;
+            pairSignCB.SelectedIndex = 6;
+
             initTBsYLoc = termTB.Location.Y;
             initMsgLblsYLoc = termMessageLbl.Location.Y;
 
+
             wl = new WordList();
+
+            UpdateTable();
         }
-
-
-
 
 
 
         private void addWordPairBtn_Click(object sender, EventArgs e)
         {
-
             if (string.IsNullOrEmpty(termTB.Text))
             {
                 PopTermMessage("Term is not entered! ", 2000);
@@ -44,17 +53,17 @@ namespace Wordly
 
             else
             {
-                termTB.Text = RemoveNewLinesFromTB(termTB.Text);
-                meaningTB.Text = RemoveNewLinesFromTB(meaningTB.Text);
+                termTB.Text = RemoveNewLines_TBStyle(termTB.Text);
+                meaningTB.Text = RemoveNewLines_TBStyle(meaningTB.Text);
 
 
                 if (!string.IsNullOrEmpty(inputTB.Text))
-                    if (separatePairSign == '\n')
+                    if (pairSign == '\n')
                         inputTB.Text += Environment.NewLine;
                     else
-                        inputTB.Text += separatePairSign;
+                        inputTB.Text += pairSign;
 
-                inputTB.Text += termTB.Text + separateWordSign + meaningTB.Text;
+                inputTB.Text += termTB.Text + wordSign + meaningTB.Text;
 
 
                 termTB.Text = string.Empty;
@@ -65,24 +74,48 @@ namespace Wordly
 
 
 
-        private void roundedButton1_Click(object sender, EventArgs e)
+        private void createListBtn_Click(object sender, EventArgs e)
         {
-            int n = 0, j = 0;
-            while (j < inputTB.Text.Length)
+            bool createList = true;
+            if (string.IsNullOrEmpty(nameTB.Text))
             {
-                if (inputTB.Text[j] == separateWordSign)
-                    n++;
-                j++;
+                nameTB.BorderWidth = 5;
+                createList = false;
             }
-            List<string[]> terms = new List<string[]>();
-            List<string[]> meanings = new List<string[]>();
+            if (string.IsNullOrEmpty(inputTB.Text))
+            {
+                inputTB.PlaceholderText = "You have not entered any words!";
+                createList = false;
+            }
+
+            if (createList)
+            {
+                PerformWordListCreation();
+            }
+
+        }
 
 
+        private void PerformWordListCreation()
+        {
+            UpdateWordList();
 
-            
-            label4.Text = Convert.ToString(n);
+            string s = new FileInfo("Word Lists").FullName;
+
+            File.WriteAllText(s + "\\" + nameTB.Text + ".json", JsonConvert.SerializeObject(wl));
+
+        }
+
+        private void UpdateWordList()
+        {
+            int n = GetNumberOfPairs();
+
+            wl.Term = new List<string[]>(n);
+            wl.Meaning = new List<string[]>(n);
 
 
+            int j;
+            string text = inputTB.Text;
             for (int i = 0; i < n; i++)
             {
                 string[] termTemp = new string[1];
@@ -92,10 +125,10 @@ namespace Wordly
                 j = 0;
                 while (true)
                 {
-                    if (inputTB.Text[j] == separateWordSign)
+                    if (text[j] == wordSign)
                     {
-                        termTemp[0] = RemoveNewLinesFromTB(inputTB.Text.Substring(0, j));
-                        inputTB.Text = inputTB.Text.Substring(j + 1);
+                        termTemp[0] = RemoveNewLines_TBStyle(text.Substring(0, j));
+                        text = text.Substring(j + 1);
 
 
                         break;
@@ -107,51 +140,142 @@ namespace Wordly
                 j = 0;
                 while (true)
                 {
-                    if (inputTB.Text[j] == separatePairSign)
+                    if (text[j] == pairSign)
                     {
-                        if (sPairSignIsNewLine)
+                        if (pairSign == '\n')
                         {
-                            meaningTemp[0] = inputTB.Text.Substring(0, j - 1);
+                            meaningTemp[0] = text.Substring(0, j - 1);
                         }
                         else
                         {
-                            meaningTemp[0] = RemoveNewLinesFromTB(inputTB.Text.Substring(0, j));
+                            meaningTemp[0] = RemoveNewLines_TBStyle(text.Substring(0, j));
                         }
-                        inputTB.Text = inputTB.Text.Substring(j + 1);
+                        text = text.Substring(j + 1);
 
                         break;
                     }
 
                     j++;
 
-                    if (j >= inputTB.Text.Length)
+                    if (j >= text.Length)
                     {
-                        meaningTemp[0] = RemoveNewLinesFromTB(inputTB.Text);
-                        inputTB.Text = string.Empty;
+                        meaningTemp[0] = RemoveNewLines_TBStyle(text);
+                        text = string.Empty;
 
                         break;
                     }
                 }
 
 
-                terms.Add(termTemp);
-                meanings.Add(meaningTemp);
+                wl.Term.Add(termTemp);
+                wl.Meaning.Add(meaningTemp);
             }
 
-            label4.Text += "\n" + (terms[0])[0] + (terms[1])[0] + "," + meanings[0][0] + meanings[1][0];
 
-            wl.Term = terms;
-            wl.Meaning = meanings;
+            wl.name = nameTB.Text;
+            wl.count = n;
+            //wl.termLanguage
+            if (termLanguageCB.SelectedItem == null)
+                wl.termLanguage = "unknown";
+            else
+                wl.termLanguage = termLanguageCB.Text;
+            //wl.meaningLanguage
+            if (meaningLanguageCB.SelectedItem == null)
+                wl.meaningLanguage = "unknown";
+            else
+                wl.meaningLanguage = meaningLanguageCB.Text;
 
 
+        }
 
-            string s = @"C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\Word Lists";//new FileInfo("Word Lists").FullName;
+        private int GetNumberOfPairs()
+        {
+            int n = 0, i = 0;
+            while (i < inputTB.Text.Length)
+            {
+                if (inputTB.Text[i] == wordSign)
+                    n++;
+                i++;
+            }
+            return n;
+        }
 
 
+        private void UpdateTable()
+        {
+            int tempASPy = this.AutoScrollPosition.Y;
 
-            File.WriteAllText(s + @"\abc.json", JsonConvert.SerializeObject(wl));
 
-            
+            UpdateWordList();
+            int n = GetNumberOfPairs();
+
+            if (tablePnl.Controls.Count != 0 && tablePnl.Controls[0].ForeColor == Color.Gray)
+                tablePnl.Controls.Clear();
+
+            int initControlCount = tablePnl.Controls.Count;
+            if (n > tablePnl.Controls.Count / 2)
+            {
+                for (int i = 0; i < n - initControlCount / 2; i++)
+                {
+                    AddTablePair();
+                }
+            }
+            else if (n < tablePnl.Controls.Count / 2)
+            {
+                for (int i = 0; i < initControlCount / 2 - n; i++)
+                {
+                    RemoveTablePair();
+                }
+            }
+
+
+            if (n == 0)
+            {
+                AddTablePair();
+                tablePnl.Controls[0].Text = "Term";
+                tablePnl.Controls[0].Font = new Font("Segoe UI", 15F, FontStyle.Italic);
+                tablePnl.Controls[0].ForeColor = Color.Gray;
+                tablePnl.Controls[1].Text = "Meaning";
+                tablePnl.Controls[1].Font = new Font("Segoe UI", 15F, FontStyle.Italic);
+                tablePnl.Controls[1].ForeColor = Color.Gray;
+            }
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    tablePnl.Controls[i * 2].Text = wl.Term[i][0];
+                    tablePnl.Controls[i * 2 + 1].Text = wl.Meaning[i][0];
+                }
+            }
+
+            tablePnl.Height = tablePnl.Controls.Count / 2 * tableLabelHeight;
+
+
+            this.AutoScrollPosition = new Point(0, -tempASPy);
+        }
+
+        private void AddTablePair()
+        {
+            tablePnl.Controls.Add(TableLabel((tablePnl.Controls.Count / 2) * tableLabelHeight, true));
+            tablePnl.Controls.Add(TableLabel((tablePnl.Controls.Count / 2) * tableLabelHeight, false));
+        }
+        private void RemoveTablePair()
+        {
+            tablePnl.Controls.RemoveAt(tablePnl.Controls.Count - 1);
+            tablePnl.Controls.RemoveAt(tablePnl.Controls.Count - 1);
+        }
+
+        private int tableLabelHeight = 30;
+        private Label TableLabel(int y, bool isLeft)
+        {
+            Label lbl = new Label();
+            lbl.BorderStyle = BorderStyle.FixedSingle;
+            lbl.Font = new Font("Segoe UI", 15F);
+            lbl.Location = new Point(450 * Convert.ToInt32(!isLeft), y);
+            lbl.Size = new Size(450 + Convert.ToInt32(isLeft), tableLabelHeight);
+            lbl.ForeColor = Color.White;
+
+            return lbl;
         }
 
 
@@ -170,7 +294,18 @@ namespace Wordly
 
 
 
-        private string RemoveNewLinesFromTB(string s)
+
+
+
+
+
+
+
+
+
+
+
+        private string RemoveNewLines_TBStyle(string s)
         {
             for (int i = 0; i < s.Length; i++)
                 if (s[i] == '\n')
@@ -233,6 +368,7 @@ namespace Wordly
         public void PopMeaningMessage(string message, int waitTime)
         {
             t2.Stop();
+
 
             meaningMessageLbl.Location = new Point(meaningMessageLbl.Location.X, initMsgLblsYLoc);
             meaningMessageLbl.Visible = true;
@@ -300,6 +436,44 @@ namespace Wordly
             PopMeaningMessage("Meaning is too long! ", 2000);
         }
 
+        private void inputTB_SizeChanged(object sender, EventArgs e)
+        {
+            if (inputTB.Size.Height < inputTBPnl.Size.Height)
+                inputTB.Size = new Size(inputTB.Size.Width, inputTBPnl.Size.Height);
+        }
+
+        private void wordSignCB_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (wordSignCB.SelectedIndex == pairSignCB.SelectedIndex)
+            {
+                wordSignCB.SelectedIndex = 2;
+                pairSignCB.SelectedIndex = 6;
+            }
+            else if (wordSignCB.SelectedItem.ToString() == "Enter")
+                wordSign = '\n';
+            else
+                wordSign = wordSignCB.SelectedItem.ToString()[0];
+        }
+
+        private void pairSignCB_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (wordSignCB.SelectedIndex == pairSignCB.SelectedIndex)
+            {
+                label4.Text = "cannot";
+                wordSignCB.SelectedIndex = 2;
+                pairSignCB.SelectedIndex = 6;
+            }
+            else if (pairSignCB.SelectedItem.ToString() == "Enter")
+                pairSign = '\n';
+            else
+                pairSign = pairSignCB.SelectedItem.ToString()[0];
+
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            UpdateTable();
+        }
     }
 }
  

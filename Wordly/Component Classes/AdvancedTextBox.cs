@@ -22,6 +22,12 @@ namespace Wordly
             get { return borderColor; }
             set { borderColor = value; Invalidate(); }
         }
+        private int borderWidth = 1;
+        public int BorderWidth
+        {
+            get { return borderWidth; }
+            set { borderWidth = value; Invalidate(); }
+        }
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);
@@ -29,7 +35,7 @@ namespace Wordly
             {
                 using (var g = Graphics.FromHwnd(Handle))
                 {
-                    using (var p = new Pen(BorderColor, 1))
+                    using (var p = new Pen(BorderColor, borderWidth))
                     {
                         g.DrawRectangle(p, new Rectangle(0, 0, Width - 1, Height - 1));
                     }
@@ -88,6 +94,9 @@ namespace Wordly
 
         public event EventHandler MaxLineCountReached;
 
+        public int perHeightAddition = 1; 
+        public int initHeightAddition = 1; 
+
         private void AdvancedTextBox_LineCountChanged(object? sender, EventArgs e)
         {
             if (LineCount() > maxLineCount)
@@ -104,7 +113,7 @@ namespace Wordly
             }
             else if (automaticResize)
             {
-                Size = new Size(Width, 1 + (PreferredHeight + 1) * LineCount());
+                Size = new Size(Width, initHeightAddition + (PreferredHeight + perHeightAddition) * LineCount());
             }
             
 

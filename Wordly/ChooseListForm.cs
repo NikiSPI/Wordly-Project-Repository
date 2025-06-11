@@ -19,7 +19,7 @@
         public void InitializeFunctions()
         {
             string fullname = new FileInfo("Word Lists").FullName; //the name of the folder that is seeked
-
+            
             DirectoryInfo d = new DirectoryInfo(fullname); //Assuming this is your Folder
             FileInfo[] files = d.GetFiles(); //Getting files
             
