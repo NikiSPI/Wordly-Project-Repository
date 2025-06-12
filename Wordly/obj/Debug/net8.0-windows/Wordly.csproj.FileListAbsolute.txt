@@ -97,3 +97,14 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\re
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.pdb
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Word Lists\ABC (for testing).json
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Word Lists\April Wordcheck List.json
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml

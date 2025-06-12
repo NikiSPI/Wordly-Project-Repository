@@ -83,6 +83,16 @@ namespace Wordly.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bin {
+            get {
+                object obj = ResourceManager.GetObject("bin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap defaultProfilePicBlack {
             get {
                 object obj = ResourceManager.GetObject("defaultProfilePicBlack", resourceCulture);
@@ -246,16 +256,6 @@ namespace Wordly.Properties {
         internal static System.Drawing.Bitmap tilesBtnBackgroundImgWhite {
             get {
                 object obj = ResourceManager.GetObject("tilesBtnBackgroundImgWhite", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap trashbin {
-            get {
-                object obj = ResourceManager.GetObject("trashbin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
