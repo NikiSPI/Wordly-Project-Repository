@@ -8,5 +8,14 @@ namespace Wordly
         {
             InitializeComponent();
         }
+
+        private void Home_Window_Load(object sender, EventArgs e)
+        {
+
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                backPnl.AutoScrollPosition = new Point(0, 0);
+            });
+        }
     }
 }

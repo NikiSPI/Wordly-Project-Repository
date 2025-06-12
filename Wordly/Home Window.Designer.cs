@@ -39,13 +39,13 @@
             contentPnl = new Panel();
             contentTipsPnl = new Panel();
             videoContainterPnl = new RoundedPanel();
+            webView22 = new Microsoft.Web.WebView2.WinForms.WebView2();
             label4 = new Label();
             label1 = new Label();
             tipsTitleSepPnl = new RoundedPanel();
             titleTipsLbl = new Label();
             kbTextFlashcardTitleLbl = new Label();
             pictureBox1 = new PictureBox();
-            webView22 = new Microsoft.Web.WebView2.WinForms.WebView2();
             backPnl.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -53,8 +53,8 @@
             contentPnl.SuspendLayout();
             contentTipsPnl.SuspendLayout();
             videoContainterPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)webView22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // backPnl
@@ -170,6 +170,19 @@
             videoContainterPnl.Size = new Size(850, 478);
             videoContainterPnl.TabIndex = 22;
             // 
+            // webView22
+            // 
+            webView22.AllowExternalDrop = true;
+            webView22.CreationProperties = null;
+            webView22.DefaultBackgroundColor = Color.White;
+            webView22.Dock = DockStyle.Fill;
+            webView22.Location = new Point(0, 0);
+            webView22.Name = "webView22";
+            webView22.Size = new Size(850, 478);
+            webView22.Source = new Uri("https://www.youtube.com/embed/gx6RaWqdHJs", UriKind.Absolute);
+            webView22.TabIndex = 1;
+            webView22.ZoomFactor = 1D;
+            // 
             // label4
             // 
             label4.Font = new Font("Candara", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -235,19 +248,6 @@
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
             // 
-            // webView22
-            // 
-            webView22.AllowExternalDrop = true;
-            webView22.CreationProperties = null;
-            webView22.DefaultBackgroundColor = Color.White;
-            webView22.Dock = DockStyle.Fill;
-            webView22.Location = new Point(0, 0);
-            webView22.Name = "webView22";
-            webView22.Size = new Size(850, 478);
-            webView22.Source = new Uri("https://www.youtube.com/embed/VELfH99f-pU", UriKind.Absolute);
-            webView22.TabIndex = 1;
-            webView22.ZoomFactor = 1D;
-            // 
             // Home_Window
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -259,6 +259,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Home_Window";
             Text = "Main_Window";
+            Load += Home_Window_Load;
             backPnl.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -266,8 +267,8 @@
             contentPnl.ResumeLayout(false);
             contentTipsPnl.ResumeLayout(false);
             videoContainterPnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)webView22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

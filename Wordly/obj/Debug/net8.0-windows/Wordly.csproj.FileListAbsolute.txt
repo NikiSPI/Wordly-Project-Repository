@@ -1,31 +1,3 @@
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.exe
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.deps.json
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.runtimeconfig.json
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.pdb
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.GenerateResource.cache
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.GeneratedMSBuildEditorConfig.editorconfig
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.AssemblyInfoInputs.cache
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.AssemblyInfo.cs
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.CoreCompileInputs.cache
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\refint\Wordly.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.pdb
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.AssemblyReference.cache
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ChooseListForm.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ExamMode.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.FlashcardMode.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Home_Window.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Properties.Resources.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.QuizWindow.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Settings_Window.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.WordlyForm.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.WriteMode.resources
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.Up2Date
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.sourcelink.json
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.exe
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.deps.json
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.runtimeconfig.json
@@ -84,16 +56,44 @@ C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\Wordly.pdb
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
 C:\Users\Lenovo\Downloads\Wordly-Project-Repository-4b6c5671100c8f85b82fd970a40c6458918784d6\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Creation_Window.resources
 C:\Users\Lenovo\Documents\Visual Studio 2022\Projects\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Creation_Window.resources
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.exe
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Word Lists\ABC (for testing).json
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Word Lists\April Wordcheck List.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.deps.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.runtimeconfig.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Wordly.pdb
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.AssemblyReference.cache
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ChooseListForm.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Creation_Window.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.ExamMode.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.FlashcardMode.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Home_Window.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Properties.Resources.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.QuizWindow.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.Settings_Window.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.WordlyForm.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.WriteMode.resources
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.GenerateResource.cache
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.AssemblyInfoInputs.cache
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.AssemblyInfo.cs
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.CoreCompileInputs.cache
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.sourcelink.json
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.csproj.Up2Date
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\refint\Wordly.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.pdb
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\Wordly.genruntimeconfig.cache
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\obj\Debug\net8.0-windows\ref\Wordly.dll

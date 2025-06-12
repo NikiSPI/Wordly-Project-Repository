@@ -266,7 +266,6 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\hostfxr.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\hostpolicy.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\mscordaccore.dll
-D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\mscordaccore_amd64_amd64_8.0.1625.21506.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\mscordbi.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\mscorrc.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\msquic.dll
@@ -496,3 +495,4 @@ D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\zh-Hant\UIAutomationTypes.resources.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\zh-Hant\WindowsBase.resources.dll
 D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\zh-Hant\WindowsFormsIntegration.resources.dll
+D:\Programming\Visual Studio\Solutions\Wordly\Wordly\bin\Release\net8.0-windows\win-x64\mscordaccore_amd64_amd64_8.0.1725.26602.dll
